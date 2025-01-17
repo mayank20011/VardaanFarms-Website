@@ -140,13 +140,36 @@ function Body() {
                   nesciunt perferendis illum aut tempora facilis modi.
                 </p>
               </div>
-
             </div>
           </section>
         </div>
       </div>
 
       {/* for a photo */}
+      <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-20 mx-auto">
+        <section className="w-full flex flex-col gap-12">
+          <span className="text-green-600 text-center text-2xl font-bold">
+            ___ Orgainc Dairy Services ___
+          </span>
+          <h1 className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto">
+            Delivering organic integrity to everyone, everywhere.
+          </h1>
+          <button className="mx-auto w-fit px-8 py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white">
+            Contact Us
+          </button>
+        </section>
+      </div>
+
+      {/* for products */}
+      <div className="bg-slate-100">
+        <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8">
+          <span className="text-2xl font-bold text-green-600">
+            ___ Shop ___
+          </span>
+          <h1 className="text-5xl font-bold text-black">Our Products</h1>
+        </div>
+      </div>
+
     </>
   );
 }
