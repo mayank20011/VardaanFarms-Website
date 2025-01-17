@@ -68,9 +68,9 @@ function Body() {
             </h1>
 
             {/* for cards */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 w-full justify-evenly gap-12">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full justify-evenly gap-12 ">
               {/* for milk */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
                 <img
                   width="100"
                   height="100"
@@ -88,7 +88,7 @@ function Body() {
               </div>
 
               {/* for panner */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
                 <img
                   width="100"
                   height="100"
@@ -106,7 +106,7 @@ function Body() {
               </div>
 
               {/* for Curd */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
                 <img
                   width="100"
                   height="100"
@@ -124,7 +124,7 @@ function Body() {
               </div>
 
               {/* for Ghee */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
                 <img
                   width="100"
                   height="100"
