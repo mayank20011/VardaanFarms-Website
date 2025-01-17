@@ -6,8 +6,10 @@ import Body from "./Components/Body/Body.jsx";
 function App() {
   return (
     <div className="bg-black text-white">
+      <div className="fixed w-full">
       <Header/>
       <Navbar/>
+      </div>
       <Body/>
     </div>
   )
