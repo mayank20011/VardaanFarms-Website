@@ -132,7 +132,7 @@ function Navbar() {
       <div className="md:hidden text-black bg-slate-100">
         {/* for mobile navbar */}
         <div className="w-full relative p-2 flex justify-center items-center top-[40px]">
-          <div className="flex md:hidden bg-gray-100 p-2 w-[400px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-md fixed">
+          <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-md fixed">
             <img src={logo} alt="vardan Farms Logo" className="h-[36px]" />
             <img
               width="36"
