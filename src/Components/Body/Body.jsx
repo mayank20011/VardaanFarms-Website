@@ -68,7 +68,7 @@ function Body() {
             </h1>
 
             {/* for cards */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 w-full justify-evenly gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 w-full justify-evenly gap-12">
               {/* for milk */}
               <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative">
                 <img
