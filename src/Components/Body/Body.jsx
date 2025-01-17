@@ -1,5 +1,6 @@
 import React from "react";
 import aboutUsImg from "../../img/aboutUsImg.png";
+import ProductSwiper from "../ProductSwiper/ProductSwiper";
 
 function Body() {
   return (
@@ -167,9 +168,9 @@ function Body() {
             ___ Shop ___
           </span>
           <h1 className="text-5xl font-bold text-black">Our Products</h1>
+          <ProductSwiper />
         </div>
       </div>
-
     </>
   );
 }
