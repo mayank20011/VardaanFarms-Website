@@ -70,13 +70,13 @@ function Body() {
             {/* for cards */}
             <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full justify-evenly gap-12 ">
               {/* for milk */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto -z-10">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0">
                 <img
                   width="100"
                   height="100"
                   src="https://img.icons8.com/matisse/100/milk.png"
                   alt="milk"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition -z-10"
+                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition z-0"
                 />
                 <h1 className="text-2xl font-bold pt-6">Milk</h1>
                 <p className="text-slate-400 font-bold">
@@ -88,13 +88,13 @@ function Body() {
               </div>
 
               {/* for panner */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto -z-10">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
                 <img
                   width="100"
                   height="100"
                   src="https://img.icons8.com/plasticine/100/silken-tofu.png"
                   alt="silken-tofu"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition -z-10"
+                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
                 />
                 <h1 className="text-2xl font-bold pt-6">Paneer</h1>
                 <p className="text-slate-400 font-bold">
@@ -106,13 +106,13 @@ function Body() {
               </div>
 
               {/* for Curd */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto -z-10">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
                 <img
                   width="100"
                   height="100"
                   src="https://img.icons8.com/stickers/100/yogurt.png"
                   alt="yogurt"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition -z-10"
+                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
                 />
                 <h1 className="text-2xl font-bold pt-6">Curd</h1>
                 <p className="text-slate-400 font-bold">
@@ -124,13 +124,13 @@ function Body() {
               </div>
 
               {/* for Ghee */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto -z-10">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto ">
                 <img
                   width="100"
                   height="100"
                   src="https://img.icons8.com/dotty/80/jam.png"
                   alt="jam"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition -z-10"
+                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
                 />
                 <h1 className="text-2xl font-bold pt-6">Ghee</h1>
                 <p className="text-slate-400 font-bold">
@@ -140,6 +140,7 @@ function Body() {
                   nesciunt perferendis illum aut tempora facilis modi.
                 </p>
               </div>
+
             </div>
           </section>
         </div>
