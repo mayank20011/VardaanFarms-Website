@@ -1,7 +1,8 @@
 import React from "react";
 import aboutUsImg from "../../img/aboutUsImg.png";
 import ProductSwiper from "../ProductSwiper/ProductSwiper";
-import team1 from "../../img/team1.jpg"
+import team1 from "../../img/team1.jpg";
+import homePageBg from "../../img/homepagebg.png"
 function Body() {
   return (
     <>
@@ -147,7 +148,7 @@ function Body() {
       </div>
 
       {/* for a photo */}
-      <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-20 mx-auto">
+      <div className="py-12 md:py-24 bg-my-background bg-cover bg-center box-shadow-lg filter brightness-60">
         <section className="w-full flex flex-col gap-12">
           <span className="text-green-600 text-center text-2xl font-bold">
             ___ Orgainc Dairy Services ___
@@ -308,6 +309,11 @@ function Body() {
           </div>
         </div>
       </div>
+
+      <div className="bg-white">
+         
+      </div>
+
     </>
   );
 }
