@@ -1,6 +1,4 @@
 .swiper {
-  /* width: 400px;
-  height: 600px; */
   width:267px;
   height:400px;
 }
@@ -36,6 +34,6 @@
   background-color: #eca3a3;
 }
 
-*{
-  /* border:1px solid black; */
+.mySwiper .swiper-slide {
+  transition: transform 3s ease-in-out;
 }
