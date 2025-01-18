@@ -162,7 +162,7 @@ function Body() {
       </div>
 
       {/* for products */}
-      <div className="bg-white pb-12">
+      <div className="bg-white pb-12 overflow-x-hidden">
 
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8 ">
         

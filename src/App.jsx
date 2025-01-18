@@ -10,9 +10,12 @@ function App() {
       <Header/>
       <Navbar/>
       </div>
+      {/* <div className="min-h-screen">
+
+      </div> */}
       <Body/>
     </div>
   )
 }
 
-export default App
+export default App;
