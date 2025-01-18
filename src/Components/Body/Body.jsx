@@ -162,13 +162,40 @@ function Body() {
       </div>
 
       {/* for products */}
-      <div className="bg-slate-100">
-        <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8">
+      <div className="bg-white pb-12">
+
+        <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8 ">
+        
+        <div className="xl:4/5 mx-auto flex flex-col justify-center items-center gap-8 ">
+
           <span className="text-2xl font-bold text-green-600">
             ___ Shop ___
           </span>
           <h1 className="text-5xl font-bold text-black">Our Products</h1>
-          <ProductSwiper />
+
+          <div className="flex w-full xl:gap-24 justify-between lg:gap-12 flex-col md:flex-row gap-12">
+            {/* For productSwiper */}
+            <div className="flex lg:px-12">
+              <ProductSwiper/>
+            </div>
+            {/* Text */}
+            <div className="w-full text-center md:text-left md:w-1/2 lg:w-3/4 text-black flex flex-col gap-4">
+              <h1 className="text-3xl font-bold text-neutral-600">We Offer daily Labtested Products</h1>
+              <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil accusantium iusto quos atque modi, corporis qui consequuntur. Id asperiores impedit, labore velit modi aperiam facere similique eius laboriosam exercitationem. Saepe recusandae, architecto repellat laboriosam, aut tempore veniam quo ipsum dolore quidem, debitis nulla itaque ratione voluptatem sunt eveniet distinctio.</p>
+              <div className="grow flex justify-center md:justify-start md:items-end">
+                <button className="px-6 py-4 border-2 rounded-md text-neutral-500 shadow-md font-bold">Explore More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      {/* Teams */}
+      <div className="bg-slate-100">
+        <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8">
+        <span className="text-green-600 text-2xl font-bold text-center">___   Team   ___</span>
+        <h1 className="text-5xl font-bold text-black">Our Farmers</h1>
         </div>
       </div>
     </>

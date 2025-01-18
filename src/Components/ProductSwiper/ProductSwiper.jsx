@@ -1,97 +1,111 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css/effect-cards";
+
+import "./swiper.css";
+
+// import required modules
+import { EffectCards } from "swiper/modules";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+import DTM from "../../img/DTM2.png";
+import cowGhee from "../../img/cowGhee.png";
+import buffaloGhee from "../../img/buffaloGhee.png";
+import Paneer from "../../img/paneer.png";
+import Curd from "../../img/curd.png";
+// import Lhasi from "../../img/"
 function ProductSwiper() {
   return (
-    <div className="w-full">
+    <>
       <Swiper
-        effect={""}
+        effect={"cards"}
         grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={"auto"}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        modules={[Pagination, Autoplay, EffectFade]}
+        modules={[EffectCards]}
+        className="mySwiper"
       >
-        <SwiperSlide className="border-2 border-black">
-          {" "}
-          <h1 className="text-red-600">Slide1</h1>
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+          <div className="w-full h-full flex flex-col justify-between">
+            {/* image */}
+            <div className="flex justify-center items-center p-4">
+              <img src={DTM} alt="" className="w-44 hover:rotate-6 transition"/>
+            </div>
+            {/* Text */}
+            <div className="grow-1 flex flex-col gap-2">
+              <h1 className="">Double Toned</h1>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
+              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</button>
+            </div>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className="border-2 border-black">
-          {" "}
-          <h1 className="text-red-600">Slide2</h1>
+
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+          <div className="w-full h-full flex flex-col justify-between">
+            {/* image */}
+            <div className="flex justify-center items-center p-4">
+              <img src={Curd} alt="" className="w-44 hover:rotate-6 transition"/>
+            </div>
+            {/* Text */}
+            <div className="grow-1 flex flex-col gap-2">
+              <h1 className="">Curd</h1>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
+              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</button>
+            </div>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className="border-2 border-black">
-          {" "}
-          <h1 className="text-red-600">Slide3</h1>{" "}
+
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+          <div className="w-full h-full flex flex-col justify-between">
+            {/* image */}
+            <div className="flex justify-center items-center p-4">
+              <img src={cowGhee} alt="" className="w-32 hover:rotate-6 transition"/>
+            </div>
+            {/* Text */}
+            <div className="grow-1 flex flex-col gap-2">
+              <h1 className="">Cow Ghee</h1>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
+              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition font-bold hover:shadow-lg hover:shadow-yellow-300 bg-yellow-300">See More</button>
+            </div>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className="border-2 border-black">
-          {" "}
-          <h1 className="text-red-600">Slide4</h1>{" "}
+
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+          <div className="w-full h-full flex flex-col justify-between">
+            {/* image */}
+            <div className="flex justify-center items-center p-4">
+              <img src={buffaloGhee} alt="" className="w-32 hover:rotate-6 transition"/>
+            </div>
+            {/* Text */}
+            <div className="grow-1 flex flex-col gap-2">
+              <h1 className="">Buffalo Ghee</h1>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
+              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg border-slate-100">See More</button>
+            </div>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className="border-2 border-black">
-          {" "}
-          <h1 className="text-red-600">Slide5</h1>{" "}
+
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+          <div className="w-full h-full flex flex-col justify-between">
+            {/* image */}
+            <div className="flex justify-center items-center p-4">
+              <img src={Paneer} alt="" className="w-28 hover:rotate-6 transition"/>
+            </div>
+            {/* Text */}
+            <div className="grow-1 flex flex-col gap-2">
+              <h1 className="">Paneer</h1>
+              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
+              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</button>
+            </div>
+          </div>
         </SwiperSlide>
+        
       </Swiper>
-    </div>
+    </>
   );
 }
 
 export default ProductSwiper;
-
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/effect-coverflow";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// import slide1 from "../img/slide1.webp";
-// import slide2 from "../img/slide2.webp";
-// import slide3 from "../img/slide3.webp";
-// import slide4 from "../img/slide4.webp";
-// import "./slider.css"
-// import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
-
-// function Slider() {
-//   return (
-//     <div className="containerr white-blur-shadow">
-//       <Swiper
-//         effect={"coverflow"}
-//         grabCursor={true}
-//         centeredSlides={true}
-//         loop={true}
-//         slidesPerView={"auto"}
-//         coverflowEffect={{
-//           rotate: 0,
-//           stretch: 0,
-//           depth: 100,
-//           modifier: 2.5,
-//         }}
-//         pagination={{ clickable: true }}
-//         autoplay={{ delay: 3000, disableOnInteraction: false }}
-//         modules={[EffectCoverflow, Pagination, Autoplay]}
-//         className="swiper_container"
-//       >
-//         <SwiperSlide >
-//           <img src={slide1} alt="Slide 1" className="-z-10 lg:w-80"/>
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src={slide2} alt="Slide 2" className="-z-10 lg:w-80"/>
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src={slide3} alt="Slide 3" className="-z-10 lg:w-80"/>
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src={slide4} alt="Slide 4" className="-z-10 lg:w-80"/>
-//         </SwiperSlide>
-//       </Swiper>
-//     </div>
-//   );
-// }
-
-// export default Slider;
