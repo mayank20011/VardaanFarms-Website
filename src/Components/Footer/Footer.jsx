@@ -2,6 +2,7 @@ import React from "react";
 import footerMail from "../../img/footerMail.png";
 import footerLocation from "../../img/footerLocation2.png";
 import cowIcon from "../../img/cowIcon.png";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     // for bg-color
@@ -47,21 +48,21 @@ function Footer() {
           {/* for quick nav and social medais*/}
           <div className="flex gap-6">
             <ul className="flex flex-col gap-4">
-              <li className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4">
+              <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/"}>
                 Home
-              </li>
-              <li className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4">
+              </Link>
+              <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/products"}>
                 Our Products
-              </li>
-              <li className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4">
+              </Link>
+              <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/aboutUs"}>
                 About Us
-              </li>
-              <li className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4">
+              </Link>
+              <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/contactUs"}>
                 Contact Us
-              </li>
-              <li className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4">
+              </Link>
+              <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/bllogs"}>
                 Blogs
-              </li>
+              </Link>
             </ul>
 
             {/* for social media */}
