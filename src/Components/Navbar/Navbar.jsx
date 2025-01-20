@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../img/Vardanlogo.png";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 function Navbar() {
   const mobileNav = useRef(null);
 
@@ -24,19 +25,19 @@ function Navbar() {
           {/* For Navlinks */}
           <ul className="flex gap-5">
             <li className="cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600">
-              Home
+              <Link to={"/"}>Home</Link>
             </li>
             <li className="cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600">
-              Our Oroducts
+              <Link to={"/products"}>Our Products</Link>
             </li>
             <li className="cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600">
-              About Us
+             <Link to={"/aboutUs"}>About Us</Link>
             </li>
             <li className="cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600">
-              Contact Us
+              <Link to={"/contactUs"}>Contact Us</Link>
             </li>
             <li className="cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600">
-              Blogs
+              <Link to={"/blogs"}>Blogs</Link>
             </li>
           </ul>
         </div>
@@ -82,21 +83,21 @@ function Navbar() {
                 alt="delete-sign"
               />
             </li>
-            <li className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer">
-              Home
-            </li>
-            <li className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer">
+            <Link className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer" to={"/"} onClick={closeNav}>
+             Home
+            </Link>
+            <Link className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer" to={"/products"} onClick={closeNav}>
               Our Products
-            </li>
-            <li className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer">
+            </Link>
+            <Link className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer" to={"/aboutUs"} onClick={closeNav}>
               About Us
-            </li>
-            <li className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer">
+            </Link>
+            <Link className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer" to={"/contactUs"} onClick={closeNav}>
               Contact Us
-            </li>
-            <li className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer">
-              Blogs
-            </li>
+            </Link>
+            <Link className="px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer" to={"/blogs"} onClick={closeNav}>
+            Blogs
+            </Link>
           </ul>
         </div>
       </div>
