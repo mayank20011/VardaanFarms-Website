@@ -6,6 +6,7 @@ import homePageBg from "../../img/homepagebg.png";
 import testimonial from "../../img/testimonial.png";
 import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
 import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
+import Footer from "../Footer/Footer";
 function Body() {
   return (
     <>
@@ -321,20 +322,24 @@ function Body() {
         </div>
       </div>
 
+      {/* Revie */}
       <div className="bg-white">
         <div className=" max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
-          <div className="flex gap-12 flex-col xl:flex-row w-full">
+          {/* for image and text */}
+          <div className="flex gap-12 flex-col md:flex-row w-full">
             {/* for Photo */}
-            <div className="xl:w-1/2">
+            <div className="md:w-1/2">
               <img src={testimonial} alt="Testimonial" />
             </div>
 
             {/* for text and swiper*/}
-            <div className="flex flex-col gap-8 w-full xl:w-1/2 lg:items-start ">
+            <div className="flex flex-col gap-8 w-full md:w-1/2 lg:items-start ">
               <span className="text-green-600 text-2xl font-bold ">
                 ___ Review
               </span>
-              <h1 className="text-4xl sm:text-5xl font-bold">What Client's Say</h1>
+              <h1 className="text-4xl sm:text-5xl font-bold">
+                What Client's Say
+              </h1>
               <div className="border-red-600 flex justify-start w-full">
                 <TestimonialSwiper />
               </div>
@@ -347,6 +352,9 @@ function Body() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer/>
     </>
   );
 }
