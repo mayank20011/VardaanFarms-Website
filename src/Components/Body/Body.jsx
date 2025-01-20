@@ -334,7 +334,7 @@ function Body() {
               <span className="text-green-600 text-2xl font-bold ">
                 ___ Review
               </span>
-              <h1 className="text-5xl font-bold">What Client's Say</h1>
+              <h1 className="text-4xl sm:text-5xl font-bold">What Client's Say</h1>
               <div className="border-red-600 flex justify-start w-full">
                 <TestimonialSwiper />
               </div>
