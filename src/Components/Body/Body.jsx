@@ -2,14 +2,20 @@ import React from "react";
 import aboutUsImg from "../../img/aboutUsImg.png";
 import ProductSwiper from "../ProductSwiper/ProductSwiper";
 import team1 from "../../img/team1.jpg";
-import homePageBg from "../../img/homepagebg.png";
 import testimonial from "../../img/testimonial.png";
 import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
 import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
 import Footer from "../Footer/Footer";
+import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 function Body() {
   return (
     <>
+      {/* For Slider */}
+
+      <div className="w-full md:pt-12">
+         <ShowcaseSwiper/>
+      </div>
+
       {/* for about Us */}
       <div className="w-full bg-slate-100 pt-28 md:pt-40">
         {/* This div is sort of container */}
