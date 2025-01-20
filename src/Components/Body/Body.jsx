@@ -2,7 +2,10 @@ import React from "react";
 import aboutUsImg from "../../img/aboutUsImg.png";
 import ProductSwiper from "../ProductSwiper/ProductSwiper";
 import team1 from "../../img/team1.jpg";
-import homePageBg from "../../img/homepagebg.png"
+import homePageBg from "../../img/homepagebg.png";
+import testimonial from "../../img/testimonial.png";
+import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
+import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
 function Body() {
   return (
     <>
@@ -202,7 +205,7 @@ function Body() {
       </div>
 
       {/* Teams */}
-      <div className="bg-slate-100">
+      <div className="bg-slate-100 py-12 pb-24">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8">
           <span className="text-green-600 text-2xl font-bold text-center">
             ___ Team ___
@@ -215,20 +218,22 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl"/>
+                <img src={team1} alt="" className="rounded-xl" />
               </div>
 
               {/* icons */}
               <div className="flex items-center justify-center w-full relative top-[-25px]">
-              <div className="flex gap-4">
-                <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-              </div>
+                <div className="flex gap-4">
+                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                </div>
               </div>
 
               {/* text */}
               <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">Ben Stcoks</h1>
+                <h1 className="text-3xl font-bold text-black text-center">
+                  Ben Stcoks
+                </h1>
                 <p className="font-bold text-neutral-400 text-center">
                   Tractor Driver
                 </p>
@@ -239,20 +244,22 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl"/>
+                <img src={team1} alt="" className="rounded-xl" />
               </div>
 
               {/* icons */}
               <div className="flex items-center justify-center w-full relative top-[-25px]">
-              <div className="flex gap-4">
-                <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-              </div>
+                <div className="flex gap-4">
+                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                </div>
               </div>
 
               {/* text */}
               <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">Ben Stcoks</h1>
+                <h1 className="text-3xl font-bold text-black text-center">
+                  Ben Stcoks
+                </h1>
                 <p className="font-bold text-neutral-400 text-center">
                   Tractor Driver
                 </p>
@@ -263,20 +270,22 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl"/>
+                <img src={team1} alt="" className="rounded-xl" />
               </div>
 
               {/* icons */}
               <div className="flex items-center justify-center w-full relative top-[-25px]">
-              <div className="flex gap-4">
-                <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-              </div>
+                <div className="flex gap-4">
+                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                </div>
               </div>
 
               {/* text */}
               <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">Ben Stcoks</h1>
+                <h1 className="text-3xl font-bold text-black text-center">
+                  Ben Stcoks
+                </h1>
                 <p className="font-bold text-neutral-400 text-center">
                   Tractor Driver
                 </p>
@@ -287,20 +296,22 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl"/>
+                <img src={team1} alt="" className="rounded-xl" />
               </div>
 
               {/* icons */}
               <div className="flex items-center justify-center w-full relative top-[-25px]">
-              <div className="flex gap-4">
-                <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-              </div>
+                <div className="flex gap-4">
+                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
+                </div>
               </div>
 
               {/* text */}
               <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">Ben Stcoks</h1>
+                <h1 className="text-3xl font-bold text-black text-center">
+                  Ben Stcoks
+                </h1>
                 <p className="font-bold text-neutral-400 text-center">
                   Tractor Driver
                 </p>
@@ -311,9 +322,31 @@ function Body() {
       </div>
 
       <div className="bg-white">
-         
-      </div>
+        <div className=" max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
+          <div className="flex gap-12 flex-col xl:flex-row w-full">
+            {/* for Photo */}
+            <div className="xl:w-1/2">
+              <img src={testimonial} alt="Testimonial" />
+            </div>
 
+            {/* for text and swiper*/}
+            <div className="flex flex-col gap-8 w-full xl:w-1/2 lg:items-start ">
+              <span className="text-green-600 text-2xl font-bold ">
+                ___ Review
+              </span>
+              <h1 className="text-5xl font-bold">What Client's Say</h1>
+              <div className="border-red-600 flex justify-start w-full">
+                <TestimonialSwiper />
+              </div>
+            </div>
+          </div>
+
+          {/* For sliding strip */}
+          <div>
+            <TestimonialSlide />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

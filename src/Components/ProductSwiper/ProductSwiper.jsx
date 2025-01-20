@@ -27,9 +27,9 @@ function ProductSwiper() {
         modules={[EffectCards, Autoplay]}
         autoplay={{ delay: 5000 }} 
         // Add autoplay option with delay of 3000ms (3 seconds)
-        className="mySwiper"
+        className={`w-[267px] h-[400px]`}
       >
-        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+        <SwiperSlide className={`px-4 py-6 shadow-2xl shadow-black flex flex-col items-center justify-center rounded-lg text-xl font-bold`}>
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
@@ -44,7 +44,7 @@ function ProductSwiper() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black flex flex-col items-center justify-center rounded-lg text-xl font-bold">
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
@@ -59,7 +59,7 @@ function ProductSwiper() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black flex flex-col items-center justify-center rounded-lg text-xl font-bold">
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
@@ -74,7 +74,7 @@ function ProductSwiper() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black flex flex-col items-center justify-center rounded-lg text-xl font-bold">
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
@@ -89,7 +89,7 @@ function ProductSwiper() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black">
+        <SwiperSlide className="px-4 py-6 shadow-2xl shadow-black flex flex-col items-center justify-center rounded-lg text-xl font-bold">
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
