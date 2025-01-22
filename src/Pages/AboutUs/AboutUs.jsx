@@ -226,8 +226,9 @@ function AboutUs() {
 
       <div className="bg-slate-100 w-full">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex flex-col gap-12 md:gap-24 py-12">
-          {/* left */}
-          <div className="flex gap-6">
+         
+          {/* top */}
+          <div className="flex gap-6 flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col gap-6">
               <div className="md:w-fit md:mx-auto flex gap-4 text-5xl md:text-center">
                 <i className="fa-solid fa-check text-green-600"></i>
@@ -242,24 +243,19 @@ function AboutUs() {
                 memorable.
               </p>
             </div>
-            <img src="" alt="" className="w-2/5" />
+            <img src="" alt="" className="md:w-2/5" />
           </div>
 
-          {/* Right */}
-          <div className="flex gap-6">
-            <img src="" alt="" className="w-2/5" />
+          {/* bottom */}
+          <div className="flex gap-6 flex-col md:flex-row">
+            <img src="" alt="" className="md:w-2/5" />
             <div className="md:w-3/5 flex flex-col gap-6">
               <div className="md:w-fit md:mx-auto flex gap-4 text-5xl md:text-center">
                 <i className="fa-solid fa-check text-green-600"></i>
-                <h1 className="text-green-600">Our Mission</h1>
+                <h1 className="text-green-600">Our Vission</h1>
               </div>
               <p className="font-bold text-neutral-500 text-xl">
-                At Vardaan Farms, we blend the best of tradition and innovation
-                to deliver premium dairy delights. With our contented cows,
-                every sip and bite is a testament to purity and joy. From
-                velvety milk to delectable cheeses, we’re dedicated to
-                excellence and sustainability, making every dairy experience
-                memorable.
+              At Vardaan Farms, we aim to set the standard in premium dairy, renowned for its quality, sustainability, and customer delight. We envision a future where our legacy flourishes, bridging communities with the pure goodness of nature. Grounded in tradition yet propelled by innovation, we strive to enrich lives globally with our exceptional dairy offerings.
               </p>
             </div>
           </div>
