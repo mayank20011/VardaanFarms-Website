@@ -64,23 +64,23 @@ function AboutUs() {
         <div className="pt-24 flex gap-6 flex-col lg:flex-row">
           {/* Text */}
           <div className="lg:w-1/2 flex flex-col gap-6">
-            <span className="text-center sm:text-left text-2xl text-green-600 font-bold ">
+            <span className="sm:text-center text-2xl text-green-600 font-bold ">
               About VardaanFarms
             </span>
-            <h1 className="text-center sm:text-left text-4xl capitalize font-bold">
+            <h1 className="sm:text-center text-4xl capitalize font-bold">
               Crafting Dairy Excellence
             </h1>
-            <p className="text-center sm:text-left text-neutral-500 font-bold text-md">
+            <p className="sm:text-center text-neutral-500 font-bold text-md">
               Welcome to Vardaan Farms! We are more than just a dairy product
               company; we are the custodians of tradition, quality, and
               innovation in every delectable morsel we offer.
             </p>
-            <p className="text-center sm:text-left text-neutral-500 font-bold text-md">
+            <p className="sm:text-center text-neutral-500 font-bold text-md">
               Vardaan Farms' journey began with a vision to enrich lives through
               wholesome products sourced from nature's bounty. From field to
               table, we prioritize freshness and goodness.
             </p>
-            <p className="text-center sm:text-left text-neutral-500 font-bold text-md">
+            <p className="sm:text-center text-neutral-500 font-bold text-md">
               With unwavering commitment to perfection, we maintain rigorous
               standards of hygiene and safety, ensuring every Vardaan Farms
               product exceeds expectations and delights consumers.
@@ -97,15 +97,15 @@ function AboutUs() {
       <div className="bg-white py-24">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex flex-col gap-12">
           
-          <h1 className="text-center font-bold text-5xl">Our Best Vardaan Service</h1>
+          <h1 className="sm:text-center font-bold text-5xl">Our Best Vardaan Service</h1>
 
-          <p className="text-center text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias nemo sed veritatis nobis nostrum minima eaque dignissimos ad vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi molestias laborum placeat. Ipsa rerum modi autem praesentium vel illo expedita magni maxime amet est suscipit, corporis accusantium quisquam dolor quas cumque tempore aspernatur! Magnam dolorem esse similique iure quod quidem rerum illum ipsum facilis autem cum laborum nam consectetur saepe ipsa accusamus harum porro tempore, iste cumque architecto! Tempore.</p>
+          <p className="sm:text-center text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias nemo sed veritatis nobis nostrum minima eaque dignissimos ad vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi molestias laborum placeat. Ipsa rerum modi autem praesentium vel illo expedita magni maxime amet est suscipit, corporis accusantium quisquam dolor quas cumque tempore aspernatur! Magnam dolorem esse similique iure quod quidem rerum illum ipsum facilis autem cum laborum nam consectetur saepe ipsa accusamus harum porro tempore, iste cumque architecto! Tempore.</p>
           
           {/* for cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {/* Card-1 */}
-            <div className="hover:shadow-lg hover:shadow-black p-8 bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition">
+            <div className="hover:shadow-lg hover:shadow-black p-8 bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
               <img src={Pipeline} alt="" className="w-[100px]"/>
               <h1 className="text-xl font-bold">Milk Preservation</h1>
               <p className="text-neutral-700">
@@ -117,7 +117,7 @@ function AboutUs() {
             </div>
 
             {/* card-2 */}
-            <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition">
+            <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
               <img src={growth} alt="" className="w-[100px]"/>
               <h1 className="text-xl font-bold">High Production</h1>
               <p className="text-neutral-700">
@@ -129,7 +129,7 @@ function AboutUs() {
             </div>
 
             {/* card-3 */}
-            <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition">
+            <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
               <img src={recipee} alt="" className="w-[100px]"/>
               <h1 className="text-xl font-bold">Featured Recipe</h1>
               <p className="text-neutral-700">
@@ -141,7 +141,7 @@ function AboutUs() {
             </div>
 
             {/* Card-4 */}
-            <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition">
+            <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
               <img src={house} alt="" className="w-[100px]"/>
               <h1 className="text-xl font-bold">Recomended For Babies</h1>
               <p className="text-neutral-700">
@@ -153,7 +153,7 @@ function AboutUs() {
             </div>
 
             {/* Card-5 */}
-            <div className="p-8 hover:shadow-lg hover:shadow-black bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition">
+            <div className="p-8 hover:shadow-lg hover:shadow-black bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
               <img src={ef} alt="" className="w-[100px]"/>
               <h1 className="text-xl font-bold">Environmentally Friendly</h1>
               <p className="text-neutral-700">
@@ -165,7 +165,7 @@ function AboutUs() {
             </div>
 
             {/* Card-6 */}
-            <div className="p-8 bg-slate-100  hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition">
+            <div className="p-8 bg-slate-100  hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
               <img src={pasturization} alt="" className="w-[100px]"/>
               <h1 className="text-xl font-bold">Reliable pasturization</h1>
               <p className="text-neutral-700">
@@ -175,6 +175,7 @@ function AboutUs() {
                 libero dolore! Itaque enim ut tempore?
               </p>
             </div>
+
           </div>
 
           {/* For Numbers */}
