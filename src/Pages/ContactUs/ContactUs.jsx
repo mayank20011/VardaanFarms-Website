@@ -48,8 +48,8 @@ function ContactUs() {
         theme="light"
         transition={Bounce}
       />
-      <div className="bg-neutral-700 w-full min-h-screen pt-24">
-        <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 min-h-screen flex justify-center items-center gap-12 flex-col lg:flex-row ">
+      <div className="bg-neutral-700 w-full min-h-screen pt-36">
+        <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 min-h-screen flex justify-center items-center gap-12 flex-col lg:flex-row">
           {/* Left-div */}
           <div className="lg:w-1/2 flex flex-col gap-6">
             <span
