@@ -8,7 +8,7 @@ function Products() {
       <div className="min-h-screen flex justify-center items-center relative border-2 bg-white text-black flex-col lg:flex-row pt-28 md:pt-36 lg:pt-0 pb-6 lg:pb-0">
 
         {/* Left Side */}
-        <div className="lg:w-1/2 flex justify-center items-center lg:min-h-screen order-2 w-11/12 mx-auto">
+        <div className="lg:w-1/2 flex justify-center items-center lg:min-h-screen w-11/12 mx-auto">
           <div className="lg:w-fit lg:pr-12">
             <h1 className="capitalize font-bold text text-5xl py-6 border-b-2 text-center lg:text-left">
               A2 Skimmed milk
@@ -19,10 +19,10 @@ function Products() {
         </div>
 
         {/* image */}
-        <img src={buffaloGhee} alt="Product Image" className="lg:absolute order-1" style={{filter:"drop-shadow(0 16px 22px rgba(0, 0, 0))"}}/>
+        <img src={buffaloGhee} alt="Product Image" className="lg:absolute" style={{filter:"drop-shadow(0 16px 22px rgba(0, 0, 0))"}}/>
 
         {/* Right Side */}
-        <div className="lg:w-1/2 flex justify-center items-center lg:min-h-screen order-3 w-11/12 mx-auto p-4 rounded-lg lg:rounded-none" style={{background:"#f2eecb"}}>
+        <div className="lg:w-1/2 flex justify-center items-center lg:min-h-screen w-11/12 mx-auto p-4 rounded-lg lg:rounded-none mt-6 lg:mt-0" style={{background:"#f2eecb"}}>
           <div className="lg:w-[600px] lg:pl-48">
             <h1 className="capitalize font-bold text text-5xl py-4">
               1 Litre
