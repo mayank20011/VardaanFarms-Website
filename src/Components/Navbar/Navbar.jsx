@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <>
       {/* for laptop */}
-      <div className="bg-white py-4 text-neutral-700 hidden md:flex">
+      <div className="bg-white py-4 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300">
         {/* for desktop Navbar*/}
         <div className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
           {/* For image */}
