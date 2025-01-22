@@ -77,7 +77,7 @@ function ContactUs() {
         {/* form */}
         <form
           action=""
-          className="lg:w-1/2 bg-white w-full text-black px-8 py-12 rounded-lg flex flex-col gap-8 shadow-lg shadow-black mb-8 "
+          className="lg:w-1/2 bg-white w-full text-black px-8 py-8 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 "
         >
           <h1 className="text-2xl sm:text-4xl font-bold text-green-600">Leave A Message</h1>
           <p className="text-neutral-500">
