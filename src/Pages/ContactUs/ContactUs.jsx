@@ -1,9 +1,114 @@
-import React from 'react'
-
+import React from "react";
+import Footer from "../../Components/Footer/Footer.jsx";
 function ContactUs() {
   return (
-    <div>ContactUs</div>
-  )
+    <div className="bg-neutral-700 w-full min-h-screen pt-24">
+      <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 min-h-screen flex justify-center items-center gap-12 flex-col lg:flex-row ">
+        {/* Left-div */}
+        <div className="lg:w-1/2 flex flex-col gap-6">
+          <span
+            className="text-xl font-bold text-green-600"
+            style={{ filter: "drop-shadow:(2px 2px 5px rgb(255,255,255))" }}
+          >
+            Contact Us
+          </span>
+
+          <h1 className="text-4xl font-bold">GET IN TOUCH</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            reprehenderit inventore fugit possimus facilis? Voluptate quidem
+            voluptatem enim iusto similique ex, nemo, amet laborum repellendus
+            nihil temporibus quas, asperiores fuga magnam adipisci deleniti
+            consectetur nulla cumque quibusdam necessitatibus aperiam quisquam?
+          </p>
+
+          {/* for location mail and other */}
+          <div className="grid gap-4 sm:grid-cols-2 border-b-2 pb-6">
+            {/* location */}
+            <div className="flex gap-2 items-center bg-white text-black py-2 rounded-lg px-2 shadow-sm shadow-white border border-neutral-700">
+              <i className="fa-solid fa-house text-green-600 p-2 bg-neutral-700 rounded-md h-fit"></i>
+              <div>
+                <h1 className="font-bold">Location</h1>
+                <p>Gurugram India</p>
+              </div>
+            </div>
+
+            {/* for phone */}
+            <div className="flex gap-2 items-center p-2">
+              <i className="fa-solid fa-phone text-orange-600 p-2 bg-white rounded-md h-fit"></i>
+              <div>
+                <h1 className="font-bold">Phone</h1>
+                <p>(+91 ) 8816000082</p>
+              </div>
+            </div>
+
+            {/* for email */}
+            <div className="flex gap-2 items-center p-2">
+              <i className="fa-solid fa-envelope text-yellow-600 p-2 bg-white rounded-md h-fit"></i>
+              <div>
+                <h1 className="font-bold">Email</h1>
+                <p>hello@vardaanfarms.com</p>
+              </div>
+            </div>
+
+            {/* for work */}
+            <div className="flex gap-2 items-center p-2">
+              <i className="fa-solid fa-clock text-blue-600 p-2 bg-white rounded-md h-fit"></i>
+              <div>
+                <h1 className="font-bold">Work Hours</h1>
+                <p>Everyday 08:00 am - 6:00 pm</p>
+              </div>
+            </div>
+          </div>
+
+          {/* social media */}
+          <div className="flex items-center">
+            <h5 className="grow text-2xl font-bold">Social Media :</h5>
+            <div className="flex gap-4">
+              <i className="fa-brands fa-facebook text-2xl hover:scale-90 transition cursor-pointer hover:opacity-90"></i>
+              <i className="fa-brands fa-instagram text-2xl hover:scale-90 transition cursor-pointer hover:opacity-90"></i>
+              <i className="fa-brands fa-linkedin text-2xl hover:scale-90 transition cursor-pointer hover:opacity-90"></i>
+              <i className="fa-brands fa-youtube text-2xl hover:scale-90 transition cursor-pointer hover:opacity-90"></i>
+            </div>
+          </div>
+        </div>
+
+        {/* form */}
+        <form
+          action=""
+          className="lg:w-1/2 bg-white w-full text-black px-8 py-12 rounded-lg flex flex-col gap-8 shadow-lg shadow-black mb-8 "
+        >
+          <h1 className="text-2xl sm:text-4xl font-bold text-green-600">Leave A Message</h1>
+          <p className="text-neutral-500">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+            omnis ipsam sapiente praesentium quidem error expedita ex excepturi,
+            iusto quae nulla illum eum distinctio, natus, repellat sunt deleniti
+            eaque dignissimos.
+          </p>
+
+          <div className="grid gap-6">
+            {/* Name, phoneNo, Email, Subject */}
+            <div className="grid gap-4 sm:grid-cols-2">
+              <input type="text" placeholder="Your Name" className="outline-none p-4 border-2 rounded-2xl"/>
+              <input type="text" placeholder="Your Phone" className="outline-none p-4 border-2 rounded-2xl"/>
+              <input type="text" placeholder="Your Email" className="outline-none p-4 border-2 rounded-2xl"/>
+              <input type="text" placeholder="Subject" className="outline-none p-4 border-2 rounded-2xl"/>
+            </div>
+            <textarea
+              name=""
+              id=""
+              className="border-2 rounded-2xl p-4 h-[200px] resize-none outline-none"
+              placeholder="Your Request"
+            ></textarea>
+            <button className="py-4 bg-green-600 rounded-xl text-white font-bold hover:scale-90 transition">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div className="border-t-2 border-dashed"></div>
+      <Footer />
+    </div>
+  );
 }
 
-export default ContactUs
+export default ContactUs;
