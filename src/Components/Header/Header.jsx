@@ -35,6 +35,7 @@ function Header() {
           <i className="fa-brands fa-facebook-f cursor-pointer transition duration-700 hover:text-green-600"></i>
           <i className="fa-brands fa-instagram cursor-pointer transition duration-700 hover:text-green-600"></i>
           <i className="fa-brands fa-linkedin-in cursor-pointer transition duration-700 hover:text-green-600"></i>
+          <i className="fa-brands fa-youtube cursor-pointer transition duration-700 hover:text-green-600"></i>
          </div>
        </div>
 
