@@ -1,6 +1,23 @@
 import React from 'react'
 
 function Header() {
+  
+  function openFb(){
+    window.open("https://www.facebook.com/vardaanfarms/");
+  }
+
+  function openIg(){
+    window.open("https://www.instagram.com/vardaanfarms/");
+  }
+
+  function openLinkedin(){
+    window.open("");
+  }
+
+  function openYt(){
+    window.open("https://www.youtube.com/@VardaanFarms");
+  }
+
   return (
     // for header
     <div className="bg-neutral-700 py-4 text-white hidden md:flex">
@@ -32,10 +49,10 @@ function Header() {
          {/* for phone Number */}
          <div className="flex gap-4 items-center">
           {/* insta fb linkedin */}
-          <i className="fa-brands fa-facebook-f cursor-pointer transition duration-700 hover:text-green-600"></i>
-          <i className="fa-brands fa-instagram cursor-pointer transition duration-700 hover:text-green-600"></i>
-          <i className="fa-brands fa-linkedin-in cursor-pointer transition duration-700 hover:text-green-600"></i>
-          <i className="fa-brands fa-youtube cursor-pointer transition duration-700 hover:text-green-600"></i>
+          <i className="fa-brands fa-facebook-f cursor-pointer transition duration-700 hover:text-green-600" onClick={openFb}></i>
+          <i className="fa-brands fa-instagram cursor-pointer transition duration-700 hover:text-green-600" onClick={openIg}></i>
+          <i className="fa-brands fa-linkedin-in cursor-pointer transition duration-700 hover:text-green-600" onClick={openLinkedin}></i>
+          <i className="fa-brands fa-youtube cursor-pointer transition duration-700 hover:text-green-600" onClick={openYt}></i>
          </div>
        </div>
 

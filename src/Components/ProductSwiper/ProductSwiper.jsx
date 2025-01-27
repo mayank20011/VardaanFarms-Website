@@ -13,7 +13,7 @@ import { EffectCards, Autoplay } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 
 import DTM from "../../img/DTM2.png";
-import cowGhee from "../../img/cowGhee.png";
+import cowGhee from "../../img/a2CowGhee.png";
 import buffaloGhee from "../../img/buffaloGhee.png";
 import Paneer from "../../img/paneer.png";
 import Curd from "../../img/curd.png";

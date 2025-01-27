@@ -11,29 +11,26 @@ function Body() {
   return (
     <>
       {/* For Slider */}
-
       <div className="w-full md:pt-12">
          <ShowcaseSwiper/>
       </div>
 
       {/* for about Us */}
-      <div className="w-full bg-slate-100 pt-28 md:pt-40">
+      <div className="w-full bg-slate-100 pt-28 md:pt-40 overflow-hidden">
         {/* This div is sort of container */}
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-          {/* for Slider */}
-          <section></section>
 
           {/* About Us */}
           <section className="flex gap-6 flex-col md:flex-row pb-8">
             {/* for content */}
             <div className="md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
-              <span className="text-green-600 text-2xl font-bold">
+              <span className="text-green-600 text-2xl font-bold" id="aboutUs">
                 _____ About Us
               </span>
-              <h1 className="text-5xl font-bold text-black">
+              <h1 className="text-5xl font-bold text-black" id="knowAbout">
                 Know About Our Farm And History
               </h1>
-              <p className="text-slate-500 text-xl">
+              <p className="text-slate-500 text-xl" id="aboutUsP">
                 It’s our obligation to take care of our animals, respect our
                 people & improve the health of the planet for the future. We
                 keep our animals healthy working in harmony with nature Just
@@ -42,13 +39,13 @@ function Body() {
               {/* for img and para */}
               <div>
                 <img src="" alt="" />
-                <p className="text-slate-500 text-xl">
+                <p className="text-slate-500 text-xl" id="aboutUsP2">
                   We keep our animals healthy by working in harmony with nature
                   is like you don’t want your kids or your self to constantly
                   exposed to antibiotics we dont .
                 </p>
               </div>
-              <button className="py-4 px-8 border-2 border-slate-300 rounded-md text-black w-fit font-bold flex gap-4 items-center hover:scale-90 transition hover:shadow-green-600 hover:shadow-xl">
+              <button className="py-4 px-8 border-2 border-slate-300 rounded-md text-black w-fit font-bold flex gap-4 items-center hover:scale-90 transition hover:shadow-green-600 hover:shadow-xl" id="rmbutton">
                 <span>Read More</span>
                 <img
                   width="30"
@@ -61,7 +58,7 @@ function Body() {
 
             {/* for image */}
             <div className="md:w-1/2 flex justify-center md:flex-row-reverse order-1 md:order-2">
-              <img src={aboutUsImg} alt="AboutUsImg" className="h-auto" />
+              <img src={aboutUsImg} alt="AboutUsImg" className="h-auto" id="sinceImg"/>
             </div>
           </section>
         </div>
@@ -72,17 +69,17 @@ function Body() {
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           {/* Services */}
           <section className="flex flex-col gap-12 py-8">
-            <span className="text-green-600 text-2xl font-bold text-center">
+            <span className="text-green-600 text-2xl font-bold text-center" id="serviceSpan">
               ____ Services ____
             </span>
-            <h1 className="text-5xl text-center text-black font-bold pb-6">
+            <h1 className="text-5xl text-center text-black font-bold pb-6" id="whatWeOffer">
               What We Offer
             </h1>
 
             {/* for cards */}
             <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full justify-evenly gap-12 ">
               {/* for milk */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0" id="milk">
                 <img
                   width="100"
                   height="100"
@@ -100,7 +97,7 @@ function Body() {
               </div>
 
               {/* for panner */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto" id="paneer">
                 <img
                   width="100"
                   height="100"
@@ -118,7 +115,7 @@ function Body() {
               </div>
 
               {/* for Curd */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto" id="curd">
                 <img
                   width="100"
                   height="100"
@@ -136,7 +133,7 @@ function Body() {
               </div>
 
               {/* for Ghee */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto ">
+              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto " id="ghee">
                 <img
                   width="100"
                   height="100"
@@ -160,13 +157,13 @@ function Body() {
       {/* for a photo */}
       <div className="py-12 md:py-24 bg-my-background bg-cover bg-center box-shadow-lg filter brightness-60">
         <section className="w-full flex flex-col gap-12">
-          <span className="text-green-600 text-center text-2xl font-bold">
+          <span className="text-green-600 text-center text-2xl font-bold" id="organicDairyServices">
             ___ Orgainc Dairy Services ___
           </span>
-          <h1 className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto">
+          <h1 className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto" id="organicDairyServicesH">
             Delivering organic integrity to everyone, everywhere.
           </h1>
-          <button className="mx-auto w-fit px-8 py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white">
+          <button id="organicDairyServicesB" className="mx-auto w-fit px-8 py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white">
             Contact Us
           </button>
         </section>

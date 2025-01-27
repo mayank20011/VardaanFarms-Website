@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        'cs': {'max':'780px'},
+      },
       backgroundImage: { 'my-background': "url('./src/img/homepagebg.png')", },
     },
   },
