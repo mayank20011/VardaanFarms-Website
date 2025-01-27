@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../img/Vardanlogo.png";
-import { useRef } from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function Navbar() {
   const [active, setActive] = useState("home");
-
+  const location = useLocation();
   const mobileNav = useRef(null);
+
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === "/") {
+      setActive("home");
+    } else if (path.includes("/products")) {
+      setActive("products");
+    } else if (path.includes("/aboutUs")) {
+      setActive("aboutUs");
+    } else if (path.includes("/contactUs")) {
+      setActive("contactUs");
+    } else if (path.includes("/blogs")) {
+      setActive("blogs");
+    }
+  }, [location.pathname]);
 
   function openNav() {
     mobileNav.current.classList.remove("-translate-x-full");
@@ -30,7 +43,7 @@ function Navbar() {
           <ul className="flex gap-5">
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active == "home"
+                active === "home"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
@@ -38,11 +51,11 @@ function Navbar() {
                 setActive("home");
               }}
             >
-              <Link to={"/"}>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active == "products"
+                active === "products"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
@@ -50,11 +63,11 @@ function Navbar() {
                 setActive("products");
               }}
             >
-              <Link to={"/products"}>Our Products</Link>
+              <Link to="/products">Our Products</Link>
             </li>
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active == "aboutUs"
+                active === "aboutUs"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
@@ -62,11 +75,11 @@ function Navbar() {
                 setActive("aboutUs");
               }}
             >
-              <Link to={"/aboutUs"}>About Us</Link>
+              <Link to="/aboutUs">About Us</Link>
             </li>
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active == "contactUs"
+                active === "contactUs"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
@@ -74,11 +87,11 @@ function Navbar() {
                 setActive("contactUs");
               }}
             >
-              <Link to={"/contactUs"}>Contact Us</Link>
+              <Link to="/contactUs">Contact Us</Link>
             </li>
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active == "blogs"
+                active === "blogs"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
@@ -86,7 +99,7 @@ function Navbar() {
                 setActive("blogs");
               }}
             >
-              <Link to={"/blogs"}>Blogs</Link>
+              <Link to="/blogs">Blogs</Link>
             </li>
           </ul>
         </div>
@@ -135,9 +148,9 @@ function Navbar() {
 
             <Link
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
-                active == "home" ? "border-green-600 scale-90" : ""
+                active === "home" ? "border-green-600 scale-90" : ""
               }`}
-              to={"/"}
+              to="/"
               onClick={() => {
                 closeNav();
                 setActive("home");
@@ -148,9 +161,9 @@ function Navbar() {
 
             <Link
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
-                active == "products" ? "border-green-600 scale-90" : ""
+                active === "products" ? "border-green-600 scale-90" : ""
               }`}
-              to={"/products"}
+              to="/products"
               onClick={() => {
                 closeNav();
                 setActive("products");
@@ -161,9 +174,9 @@ function Navbar() {
 
             <Link
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
-                active == "aboutUs" ? "border-green-600 scale-90" : ""
+                active === "aboutUs" ? "border-green-600 scale-90" : ""
               }`}
-              to={"/aboutUs"}
+              to="/aboutUs"
               onClick={() => {
                 closeNav();
                 setActive("aboutUs");
@@ -174,9 +187,9 @@ function Navbar() {
 
             <Link
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
-                active == "contactUs" ? "border-green-600 scale-90" : ""
+                active === "contactUs" ? "border-green-600 scale-90" : ""
               }`}
-              to={"/contactUs"}
+              to="/contactUs"
               onClick={() => {
                 closeNav();
                 setActive("contactUs");
@@ -187,9 +200,9 @@ function Navbar() {
 
             <Link
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
-                active == "blogs" ? "border-green-600 scale-90" : ""
+                active === "blogs" ? "border-green-600 scale-90" : ""
               }`}
-              to={"/blogs"}
+              to="/blogs"
               onClick={() => {
                 closeNav();
                 setActive("blogs");
