@@ -20,7 +20,7 @@ import Footer from "../../Components/Footer/Footer.jsx";
 
 function Products() {
   return (
-    <div className="min-h-screen pt-24 flex flex-col space-y-8 md:pt-36 bg-white lg:pt-0">
+    <div className="min-h-screen pt-24 flex flex-col lg:space-y-0 space-y-8 md:pt-36 bg-white lg:pt-0">
       {/* Product-1 */}
        <Product name={"A2 Desi Cow Milk"} info={"Natural & Unadultrated"} img={a2DesiCowMilk} description={"For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"} availability={"Available in x, y,z quantity"} bgColor={"#b1998c"} colorSide={"right"}/>
 
