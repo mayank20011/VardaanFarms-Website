@@ -15,6 +15,7 @@ import Footer from "../../Components/Footer/Footer.jsx";
 
 function AboutUs() {
   return (
+    <>
     <div className="min-h-screen w-full bg-slate-100">
       <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 border-2 border-slate-100 min-h-screen text-black pb-24">
         {/* key points */}
@@ -266,6 +267,7 @@ function AboutUs() {
       {/* Footer */}
       <Footer />
     </div>
+    </>
   );
 }
 

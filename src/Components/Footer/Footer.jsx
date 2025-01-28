@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     // for bg-color
-    <div className="bg-neutral-700">
+    <footer className="bg-neutral-700">
       {/* for container */}
       <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-white">
         {/* for diff sections */}
@@ -46,7 +46,7 @@ function Footer() {
           </div>
 
           {/* for quick nav and social medais*/}
-          <div className="flex gap-6">
+          <nav className="flex gap-6">
             <ul className="flex flex-col gap-4">
               <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/"}>
                 Home
@@ -72,7 +72,7 @@ function Footer() {
               <i className="fa-brands fa-linkedin-in text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition"></i>
               <i className="fa-brands fa-youtube text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition"></i>
             </div>
-          </div>
+          </nav>
         </div>
         <div className="w-full border-t-2 border-dashed border-t-green-600">
           <p className="pt-12 text-center">
@@ -80,7 +80,7 @@ function Footer() {
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

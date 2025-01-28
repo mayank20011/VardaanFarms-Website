@@ -10,11 +10,11 @@ import Blogs from "./Pages/Blogs/Blogs.jsx";
 import { Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="bg-black text-white">
-      <div className="w-full fixed z-10">
+    <main className="bg-black text-white">
+      <header className="w-full fixed z-10">
         <Header />
         <Navbar />
-      </div>
+      </header>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<Products />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/blogs" element={<Blogs />} />
       </Routes>
-    </div>
+    </main>
   );
 }
 

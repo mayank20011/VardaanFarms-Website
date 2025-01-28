@@ -1,0 +1,5 @@
+https://vardaan-farms-website.vercel.app/
+https://vardaan-farms-website.vercel.app/products
+https://vardaan-farms-website.vercel.app/aboutUs
+https://vardaan-farms-website.vercel.app/contactUs
+https://vardaan-farms-website.vercel.app/blogs

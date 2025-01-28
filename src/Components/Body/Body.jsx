@@ -11,12 +11,12 @@ function Body() {
   return (
     <>
       {/* For Slider */}
-      <div className="w-full md:pt-12">
+      <section className="w-full md:pt-12">
          <ShowcaseSwiper/>
-      </div>
+      </section>
 
       {/* for about Us */}
-      <div className="w-full bg-slate-100 pt-28 md:pt-40 overflow-hidden">
+      <section className="w-full bg-slate-100 pt-28 md:pt-40 overflow-hidden">
         {/* This div is sort of container */}
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
 
@@ -62,10 +62,10 @@ function Body() {
             </div>
           </section>
         </div>
-      </div>
+      </section>
 
       {/* For Services */}
-      <div className="bg-white py-8">
+      <section className="bg-white py-8">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           {/* Services */}
           <section className="flex flex-col gap-12 py-8">
@@ -152,10 +152,10 @@ function Body() {
             </div>
           </section>
         </div>
-      </div>
+      </section>
 
       {/* for a photo */}
-      <div className="py-12 md:py-24 bg-my-background bg-cover bg-center box-shadow-lg filter brightness-60">
+      <section className="py-12 md:py-24 bg-my-background bg-cover bg-center box-shadow-lg filter brightness-60">
         <section className="w-full flex flex-col gap-12">
           <span className="text-green-600 text-center text-2xl font-bold" id="organicDairyServices">
             ___ Orgainc Dairy Services ___
@@ -167,10 +167,10 @@ function Body() {
             Contact Us
           </button>
         </section>
-      </div>
+      </section>
 
       {/* for products */}
-      <div className="bg-white pb-12 overflow-x-hidden">
+      <section className="bg-white pb-12 overflow-x-hidden">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8 ">
           <div className="xl:4/5 mx-auto flex flex-col justify-center items-center gap-8 ">
             <span className="text-2xl font-bold text-green-600">
@@ -206,10 +206,10 @@ function Body() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Teams */}
-      <div className="bg-slate-100 py-12 pb-24">
+      <section className="bg-slate-100 py-12 pb-24">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8">
           <span className="text-green-600 text-2xl font-bold text-center">
             ___ Team ___
@@ -323,10 +323,10 @@ function Body() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Revie */}
-      <div className="bg-white">
+      {/* Review */}
+      <section className="bg-white">
         <div className=" max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
           {/* for image and text */}
           <div className="flex gap-12 flex-col md:flex-row w-full">
@@ -354,7 +354,7 @@ function Body() {
             <TestimonialSlide />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Footer */}
       <Footer/>

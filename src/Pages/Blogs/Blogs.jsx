@@ -9,7 +9,7 @@ import Footer from "../../Components/Footer/Footer.jsx";
 
 function Blogs() {
   return (
-    <div className="bg-slate-100 text-black min-h-screen">
+    <section className="bg-slate-100 text-black min-h-screen">
       <div className="p-24 md:p-48 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex flex-col gap-6">
         <span className="md:text-center font-bold text-green-600 text-lg">
           Our Blogs
@@ -27,7 +27,7 @@ function Blogs() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
 
           {/* blog-1 */}
-          <div className="grid gap-4">
+          <article className="grid gap-4">
             <div className="relative">
               <img src={blog1} alt="" className="rounded-md"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Dairy</span>
@@ -37,10 +37,10 @@ function Blogs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
             </p>
-          </div>
+          </article>
 
           {/* blog-2 */}
-          <div className="grid gap-4">
+          <article className="grid gap-4">
             <div className="relative">
               <img src={blog2} alt="" className="rounded-md"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Cheese</span>
@@ -50,10 +50,10 @@ function Blogs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
             </p>
-          </div>
+          </article>
 
           {/* blog-3 */}
-          <div className="grid gap-4">
+          <article className="grid gap-4">
             <div className="relative">
               <img src={blog3} alt="" className="rounded-md"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Markets</span>
@@ -63,10 +63,10 @@ function Blogs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
             </p>
-          </div>
+          </article>
 
           {/* blog-4 */}
-          <div className="grid gap-4">
+          <article className="grid gap-4">
             <div className="relative">
               <img src={blog4} alt="" className="rounded-md"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Milk</span>
@@ -76,10 +76,10 @@ function Blogs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
             </p>
-          </div>
+          </article>
 
           {/* blog-5 */}
-          <div className="grid gap-4">
+          <article className="grid gap-4">
             <div className="relative">
               <img src={blog5} alt="" className="rounded-md"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Farm</span>
@@ -89,10 +89,10 @@ function Blogs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
             </p>
-          </div>
+          </article>
 
           {/* bllog-6 */}
-          <div className="grid gap-4">
+          <article className="grid gap-4">
             <div className="relative">
               <img src={blog6} alt="" className="rounded-md"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Organic</span>
@@ -102,11 +102,11 @@ function Blogs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
             </p>
-          </div>
+          </article>
         </div>
       </div>
       <Footer/>
-    </div>
+    </section>
   );
 }
 

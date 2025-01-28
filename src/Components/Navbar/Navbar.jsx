@@ -35,74 +35,65 @@ function Navbar() {
       {/* for laptop */}
       <div className="bg-white py-4 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300">
         {/* for desktop Navbar*/}
-        <div className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
+        <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
           {/* For image */}
           <img src={logo} alt="logo" className="w-24" />
 
           {/* For Navlinks */}
           <ul className="flex gap-5">
+
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "home"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
-              onClick={() => {
-                setActive("home");
-              }}
             >
               <Link to="/">Home</Link>
             </li>
+
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "products"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
-              onClick={() => {
-                setActive("products");
-              }}
             >
               <Link to="/products">Our Products</Link>
             </li>
+
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "aboutUs"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
-              onClick={() => {
-                setActive("aboutUs");
-              }}
             >
               <Link to="/aboutUs">About Us</Link>
             </li>
+
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "contactUs"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
-              onClick={() => {
-                setActive("contactUs");
-              }}
             >
               <Link to="/contactUs">Contact Us</Link>
             </li>
+
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "blogs"
                   ? "text-green-600 underline underline-offset-8 scale-110"
                   : ""
               }`}
-              onClick={() => {
-                setActive("blogs");
-              }}
             >
               <Link to="/blogs">Blogs</Link>
             </li>
+
           </ul>
-        </div>
+        </nav>
       </div>
 
       {/* For mobile nav */}
@@ -129,7 +120,7 @@ function Navbar() {
         </div>
 
         {/* for mobile nav slider */}
-        <div
+        <nav
           className="flex flex-col bg-white opacity-90 fixed top-0 min-h-screen w-[300px] transfor p-3 -translate-x-full transition duration-700 ease-in-out z-50"
           ref={mobileNav}
         >
@@ -211,7 +202,7 @@ function Navbar() {
               Blogs
             </Link>
           </ul>
-        </div>
+        </nav>
       </div>
     </>
   );
