@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+ import { Link } from "react-router-dom";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -38,8 +38,8 @@ function ProductSwiper() {
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
               <h1 className="">Double Toned</h1>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
-              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</button>
+              <p className="text-sm">Light and nutritious, perfect for everyday health and wellness.</p>
+              <Link to={"/products"} className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</Link>
             </div>
           </div>
         </SwiperSlide>
@@ -53,8 +53,8 @@ function ProductSwiper() {
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
               <h1 className="">Curd</h1>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
-              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</button>
+              <p className="text-sm">Creamy and tangy, our dahi is a must for every meal.</p>
+              <Link to={"/products"} className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</Link>
             </div>
           </div>
         </SwiperSlide>
@@ -68,8 +68,8 @@ function ProductSwiper() {
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
               <h1 className="">Cow Ghee</h1>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
-              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition font-bold hover:shadow-lg hover:shadow-yellow-300 bg-yellow-300">See More</button>
+              <p className="text-sm">Pure desi ghee, rich in flavor and tradition.</p>
+              <Link to={"/products"} className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition font-bold hover:shadow-lg hover:shadow-yellow-300 bg-yellow-300">See More</Link>
             </div>
           </div>
         </SwiperSlide>
@@ -83,8 +83,8 @@ function ProductSwiper() {
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
               <h1 className="">Buffalo Ghee</h1>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
-              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg border-slate-100">See More</button>
+              <p className="text-sm">Rich and aromatic, ideal for enhancing your dishes.</p>
+              <Link to={"/products"} className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg border-slate-100">See More</Link>
             </div>
           </div>
         </SwiperSlide>
@@ -98,8 +98,8 @@ function ProductSwiper() {
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
               <h1 className="">Paneer</h1>
-              <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius.</p>
-              <button className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</button>
+              <p className="text-sm">Soft and creamy paneer for all your favorite recipes.</p>
+              <Link to={"/products"} className="w-fit text-sm px-6 py-2 border-2 rounded-md hover:scale-90 transition  font-bold hover:shadow-lg">See More</Link>
             </div>
           </div>
         </SwiperSlide>

@@ -24,8 +24,7 @@ function Footer() {
               </span>
             </div>
             <p className="text-slate-200">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
-              aut ab optio reprehenderit, magnam a possimus quas odio!
+            Delivering fresh, pure, and natural dairy products directly from our farm to your home, every day with love and care.
             </p>
             <div>
               {/* for mail */}
@@ -67,10 +66,10 @@ function Footer() {
 
             {/* for social media */}
             <div className="flex gap-6 grow self-center justify-end">
-              <i className="fa-brands fa-facebook-f text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition"></i>
-              <i className="fa-brands fa-instagram text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition"></i>
-              <i className="fa-brands fa-linkedin-in text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition"></i>
-              <i className="fa-brands fa-youtube text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition"></i>
+              <i className="fa-brands fa-facebook-f text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition" onClick={()=>{window.open("https://www.facebook.com/vardaanfarms/")}}></i>
+              <i className="fa-brands fa-instagram text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition" onClick={()=>{window.open("https://www.instagram.com/vardaanfarms/")}}></i>
+              <i className="fa-brands fa-linkedin-in text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition" onClick={()=>{window.open("")}}></i>
+              <i className="fa-brands fa-youtube text-4xl cursor-pointer hover:text-green-600 hover:scale-95 transition" onClick={()=>{window.open("https://www.youtube.com/@VardaanFarms")}}></i>
             </div>
           </nav>
         </div>

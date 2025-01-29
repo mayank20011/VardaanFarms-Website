@@ -7,19 +7,20 @@ import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
 import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
 import Footer from "../Footer/Footer";
 import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
+import { Link } from "react-router-dom";
+
 function Body() {
   return (
     <>
       {/* For Slider */}
-      <section className="w-full md:pt-12">
-         <ShowcaseSwiper/>
+      <section className="w-full md:pt-32">
+        <ShowcaseSwiper />
       </section>
 
       {/* for about Us */}
       <section className="w-full bg-slate-100 pt-28 md:pt-40 overflow-hidden">
         {/* This div is sort of container */}
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-
           {/* About Us */}
           <section className="flex gap-6 flex-col md:flex-row pb-8">
             {/* for content */}
@@ -31,21 +32,29 @@ function Body() {
                 Know About Our Farm And History
               </h1>
               <p className="text-slate-500 text-xl" id="aboutUsP">
-                It’s our obligation to take care of our animals, respect our
-                people & improve the health of the planet for the future. We
-                keep our animals healthy working in harmony with nature Just
-                like you don’t want.
+                Located in the heart of the countryside, VardaanFarms is where
+                tradition and modernity blend seamlessly. Our farm is home to a
+                variety of indigenous cows and buffaloes. We believe in
+                sustainable farming practices that protect the environment and
+                ensure the well-being of our animals. Our livestock roams
+                freely, giving you the purest milk directly from our farm to
+                your home.
               </p>
               {/* for img and para */}
               <div>
                 <img src="" alt="" />
                 <p className="text-slate-500 text-xl" id="aboutUsP2">
-                  We keep our animals healthy by working in harmony with nature
-                  is like you don’t want your kids or your self to constantly
-                  exposed to antibiotics we dont .
+                  VardaanFarms was founded in [Founding Year] by [Founder's
+                  Name]. Starting as a small family-run operation, we have grown
+                  while maintaining our core principles and quality. Our journey
+                  is one of love, hard work, and progress, making us a trusted
+                  name in the dairy industry.
                 </p>
               </div>
-              <button className="py-4 px-8 border-2 border-slate-300 rounded-md text-black w-fit font-bold flex gap-4 items-center hover:scale-90 transition hover:shadow-green-600 hover:shadow-xl" id="rmbutton">
+              {/* <button
+                className="py-4 px-8 border-2 border-slate-300 rounded-md text-black w-fit font-bold flex gap-4 items-center hover:scale-90 transition hover:shadow-green-600 hover:shadow-xl"
+                id="rmbutton"
+              >
                 <span>Read More</span>
                 <img
                   width="30"
@@ -53,12 +62,17 @@ function Body() {
                   src="https://img.icons8.com/dotty/80/right.png"
                   alt="right"
                 />
-              </button>
+              </button> */}
             </div>
 
             {/* for image */}
             <div className="md:w-1/2 flex justify-center md:flex-row-reverse order-1 md:order-2">
-              <img src={aboutUsImg} alt="AboutUsImg" className="h-auto" id="sinceImg"/>
+              <img
+                src={aboutUsImg}
+                alt="AboutUsImg"
+                className="h-auto"
+                id="sinceImg"
+              />
             </div>
           </section>
         </div>
@@ -69,17 +83,26 @@ function Body() {
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           {/* Services */}
           <section className="flex flex-col gap-12 py-8">
-            <span className="text-green-600 text-2xl font-bold text-center" id="serviceSpan">
+            <span
+              className="text-green-600 text-2xl font-bold text-center"
+              id="serviceSpan"
+            >
               ____ Services ____
             </span>
-            <h1 className="text-5xl text-center text-black font-bold pb-6" id="whatWeOffer">
+            <h1
+              className="text-5xl text-center text-black font-bold pb-6"
+              id="whatWeOffer"
+            >
               What We Offer
             </h1>
 
             {/* for cards */}
             <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full justify-evenly gap-12 ">
               {/* for milk */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0" id="milk">
+              <div
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0"
+                id="milk"
+              >
                 <img
                   width="100"
                   height="100"
@@ -89,15 +112,18 @@ function Body() {
                 />
                 <h1 className="text-2xl font-bold pt-6">Milk</h1>
                 <p className="text-slate-400 font-bold">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-                  eveniet voluptas voluptate dolor magnam neque! Ipsa illo
-                  dolorem illum nisi, iure provident accusantium quod quo vero
-                  impedit consectetur, voluptates distinctio.
+                  Enjoy the pure and tasty milk from VardaanFarms, straight from
+                  our happy cows. It's great for your daily tea, coffee, or
+                  making yummy homemade dishes. Our milk is full of nutrients,
+                  making it a healthy choice for you and your family.
                 </p>
               </div>
 
               {/* for panner */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto" id="paneer">
+              <div
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto"
+                id="paneer"
+              >
                 <img
                   width="100"
                   height="100"
@@ -107,15 +133,18 @@ function Body() {
                 />
                 <h1 className="text-2xl font-bold pt-6">Paneer</h1>
                 <p className="text-slate-400 font-bold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                  commodi amet harum molestiae, natus assumenda, omnis
-                  voluptatem, est eius repudiandae placeat sit sunt? Eum
-                  incidunt nobis sunt quibusdam temporibus quas.
+                  Love the soft and creamy paneer made from our best milk.
+                  Perfect for your traditional curries or modern snacks, it's a
+                  family favorite and full of protein. Use it to make delicious
+                  parathas, pakoras, or any of your favorite paneer dishes.
                 </p>
               </div>
 
               {/* for Curd */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto" id="curd">
+              <div
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto"
+                id="curd"
+              >
                 <img
                   width="100"
                   height="100"
@@ -125,15 +154,18 @@ function Body() {
                 />
                 <h1 className="text-2xl font-bold pt-6">Curd</h1>
                 <p className="text-slate-400 font-bold">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Veritatis atque reprehenderit tempore dolor maxime quisquam
-                  iusto et? Quis quasi, aspernatur explicabo repudiandae odio
-                  illum consectetur itaque delectus ipsam! Reiciendis, corporis.
+                  Taste the natural tangy flavor of VardaanFarms' curd, made
+                  from fresh milk. It's great for your meals, adding a smooth
+                  texture and healthy probiotics to your food. Enjoy it as is or
+                  use it to make raita, kadhi, or lassi.
                 </p>
               </div>
 
               {/* for Ghee */}
-              <div className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto " id="ghee">
+              <div
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto "
+                id="ghee"
+              >
                 <img
                   width="100"
                   height="100"
@@ -143,10 +175,11 @@ function Body() {
                 />
                 <h1 className="text-2xl font-bold pt-6">Ghee</h1>
                 <p className="text-slate-400 font-bold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae atque, aspernatur, hic quod distinctio facere
-                  tempora nemo in voluptatum odit aperiam quis? Suscipit,
-                  nesciunt perferendis illum aut tempora facilis modi.
+                  Enjoy the rich taste of our pure ghee, made from top-quality
+                  milk. Ideal for cooking, baking, or adding a delicious touch
+                  to your dishes, our ghee brings a traditional flavor to your
+                  meals. Use it in your dal, rotis, or even sweet dishes like
+                  halwa and ladoos.
                 </p>
               </div>
             </div>
@@ -157,15 +190,25 @@ function Body() {
       {/* for a photo */}
       <section className="py-12 md:py-24 bg-my-background bg-cover bg-center box-shadow-lg filter brightness-60">
         <section className="w-full flex flex-col gap-12">
-          <span className="text-green-600 text-center text-2xl font-bold" id="organicDairyServices">
+          <span
+            className="text-green-600 text-center text-2xl font-bold"
+            id="organicDairyServices"
+          >
             ___ Orgainc Dairy Services ___
           </span>
-          <h1 className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto" id="organicDairyServicesH">
+          <h1
+            className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto"
+            id="organicDairyServicesH"
+          >
             Delivering organic integrity to everyone, everywhere.
           </h1>
-          <button id="organicDairyServicesB" className="mx-auto w-fit px-8 py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white">
+          <Link
+            id="organicDairyServicesB"
+            className="mx-auto w-fit px-8 py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white"
+           to={"/contactUs"}
+          >
             Contact Us
-          </button>
+          </Link>
         </section>
       </section>
 
@@ -189,18 +232,20 @@ function Body() {
                   We Offer daily Labtested Products
                 </h1>
                 <p className="text-xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  nihil accusantium iusto quos atque modi, corporis qui
-                  consequuntur. Id asperiores impedit, labore velit modi aperiam
-                  facere similique eius laboriosam exercitationem. Saepe
-                  recusandae, architecto repellat laboriosam, aut tempore veniam
-                  quo ipsum dolore quidem, debitis nulla itaque ratione
-                  voluptatem sunt eveniet distinctio.
+                  At VardaanFarms, we ensure that every product you receive is
+                  lab-tested daily for quality and purity. Our commitment is to
+                  deliver fresh, nutritious, and safe dairy products to your
+                  family.
+                  <br />
+                  From milk to ghee, each item undergoes rigorous testing to
+                  meet our high standards. Enjoy the confidence of knowing that
+                  VardaanFarms’ dairy products are of the highest quality, made
+                  with care and dedication.
                 </p>
                 <div className="grow flex justify-center md:justify-start md:items-end">
-                  <button className="px-6 py-4 border-2 rounded-md text-neutral-500 shadow-md font-bold">
+                  <Link to={"/products"} className="px-6 py-4 border-2 rounded-md text-neutral-500 shadow-md font-bold">
                     Explore More
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -357,7 +402,7 @@ function Body() {
       </section>
 
       {/* Footer */}
-      <Footer/>
+      <Footer />
     </>
   );
 }

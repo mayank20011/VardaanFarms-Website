@@ -75,12 +75,12 @@ function Products() {
         {/* Product-1 */}
         <Product
           name={"A2 Desi Cow Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Natural & Clean"}
           img={a2DesiCowMilk}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Our A2 Desi Cow Milk comes from local cows, making it easy to digest and tasty. Perfect for daily use and full of good nutrients."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500ml"}
           bgColor={"#b1998c"}
           colorSide={"right"}
         />
@@ -88,12 +88,12 @@ function Products() {
         {/* Product-2 */}
         <Product
           name={"Full Cream Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Natural & Fresh"}
           img={fullCream}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Enjoy the rich taste of our Full Cream Milk, perfect for your morning tea, coffee, or cereal. Full of nutrients and very creamy."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500ml, 450ml, 6l"}
           bgColor={"#f9b3b3"}
           colorSide={"left"}
         />
@@ -101,12 +101,12 @@ function Products() {
         {/* Product-3 */}
         <Product
           name={"Toned Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Balanced, Natural & Healthy"}
           img={toned}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Our Toned Milk offers a good taste, great for those who want a healthy option without losing flavor."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available 500ml, 400ml"}
           bgColor={"#8cd8d7"}
           colorSide={"right"}
         />
@@ -114,12 +114,12 @@ function Products() {
         {/* Product-4 */}
         <Product
           name={"Double Toned Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Light, Natural & Healthy"}
           img={dtm}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Enjoy a lighter option with our Double Toned Milk, great for those looking to cut down on fat without losing taste."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 400ml, 500ml"}
           bgColor={"#a999cf"}
           colorSide={"left"}
         />
@@ -127,12 +127,12 @@ function Products() {
         {/* Product-5 */}
         <Product
           name={"Natural Cow Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Pure, Natural & Fresh"}
           img={cowMilk}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Savor the natural taste and goodness of our Cow Milk. Perfect for drinking or cooking every day."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500ml, 350ml"}
           bgColor={"#8cbfe0"}
           colorSide={"right"}
         />
@@ -140,12 +140,12 @@ function Products() {
         {/* Product-6 */}
         <Product
           name={"Buffalo Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Rich, Natural & Nutritious"}
           img={buffaloMilk}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Our Buffalo Milk is rich and creamy, great for making sweets and other dairy dishes. Full of nutrients."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500ml, 1l"}
           bgColor={"#6b6972"}
           colorSide={"left"}
         />
@@ -153,12 +153,12 @@ function Products() {
         {/* Product-7 */}
         <Product
           name={"Family Pack"}
-          info={"Natural & Unadultrated"}
+          info={"Convenient, Natural & Fresh"}
           img={familyPack}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Our Family Pack offers 450ml of fresh, homogenized milk. Perfect for small families, it ensures everyone enjoys pure and nutritious milk every day."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 450ml"}
           bgColor={"#f28d92"}
           colorSide={"right"}
         />
@@ -166,12 +166,12 @@ function Products() {
         {/* Product-8 */}
         <Product
           name={"Double Toned Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Light, Natural & Healthy"}
           img={dtmBacha}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Enjoy a lighter option with our Double Toned Milk, great for those looking to cut down on fat without losing taste."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available 170ml"}
           bgColor={"#a999cf"}
           colorSide={"left"}
         />
@@ -179,12 +179,12 @@ function Products() {
         {/* Product-9 */}
         <Product
           name={"Butter Milk"}
-          info={"Natural & Unadultrated"}
+          info={"Refreshing, Natural & Healthy"}
           img={plainChach}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Refresh yourself with our Plain Chach, a traditional buttermilk drink that’s cool and healthy. Perfect for a hot day."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500 ml"}
           bgColor={"#6b957c"}
           colorSide={"right"}
         />
@@ -192,12 +192,12 @@ function Products() {
         {/* Product-10 */}
         <Product
           name={"Masala Chach"}
-          info={"Natural & Unadultrated"}
+          info={"Spicy, Natural & Refreshing"}
           img={masalaChach}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Spice up your day with our Masala Chach, a tasty blend of buttermilk and spices. A refreshing and healthy drink."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500ml"}
           bgColor={"#a8d980"}
           colorSide={"left"}
         />
@@ -205,12 +205,12 @@ function Products() {
         {/* Product-11 */}
         <Product
           name={"Slim Curd"}
-          info={"Natural & Unadultrated"}
+          info={"Light Natural & Fresh"}
           img={dahiLight}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Our Dahi Light offers all the goodness of yogurt with less fat. Perfect for those looking for a lighter option."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 400gm"}
           bgColor={"#a4d8e3"}
           colorSide={"right"}
         />
@@ -218,12 +218,12 @@ function Products() {
         {/* Product-12 */}
         <Product
           name={"Curd"}
-          info={"Natural & Unadultrated"}
+          info={"Creamy, Natural & Pure"}
           img={freshDahi}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Made from pure milk, our Fresh Dahi is thick, creamy, and perfect for daily use in all your meals and snacks."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 400gm"}
           bgColor={"#f49b80"}
           colorSide={"left"}
         />
@@ -231,12 +231,12 @@ function Products() {
         {/* Product-13 */}
         <Product
           name={"A2 Desi Cow Ghee"}
-          info={"Natural & Unadultrated"}
+          info={"Pure, Natural & Traditional"}
           img={a2CowGhee}
           description={
             "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500ml"}
           bgColor={"#f8e89c"}
           colorSide={"right"}
         />
@@ -244,12 +244,12 @@ function Products() {
         {/* Product-14 */}
         <Product
           name={"Buffalo Ghee"}
-          info={"Natural & Unadultrated"}
+          info={"Rich, Natural & Flavorful"}
           img={buffaloGhee}
           description={
-            "For Those who wants to stay in shape, but also want the wholesome goodness of milk , A2 skimmed milk has come to your rescue !"
+            "Our Buffalo Ghee is rich and flavorful, ideal for enhancing the taste of your dishes and making them more nutritious."
           }
-          availability={"Available in x, y,z quantity"}
+          availability={"Available in 500ml, 1l"}
           bgColor={"#f7f4d8"}
           colorSide={"left"}
         />

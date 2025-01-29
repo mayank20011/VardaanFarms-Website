@@ -24,8 +24,7 @@ function AboutUs() {
             <img src={truck} alt="" className="mx-auto" />
             <h1 className="font-bold text-xl">Deliver to your Door</h1>
             <p className="text-slate-500 font-bold text-sm">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              corporis?
+            We bring fresh and pure dairy products straight to your doorstep. Enjoy the convenience of farm-fresh milk and more delivered daily.
             </p>
           </div>
 
@@ -38,8 +37,7 @@ function AboutUs() {
             />
             <h1 className="font-bold text-xl">Healthy & Nutritious</h1>
             <p className="text-slate-500 font-bold text-sm">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              corporis?
+            Our dairy products are packed with essential nutrients, ensuring your family stays healthy and strong every day.
             </p>
           </div>
 
@@ -47,8 +45,7 @@ function AboutUs() {
             <img src={tag} alt="" className="mx-auto" />
             <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
             <p className="text-slate-500 font-bold text-sm">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              corporis?
+            We promise reliable service and timely delivery, so you always have the dairy products you need.
             </p>
           </div>
 
@@ -56,8 +53,7 @@ function AboutUs() {
             <img src={support} alt="" className="mx-auto" />
             <h1 className="font-bold text-xl">24/7 Customer Support</h1>
             <p className="text-slate-500 font-bold text-sm">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-              corporis?
+            Our friendly customer support team is available around the clock to help with any questions or issues.
             </p>
           </div>
         </div>
@@ -106,15 +102,7 @@ function AboutUs() {
           </h1>
 
           <p className="sm:text-center text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            alias nemo sed veritatis nobis nostrum minima eaque dignissimos ad
-            vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Facere quasi molestias laborum placeat. Ipsa rerum modi autem
-            praesentium vel illo expedita magni maxime amet est suscipit,
-            corporis accusantium quisquam dolor quas cumque tempore aspernatur!
-            Magnam dolorem esse similique iure quod quidem rerum illum ipsum
-            facilis autem cum laborum nam consectetur saepe ipsa accusamus harum
-            porro tempore, iste cumque architecto! Tempore.
+          At VardaanFarms, we are dedicated to providing top-quality dairy products directly from our farm to your doorstep. Our commitment ensures that you receive fresh, natural, and delicious dairy products every day. With our reliable service, you can trust the quality and care that goes into each product we deliver.
           </p>
 
           {/* for cards */}
@@ -124,10 +112,7 @@ function AboutUs() {
               <img src={Pipeline} alt="" className="w-[100px]" />
               <h1 className="text-xl font-bold">Milk Preservation</h1>
               <p className="text-neutral-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat explicabo totam odio quidem consequuntur fuga porro
-                amet placeat, suscipit voluptatum nihil, hic molestiae est
-                libero dolore! Itaque enim ut tempore?
+              We use the best techniques to keep our milk fresh and pure. From the moment it leaves our cows to the time it reaches your home, our milk is handled with utmost care to preserve its natural taste and nutrients.
               </p>
             </div>
 
@@ -136,10 +121,7 @@ function AboutUs() {
               <img src={growth} alt="" className="w-[100px]" />
               <h1 className="text-xl font-bold">High Production</h1>
               <p className="text-neutral-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat explicabo totam odio quidem consequuntur fuga porro
-                amet placeat, suscipit voluptatum nihil, hic molestiae est
-                libero dolore! Itaque enim ut tempore?
+              Our farm is equipped with modern facilities that help us produce high-quality dairy products in large quantities. This ensures that we meet all your needs, providing fresh supplies daily without compromising on quality.
               </p>
             </div>
 
@@ -148,10 +130,7 @@ function AboutUs() {
               <img src={recipee} alt="" className="w-[100px]" />
               <h1 className="text-xl font-bold">Featured Recipe</h1>
               <p className="text-neutral-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat explicabo totam odio quidem consequuntur fuga porro
-                amet placeat, suscipit voluptatum nihil, hic molestiae est
-                libero dolore! Itaque enim ut tempore?
+              Discover mouth-watering recipes made with VardaanFarms' dairy products. From creamy curries to delicious desserts, our dairy adds a special touch to every dish. Perfect for making every meal a celebration.
               </p>
             </div>
 
@@ -160,10 +139,7 @@ function AboutUs() {
               <img src={house} alt="" className="w-[100px]" />
               <h1 className="text-xl font-bold">Recomended For Babies</h1>
               <p className="text-neutral-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat explicabo totam odio quidem consequuntur fuga porro
-                amet placeat, suscipit voluptatum nihil, hic molestiae est
-                libero dolore! Itaque enim ut tempore?
+              Our dairy products are safe and packed with essential nutrients, making them a great choice for your little ones. They provide the necessary vitamins and minerals to support healthy growth and development.
               </p>
             </div>
 
@@ -172,10 +148,7 @@ function AboutUs() {
               <img src={ef} alt="" className="w-[100px]" />
               <h1 className="text-xl font-bold">Environmentally Friendly</h1>
               <p className="text-neutral-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat explicabo totam odio quidem consequuntur fuga porro
-                amet placeat, suscipit voluptatum nihil, hic molestiae est
-                libero dolore! Itaque enim ut tempore?
+              We believe in eco-friendly farming practices that protect nature. Our methods ensure that we produce pure, natural products while caring for the environment. This way, you get the best of both worlds.
               </p>
             </div>
 
@@ -184,10 +157,7 @@ function AboutUs() {
               <img src={pasturization} alt="" className="w-[100px]" />
               <h1 className="text-xl font-bold">Reliable pasturization</h1>
               <p className="text-neutral-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellat explicabo totam odio quidem consequuntur fuga porro
-                amet placeat, suscipit voluptatum nihil, hic molestiae est
-                libero dolore! Itaque enim ut tempore?
+              Our pasteurization process is reliable and keeps your milk safe and delicious. It ensures that all harmful bacteria are removed while preserving the natural goodness of the milk, so you can enjoy it with peace of mind.
               </p>
             </div>
           </div>

@@ -62,12 +62,7 @@ function ContactUs() {
             <h1 className="text-4xl font-bold">GET IN TOUCH</h1>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              reprehenderit inventore fugit possimus facilis? Voluptate quidem
-              voluptatem enim iusto similique ex, nemo, amet laborum repellendus
-              nihil temporibus quas, asperiores fuga magnam adipisci deleniti
-              consectetur nulla cumque quibusdam necessitatibus aperiam
-              quisquam?
+            We’d love to hear from you! Whether you have a question about our products, need assistance, or just want to share your feedback, we're here to help. Reach out to us through any of the channels below, and we'll get back to you as soon as possible.
             </p>
 
             {/* for location mail and other */}
@@ -130,10 +125,7 @@ function ContactUs() {
               Leave A Message
             </h1>
             <p className="text-neutral-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-              omnis ipsam sapiente praesentium quidem error expedita ex
-              excepturi, iusto quae nulla illum eum distinctio, natus, repellat
-              sunt deleniti eaque dignissimos.
+            Have a question, feedback, or just want to say hi? Drop us a message, and we'll get back to you as soon as we can. We're here to help and listen to what you have to say.
             </p>
 
             <div className="grid gap-6">
