@@ -8,6 +8,7 @@ import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
 import Footer from "../Footer/Footer";
 import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
+import aboutUsHome from "../../img/aboutUsHome.png";
 
 function Body() {
   return (
@@ -18,7 +19,7 @@ function Body() {
       </section>
 
       {/* for about Us */}
-      <section className="w-full bg-slate-100 pt-28 md:pt-40 overflow-hidden">
+      <section className="w-full bg-slate-100 pt-28 md:pt-40 overflow-hidden pb-28">
         {/* This div is sort of container */}
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           {/* About Us */}
@@ -32,25 +33,20 @@ function Body() {
                 Know About Our Farm And History
               </h1>
               <p className="text-slate-500 text-xl" id="aboutUsP">
-                Located in the heart of the countryside, VardaanFarms is where
-                tradition and modernity blend seamlessly. Our farm is home to a
-                variety of indigenous cows and buffaloes. We believe in
-                sustainable farming practices that protect the environment and
-                ensure the well-being of our animals. Our livestock roams
-                freely, giving you the purest milk directly from our farm to
-                your home.
+                Located in the heart of the countryside, VardaanFarms blends
+                tradition and modernity seamlessly. Our farm is home to a
+                variety of cows and buffaloes. We believe in sustainable farming
+                that protects the environment and ensures animal well-being. Our
+                livestock roams freely, providing the purest milk straight from
+                our farm to your home.
+                <br />
+                VardaanFarms was founded in [Founding Year] by [Founder's Name].
+                Starting as a small family-run operation, we've grown while
+                keeping our core principles and quality intact. Our journey of
+                love, hard work, and progress has made us a trusted name in the
+                dairy industry.
               </p>
-              {/* for img and para */}
-              <div>
-                <img src="" alt="" />
-                <p className="text-slate-500 text-xl" id="aboutUsP2">
-                  VardaanFarms was founded in [Founding Year] by [Founder's
-                  Name]. Starting as a small family-run operation, we have grown
-                  while maintaining our core principles and quality. Our journey
-                  is one of love, hard work, and progress, making us a trusted
-                  name in the dairy industry.
-                </p>
-              </div>
+
               {/* <button
                 className="py-4 px-8 border-2 border-slate-300 rounded-md text-black w-fit font-bold flex gap-4 items-center hover:scale-90 transition hover:shadow-green-600 hover:shadow-xl"
                 id="rmbutton"
@@ -66,11 +62,11 @@ function Body() {
             </div>
 
             {/* for image */}
-            <div className="md:w-1/2 flex justify-center md:flex-row-reverse order-1 md:order-2">
+            <div className="md:w-1/2 flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black" style={{border:"10px solid white"}}>
               <img
-                src={aboutUsImg}
+                src={aboutUsHome}
                 alt="AboutUsImg"
-                className="h-auto"
+                className="h-auto rounded-xl"
                 id="sinceImg"
               />
             </div>
@@ -112,10 +108,9 @@ function Body() {
                 />
                 <h1 className="text-2xl font-bold pt-6">Milk</h1>
                 <p className="text-slate-400 font-bold">
-                  Enjoy the pure and tasty milk from VardaanFarms, straight from
-                  our happy cows. It's great for your daily tea, coffee, or
-                  making yummy homemade dishes. Our milk is full of nutrients,
-                  making it a healthy choice for you and your family.
+                  Enjoy the tasty milk from VardaanFarms, straight from our
+                  happy cows. Perfect for tea, coffee, or homemade dishes. Full
+                  of nutrients and healthy for your family.
                 </p>
               </div>
 
@@ -133,10 +128,9 @@ function Body() {
                 />
                 <h1 className="text-2xl font-bold pt-6">Paneer</h1>
                 <p className="text-slate-400 font-bold">
-                  Love the soft and creamy paneer made from our best milk.
-                  Perfect for your traditional curries or modern snacks, it's a
-                  family favorite and full of protein. Use it to make delicious
-                  parathas, pakoras, or any of your favorite paneer dishes.
+                  Enjoy our soft and creamy paneer made from the best milk.
+                  Great for curries, snacks, parathas, and pakoras. A family
+                  favorite and full of protein.
                 </p>
               </div>
 
@@ -154,10 +148,9 @@ function Body() {
                 />
                 <h1 className="text-2xl font-bold pt-6">Curd</h1>
                 <p className="text-slate-400 font-bold">
-                  Taste the natural tangy flavor of VardaanFarms' curd, made
-                  from fresh milk. It's great for your meals, adding a smooth
-                  texture and healthy probiotics to your food. Enjoy it as is or
-                  use it to make raita, kadhi, or lassi.
+                  Enjoy the tangy flavor of VardaanFarms' curd, made from fresh
+                  milk. Great for meals, adding smooth texture and healthy
+                  probiotics. Use it for raita, kadhi, or lassi
                 </p>
               </div>
 
@@ -176,10 +169,8 @@ function Body() {
                 <h1 className="text-2xl font-bold pt-6">Ghee</h1>
                 <p className="text-slate-400 font-bold">
                   Enjoy the rich taste of our pure ghee, made from top-quality
-                  milk. Ideal for cooking, baking, or adding a delicious touch
-                  to your dishes, our ghee brings a traditional flavor to your
-                  meals. Use it in your dal, rotis, or even sweet dishes like
-                  halwa and ladoos.
+                  milk. Perfect for cooking, baking, or adding a delicious touch
+                  to your dishes like dal, rotis, halwa, and ladoos.
                 </p>
               </div>
             </div>
@@ -205,7 +196,7 @@ function Body() {
           <Link
             id="organicDairyServicesB"
             className="mx-auto w-fit px-8 py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white"
-           to={"/contactUs"}
+            to={"/contactUs"}
           >
             Contact Us
           </Link>
@@ -243,7 +234,10 @@ function Body() {
                   with care and dedication.
                 </p>
                 <div className="grow flex justify-center md:justify-start md:items-end">
-                  <Link to={"/products"} className="px-6 py-4 border-2 rounded-md text-neutral-500 shadow-md font-bold">
+                  <Link
+                    to={"/products"}
+                    className="px-6 py-4 border-2 rounded-md text-neutral-500 shadow-md font-bold"
+                  >
                     Explore More
                   </Link>
                 </div>

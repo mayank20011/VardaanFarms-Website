@@ -23,9 +23,9 @@ function ShowcaseSwiper() {
         autoplay={{ delay: "3000" }}
         modules={[Scrollbar, Autoplay]}
         // className="w-full cs:h-[500px] h-[700px]"
-        className="w-full h-auto"
+        className="w-full bg-slate-100"
       >
-        <SwiperSlide>
+        <SwiperSlide className="">
           <img src={img1} alt="" className="w-full h-full cursor-grab" />
         </SwiperSlide>
         <SwiperSlide>

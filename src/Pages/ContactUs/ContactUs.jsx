@@ -99,7 +99,7 @@ function ContactUs() {
                 <i className="fa-solid fa-clock text-blue-600 p-2 bg-white rounded-md h-fit"></i>
                 <div>
                   <h1 className="font-bold">Work Hours</h1>
-                  <p>Everyday 08:00 am - 6:00 pm</p>
+                  <p>8:00 am - 6:00 pm</p>
                 </div>
               </div>
             </div>

@@ -8,10 +8,12 @@ import AboutUs from "./Pages/AboutUs/AboutUs.jsx";
 import ContactUs from "./Pages/ContactUs/ContactUs.jsx";
 import Blogs from "./Pages/Blogs/Blogs.jsx";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollTop/ScrollTop.jsx";
 function App() {
   return (
     <main className="bg-black text-white">
       <header className="w-full fixed z-10">
+        <ScrollToTop/>
         <Header />
         <Navbar />
       </header>

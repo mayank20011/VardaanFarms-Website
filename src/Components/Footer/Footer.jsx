@@ -59,7 +59,7 @@ function Footer() {
               <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/contactUs"}>
                 Contact Us
               </Link>
-              <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/bllogs"}>
+              <Link className="hover:text-green-600 transition text-xl cursor-pointer underline underline-offset-4" to={"/blogs"}>
                 Blogs
               </Link>
             </ul>
