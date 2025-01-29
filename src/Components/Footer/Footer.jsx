@@ -15,7 +15,7 @@ function Footer() {
           <div className="flex flex-col gap-4">
             {/* img and text */}
             <div className="flex gap-4">
-              <img src={cowIcon} alt="" />
+              <img src={cowIcon} alt="" loading="lazy"/>
               <span
                 className="text-5xl font-bold"
                 style={{ filter: "drop-shadow(2px 2px 0px rgba(0, 0, 0, 1))" }}
@@ -29,14 +29,14 @@ function Footer() {
             <div>
               {/* for mail */}
               <div className="flex gap-4 items-center">
-                <img src={footerMail} alt="" className="w-[50px]" />
+                <img src={footerMail} alt="" className="w-[50px]" loading="lazy"/>
                 <p className="hover:scale-110 transition-all hover:text-green-600 cursor-pointer">
                   hello@vardaanfarms.com
                 </p>
               </div>
               {/* for location */}
               <div className="flex gap-4 items-center">
-                <img src={footerLocation} alt="" className="w-[50px]" />
+                <img src={footerLocation} alt="" className="w-[50px]" loading="lazy"/>
                 <p className="hover:text-green-600 transition hover:scale-110">
                   Gurugram India
                 </p>

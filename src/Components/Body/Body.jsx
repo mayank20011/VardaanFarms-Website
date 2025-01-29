@@ -56,6 +56,7 @@ function Body() {
                 alt="AboutUsImg"
                 className="w-full rounded-xl filter brightness-75"
                 id="sinceImg"
+                loading="lazy"
               />
             </div>
           </section>
@@ -93,6 +94,7 @@ function Body() {
                   src="https://img.icons8.com/matisse/100/milk.png"
                   alt="milk"
                   className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition z-0"
+                  loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Milk</h1>
                 <p className="text-slate-400 font-bold">
@@ -113,6 +115,7 @@ function Body() {
                   src="https://img.icons8.com/plasticine/100/silken-tofu.png"
                   alt="silken-tofu"
                   className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
+                  loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Paneer</h1>
                 <p className="text-slate-400 font-bold">
@@ -133,6 +136,7 @@ function Body() {
                   src="https://img.icons8.com/stickers/100/yogurt.png"
                   alt="yogurt"
                   className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
+                  loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Curd</h1>
                 <p className="text-slate-400 font-bold">
@@ -153,6 +157,7 @@ function Body() {
                   src="https://img.icons8.com/dotty/80/jam.png"
                   alt="jam"
                   className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
+                  loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Ghee</h1>
                 <p className="text-slate-400 font-bold">
@@ -249,7 +254,7 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" />
+                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
               </div>
 
               {/* icons */}
@@ -275,7 +280,7 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" />
+                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
               </div>
 
               {/* icons */}
@@ -301,7 +306,7 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" />
+                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
               </div>
 
               {/* icons */}
@@ -327,7 +332,7 @@ function Body() {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" />
+                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
               </div>
 
               {/* icons */}
@@ -359,7 +364,7 @@ function Body() {
           <div className="flex gap-12 flex-col md:flex-row w-full">
             {/* for Photo */}
             <div className="md:w-1/2">
-              <img src={testimonial} alt="Testimonial" />
+              <img src={testimonial} alt="Testimonial" loading="lazy"/>
             </div>
 
             {/* for text and swiper*/}

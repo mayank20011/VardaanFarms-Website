@@ -29,7 +29,7 @@ function Blogs() {
           {/* blog-1 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog1} alt="" className="rounded-md"/>
+              <img src={blog1} alt="" className="rounded-md" loading="lazy"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Dairy</span>
             </div>
             <h1 className="text-xl font-bold">Safe Environment For Dairy Farm</h1>
@@ -42,7 +42,7 @@ function Blogs() {
           {/* blog-2 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog2} alt="" className="rounded-md"/>
+              <img src={blog2} alt="" className="rounded-md" loading="lazy"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Cheese</span>
             </div>
             <h1 className="text-xl font-bold">Organic Cheese Curds & Gravy</h1>
@@ -55,7 +55,7 @@ function Blogs() {
           {/* blog-3 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog3} alt="" className="rounded-md"/>
+              <img src={blog3} alt="" className="rounded-md" loading="lazy"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Markets</span>
             </div>
             <h1 className="text-xl font-bold">Frozen Dairy Items On The Market</h1>
@@ -68,7 +68,7 @@ function Blogs() {
           {/* blog-4 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog4} alt="" className="rounded-md"/>
+              <img src={blog4} alt="" className="rounded-md" loading="lazy"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Milk</span>
             </div>
             <h1 className="text-xl font-bold">Milk & Cheese Against Allergies</h1>
@@ -81,7 +81,7 @@ function Blogs() {
           {/* blog-5 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog5} alt="" className="rounded-md"/>
+              <img src={blog5} alt="" className="rounded-md" loading="lazy"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Farm</span>
             </div>
             <h1 className="text-xl font-bold">High Standards For A Dairy Farm</h1>
@@ -94,7 +94,7 @@ function Blogs() {
           {/* bllog-6 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog6} alt="" className="rounded-md"/>
+              <img src={blog6} alt="" className="rounded-md" loading="lazy"/>
               <span className="absolute text-white bg-blue-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">Organic</span>
             </div>
             <h1 className="text-xl font-bold">Sustainability On A Dairy Farm</h1>

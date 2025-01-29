@@ -26,13 +26,13 @@ function ShowcaseSwiper() {
         className="w-full bg-slate-100"
       >
         <SwiperSlide className="">
-          <img src={img1} alt="" className="w-full h-full cursor-grab" />
+          <img src={img1} alt="" className="w-full h-full cursor-grab" loading="lazy"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img2} alt="" className="w-full h-full cursor-grab" />
+          <img src={img2} alt="" className="w-full h-full cursor-grab" loading="lazy"/>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={img3} alt="" className="w-full h-full cursor-grab" />
+        <img src={img3} alt="" className="w-full h-full cursor-grab" loading="lazy"/>
         </SwiperSlide>
       </Swiper>
     </>

@@ -38,6 +38,7 @@ function Product({
           alt="Product Image"
           className="lg:absolute w-72"
           style={{ filter: "drop-shadow(0 16px 22px rgba(0, 0, 0))" }}
+          loading="lazy"
         />
 
         {/* Right Side */}
@@ -126,6 +127,7 @@ function Product({
               alt=""
               className="w-3/4 mx-auto md:w-72"
               style={{ filter: "drop-shadow(5px 5px 10px black)" }}
+              loading="lazy"
             />
           </div>
 

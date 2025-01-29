@@ -37,7 +37,7 @@ function Navbar() {
         {/* for desktop Navbar*/}
         <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
           {/* For image */}
-          <img src={logo} alt="logo" className="w-24" />
+          <img src={logo} alt="logo" className="w-24" loading="lazy"/>
 
           {/* For Navlinks */}
           <ul className="flex gap-5">
@@ -101,12 +101,13 @@ function Navbar() {
         {/* for mobile navbar */}
         <div className="w-full relative p-2 flex justify-center items-center top-[40px] z-30">
           <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-md fixed">
-            <img src={logo} alt="vardan Farms Logo" className="h-[36px]" />
+            <img src={logo} alt="vardan Farms Logo" className="h-[36px]" loading="lazy"/>
             <img
               width="36"
               height="36"
               src="https://img.icons8.com/ink/48/cow.png"
               alt="cow"
+              loading="lazy"
             />
             <img
               width="32"
@@ -115,6 +116,7 @@ function Navbar() {
               alt="menu--v5"
               className="cursor-pointer"
               onClick={openNav}
+              loading="lazy"
             />
           </div>
         </div>
@@ -134,6 +136,7 @@ function Navbar() {
                 height="30"
                 src="https://img.icons8.com/dotty/80/delete-sign.png"
                 alt="delete-sign"
+                loading="lazy"
               />
             </li>
 

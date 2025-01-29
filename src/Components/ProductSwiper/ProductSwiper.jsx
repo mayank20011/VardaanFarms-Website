@@ -33,7 +33,7 @@ function ProductSwiper() {
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
-              <img src={DTM} alt="" className="w-44 hover:rotate-6 transition"/>
+              <img src={DTM} alt="" className="w-44 hover:rotate-6 transition" loading="lazy"/>
             </div>
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
@@ -48,7 +48,7 @@ function ProductSwiper() {
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
-              <img src={Curd} alt="" className="w-44 hover:rotate-6 transition"/>
+              <img src={Curd} alt="" className="w-44 hover:rotate-6 transition" loading="lazy"/>
             </div>
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
@@ -63,7 +63,7 @@ function ProductSwiper() {
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
-              <img src={cowGhee} alt="" className="w-32 hover:rotate-6 transition"/>
+              <img src={cowGhee} alt="" className="w-32 hover:rotate-6 transition" loading="lazy"/>
             </div>
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
@@ -78,7 +78,7 @@ function ProductSwiper() {
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
-              <img src={buffaloGhee} alt="" className="w-32 hover:rotate-6 transition"/>
+              <img src={buffaloGhee} alt="" className="w-32 hover:rotate-6 transition" loading="lazy"/>
             </div>
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">
@@ -93,7 +93,7 @@ function ProductSwiper() {
           <div className="w-full h-full flex flex-col justify-between">
             {/* image */}
             <div className="flex justify-center items-center p-4">
-              <img src={Paneer} alt="" className="w-28 hover:rotate-6 transition"/>
+              <img src={Paneer} alt="" className="w-28 hover:rotate-6 transition" loading="lazy"/>
             </div>
             {/* Text */}
             <div className="grow-1 flex flex-col gap-2">

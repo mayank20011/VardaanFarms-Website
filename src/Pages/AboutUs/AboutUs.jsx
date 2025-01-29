@@ -21,7 +21,7 @@ function AboutUs() {
         {/* key points */}
         <div className="w-full mt-24 md:mt-48 grid md:grid-cols-2 xl:grid-cols-4 gap-4">
           <div className="text-center">
-            <img src={truck} alt="" className="mx-auto" />
+            <img src={truck} alt="" className="mx-auto" loading="lazy"/>
             <h1 className="font-bold text-xl">Deliver to your Door</h1>
             <p className="text-slate-500 font-bold text-sm">
             We bring fresh and pure dairy products straight to your doorstep. Enjoy the convenience of farm-fresh milk and more delivered daily.
@@ -34,6 +34,7 @@ function AboutUs() {
               alt=""
               className="mx-auto"
               style={{ width: "100px" }}
+              loading="lazy"
             />
             <h1 className="font-bold text-xl">Healthy & Nutritious</h1>
             <p className="text-slate-500 font-bold text-sm">
@@ -42,7 +43,7 @@ function AboutUs() {
           </div>
 
           <div className="text-center">
-            <img src={tag} alt="" className="mx-auto" />
+            <img src={tag} alt="" className="mx-auto" loading="lazy"/>
             <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
             <p className="text-slate-500 font-bold text-sm">
             We promise reliable service and timely delivery, so you always have the dairy products you need.
@@ -50,7 +51,7 @@ function AboutUs() {
           </div>
 
           <div className="text-center">
-            <img src={support} alt="" className="mx-auto" />
+            <img src={support} alt="" className="mx-auto" loading="lazy"/>
             <h1 className="font-bold text-xl">24/7 Customer Support</h1>
             <p className="text-slate-500 font-bold text-sm">
             Our friendly customer support team is available around the clock to help with any questions or issues.
@@ -89,7 +90,7 @@ function AboutUs() {
 
           {/* img */}
           <div className="lg:w-1/2 flex justify-center items-center">
-            <img src={ourFarm} alt="" className="rounded-2xl" />
+            <img src={ourFarm} alt="" className="rounded-2xl" loading="lazy"/>
           </div>
         </div>
       </div>
@@ -109,7 +110,7 @@ function AboutUs() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Card-1 */}
             <div className="hover:shadow-lg hover:shadow-black p-8 bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-              <img src={Pipeline} alt="" className="w-[100px]" />
+              <img src={Pipeline} alt="" className="w-[100px]" loading="lazy"/>
               <h1 className="text-xl font-bold">Milk Preservation</h1>
               <p className="text-neutral-700">
               We use the best techniques to keep our milk fresh and pure. From the moment it leaves our cows to the time it reaches your home, our milk is handled with utmost care to preserve its natural taste and nutrients.
@@ -118,7 +119,7 @@ function AboutUs() {
 
             {/* card-2 */}
             <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-              <img src={growth} alt="" className="w-[100px]" />
+              <img src={growth} alt="" className="w-[100px]" loading="lazy"/>
               <h1 className="text-xl font-bold">High Production</h1>
               <p className="text-neutral-700">
               Our farm is equipped with modern facilities that help us produce high-quality dairy products in large quantities. This ensures that we meet all your needs, providing fresh supplies daily without compromising on quality.
@@ -127,7 +128,7 @@ function AboutUs() {
 
             {/* card-3 */}
             <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-              <img src={recipee} alt="" className="w-[100px]" />
+              <img src={recipee} alt="" className="w-[100px]" loading="lazy"/>
               <h1 className="text-xl font-bold">Featured Recipe</h1>
               <p className="text-neutral-700">
               Discover mouth-watering recipes made with VardaanFarms' dairy products. From creamy curries to delicious desserts, our dairy adds a special touch to every dish. Perfect for making every meal a celebration.
@@ -136,7 +137,7 @@ function AboutUs() {
 
             {/* Card-4 */}
             <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-              <img src={house} alt="" className="w-[100px]" />
+              <img src={house} alt="" className="w-[100px]" loading="lazy"/>
               <h1 className="text-xl font-bold">Recomended For Babies</h1>
               <p className="text-neutral-700">
               Our dairy products are safe and packed with essential nutrients, making them a great choice for your little ones. They provide the necessary vitamins and minerals to support healthy growth and development.
@@ -145,7 +146,7 @@ function AboutUs() {
 
             {/* Card-5 */}
             <div className="p-8 hover:shadow-lg hover:shadow-black bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-              <img src={ef} alt="" className="w-[100px]" />
+              <img src={ef} alt="" className="w-[100px]" loading="lazy"/>
               <h1 className="text-xl font-bold">Environmentally Friendly</h1>
               <p className="text-neutral-700">
               We believe in eco-friendly farming practices that protect nature. Our methods ensure that we produce pure, natural products while caring for the environment. This way, you get the best of both worlds.
@@ -154,7 +155,7 @@ function AboutUs() {
 
             {/* Card-6 */}
             <div className="p-8 bg-slate-100  hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-              <img src={pasturization} alt="" className="w-[100px]" />
+              <img src={pasturization} alt="" className="w-[100px]" loading="lazy"/>
               <h1 className="text-xl font-bold">Reliable pasturization</h1>
               <p className="text-neutral-700">
               Our pasteurization process is reliable and keeps your milk safe and delicious. It ensures that all harmful bacteria are removed while preserving the natural goodness of the milk, so you can enjoy it with peace of mind.
@@ -214,12 +215,12 @@ function AboutUs() {
                 memorable.
               </p>
             </div>
-            <img src="" alt="" className="md:w-2/5" />
+            <img src="" alt="" className="md:w-2/5" loading="lazy"/>
           </div>
 
           {/* bottom */}
           <div className="flex gap-6 flex-col md:flex-row">
-            <img src="" alt="" className="md:w-2/5" />
+            <img src="" alt="" className="md:w-2/5" loading="lazy"/>
             <div className="md:w-3/5 flex flex-col gap-6">
               <div className="md:w-fit md:mx-auto flex gap-4 text-5xl md:text-center">
                 <i className="fa-solid fa-check text-green-600"></i>
@@ -231,7 +232,7 @@ function AboutUs() {
             </div>
           </div>
 
-          <img src={aboutUsBanner} alt="" className="rounded-3xl"/>
+          <img src={aboutUsBanner} alt="" className="rounded-3xl" loading="lazy"/>
         </div>
       </div>
       {/* Footer */}

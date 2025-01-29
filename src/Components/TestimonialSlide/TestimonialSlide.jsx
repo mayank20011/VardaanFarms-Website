@@ -23,7 +23,7 @@ function TestimonialSlide() {
         {/* SLide-1 */}
         <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
-            <img src={client1} alt="" className="w-36" />
+            <img src={client1} alt="" className="w-36" loading="lazy"/>
             <p className="text-sm">Black Seeds</p>
           </div>
         </SwiperSlide>
@@ -31,7 +31,7 @@ function TestimonialSlide() {
          {/* SLide-2 */}
          <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
-            <img src={client2} alt="" className="w-36" />
+            <img src={client2} alt="" className="w-36" loading="lazy"/>
             <p className="text-sm">Black Seeds</p>
           </div>
         </SwiperSlide>
@@ -39,7 +39,7 @@ function TestimonialSlide() {
          {/* SLide-3 */}
          <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
-            <img src={client3} alt="" className="w-36" />
+            <img src={client3} alt="" className="w-36" loading="lazy"/>
             <p className="text-sm">Black Seeds</p>
           </div>
         </SwiperSlide>
@@ -47,7 +47,7 @@ function TestimonialSlide() {
          {/* SLide-4 */}
          <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
-            <img src={client4} alt="" className="w-36" />
+            <img src={client4} alt="" className="w-36" loading="lazy"/>
             <p className="text-sm">Black Seeds</p>
           </div>
         </SwiperSlide>
@@ -55,7 +55,7 @@ function TestimonialSlide() {
         {/* Slide-5 */}
         <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
-            <img src={client1} alt="" className="w-36" />
+            <img src={client1} alt="" className="w-36" loading="lazy"/>
             <p className="text-sm">Black Seeds</p>
           </div>
         </SwiperSlide>
