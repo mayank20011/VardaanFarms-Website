@@ -6,6 +6,10 @@ import testimonial2 from "../../img/testimonial2.jpg";
 import priyaSharma from "../../img/priyaSharma.jpg";
 import poojaSingh from "../../img/poojaSingh.jpg";
 import snehaReddy from "../../img/snehaReddy.jpg";
+import rahulMehta from "../../img/rahulMehta.jpg";
+import anilKumar from "../../img/anilKumar.jpeg";
+import amitJoshi from "../../img/amitJoshi.jpeg";
+
 // Import Swiper styles
 import "swiper/css/pagination";
 
@@ -34,7 +38,7 @@ function TestimonialSwiper() {
             <div>
               <div className="flex gap-4 pt-6">
                 <img
-                  src={testimonial2}
+                  src={rahulMehta}
                   alt=""
                   className="w-28 rounded-full border-2 border-green-600 shadow-md shadow-black"
                 />
@@ -78,7 +82,7 @@ function TestimonialSwiper() {
             <div>
               <div className="flex gap-4 pt-6">
                 <img
-                  src={testimonial2}
+                  src={anilKumar}
                   alt=""
                   className="w-28 rounded-full border-2 border-green-600 shadow-md shadow-black"
                 />
@@ -122,7 +126,7 @@ function TestimonialSwiper() {
             <div>
               <div className="flex gap-4 pt-6">
                 <img
-                  src={testimonial2}
+                  src={amitJoshi}
                   alt=""
                   className="w-28 rounded-full border-2 border-green-600 shadow-md shadow-black"
                 />

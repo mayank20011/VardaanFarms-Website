@@ -23,7 +23,7 @@ function Body() {
         {/* This div is sort of container */}
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           {/* About Us */}
-          <section className="flex gap-6 flex-col md:flex-row pb-8">
+          <section className="flex gap-12 flex-col md:flex-row">
             {/* for content */}
             <div className="md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
               <span className="text-green-600 text-2xl font-bold" id="aboutUs">
@@ -40,33 +40,21 @@ function Body() {
                 livestock roams freely, providing the purest milk straight from
                 our farm to your home.
                 <br />
-                VardaanFarms was founded in [Founding Year] by [Founder's Name].
+                VardaanFarms was founded in 2014 by [Founder's Name].
                 Starting as a small family-run operation, we've grown while
                 keeping our core principles and quality intact. Our journey of
                 love, hard work, and progress has made us a trusted name in the
                 dairy industry.
               </p>
 
-              {/* <button
-                className="py-4 px-8 border-2 border-slate-300 rounded-md text-black w-fit font-bold flex gap-4 items-center hover:scale-90 transition hover:shadow-green-600 hover:shadow-xl"
-                id="rmbutton"
-              >
-                <span>Read More</span>
-                <img
-                  width="30"
-                  height="30"
-                  src="https://img.icons8.com/dotty/80/right.png"
-                  alt="right"
-                />
-              </button> */}
             </div>
 
             {/* for image */}
-            <div className="md:w-1/2 flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black" style={{border:"10px solid white"}}>
+            <div className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black" style={{border:"10px solid white"}}>
               <img
                 src={aboutUsHome}
                 alt="AboutUsImg"
-                className="h-auto rounded-xl"
+                className="w-full rounded-xl filter brightness-75"
                 id="sinceImg"
               />
             </div>

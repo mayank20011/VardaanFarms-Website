@@ -45,7 +45,7 @@ function Navbar() {
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "home"
-                  ? "text-green-600 underline underline-offset-8 scale-110"
+                  ? "text-green-600 scale-110"
                   : ""
               }`}
             >
@@ -55,7 +55,7 @@ function Navbar() {
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "products"
-                  ? "text-green-600 underline underline-offset-8 scale-110"
+                  ? "text-green-600 scale-110"
                   : ""
               }`}
             >
@@ -65,7 +65,7 @@ function Navbar() {
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "aboutUs"
-                  ? "text-green-600 underline underline-offset-8 scale-110"
+                  ? "text-green-600 scale-110"
                   : ""
               }`}
             >
@@ -75,7 +75,7 @@ function Navbar() {
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "contactUs"
-                  ? "text-green-600 underline underline-offset-8 scale-110"
+                  ? "text-green-600 scale-110"
                   : ""
               }`}
             >
@@ -85,7 +85,7 @@ function Navbar() {
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
                 active === "blogs"
-                  ? "text-green-600 underline underline-offset-8 scale-110"
+                  ? "text-green-600 scale-110"
                   : ""
               }`}
             >

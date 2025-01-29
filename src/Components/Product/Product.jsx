@@ -8,7 +8,8 @@ function Product({
   availability,
   bgColor,
   colorSide,
-  pt,
+  descriptionColor,
+  availabilityColor,
 }) {
   return (
     <>
@@ -45,7 +46,6 @@ function Product({
           style={{ background: colorSide === "right" ? bgColor : null }}
         >
           <div className="lg:w-[600px] lg:pl-48">
-            {/* <img src={plus} alt="" className="pb-2 h-[70px] w-[70px] cursor-pointer" id="plus" /> */}
 
             {/* For NutritionalInfo bydefault set to hidden*/}
             <div
@@ -106,10 +106,10 @@ function Product({
               </div>
             </div>
 
-            <p className="text-xl cs:text-sm cs:font-bold text-neutral-600">
+            <p className="text-xl cs:text-sm cs:font-bold text-neutral-600 font-bold" style={{color:descriptionColor}}>
               {description}
             </p>
-            <p className="text-2xl font-bold py-4 text-neutral-600">
+            <p className="text-2xl font-bold py-4 text-neutral-600" style={{color:availabilityColor}}>
               {availability}
             </p>
           </div>

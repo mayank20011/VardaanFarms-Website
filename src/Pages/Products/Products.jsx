@@ -77,6 +77,8 @@ function Products() {
           name={"A2 Desi Cow Milk"}
           info={"Natural & Clean"}
           img={a2DesiCowMilk}
+          descriptionColor={"#ffffff"}
+          availabilityColor={"#ffffff"}
           description={
             "Our A2 Desi Cow Milk comes from local cows, making it easy to digest and tasty. Perfect for daily use and full of good nutrients."
           }
@@ -96,6 +98,8 @@ function Products() {
           availability={"Available in 500ml, 450ml, 6l"}
           bgColor={"#f9b3b3"}
           colorSide={"left"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Product-3 */}
@@ -109,6 +113,8 @@ function Products() {
           availability={"Available 500ml, 400ml"}
           bgColor={"#8cd8d7"}
           colorSide={"right"}
+          descriptionColor={"#ffffff"}
+          availabilityColor={"#ffffff"}
         />
 
         {/* Product-4 */}
@@ -122,6 +128,8 @@ function Products() {
           availability={"Available in 400ml, 500ml"}
           bgColor={"#a999cf"}
           colorSide={"left"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Product-5 */}
@@ -135,6 +143,8 @@ function Products() {
           availability={"Available in 500ml, 350ml"}
           bgColor={"#8cbfe0"}
           colorSide={"right"}
+          descriptionColor={"#1a1a2e"}
+          availabilityColor={"#1a1a2e"}
         />
 
         {/* Product-6 */}
@@ -148,6 +158,8 @@ function Products() {
           availability={"Available in 500ml, 1l"}
           bgColor={"#6b6972"}
           colorSide={"left"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Product-7 */}
@@ -161,6 +173,8 @@ function Products() {
           availability={"Available in 450ml"}
           bgColor={"#f28d92"}
           colorSide={"right"}
+          descriptionColor={"#3B2F2F"}
+          availabilityColor={"#3B2F2F"}
         />
 
         {/* Product-8 */}
@@ -174,6 +188,8 @@ function Products() {
           availability={"Available 170ml"}
           bgColor={"#a999cf"}
           colorSide={"left"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Product-9 */}
@@ -187,6 +203,8 @@ function Products() {
           availability={"Available in 500 ml"}
           bgColor={"#6b957c"}
           colorSide={"right"}
+          descriptionColor={"#ffffff"}
+          availabilityColor={"#ffffff"}
         />
 
         {/* Product-10 */}
@@ -200,6 +218,8 @@ function Products() {
           availability={"Available in 500ml"}
           bgColor={"#a8d980"}
           colorSide={"left"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Product-11 */}
@@ -213,6 +233,8 @@ function Products() {
           availability={"Available in 400gm"}
           bgColor={"#a4d8e3"}
           colorSide={"right"}
+          descriptionColor={"#1a1a2e"}
+          availabilityColor={"#1a1a2e"}
         />
 
         {/* Product-12 */}
@@ -226,6 +248,8 @@ function Products() {
           availability={"Available in 400gm"}
           bgColor={"#f49b80"}
           colorSide={"left"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Product-13 */}
@@ -239,6 +263,8 @@ function Products() {
           availability={"Available in 500ml"}
           bgColor={"#f8e89c"}
           colorSide={"right"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Product-14 */}
@@ -252,6 +278,8 @@ function Products() {
           availability={"Available in 500ml, 1l"}
           bgColor={"#f7f4d8"}
           colorSide={"left"}
+          descriptionColor={"#4f4f4f"}
+          availabilityColor={"#4f4f4f"}
         />
 
         {/* Footer */}
