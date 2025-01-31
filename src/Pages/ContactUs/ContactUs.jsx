@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "../../Components/Footer/Footer.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import { Bounce } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 import axios from "axios";
+
 function ContactUs() {
   function handleSubmit(e) {
     const dataToSend = {};
@@ -48,6 +50,61 @@ function ContactUs() {
         theme="light"
         transition={Bounce}
       />
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>
+          Vardaan Farms | Fresh Dairy Products Delivered to Your Doorstep in
+          Gurugram, India
+        </title>
+        <meta
+          name="description"
+          content="Experience fresh and pure dairy products delivered straight to your doorstep with Vardaan Farms. Our healthy and nutritious milk and dairy products ensure your family stays strong every day. Contact us at (+91) 8816000082."
+        />
+        <meta
+          name="keywords"
+          content="Vardaan Farms, Fresh Dairy Products, Milk Delivery Gurugram, Healthy Milk India, Nutritious Dairy Products, Farm-Fresh Milk, Milk Preservation, High Production Dairy, Eco-Friendly Farming, Reliable Pasteurization"
+        />
+        <meta name="author" content="Vardaan Farms" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Vardaan Farms | Fresh Dairy Products Delivered to Your Doorstep in Gurugram, India"
+        />
+        <meta
+          property="og:description"
+          content="Experience fresh and pure dairy products delivered straight to your doorstep with Vardaan Farms. Our healthy and nutritious milk and dairy products ensure your family stays strong every day."
+        />
+        <meta
+          property="og:image"
+          content="https://www.vardaanfarms.com/images/your-image.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.vardaanfarms.com/your-page-url"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Vardaan Farms | Fresh Dairy Products Delivered to Your Doorstep in Gurugram, India"
+        />
+        <meta
+          name="twitter:description"
+          content="Experience fresh and pure dairy products delivered straight to your doorstep with Vardaan Farms. Healthy and nutritious dairy products for your family's well-being."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.vardaanfarms.com/images/your-image.jpg"
+        />
+
+        {/* Additional Meta Tags */}
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      </Helmet>
+
       <section className="bg-neutral-700 w-full min-h-screen pt-36">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 min-h-screen flex justify-center items-center gap-12 flex-col lg:flex-row">
           {/* Left-div */}
@@ -62,7 +119,10 @@ function ContactUs() {
             <h1 className="text-4xl font-bold">GET IN TOUCH</h1>
 
             <p>
-            We’d love to hear from you! Whether you have a question about our products, need assistance, or just want to share your feedback, we're here to help. Reach out to us through any of the channels below, and we'll get back to you as soon as possible.
+              We’d love to hear from you! Whether you have a question about our
+              products, need assistance, or just want to share your feedback,
+              we're here to help. Reach out to us through any of the channels
+              below, and we'll get back to you as soon as possible.
             </p>
 
             {/* for location mail and other */}
@@ -125,7 +185,9 @@ function ContactUs() {
               Leave A Message
             </h1>
             <p className="text-neutral-500">
-            Have a question, feedback, or just want to say hi? Drop us a message, and we'll get back to you as soon as we can. We're here to help and listen to what you have to say.
+              Have a question, feedback, or just want to say hi? Drop us a
+              message, and we'll get back to you as soon as we can. We're here
+              to help and listen to what you have to say.
             </p>
 
             <div className="grid gap-6">
@@ -172,7 +234,6 @@ function ContactUs() {
         </div>
 
         <div className="border-t-2 border-dashed"></div>
-
         <Footer />
       </section>
     </>

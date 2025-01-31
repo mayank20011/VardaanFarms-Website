@@ -23,25 +23,26 @@ function Products() {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#059669" />
-        <title>Fresh Dairy Products - VardaanFarms</title>
+        <meta
+          name="title"
+          content="Natural & Clean A2 Desi Cow Milk | Full Cream, Toned, Double Toned, Natural Cow Milk | Buffalo Milk & Ghee | Family Pack & Refreshing Chach | Fresh, Nutritious & Healthy Milk Products"
+        />
         <meta
           name="description"
-          content="Explore a wide range of fresh dairy products including milk, chach, dahi, ghee, paneer and more from vardaanFarms. Quality you can trust!"
+          content="Explore our wide range of 100% natural and clean milk products: A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee. Available in various sizes."
         />
         <meta
           name="keywords"
-          content="dairy products, fresh milk, dahi, chach, ghee, paneer, dairy company, a2 desi cow milk, full Cream, toned, DTM, Cow Milk, Buffalo Milk, Family Pack, Dtm Bacha, Masala Chach, Dahi Light, Fresh Dahi, a2 Cow Ghee, Buffalo Ghee, Dahi Matka, vardaanFarms"
+          content="A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee, 100% Natural, Nutritious, Healthy Milk Products"
         />
+        <meta name="author" content="VardaanFarms" />
         <meta
           property="og:title"
-          content="Fresh Dairy Products - VardaanFarms"
+          content="Natural & Clean A2 Desi Cow Milk | Full Cream, Toned, Double Toned, Natural Cow Milk | Buffalo Milk & Ghee | Family Pack & Refreshing Chach | Fresh, Nutritious & Healthy Milk Products"
         />
         <meta
           property="og:description"
-          content="Explore a wide range of fresh dairy products including milk, chach, dahi, ghee, paneer and more from vardaanFarms. Quality you can trust!"
+          content="Explore our wide range of 100% natural and clean milk products: A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee. Available in various sizes."
         />
         <meta property="og:image" content={a2DesiCowMilk} />
         <meta property="og:image" content={fullCream} />
@@ -57,17 +58,31 @@ function Products() {
         <meta property="og:image" content={freshDahi} />
         <meta property="og:image" content={a2CowGhee} />
         <meta property="og:image" content={buffaloGhee} />
-        <meta property="og:url" content="[URL to your products page]" />
-        <meta property="og:type" content="website" />
+        <meta property="og:url" content="URL_of_your_product_page" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Fresh Dairy Products - vardaanFarms"
+          content="Natural & Clean A2 Desi Cow Milk | Full Cream, Toned, Double Toned, Natural Cow Milk | Buffalo Milk & Ghee | Family Pack & Refreshing Chach | Fresh, Nutritious & Healthy Milk Products"
         />
         <meta
           name="twitter:description"
-          content="Explore a wide range of fresh dairy products including milk, chach, dahi, ghee, paneer and more from vardaanFarms. Quality you can trust!"
+          content="Explore our wide range of 100% natural and clean milk products: A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee. Available in various sizes."
         />
+        <meta name="twitter:image" content={a2DesiCowMilk} />
+        <meta name="twitter:image" content={fullCream} />
+        <meta name="twitter:image" content={toned} />
+        <meta name="twitter:image" content={dtm} />
+        <meta name="twitter:image" content={cowMilk} />
+        <meta name="twitter:image" content={buffaloMilk} />
+        <meta name="twitter:image" content={familyPack} />
+        <meta name="twitter:image" content={dtmBacha} />
+        <meta name="twitter:image" content={plainChach} />
+        <meta name="twitter:image" content={masalaChach} />
+        <meta name="twitter:image" content={dahiLight} />
+        <meta name="twitter:image" content={freshDahi} />
+        <meta name="twitter:image" content={a2CowGhee} />
+        <meta name="twitter:image" content={buffaloGhee} />
+
         <link rel="canonical" href="/products" />
       </Helmet>
 
