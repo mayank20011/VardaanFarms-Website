@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../img/Vardanlogo.png";
 
-function Navbar() {
+function Navbar({headerHeight}) {
   const [active, setActive] = useState("home");
   const location = useLocation();
   const mobileNav = useRef(null);
@@ -33,20 +33,17 @@ function Navbar() {
   return (
     <>
       {/* for laptop */}
-      <div className="bg-white py-4 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300">
+      <div className="bg-white py-4 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300 fixed w-full z-50" style={{top:`${headerHeight}px`}} id="nav">
         {/* for desktop Navbar*/}
         <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
           {/* For image */}
-          <img src={logo} alt="logo" className="w-24" loading="lazy"/>
+          <img src={logo} alt="logo" className="w-24" loading="lazy" />
 
           {/* For Navlinks */}
           <ul className="flex gap-5">
-
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "home"
-                  ? "text-green-600 scale-110"
-                  : ""
+                active === "home" ? "text-green-600 scale-110" : ""
               }`}
             >
               <Link to="/">Home</Link>
@@ -54,9 +51,7 @@ function Navbar() {
 
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "products"
-                  ? "text-green-600 scale-110"
-                  : ""
+                active === "products" ? "text-green-600 scale-110" : ""
               }`}
             >
               <Link to="/products">Our Products</Link>
@@ -64,9 +59,7 @@ function Navbar() {
 
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "aboutUs"
-                  ? "text-green-600 scale-110"
-                  : ""
+                active === "aboutUs" ? "text-green-600 scale-110" : ""
               }`}
             >
               <Link to="/aboutUs">About Us</Link>
@@ -74,9 +67,7 @@ function Navbar() {
 
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "contactUs"
-                  ? "text-green-600 scale-110"
-                  : ""
+                active === "contactUs" ? "text-green-600 scale-110" : ""
               }`}
             >
               <Link to="/contactUs">Contact Us</Link>
@@ -84,24 +75,26 @@ function Navbar() {
 
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "blogs"
-                  ? "text-green-600 scale-110"
-                  : ""
+                active === "blogs" ? "text-green-600 scale-110" : ""
               }`}
             >
               <Link to="/blogs">Blogs</Link>
             </li>
-
           </ul>
         </nav>
       </div>
 
       {/* For mobile nav */}
-      <div className="md:hidden text-black bg-transparent overflow-hidden">
+      <div className="md:hidden text-black bg-transparent overflow-hidden" style={{height:"0px"}}>
         {/* for mobile navbar */}
         <div className="w-full relative p-2 flex justify-center items-center top-[40px] z-30">
-          <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-md fixed">
-            <img src={logo} alt="vardan Farms Logo" className="h-[36px]" loading="lazy"/>
+          <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-md fixed shadow-black">
+            <img
+              src={logo}
+              alt="vardan Farms Logo"
+              className="h-[36px]"
+              loading="lazy"
+            />
             <img
               width="36"
               height="36"

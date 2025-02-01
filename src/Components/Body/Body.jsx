@@ -10,11 +10,11 @@ import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
 import aboutUsHome from "../../img/aboutUsHome.png";
 
-function Body() {
+function Body({totalPaddingToGive}) {
   return (
     <>
       {/* For Slider */}
-      <section className="w-full md:pt-32">
+      <section className="w-full bg-slate-100" style={window.innerWidth > 768 ? { paddingTop: `${totalPaddingToGive}px` } : {}}>
         <ShowcaseSwiper />
       </section>
 

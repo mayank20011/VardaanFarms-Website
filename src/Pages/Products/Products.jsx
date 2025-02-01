@@ -1,5 +1,4 @@
 import React from "react";
-
 import a2DesiCowMilk from "../../img/a2DesiCowMilk.png";
 import fullCream from "../../img/fullCream.png";
 import toned from "../../img/tonedMilk.png";
@@ -19,7 +18,7 @@ import { Helmet } from "react-helmet-async";
 
 import Footer from "../../Components/Footer/Footer.jsx";
 
-function Products() {
+function Products({ totalPaddingToGive }) {
   return (
     <>
       <Helmet>
@@ -86,7 +85,10 @@ function Products() {
         <link rel="canonical" href="/products" />
       </Helmet>
 
-      <section className="min-h-screen pt-24 flex flex-col lg:space-y-0 space-y-8 md:pt-36 bg-white lg:pt-0">
+      <section
+        className="flex flex-col lg:space-y-0 space-y-8 md:pt-36 bg-white lg:pt-0"
+        style={{ paddingTop: `${totalPaddingToGive}px` }}
+      >
         {/* Product-1 */}
         <Product
           name={"A2 Desi Cow Milk"}
@@ -100,6 +102,7 @@ function Products() {
           availability={"Available in 500ml"}
           bgColor={"#b1998c"}
           colorSide={"right"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-2 */}
@@ -115,6 +118,7 @@ function Products() {
           colorSide={"left"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-3 */}
@@ -130,6 +134,7 @@ function Products() {
           colorSide={"right"}
           descriptionColor={"#ffffff"}
           availabilityColor={"#ffffff"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-4 */}
@@ -145,6 +150,7 @@ function Products() {
           colorSide={"left"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-5 */}
@@ -160,6 +166,7 @@ function Products() {
           colorSide={"right"}
           descriptionColor={"#1a1a2e"}
           availabilityColor={"#1a1a2e"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-6 */}
@@ -175,6 +182,7 @@ function Products() {
           colorSide={"left"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-7 */}
@@ -190,6 +198,7 @@ function Products() {
           colorSide={"right"}
           descriptionColor={"#3B2F2F"}
           availabilityColor={"#3B2F2F"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-8 */}
@@ -205,6 +214,7 @@ function Products() {
           colorSide={"left"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-9 */}
@@ -220,6 +230,7 @@ function Products() {
           colorSide={"right"}
           descriptionColor={"#ffffff"}
           availabilityColor={"#ffffff"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-10 */}
@@ -235,6 +246,7 @@ function Products() {
           colorSide={"left"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-11 */}
@@ -250,6 +262,7 @@ function Products() {
           colorSide={"right"}
           descriptionColor={"#1a1a2e"}
           availabilityColor={"#1a1a2e"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-12 */}
@@ -265,6 +278,7 @@ function Products() {
           colorSide={"left"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-13 */}
@@ -280,6 +294,7 @@ function Products() {
           colorSide={"right"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
 
         {/* Product-14 */}
@@ -295,11 +310,11 @@ function Products() {
           colorSide={"left"}
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
+          totalPaddingToGive={totalPaddingToGive}
         />
-
-        {/* Footer */}
-        <Footer />
       </section>
+
+      <Footer />
     </>
   );
 }

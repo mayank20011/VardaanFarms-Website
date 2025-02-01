@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -14,6 +13,7 @@ import img1 from "../../img/homeSwipper1.svg";
 import img2 from "../../img/homeSwipper2.svg";
 import img3 from "../../img/homeSwipper3.svg";
 function ShowcaseSwiper() {
+
   return (
     <>
       <Swiper
@@ -22,7 +22,6 @@ function ShowcaseSwiper() {
         }}
         autoplay={{ delay: "3000" }}
         modules={[Scrollbar, Autoplay]}
-        // className="w-full cs:h-[500px] h-[700px]"
         className="w-full bg-slate-100"
       >
         <SwiperSlide className="">

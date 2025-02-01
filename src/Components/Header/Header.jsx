@@ -20,7 +20,7 @@ function Header() {
 
   return (
     // for header
-    <div className="bg-neutral-700 py-4 text-white hidden md:flex">
+    <div className="bg-neutral-700 py-4 text-white hidden md:flex fixed w-full z-50" id="header">
       
       {/* To Contain Everything of header */}
       <div className="flex justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12">

@@ -10,14 +10,16 @@ function Product({
   colorSide,
   descriptionColor,
   availabilityColor,
+  totalPaddingToGive
 }) {
+console.log(totalPaddingToGive);
   return (
     <>
-      <div className="justify-center items-center relative bg-white text-black flex-col lg:flex-row pt-20 md:pt-36 lg:pt-0 pb-6 lg:pb-0 hidden lg:flex">
+      <div className="justify-center items-center relative bg-white text-black flex-col lg:flex-row pb-6 lg:pb-0 hidden lg:flex snap-start" style={{minHeight:`calc(100vh - ${totalPaddingToGive}px)`}}>
         {/* Left Side */}
         <div
-          className={`lg:w-1/2 flex justify-center items-center lg:min-h-screen w-11/12 mx-auto cs:justify-start`}
-          style={{ background: colorSide === "left" ? bgColor : null }}
+          className={`lg:w-1/2 flex justify-center items-center w-11/12 mx-auto cs:justify-start`}
+          style={{ background: colorSide === "left" ? bgColor : null, minHeight:`calc(100vh - ${totalPaddingToGive}px)`}}
         >
           <div className="lg:w-fit lg:pr-12">
             <h1 className="capitalize font-bold text text-5xl py-6 border-b-2 text-center lg:text-left cs:text-2xl cs:text-left cs:border-b-0">
@@ -43,8 +45,8 @@ function Product({
 
         {/* Right Side */}
         <div
-          className="lg:w-1/2 flex justify-center items-center lg:min-h-screen w-11/12 mx-auto p-4 mt-6 lg:mt-0 px-8 py-12"
-          style={{ background: colorSide === "right" ? bgColor : null }}
+          className="lg:w-1/2 flex justify-center items-center w-11/12 mx-auto p-4 mt-6 lg:mt-0 px-8 py-12"
+          style={{ background: colorSide === "right" ? bgColor : null , minHeight:`calc(100vh - ${totalPaddingToGive}px)`}}
         >
           <div className="lg:w-[600px] lg:pl-48">
 
@@ -117,6 +119,7 @@ function Product({
         </div>
       </div>
 
+      {/* for small screens */}
       <div className={`block lg:hidden bg-white`}>
         {/* Card */}
         <div className="bg-slate-100 rounded-md mx-auto w-4/5 sm:w-3/4 py-12 items-center shadow-lg shadow-black flex lg:hidden flex-col md:flex-row space-y-6 sm:space-y-0">

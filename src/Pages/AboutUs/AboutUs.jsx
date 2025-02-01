@@ -13,14 +13,14 @@ import pasturization from "../../img/pasturization.png";
 import aboutUsBanner from "../../img/aboutUsBanner.png";
 import Footer from "../../Components/Footer/Footer.jsx";
 
-function AboutUs() {
+function AboutUs({totalPaddingToGive}) {
   return (
     <>
-    <div className="min-h-screen w-full bg-slate-100">
-      <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 border-2 border-slate-100 min-h-screen text-black pb-24">
+    <div className="min-h-screen w-full bg-slate-100" style={{paddingTop:`${totalPaddingToGive}px`}}>
+      <div className="pt-14 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 border-2 border-slate-100 min-h-screen text-black pb-24">
         {/* key points */}
-        <div className="w-full mt-24 md:mt-48 grid md:grid-cols-2 xl:grid-cols-4 gap-4">
-          <div className="text-center">
+        <div className="w-full grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div className="text-center shadow-md shadow-black p-4 rounded-lg">
             <img src={truck} alt="" className="mx-auto" loading="lazy"/>
             <h1 className="font-bold text-xl">Deliver to your Door</h1>
             <p className="text-slate-500 font-bold text-sm">
@@ -28,7 +28,7 @@ function AboutUs() {
             </p>
           </div>
 
-          <div className="text-center">
+          <div className="text-center shadow-md shadow-black p-4 rounded-lg">
             <img
               src={healthy}
               alt=""
@@ -42,7 +42,7 @@ function AboutUs() {
             </p>
           </div>
 
-          <div className="text-center">
+          <div className="text-center shadow-md shadow-black p-4 rounded-lg">
             <img src={tag} alt="" className="mx-auto" loading="lazy"/>
             <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
             <p className="text-slate-500 font-bold text-sm">
@@ -50,7 +50,7 @@ function AboutUs() {
             </p>
           </div>
 
-          <div className="text-center">
+          <div className="text-center shadow-md shadow-black p-4 rounded-lg">
             <img src={support} alt="" className="mx-auto" loading="lazy"/>
             <h1 className="font-bold text-xl">24/7 Customer Support</h1>
             <p className="text-slate-500 font-bold text-sm">
@@ -60,16 +60,16 @@ function AboutUs() {
         </div>
 
         {/* About Us */}
-        <div className="pt-24 flex gap-6 flex-col lg:flex-row">
+        <div className="pt-24 flex gap-12 flex-col lg:flex-row">
           {/* Text */}
-          <div className="lg:w-1/2 flex flex-col gap-6">
+          <div className="lg:w-1/2 flex flex-col gap-6 lg:pr-6">
             <span className="text-left text-2xl text-green-600 font-bold ">
               About VardaanFarms
             </span>
             <h1 className="text-left text-4xl capitalize font-bold">
               Crafting Dairy Excellence
             </h1>
-            <div className="text-left text-neutral-500 font-bold text-md flex flex-col gap-3">
+            <div className="text-left text-black text-lg text-md flex flex-col gap-3">
               <span>
                 Welcome to Vardaan Farms! We are more than just a dairy product
                 company; we are the custodians of tradition, quality, and
@@ -89,7 +89,7 @@ function AboutUs() {
           </div>
 
           {/* img */}
-          <div className="lg:w-1/2 flex justify-center items-center">
+          <div className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-md shadow-black" style={{border:"10px solid white"}}>
             <img src={ourFarm} alt="" className="rounded-2xl" loading="lazy"/>
           </div>
         </div>
