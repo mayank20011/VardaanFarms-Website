@@ -108,6 +108,7 @@ import Blog4 from "../../Components/Blogs/Blog4.jsx";
 import Blog5 from "../../Components/Blogs/Blog5.jsx";
 import Blog6 from "../../Components/Blogs/Blog6.jsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ReadFullBlog({ totalPaddingToGive }) {
   const [blogToShow, setBlogToShow] = useState(1);
@@ -117,15 +118,16 @@ function ReadFullBlog({ totalPaddingToGive }) {
       style={{ paddingTop: `${totalPaddingToGive}px` }}
     >
       <div
-        className="md:pb-4 md:pt-4 flex flex-row gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black"
+        className="md:pb-4 md:pt-8 flex flex-row gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black"
         style={{ height: `calc(100vh - ${totalPaddingToGive}px)`}} // Ensure to add "px" to the padding value
       >
         {/* for left blogs */}
 
         <div
-          className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md" 
+          className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md relative" 
           style={{scrollbarColor:"transparent transparent", scrollbarWidth:"thin"}}
         >
+          <Link to={"/blogs"} className="fixed -translate-x-1/2"><i className="fa-solid fa-arrow-left text-white bg-black top-10 text-3xl p-2 rounded-md"></i></Link>
           {blogToShow === 1 ? (
             <Blog1 />
           ) : blogToShow === 2 ? (

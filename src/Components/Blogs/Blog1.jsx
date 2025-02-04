@@ -41,6 +41,31 @@ function Blog1() {
           <h3 className="text-3xl font-bold text-green-600">Conclusion</h3>
           <p>In conclusion, A2 Desi Cow Milk is a healthier choice for you and your family. It is easier to digest, nutrient-rich, and supports local and sustainable farming practices. Try A2 Desi Cow Milk today and feel the difference it makes in your life.</p>
         </div>
+
+        <div className="border-t border-green-600 py-12 mt-6 flex gap-6 flex-col md:flex-row">
+          {/* for tags */}
+          <div className="flex gap-2 grow sm:items-center flex-col sm:flex-row">
+            <h1 className="text-xl font-bold">Tags: </h1>
+            <div className="flex gap-2">
+            <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center">A2Milk</span>
+            <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center">Digestible</span>
+            <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center">Nutrients</span>
+            <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center">Local</span>
+            </div>
+
+          </div>
+          {/* for links */}
+          <div className="flex gap-4 items-center text-xl">
+            {/* Facebook */}
+            <i className="fa-brands fa-facebook-f cursor-pointer hover:text-slate-500 transition"></i>
+            {/* Twitter */}
+            <i className="fa-brands fa-twitter cursor-pointer hover:text-slate-500 transition"></i>
+            {/* instagram */}
+            <i className="fa-brands fa-instagram cursor-pointer hover:text-slate-500 transition"></i>
+            {/* linkedin */}
+            <i className="fa-brands fa-linkedin-in cursor-pointer hover:text-slate-500 transition"></i>
+          </div>
+        </div>
       </div>
     </div>
   );

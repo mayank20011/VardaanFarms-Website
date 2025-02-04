@@ -17,7 +17,7 @@ function Navbar({headerHeight}) {
       setActive("aboutUs");
     } else if (path.includes("/contactUs")) {
       setActive("contactUs");
-    } else if (path.includes("/blogs")) {
+    } else if (path.includes("/blogs") || path.includes("/readFullBlog")) {
       setActive("blogs");
     }
   }, [location.pathname]);
