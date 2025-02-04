@@ -46,7 +46,7 @@ function Blog1() {
           {/* for tags */}
           <div className="flex gap-2 grow sm:items-center flex-col sm:flex-row">
             <h1 className="text-xl font-bold">Tags: </h1>
-            <div className="flex gap-2">
+            <div className="sm:flex gap-2 grid grid-cols-2">
             <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center">A2Milk</span>
             <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center">Digestible</span>
             <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center">Nutrients</span>
