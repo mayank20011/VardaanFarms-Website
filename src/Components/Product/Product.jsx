@@ -12,7 +12,6 @@ function Product({
   availabilityColor,
   totalPaddingToGive
 }) {
-console.log(totalPaddingToGive);
   return (
     <>
       <div className="justify-center items-center relative bg-white text-black flex-col lg:flex-row pb-6 lg:pb-0 hidden lg:flex snap-start" style={{minHeight:`calc(100vh - ${totalPaddingToGive}px)`}}>

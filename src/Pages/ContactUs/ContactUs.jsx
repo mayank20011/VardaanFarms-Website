@@ -3,9 +3,12 @@ import Footer from "../../Components/Footer/Footer.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import { Bounce } from "react-toastify";
 import { Helmet } from "react-helmet-async";
-import axios from "axios";
+import { getDatabase, ref, set } from "firebase/database";
+import database from "../../firebase/firebase.js";
+import { useRef } from "react";
 
 function ContactUs({totalPaddingToGive}) {
+  const form = useRef(null);
   function handleSubmit(e) {
     const dataToSend = {};
     e.preventDefault();
@@ -20,19 +23,16 @@ function ContactUs({totalPaddingToGive}) {
     ) {
       toast.error("Fields Can't Be Empty");
     } else {
-      // axios.post("",dataToSend)
-      // .then((response)=>{
-      //   if(response.data.success){
-      //     toast.success("Form Submit SuccessFully");
-      //   }
-      //   else{
-      //     toast.error("Something went Wrong")
-      //   }
-      // })
-      // .catch((err)=>{
-      //   console.log(err);
-      //   toast.error("Something Went Wrong");
-      // })
+      const db=getDatabase();
+      const useRef=ref(db, 'users/' + new Date().getTime());
+      set(useRef,dataToSend).then(()=>{
+          toast.success("Your Response is Recorded");
+          form.current.reset();
+      })
+      .catch((err)=>{
+        toast.error("Something Went Wrong");
+        console.log(err);
+      })
     }
   }
   return (
@@ -180,6 +180,7 @@ function ContactUs({totalPaddingToGive}) {
           <form
             onSubmit={handleSubmit}
             className="lg:w-1/2 bg-white w-full text-black px-8 py-8 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 lg:mt-6"
+            ref={form}
           >
             <h1 className="text-2xl sm:text-4xl font-bold text-green-600">
               Leave A Message

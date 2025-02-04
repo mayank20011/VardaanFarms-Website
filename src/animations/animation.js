@@ -1,4 +1,3 @@
-
 // document.addEventListener("DOMContentLoaded", () => {
 //   gsap.registerPlugin(ScrollTrigger);
 // });
@@ -242,4 +241,16 @@ window.addEventListener("load", () => {
   //     }
   //   });
   // });
+
+  // const readMoreButton = document.querySelectorAll(".readMoreButton");
+  // readMoreButton.forEach((btn)=>{
+  //   console.log(btn);
+  //   btn.addEventListener("click",()=>{
+  //     gsap.to("#wholeBlog",{
+  //       scale:1,
+  //       transition:0.3,
+  //     })
+  //   })
+  // })
+  
 });
