@@ -1,7 +1,7 @@
 import React from "react";
 import aboutUsHome from "../../img/fullCream.png";
 
-function Blog6() {
+function Blog6({setBlog}) {
   return (
     <div className="w-full h-full flex flex-col gap-6">
       <img
@@ -78,9 +78,9 @@ function Blog6() {
           </div>
         </div>
 
-        <div className="border-t border-green-600 py-12 mt-6 flex gap-6 flex-col md:flex-row">
+        <div className="border-t border-green-600 py-12 mt-6 flex gap-6 flex-col md:flex-row crbs:flex-col">
           {/* for tags */}
-          <div className="flex gap-2 grow sm:items-center flex-col sm:flex-row">
+          <div className="flex gap-2 grow sm:items-center flex-col sm:flex-row crbs:flex-col crbs:items-start">
             <h1 className="text-xl font-bold">Tags: </h1>
             <div className="sm:flex gap-2 grid grid-cols-2">
               <span className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center h-fit">
@@ -110,6 +110,25 @@ function Blog6() {
           </div>
         </div>
       </div>
+
+      <div className="relative flex lg:hidden items-center text-black z-30 bg-white w-fit mx-auto pb-12">
+        <img
+          src="https://img.icons8.com/?size=100&id=42477&format=png&color=000000"
+          alt="arrow-left"
+          className="w-12 cursor-pointer"
+          onClick={()=>{setBlog(5)}}
+        />
+        <p className="font-bold">{`${sessionStorage.getItem("blog")} of 6`}</p>
+        <img
+          width="80"
+          height="80"
+          src="https://img.icons8.com/dotty/80/right.png"
+          alt="right"
+          className="w-12 cursor-pointer"
+          onClick={setBlog(1)}
+        />
+      </div>
+
     </div>
   );
 }
