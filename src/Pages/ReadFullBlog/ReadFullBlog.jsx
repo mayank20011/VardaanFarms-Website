@@ -99,7 +99,6 @@
 
 // export default ReadFullBlog;
 
-
 import React from "react";
 import Blog1 from "../../Components/Blogs/Blog1.jsx";
 import Blog2 from "../../Components/Blogs/Blog2.jsx";
@@ -111,36 +110,42 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function ReadFullBlog({ totalPaddingToGive }) {
-  const [blogToShow, setBlogToShow] = useState(1);
+  const [blogToShow, setBlogToShow] = useState(sessionStorage.getItem("blog"));
   return (
     <div
       className="min-h-screen w-full bg-slate-100"
       style={{ paddingTop: `${totalPaddingToGive}px` }}
     >
       <div
-        className="md:pb-4 md:pt-8 flex flex-row gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black"
-        style={{ height: `calc(100vh - ${totalPaddingToGive}px)`}} // Ensure to add "px" to the padding value
+        className="md:pb-4 md:pt-8 flex gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex-row"
+        style={{ height: `calc(100vh - ${totalPaddingToGive}px)` }} // Ensure to add "px" to the padding value
       >
         {/* for left blogs */}
 
         <div
-          className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md relative" 
-          style={{scrollbarColor:"transparent transparent", scrollbarWidth:"thin"}}
+          className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md relative"
+          style={{
+            scrollbarColor: "transparent transparent",
+            scrollbarWidth: "thin",
+          }}
         >
-          <Link to={"/blogs"} className="fixed -translate-x-1/2"><i className="fa-solid fa-arrow-left text-white bg-black top-10 text-3xl p-2 rounded-md"></i></Link>
-          {blogToShow === 1 ? (
+          <Link to={"/blogs"} className="fixed -translate-x-1/2">
+            <i className="fa-solid fa-arrow-left text-white bg-black top-10 text-3xl p-2 rounded-md"></i>
+          </Link>
+          {blogToShow == 1 ? (
             <Blog1 />
-          ) : blogToShow === 2 ? (
+          ) : blogToShow == 2 ? (
             <Blog2 />
-          ) : blogToShow === 3 ? (
+          ) : blogToShow == 3 ? (
             <Blog3 />
-          ) : blogToShow === 4 ? (
+          ) : blogToShow == 4 ? (
             <Blog4 />
-          ) : blogToShow === 5 ? (
+          ) : blogToShow == 5 ? (
             <Blog5 />
-          ) : blogToShow === 6 ? (
+          ) : blogToShow == 6 ? (
             <Blog6 />
           ) : null}
+
         </div>
 
         {/* for right */}
@@ -150,7 +155,16 @@ function ReadFullBlog({ totalPaddingToGive }) {
             className="border- h-[300px] overflow-y-auto flex flex-col gap-2"
             style={{ scrollbarWidth: "thin", scrollbarColor: "green white" }}
           >
-            <div className="p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer" onClick={()=>{setBlogToShow(1)}}>
+            <div
+              className={`p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer ${
+                blogToShow == 1
+                  ? "shadow-md shadow-black scale-95 hover:shadow-black"
+                  : null
+              }`}
+              onClick={() => {
+                setBlogToShow(1);
+              }}
+            >
               <h1 className="font-bold">Why A2 Desi Cow Milk</h1>
               <div className="flex gap-4 items-center">
                 <i className="fa-solid fa-clock text-green-600"></i>
@@ -158,7 +172,16 @@ function ReadFullBlog({ totalPaddingToGive }) {
               </div>
             </div>
 
-            <div className="p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer" onClick={()=>{setBlogToShow(2)}}>
+            <div
+              className={`p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer ${
+                blogToShow == 2
+                  ? "shadow-md shadow-black scale-95 hover:shadow-black"
+                  : null
+              }`}
+              onClick={() => {
+                setBlogToShow(2);
+              }}
+            >
               <h1 className="font-bold">Enjoy Full Cream Milk Daily</h1>
               <div className="flex gap-4 items-center">
                 <i className="fa-solid fa-clock text-green-600"></i>
@@ -166,7 +189,16 @@ function ReadFullBlog({ totalPaddingToGive }) {
               </div>
             </div>
 
-            <div className="p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer" onClick={()=>{setBlogToShow(3)}}>
+            <div
+              className={`p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer ${
+                blogToShow == 3
+                  ? "shadow-md shadow-black scale-95 hover:shadow-black"
+                  : null
+              }`}
+              onClick={() => {
+                setBlogToShow(3);
+              }}
+            >
               <h1 className="font-bold">Healthy & Tasty: Toned Milk</h1>
               <div className="flex gap-4 items-center">
                 <i className="fa-solid fa-clock text-green-600"></i>
@@ -174,7 +206,16 @@ function ReadFullBlog({ totalPaddingToGive }) {
               </div>
             </div>
 
-            <div className="p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer" onClick={()=>{setBlogToShow(4)}}>
+            <div
+              className={`p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer ${
+                blogToShow == 4
+                  ? "shadow-md shadow-black scale-95 hover:shadow-black"
+                  : null
+              }`}
+              onClick={() => {
+                setBlogToShow(4);
+              }}
+            >
               <h1 className="font-bold">Light & Tasty: Double Toned Milk</h1>
               <div className="flex gap-4 items-center">
                 <i className="fa-solid fa-clock text-green-600"></i>
@@ -182,7 +223,16 @@ function ReadFullBlog({ totalPaddingToGive }) {
               </div>
             </div>
 
-            <div className="p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer" onClick={()=>{setBlogToShow(5)}}>
+            <div
+              className={`p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer ${
+                blogToShow == 5
+                  ? "shadow-md shadow-black scale-95 hover:shadow-black"
+                  : null
+              }`}
+              onClick={() => {
+                setBlogToShow(5);
+              }}
+            >
               <h1 className="font-bold">Buffalo Milk: Rich & Nutritious</h1>
               <div className="flex gap-4 items-center">
                 <i className="fa-solid fa-clock text-green-600"></i>
@@ -190,8 +240,17 @@ function ReadFullBlog({ totalPaddingToGive }) {
               </div>
             </div>
 
-            <div className="p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer" onClick={()=>{setBlogToShow(6)}}>
-              <h1 className="font-bold">Why A2 Desi Cow Milk</h1>
+            <div
+              className={`p-2 rounded-md flex flex-col gap-2 border hover:shadow-md transition cursor-pointer ${
+                blogToShow == 6
+                  ? "shadow-md shadow-black scale-95 hover:shadow-black"
+                  : null
+              }`}
+              onClick={() => {
+                setBlogToShow(6);
+              }}
+            >
+              <h1 className="font-bold">Sustainability On Dairy Farm</h1>
               <div className="flex gap-4 items-center">
                 <i className="fa-solid fa-clock text-green-600"></i>
                 <p className="text-sm text-slate-600">Feb 4,2025</p>
@@ -199,6 +258,7 @@ function ReadFullBlog({ totalPaddingToGive }) {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

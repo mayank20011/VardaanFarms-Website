@@ -8,6 +8,10 @@ import blog6 from "../../img/blog6.jpg";
 import Footer from "../../Components/Footer/Footer.jsx";
 import { Link } from "react-router-dom";
 function Blogs() {
+  sessionStorage.setItem('blog','1');
+  function setBlogToView(n){
+    sessionStorage.setItem('blog',`${n}`);
+  }
   return (
     <section className="bg-slate-100 text-black min-h-screen" id="blogPage">
 
@@ -33,7 +37,7 @@ function Blogs() {
             <p className="text-slate-500 text-lg">
             A2 Desi Cow Milk is a type of milk that comes from desi cows, which are native to our ...
             </p>
-            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit" to={"/readFullBlog"}>Read More</Link>
+            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit" to={"/readFullBlog"} onClick={()=>{setBlogToView(1)}}>Read More</Link>
           </article>
 
           {/* blog-2 */}
@@ -46,7 +50,7 @@ function Blogs() {
             <p className="text-slate-500 text-lg">
             Full Cream Milk is a rich and creamy type of milk that is perfect for your daily diet ...
             </p>
-            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit" to={"/readFullBlog"}>Read More</Link>
+            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit" to={"/readFullBlog"} onClick={()=>{setBlogToView(2)}}>Read More</Link>
           </article>
 
           {/* blog-3 */}
@@ -59,7 +63,7 @@ function Blogs() {
             <p className="text-slate-500 text-lg">
             Toned Milk is a type of milk that offers a good balance of health and ...
             </p>
-            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit" to={"/readFullBlog"}>Read More</Link>
+            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit" to={"/readFullBlog"} onClick={()=>{setBlogToView(3)}}>Read More</Link>
           </article>
 
           {/* blog-4 */}
@@ -72,7 +76,7 @@ function Blogs() {
             <p className="text-slate-500 text-lg">
             Double Toned Milk is a lighter choice that does not compromise on taste. Here's why ...
             </p>
-            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit" to={"/readFullBlog"}>Read More</Link>
+            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit" to={"/readFullBlog"} onClick={()=>{setBlogToView(4)}}>Read More</Link>
           </article>
 
           {/* blog-5 */}
@@ -85,7 +89,7 @@ function Blogs() {
             <p className="text-slate-500 text-lg">
             Buffalo Milk is known for its rich and creamy texture. Here's why you should consider adding ...
             </p>
-            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit" to={"/readFullBlog"}>Read More</Link>
+            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit" to={"/readFullBlog"} onClick={()=>{setBlogToView(5)}}>Read More</Link>
           </article>
 
           {/* bllog-6 */}
@@ -96,10 +100,9 @@ function Blogs() {
             </div>
             <h1 className="text-xl font-bold">Sustainability On A Dairy Farm</h1>
             <p className="text-slate-500 text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
+            Sustainability is a crucial aspect of modern dairy farming. Here’s how dairy farms can adopt  ...
             </p>
-            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit" to={"/readFullBlog"}>Read More</Link>
+            <Link className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit" to={"/readFullBlog"} onClick={()=>{setBlogToView(6)}}>Read More</Link>
           </article>
         </div>
       </div>
