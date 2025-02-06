@@ -38,14 +38,14 @@ function BlogComponent({ id, setId }) {
   }
 
   return (
-    <div className="w-full h-full flex flex-col gap-6">
+    <div className="w-full h-full flex flex-col gap-6 vs:gap-4">
       <img
         src={data.data.img}
         alt="blog-1"
         className="w-full border-4 border-white rounded-lg"
         loading="lazy"
       />
-      <div className="flex flex-col gap-6 p-8">
+      <div className="flex flex-col gap-6 p-8 vs:gap-4 vs:p-4">
         <div className="flex gap-8">
           {/* for date */}
           <div className="flex  items-center gap-2">
@@ -68,7 +68,7 @@ function BlogComponent({ id, setId }) {
           <p>{data.data.intro}</p>
           {data.data.pera.map((obj) => (
             <div key={obj.heading}>
-              <h3>{obj.heading}</h3>
+              <h3 className="text-xl underline text-green-600">{obj.heading}</h3>
               <p>{obj.info}</p>
             </div>
           ))}

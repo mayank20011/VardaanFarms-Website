@@ -8,7 +8,8 @@ export default {
     extend: {
       screens:{
         'cs': {'max':'780px'},
-        'crbs' : {'max':'1360px', 'min':'1024px'}
+        'crbs' : {'max':'1360px', 'min':'1024px'},
+        'vs' : {'max':'500px'}
       },
       backgroundImage: { 'my-background': "url('./src/img/homepagebg.png')", },
     },
