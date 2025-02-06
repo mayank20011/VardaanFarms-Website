@@ -10,11 +10,18 @@ import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
 import aboutUsHome from "../../img/aboutUsHome.png";
 
-function Body({totalPaddingToGive}) {
+function Body({ totalPaddingToGive }) {
   return (
     <>
       {/* For Slider */}
-      <section className="w-full bg-slate-100" style={window.innerWidth > 768 ? { paddingTop: `${totalPaddingToGive}px` } : {}}>
+      <section
+        className="w-full bg-slate-100"
+        style={
+          window.innerWidth > 768
+            ? { paddingTop: `${totalPaddingToGive}px` }
+            : {}
+        }
+      >
         <ShowcaseSwiper />
       </section>
 
@@ -40,17 +47,19 @@ function Body({totalPaddingToGive}) {
                 livestock roams freely, providing the purest milk straight from
                 our farm to your home.
                 <br />
-                VardaanFarms was founded in 2014 by [Founder's Name].
-                Starting as a small family-run operation, we've grown while
-                keeping our core principles and quality intact. Our journey of
-                love, hard work, and progress has made us a trusted name in the
-                dairy industry.
+                VardaanFarms was founded in 2014 by [Founder's Name]. Starting
+                as a small family-run operation, we've grown while keeping our
+                core principles and quality intact. Our journey of love, hard
+                work, and progress has made us a trusted name in the dairy
+                industry.
               </p>
-
             </div>
 
             {/* for image */}
-            <div className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black" style={{border:"10px solid white"}}>
+            <div
+              className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black"
+              style={{ border: "10px solid white" }}
+            >
               <img
                 src={aboutUsHome}
                 alt="AboutUsImg"
@@ -172,14 +181,15 @@ function Body({totalPaddingToGive}) {
       </section>
 
       {/* for a photo */}
-      <section className="py-12 md:py-24 bg-my-background bg-cover bg-center box-shadow-lg filter brightness-60">
-        <section className="w-full flex flex-col gap-12 px-4">
+      <section className="py-12 md:py-24 bg-my-background bg-cover bg-center relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black opacity-50"></div>
+        <section className="w-full flex flex-col gap-12 relative z-10 px-4">
           <span
             className="text-green-600 text-center text-2xl font-bold"
             id="organicDairyServices"
             style={{filter:"drop-shadow(2px 2px 1px white)"}}
           >
-            ___ Orgainc Dairy Services ___
+            ___ Organic Dairy Services ___
           </span>
           <h1
             className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto vs:text-2xl"
@@ -255,7 +265,7 @@ function Body({totalPaddingToGive}) {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
+                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
               </div>
 
               {/* icons */}
@@ -281,7 +291,7 @@ function Body({totalPaddingToGive}) {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
+                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
               </div>
 
               {/* icons */}
@@ -307,7 +317,7 @@ function Body({totalPaddingToGive}) {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
+                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
               </div>
 
               {/* icons */}
@@ -333,7 +343,7 @@ function Body({totalPaddingToGive}) {
             <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
               {/* img */}
               <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy"/>
+                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
               </div>
 
               {/* icons */}
@@ -365,7 +375,7 @@ function Body({totalPaddingToGive}) {
           <div className="flex gap-12 flex-col md:flex-row w-full">
             {/* for Photo */}
             <div className="md:w-1/2">
-              <img src={testimonial} alt="Testimonial" loading="lazy"/>
+              <img src={testimonial} alt="Testimonial" loading="lazy" />
             </div>
 
             {/* for text and swiper*/}
