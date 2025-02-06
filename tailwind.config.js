@@ -11,7 +11,7 @@ export default {
         'crbs' : {'max':'1360px', 'min':'1024px'},
         'vs' : {'max':'500px'}
       },
-      backgroundImage: { 'my-background': "url('./src/img/homepagebg.png')", },
+      backgroundImage: { 'my-background': "url('/src/img/homepagebg.png')", },
     },
   },
   plugins: [],
