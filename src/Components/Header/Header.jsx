@@ -26,7 +26,7 @@ function Header() {
       <div className="flex justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12">
 
        {/* For email and number  */}
-       <div className="flex gap-4">
+       <div className="flex gap-4 text-sm">
         {/* for email */}
          <div className="flex gap-2 items-center">
           <i className="fa-solid fa-envelope text-green-600"></i>
@@ -40,7 +40,7 @@ function Header() {
        </div>
 
        {/* For time and links */}
-       <div className="flex gap-4">
+       <div className="flex gap-4 text-sm">
         {/* for email */}
          <div className="flex gap-2 items-center border-r-2 pr-6">
           <i className="fa-solid fa-clock text-green-600"></i>

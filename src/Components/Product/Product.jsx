@@ -10,15 +10,21 @@ function Product({
   colorSide,
   descriptionColor,
   availabilityColor,
-  totalPaddingToGive
+  totalPaddingToGive,
 }) {
   return (
     <>
-      <div className="justify-center items-center relative bg-white text-black flex-col lg:flex-row pb-6 lg:pb-0 hidden lg:flex snap-start" style={{minHeight:`calc(100vh - ${totalPaddingToGive}px)`}}>
+      <div
+        className="justify-center items-center relative bg-white text-black flex-col lg:flex-row pb-6 lg:pb-0 hidden lg:flex snap-start"
+        style={{ minHeight: `calc(100vh - ${totalPaddingToGive}px)` }}
+      >
         {/* Left Side */}
         <div
           className={`lg:w-1/2 flex justify-center items-center w-11/12 mx-auto cs:justify-start`}
-          style={{ background: colorSide === "left" ? bgColor : null, minHeight:`calc(100vh - ${totalPaddingToGive}px)`}}
+          style={{
+            background: colorSide === "left" ? bgColor : null,
+            minHeight: `calc(100vh - ${totalPaddingToGive}px)`,
+          }}
         >
           <div className="lg:w-fit lg:pr-12">
             <h1 className="capitalize font-bold text text-5xl py-6 border-b-2 text-center lg:text-left cs:text-2xl cs:text-left cs:border-b-0">
@@ -37,7 +43,7 @@ function Product({
         <img
           src={img}
           alt="Product Image"
-          className="lg:absolute w-72"
+          className="lg:absolute w-72 hover:scale-105 transition"
           style={{ filter: "drop-shadow(0 16px 22px rgba(0, 0, 0))" }}
           loading="lazy"
         />
@@ -45,10 +51,12 @@ function Product({
         {/* Right Side */}
         <div
           className="lg:w-1/2 flex justify-center items-center w-11/12 mx-auto p-4 mt-6 lg:mt-0 px-8 py-12"
-          style={{ background: colorSide === "right" ? bgColor : null , minHeight:`calc(100vh - ${totalPaddingToGive}px)`}}
+          style={{
+            background: colorSide === "right" ? bgColor : null,
+            minHeight: `calc(100vh - ${totalPaddingToGive}px)`,
+          }}
         >
           <div className="lg:w-[600px] lg:pl-48">
-
             {/* For NutritionalInfo bydefault set to hidden*/}
             <div
               className="p-2 w-full space-y-2 pb-4 overflow-hidden hidden scale-0"
@@ -108,10 +116,16 @@ function Product({
               </div>
             </div>
 
-            <p className="text-xl cs:text-sm cs:font-bold text-neutral-600 font-bold" style={{color:descriptionColor}}>
+            <p
+              className="text-xl cs:text-sm cs:font-bold text-neutral-600 font-bold"
+              style={{ color: descriptionColor }}
+            >
               {description}
             </p>
-            <p className="text-2xl font-bold py-4 text-neutral-600" style={{color:availabilityColor}}>
+            <p
+              className="text-2xl font-bold py-4 text-neutral-600"
+              style={{ color: availabilityColor }}
+            >
               {availability}
             </p>
           </div>
@@ -142,7 +156,6 @@ function Product({
           </div>
         </div>
       </div>
-
     </>
   );
 }

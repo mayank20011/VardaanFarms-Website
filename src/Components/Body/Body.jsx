@@ -1,5 +1,4 @@
 import React from "react";
-import aboutUsImg from "../../img/aboutUsImg.png";
 import ProductSwiper from "../ProductSwiper/ProductSwiper";
 import team1 from "../../img/team1.jpg";
 import testimonial from "../../img/testimonial.png";
@@ -9,7 +8,12 @@ import Footer from "../Footer/Footer";
 import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
 import aboutUsHome from "../../img/aboutUsHome.png";
-
+import farmer1 from "../../img/farmer1.jpeg";
+import farmer2 from "../../img/farmer2.jpg";
+import farmer3 from "../../img/farmer3.webp";
+import farmer5 from "../../img/farmer5.jpg";
+import FarmCards from "../FarmCards/FarmCards";
+import clientCow2 from "../../img/clientCow2.jpg";
 function Body({ totalPaddingToGive }) {
   return (
     <>
@@ -34,7 +38,7 @@ function Body({ totalPaddingToGive }) {
             {/* for content */}
             <div className="md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
               <span className="text-green-600 text-2xl font-bold" id="aboutUs">
-                _____ About Us
+                About Us
               </span>
               <h1 className="text-5xl font-bold text-black" id="knowAbout">
                 Know About Our Farm And History
@@ -81,7 +85,7 @@ function Body({ totalPaddingToGive }) {
               className="text-green-600 text-2xl font-bold text-center"
               id="serviceSpan"
             >
-              ____ Services ____
+              Services
             </span>
             <h1
               className="text-5xl text-center text-black font-bold pb-6"
@@ -94,16 +98,17 @@ function Body({ totalPaddingToGive }) {
             <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full justify-evenly gap-12 ">
               {/* for milk */}
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0"
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0 shadow-lg"
                 id="milk"
               >
                 <img
-                  width="100"
-                  height="100"
-                  src="https://img.icons8.com/matisse/100/milk.png"
+                  width="80"
+                  height="80"
+                  src="https://img.icons8.com/?size=100&id=3tKbNQIe_DGA&format=png&color=000000"
                   alt="milk"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition z-0"
+                  className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition z-0"
                   loading="lazy"
+                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Milk</h1>
                 <p className="text-slate-400 font-bold">
@@ -115,16 +120,17 @@ function Body({ totalPaddingToGive }) {
 
               {/* for panner */}
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto"
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
                 id="paneer"
               >
                 <img
-                  width="100"
-                  height="100"
-                  src="https://img.icons8.com/plasticine/100/silken-tofu.png"
+                  width="80"
+                  height="80"
+                  src="https://img.icons8.com/?size=100&id=KlRkVThu4Uim&format=png&color=000000"
                   alt="silken-tofu"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
+                  className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
+                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Paneer</h1>
                 <p className="text-slate-400 font-bold">
@@ -136,16 +142,17 @@ function Body({ totalPaddingToGive }) {
 
               {/* for Curd */}
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto"
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
                 id="curd"
               >
                 <img
-                  width="100"
-                  height="100"
-                  src="https://img.icons8.com/stickers/100/yogurt.png"
+                  width="80"
+                  height="80"
+                  src="https://img.icons8.com/?size=100&id=QQlW3jD4qmhv&format=png&color=000000"
                   alt="yogurt"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
+                  className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
+                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Curd</h1>
                 <p className="text-slate-400 font-bold">
@@ -157,16 +164,17 @@ function Body({ totalPaddingToGive }) {
 
               {/* for Ghee */}
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto "
+                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
                 id="ghee"
               >
                 <img
-                  width="100"
-                  height="100"
+                  width="80"
+                  height="80"
                   src="https://img.icons8.com/dotty/80/jam.png"
                   alt="jam"
-                  className="absolute -top-[50px] left-0 cursor-pointer hover:scale-90 transition"
+                  className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
+                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Ghee</h1>
                 <p className="text-slate-400 font-bold">
@@ -189,7 +197,7 @@ function Body({ totalPaddingToGive }) {
             id="organicDairyServices"
             style={{filter:"drop-shadow(2px 2px 1px white)"}}
           >
-            ___ Organic Dairy Services ___
+            Organic Dairy Services
           </span>
           <h1
             className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto vs:text-2xl"
@@ -212,7 +220,7 @@ function Body({ totalPaddingToGive }) {
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8 ">
           <div className="xl:4/5 mx-auto flex flex-col justify-center items-center gap-8 ">
             <span className="text-2xl font-bold text-green-600">
-              ___ Shop ___
+              Shop
             </span>
             <h1 className="text-5xl font-bold text-black">Our Products</h1>
 
@@ -255,115 +263,17 @@ function Body({ totalPaddingToGive }) {
       <section className="bg-slate-100 py-12 pb-24">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8">
           <span className="text-green-600 text-2xl font-bold text-center">
-            ___ Team ___
+            Team
           </span>
           <h1 className="text-5xl font-bold text-black">Our Farmers</h1>
 
           {/* For Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between">
             {/* card-1 */}
-            <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
-              {/* img */}
-              <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
-              </div>
-
-              {/* icons */}
-              <div className="flex items-center justify-center w-full relative top-[-25px]">
-                <div className="flex gap-4">
-                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                </div>
-              </div>
-
-              {/* text */}
-              <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">
-                  Ben Stcoks
-                </h1>
-                <p className="font-bold text-neutral-400 text-center">
-                  Tractor Driver
-                </p>
-              </div>
-            </div>
-
-            {/* card-2 */}
-            <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
-              {/* img */}
-              <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
-              </div>
-
-              {/* icons */}
-              <div className="flex items-center justify-center w-full relative top-[-25px]">
-                <div className="flex gap-4">
-                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                </div>
-              </div>
-
-              {/* text */}
-              <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">
-                  Ben Stcoks
-                </h1>
-                <p className="font-bold text-neutral-400 text-center">
-                  Tractor Driver
-                </p>
-              </div>
-            </div>
-
-            {/* card-3 */}
-            <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
-              {/* img */}
-              <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
-              </div>
-
-              {/* icons */}
-              <div className="flex items-center justify-center w-full relative top-[-25px]">
-                <div className="flex gap-4">
-                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                </div>
-              </div>
-
-              {/* text */}
-              <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">
-                  Ben Stcoks
-                </h1>
-                <p className="font-bold text-neutral-400 text-center">
-                  Tractor Driver
-                </p>
-              </div>
-            </div>
-
-            {/* card-4 */}
-            <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out">
-              {/* img */}
-              <div className="rounded-xl">
-                <img src={team1} alt="" className="rounded-xl" loading="lazy" />
-              </div>
-
-              {/* icons */}
-              <div className="flex items-center justify-center w-full relative top-[-25px]">
-                <div className="flex gap-4">
-                  <i className="fa-brands fa-facebook-f px-5 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                  <i className="fa-brands fa-linkedin-in px-4 p-4 bg-slate rounded-full cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-black bg-green-600 text-white border-2"></i>
-                </div>
-              </div>
-
-              {/* text */}
-              <div className="pb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black text-center">
-                  Ben Stcoks
-                </h1>
-                <p className="font-bold text-neutral-400 text-center">
-                  Tractor Driver
-                </p>
-              </div>
-            </div>
+            <FarmCards img={farmer1} name={"Ramkishan Verma"} info={"Caretaker"}/>
+            <FarmCards img={farmer2} name={"Raju Kashyap"} info={"Milkman"}/>
+            <FarmCards img={farmer3} name={"Summitra Devi"} info={"Milkmaid"}/>
+            <FarmCards img={farmer5} name={"Narayan Singh"} info={"Caretaker"}/>
           </div>
         </div>
       </section>
@@ -374,14 +284,14 @@ function Body({ totalPaddingToGive }) {
           {/* for image and text */}
           <div className="flex gap-12 flex-col md:flex-row w-full">
             {/* for Photo */}
-            <div className="md:w-1/2">
-              <img src={testimonial} alt="Testimonial" loading="lazy" />
+            <div className="md:w-1/2 rounded-lg">
+              <img src={clientCow2} alt="Testimonial" loading="lazy" className="rounded-lg shadow-lg shadow-black" style={{border:"10px solid white"}}/>
             </div>
 
             {/* for text and swiper*/}
             <div className="flex flex-col gap-8 w-full md:w-1/2 lg:items-start ">
               <span className="text-green-600 text-2xl font-bold ">
-                ___ Review
+                Review
               </span>
               <h1 className="text-4xl sm:text-5xl font-bold">
                 What Client's Say
