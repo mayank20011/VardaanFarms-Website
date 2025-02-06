@@ -173,15 +173,16 @@ function Body({totalPaddingToGive}) {
 
       {/* for a photo */}
       <section className="py-12 md:py-24 bg-my-background bg-cover bg-center box-shadow-lg filter brightness-60">
-        <section className="w-full flex flex-col gap-12">
+        <section className="w-full flex flex-col gap-12 px-4">
           <span
             className="text-green-600 text-center text-2xl font-bold"
             id="organicDairyServices"
+            style={{filter:"drop-shadow(2px 2px 1px white)"}}
           >
             ___ Orgainc Dairy Services ___
           </span>
           <h1
-            className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto"
+            className="text-5xl text-center font-bold text-white md:w-4/5 mx-auto vs:text-2xl"
             id="organicDairyServicesH"
           >
             Delivering organic integrity to everyone, everywhere.
