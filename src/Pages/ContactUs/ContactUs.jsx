@@ -106,7 +106,7 @@ function ContactUs({totalPaddingToGive}) {
       </Helmet>
 
       <section className="bg-neutral-700 w-full min-h-screen" style={{paddingTop:`${totalPaddingToGive}px`, minHeight:`calc(100vh - ${totalPaddingToGive}px`}}>
-        <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex justify-center pt-4 gap-12 flex-col lg:flex-row">
+        <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex justify-center pt-6 gap-12 flex-col lg:flex-row">
           {/* Left-div */}
           <div className="lg:w-1/2 flex flex-col gap-6 justify-center">
             <span
