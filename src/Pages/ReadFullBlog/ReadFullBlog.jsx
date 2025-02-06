@@ -1,12 +1,17 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import BlogComponent from "../../Components/Blogs/BlogComponent.jsx";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 function ReadFullBlog({ totalPaddingToGive }) {
   const [id, setId] = useState(useParams().id);
   const navigate = useNavigate();
+  const [blogClicked, setBlogClicked] = useState("0");
+
+  useEffect(() => {
+    document.querySelector("#leftBlog").scrollTo(0, 0);
+  }, [blogClicked]);
 
   return (
     <div
@@ -20,18 +25,18 @@ function ReadFullBlog({ totalPaddingToGive }) {
         {/* for left blogs */}
 
         <div
-          className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md relative"
+          className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md relative scroll-smooth"
           style={{
-            scrollbarColor: "transparent transparent",
+            scrollbarColor: "green white",
             scrollbarWidth: "thin",
           }}
+          id="leftBlog"
         >
           <Link to={"/blogs"} className="fixed -translate-x-1/2">
             <i className="fa-solid fa-arrow-left text-white bg-black top-10 text-3xl p-2 rounded-md"></i>
           </Link>
 
-          {<BlogComponent id={id} setId={setId}/>}
-
+          {<BlogComponent id={id} setId={setId} setBlogClicked={setBlogClicked}/>}
         </div>
 
         {/* for right */}
@@ -50,6 +55,7 @@ function ReadFullBlog({ totalPaddingToGive }) {
               onClick={() => {
                 setId("001");
                 navigate(`/readFullBlog/001`, { replace: true });
+                setBlogClicked(1);
               }}
             >
               <h1 className="font-bold">Why A2 Desi Cow Milk</h1>
@@ -68,6 +74,7 @@ function ReadFullBlog({ totalPaddingToGive }) {
               onClick={() => {
                 setId("002");
                 navigate(`/readFullBlog/002`, { replace: true });
+                setBlogClicked(2);
               }}
             >
               <h1 className="font-bold">Enjoy Full Cream Milk Daily</h1>
@@ -86,6 +93,7 @@ function ReadFullBlog({ totalPaddingToGive }) {
               onClick={() => {
                 setId("003");
                 navigate(`/readFullBlog/003`, { replace: true });
+                setBlogClicked(3);
               }}
             >
               <h1 className="font-bold">Healthy & Tasty: Toned Milk</h1>
@@ -104,6 +112,7 @@ function ReadFullBlog({ totalPaddingToGive }) {
               onClick={() => {
                 setId("004");
                 navigate(`/readFullBlog/004`, { replace: true });
+                setBlogClicked(4);
               }}
             >
               <h1 className="font-bold">Light & Tasty: Double Toned Milk</h1>
@@ -122,6 +131,7 @@ function ReadFullBlog({ totalPaddingToGive }) {
               onClick={() => {
                 setId("005");
                 navigate(`/readFullBlog/005`, { replace: true });
+                setBlogClicked(5);
               }}
             >
               <h1 className="font-bold">Buffalo Milk: Rich & Nutritious</h1>
@@ -140,6 +150,7 @@ function ReadFullBlog({ totalPaddingToGive }) {
               onClick={() => {
                 setId("006");
                 navigate(`/readFullBlog/006`, { replace: true });
+                setBlogClicked(6);
               }}
             >
               <h1 className="font-bold">Sustainability On Dairy Farm</h1>
@@ -148,10 +159,8 @@ function ReadFullBlog({ totalPaddingToGive }) {
                 <p className="text-sm text-slate-600">Feb 4,2025</p>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
   );

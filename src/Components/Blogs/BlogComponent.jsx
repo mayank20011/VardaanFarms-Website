@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import blogData from "./BlogData.js";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-function BlogComponent({ id, setId }) {
-
-  const {id:textId} = useParams();
+function BlogComponent({ id, setId, setBlogClicked }) {
+  const { id: textId } = useParams();
   const data = blogData.find((obj) => obj._id == id);
   const navigate = useNavigate();
   const [lastDigit, setLastDigit] = useState(data._id[2]);
@@ -22,6 +21,7 @@ function BlogComponent({ id, setId }) {
     navigate(`/readFullBlog/${idString}`, { replace: true });
     setId(idString);
     setLastDigit(lastDigit);
+    setBlogClicked(lastDigit);
   }
 
   function prevBlog() {
@@ -35,6 +35,7 @@ function BlogComponent({ id, setId }) {
     navigate(`/readFullBlog/${idString}`, { replace: true });
     setId(idString);
     setLastDigit(lastDigit);
+    setBlogClicked(lastDigit);
   }
 
   return (
@@ -68,7 +69,9 @@ function BlogComponent({ id, setId }) {
           <p>{data.data.intro}</p>
           {data.data.pera.map((obj) => (
             <div key={obj.heading}>
-              <h3 className="text-xl underline text-green-600">{obj.heading}</h3>
+              <h3 className="text-xl underline text-green-600">
+                {obj.heading}
+              </h3>
               <p>{obj.info}</p>
             </div>
           ))}
