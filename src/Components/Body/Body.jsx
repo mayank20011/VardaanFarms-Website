@@ -28,7 +28,7 @@ function Body({ totalPaddingToGive }) {
       </section>
 
       {/* for about Us */}
-      <section className="w-full bg-slate-100 pt-28 md:pt-40 overflow-hidden pb-28">
+      <section className="w-full bg-slate-100 pt-12 md:pt-40 overflow-hidden pb-28">
         {/* This div is sort of container */}
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           {/* About Us */}
