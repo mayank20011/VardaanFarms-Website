@@ -2,7 +2,6 @@ import React from "react";
 import ProductSwiper from "../ProductSwiper/ProductSwiper";
 import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
 import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
-import Footer from "../Footer/Footer";
 import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
 import aboutUsHome from "../../img/aboutUsHome.png";

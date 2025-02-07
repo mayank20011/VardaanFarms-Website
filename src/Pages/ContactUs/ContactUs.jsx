@@ -179,7 +179,7 @@ function ContactUs({totalPaddingToGive}) {
           {/* form */}
           <form
             onSubmit={handleSubmit}
-            className="lg:w-1/2 bg-white w-full text-black px-3 py-8 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 lg:mt-6"
+            className="lg:w-1/2 bg-white w-full text-black px-3 sm:px-8 py-8 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 lg:mt-6"
             ref={form}
           >
             <h1 className="text-2xl sm:text-4xl font-bold text-green-600">

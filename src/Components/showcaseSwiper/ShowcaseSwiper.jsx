@@ -2,12 +2,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
-import img1 from "../../img/homeSwipper1.svg";
-import img2 from "../../img/homeSwipper2.svg";
-import img3 from "../../img/homeSwipper3.svg";
 import mobileSlide1 from "../../img/mobileSlider1.jpg";
 import mobileSlide2 from "../../img/mobileSlider2.jpg";
 import mobileSlide3 from "../../img/mobileSlider3.jpg";
+import pcSlider1 from "../../img/pcSlider1.jpg";
+import pcSlider2 from "../../img/pcSlider2.jpg";
+import pcSlider3 from "../../img/pcSlider3.jpg";
+
 function ShowcaseSwiper() {
   return (
     <>
@@ -22,7 +23,7 @@ function ShowcaseSwiper() {
         <SwiperSlide>
           <div className="relative w-full h-full">
             <img
-              src={img1}
+              src={pcSlider1}
               alt=""
               className="w-full h-full cursor-grab hidden md:block"
               loading="lazy"
@@ -41,7 +42,7 @@ function ShowcaseSwiper() {
         <SwiperSlide>
           <div className="relative w-full h-full">
             <img
-              src={img2}
+              src={pcSlider2}
               alt=""
               className="w-full h-full cursor-grab hidden md:block"
               loading="lazy"
@@ -59,7 +60,7 @@ function ShowcaseSwiper() {
         <SwiperSlide>
           <div className="relative w-full h-full">
             <img
-              src={img3}
+              src={pcSlider3}
               alt=""
               className="w-full h-full cursor-grab hidden md:block"
               loading="lazy"
