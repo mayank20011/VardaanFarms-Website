@@ -1,16 +1,13 @@
-import React, { useState } from "react";
 import blog1 from "../../img/blog1.jpg";
 import blog2 from "../../img/blog2.jpg";
 import blog3 from "../../img/blog3.jpg";
 import blog4 from "../../img/blog4.jpg";
 import blog5 from "../../img/blog5.jpg";
 import blog6 from "../../img/blog6.jpg";
-import Footer from "../../Components/Footer/Footer.jsx";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
 
-  const [showBlog, setShowBlog] = useState("001");
   return (
     <section className="bg-slate-100 text-black min-h-screen" id="blogPage">
       <div className="p-24 md:p-48 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex flex-col gap-6">
@@ -34,7 +31,7 @@ const Blogs = () => {
             <div className="relative">
               <img src={blog1} alt="" className="rounded-md" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
-                Dairy
+                Local
               </span>
             </div>
             <h1 className="text-xl font-bold">Why A2 Desi Cow Milk</h1>
@@ -58,7 +55,7 @@ const Blogs = () => {
             <div className="relative">
               <img src={blog2} alt="" className="rounded-md" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
-                Cheese
+                Energizer
               </span>
             </div>
             <h1 className="text-xl font-bold">Enjoy Full Cream Milk Daily</h1>
@@ -82,7 +79,7 @@ const Blogs = () => {
             <div className="relative">
               <img src={blog3} alt="" className="rounded-md" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
-                Markets
+                Digestable
               </span>
             </div>
             <h1 className="text-xl font-bold">Healthy and Tasty: Toned Milk</h1>
@@ -106,7 +103,7 @@ const Blogs = () => {
             <div className="relative">
               <img src={blog4} alt="" className="rounded-md" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
-                Milk
+                Low Fat
               </span>
             </div>
             <h1 className="text-xl font-bold">
@@ -132,7 +129,7 @@ const Blogs = () => {
             <div className="relative w-full">
               <img src={blog5} alt="" className="rounded-md w-full" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
-                Farm
+                Creamy
               </span>
             </div>
             <h1 className="text-xl font-bold">
@@ -158,7 +155,7 @@ const Blogs = () => {
             <div className="relative">
               <img src={blog6} alt="" className="rounded-md w-full" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
-                Organic
+                Dairy
               </span>
             </div>
             <h1 className="text-xl font-bold">
