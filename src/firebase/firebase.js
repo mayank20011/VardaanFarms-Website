@@ -1,17 +1,19 @@
-// firebase.js
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDT147Jy9DhUTIMpabM8LlnC5ABGG-EwVY",
-  authDomain: "vardaanfarmsformbackend.firebaseapp.com",
-  projectId: "vardaanfarmsformbackend",
-  storageBucket: "vardaanfarmsformbackend.firebasestorage.app",
-  messagingSenderId: "106605212496",
-  appId: "1:106605212496:web:24cf09c8bb4819be16b255",
-  measurementId: "G-PFBZGBVSF6",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  databaseURL: import.meta.env.VITE_databaseURL,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
+  measurementId: import.meta.env.VITE_measurementId,
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
