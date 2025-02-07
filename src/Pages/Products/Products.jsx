@@ -314,7 +314,6 @@ function Products({ totalPaddingToGive }) {
         />
       </section>
 
-      <Footer />
     </>
   );
 }

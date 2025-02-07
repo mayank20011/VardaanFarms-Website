@@ -235,7 +235,6 @@ function ContactUs({totalPaddingToGive}) {
         </div>
 
         <div className="border-t-2 border-dashed"></div>
-        <Footer />
       </section>
     </>
   );

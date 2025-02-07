@@ -129,8 +129,8 @@ const Blogs = () => {
 
           {/* blog-5 */}
           <article className="grid gap-4">
-            <div className="relative">
-              <img src={blog5} alt="" className="rounded-md" loading="lazy" />
+            <div className="relative w-full">
+              <img src={blog5} alt="" className="rounded-md w-full" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Farm
               </span>
@@ -156,7 +156,7 @@ const Blogs = () => {
           {/* bllog-6 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog6} alt="" className="rounded-md" loading="lazy" />
+              <img src={blog6} alt="" className="rounded-md w-full" loading="lazy" />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Organic
               </span>
@@ -180,7 +180,6 @@ const Blogs = () => {
           </article>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

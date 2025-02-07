@@ -12,7 +12,6 @@ import ef from "../../img/ef.png";
 import pasturization from "../../img/pasturization.png";
 import aboutUsBanner from "../../img/aboutUsBanner.png";
 import Footer from "../../Components/Footer/Footer.jsx";
-import aboutUs from "../../img/aboutUsImg.png";
 import clientCow from "../../img/clientCow.jpg";
 import ourMission from "../../img/ourMission.jpg";
 import ourVission from "../../img/ourVission.jpg";
@@ -332,8 +331,6 @@ function AboutUs({ totalPaddingToGive }) {
             />
           </div>
         </div>
-        {/* Footer */}
-        <Footer />
       </div>
     </>
   );

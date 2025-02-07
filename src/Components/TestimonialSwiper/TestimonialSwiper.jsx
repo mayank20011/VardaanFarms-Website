@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import leftQuote from "../../img/left-quote.png";
-import testimonial2 from "../../img/testimonial2.jpg";
 import priyaSharma from "../../img/priyaSharma.jpg";
 import poojaSingh from "../../img/poojaSingh.jpg";
 import snehaReddy from "../../img/snehaReddy.jpg";

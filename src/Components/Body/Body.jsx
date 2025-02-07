@@ -1,7 +1,5 @@
 import React from "react";
 import ProductSwiper from "../ProductSwiper/ProductSwiper";
-import team1 from "../../img/team1.jpg";
-import testimonial from "../../img/testimonial.png";
 import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
 import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
 import Footer from "../Footer/Footer";
@@ -308,9 +306,6 @@ function Body({ totalPaddingToGive }) {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 }

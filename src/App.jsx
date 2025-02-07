@@ -9,6 +9,7 @@ import Blogs from "./Pages/Blogs/Blogs.jsx";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollTop/ScrollTop.jsx";
 import ReadFullBlog from "./Pages/ReadFullBlog/ReadFullBlog.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -72,6 +73,7 @@ function App() {
           element={<ReadFullBlog totalPaddingToGive={headerHeight + navHeight}/>}
         />
       </Routes>
+      <Footer/>
     </main>
   );
 }
