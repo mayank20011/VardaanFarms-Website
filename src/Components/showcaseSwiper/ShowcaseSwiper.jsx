@@ -19,18 +19,6 @@ function ShowcaseSwiper() {
         modules={[Scrollbar, Autoplay]}
         className="w-full bg-slate-100"
       >
-        {/* <SwiperSlide className="">
-          <img src={img1} alt="" className="w-full h-full cursor-grab hidden md:block" loading="lazy"/>
-          <img src={mobileSlide1} alt="" className="w-full h-full cursor-grab md:hidden" loading="lazy"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img2} alt="" className="w-full h-full cursor-grab hidden md:block" loading="lazy"/>
-          <img src={mobileSlide2} alt="" className="w-full h-full cursor-grab md:hidden" loading="lazy"/>
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src={img3} alt="" className="w-full h-full cursor-grab hidden md:block" loading="lazy"/>
-        <img src={mobileSlide3} alt="" className="w-full h-full cursor-grab md:hidden" loading="lazy"/>
-        </SwiperSlide> */}
         <SwiperSlide>
           <div className="relative w-full h-full">
             <img
