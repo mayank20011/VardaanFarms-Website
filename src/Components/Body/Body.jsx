@@ -11,10 +11,9 @@ import farmer5 from "../../img/farmer5.jpg";
 import FarmCards from "../FarmCards/FarmCards";
 import clientCow2 from "../../img/clientCow2.jpg";
 import gfoFarm from "../../img/gfoFarm.png";
-function Body({ totalPaddingToGive }) {
+const Body = ({ totalPaddingToGive }) => {
   return (
     <>
-      {/* For Slider */}
       <section
         className="w-full bg-slate-100"
         style={
@@ -26,13 +25,9 @@ function Body({ totalPaddingToGive }) {
         <ShowcaseSwiper />
       </section>
 
-      {/* for about Us */}
       <section className="w-full bg-slate-100 pt-12 md:pt-40 overflow-hidden pb-28">
-        {/* This div is sort of container */}
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-          {/* About Us */}
           <section className="flex gap-12 flex-col md:flex-row">
-            {/* for content */}
             <div className="md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
               <span className="text-green-600 text-2xl font-bold" id="aboutUs">
                 About Us
@@ -48,7 +43,7 @@ function Body({ totalPaddingToGive }) {
                 livestock roams freely, providing the purest milk straight from
                 our farm to your home.
                 <br />
-                VardaanFarms was founded in 2014 by [Founder's Name]. Starting
+                VardaanFarms was founded in 2024 by [Founder's Name]. Starting
                 as a small family-run operation, we've grown while keeping our
                 core principles and quality intact. Our journey of love, hard
                 work, and progress has made us a trusted name in the dairy
@@ -56,7 +51,6 @@ function Body({ totalPaddingToGive }) {
               </p>
             </div>
 
-            {/* for image */}
             <div
               className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black"
               style={{ border: "10px solid white" }}
@@ -73,7 +67,6 @@ function Body({ totalPaddingToGive }) {
         </div>
       </section>
 
-      {/* For Services */}
       <section className="bg-white py-8">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           {/* Services */}
@@ -185,7 +178,6 @@ function Body({ totalPaddingToGive }) {
         </div>
       </section>
 
-      {/* for a photo */}
       <section className="py-12 md:py-24 bg-my-background bg-cover bg-center relative">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black opacity-50"></div>
         <section className="w-full flex flex-col gap-12 relative z-10 px-4">
@@ -212,7 +204,6 @@ function Body({ totalPaddingToGive }) {
         </section>
       </section>
 
-      {/* for products */}
       <section className="bg-white pb-12 overflow-x-hidden">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8 ">
           <div className="xl:4/5 mx-auto flex flex-col justify-center items-center gap-8 ">
@@ -256,7 +247,6 @@ function Body({ totalPaddingToGive }) {
         </div>
       </section>
 
-      {/* Teams */}
       <section className="bg-slate-100 py-12 pb-24">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8">
           <span className="text-green-600 text-2xl font-bold text-center">
@@ -264,7 +254,6 @@ function Body({ totalPaddingToGive }) {
           </span>
           <h1 className="text-5xl font-bold text-black">Our Farmers</h1>
 
-          {/* For Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between">
             {/* card-1 */}
             <FarmCards img={farmer1} name={"Ramkishan Verma"} info={"Caretaker"}/>
@@ -275,17 +264,13 @@ function Body({ totalPaddingToGive }) {
         </div>
       </section>
 
-      {/* Review */}
       <section className="bg-white">
         <div className=" max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
-          {/* for image and text */}
           <div className="flex gap-12 flex-col md:flex-row w-full">
-            {/* for Photo */}
             <div className="md:w-1/2 rounded-lg">
               <img src={clientCow2} alt="cows Grazing" loading="lazy" className="rounded-lg shadow-lg shadow-black" style={{border:"10px solid white"}}/>
             </div>
 
-            {/* for text and swiper*/}
             <div className="flex flex-col gap-8 w-full md:w-1/2 lg:items-start ">
               <span className="text-green-600 text-2xl font-bold ">
                 Review
@@ -299,7 +284,6 @@ function Body({ totalPaddingToGive }) {
             </div>
           </div>
 
-          {/* For sliding strip */}
           <div>
             <TestimonialSlide />
           </div>

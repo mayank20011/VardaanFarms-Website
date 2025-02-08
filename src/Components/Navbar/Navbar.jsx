@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../img/Vardanlogo.png";
 
-function Navbar({headerHeight}) {
+const Navbar = ({headerHeight}) => {
   const [active, setActive] = useState("home");
   const location = useLocation();
   const mobileNav = useRef(null);
@@ -32,14 +32,10 @@ function Navbar({headerHeight}) {
 
   return (
     <>
-      {/* for laptop */}
       <div className="bg-white py-2 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300 fixed w-full z-50" style={{top:`${headerHeight}px`}} id="nav">
-        {/* for desktop Navbar*/}
         <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
-          {/* For image */}
           <img src={logo} alt="vardaanfarms Logo" className="w-24" loading="lazy" />
 
-          {/* For Navlinks */}
           <ul className="flex gap-5">
             <li
               className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
@@ -84,9 +80,7 @@ function Navbar({headerHeight}) {
         </nav>
       </div>
 
-      {/* For mobile nav */}
       <div className="md:hidden text-black bg-transparent overflow-hidden" style={{height:"0px"}}>
-        {/* for mobile navbar */}
         <div className="w-full relative p-2 flex justify-center items-center top-[40px] z-30">
           <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-md fixed shadow-black">
             <img
@@ -114,7 +108,6 @@ function Navbar({headerHeight}) {
           </div>
         </div>
 
-        {/* for mobile nav slider */}
         <nav
           className="flex flex-col bg-white opacity-90 fixed top-0 min-h-screen w-[300px] transfor p-3 -translate-x-full transition duration-700 ease-in-out z-50"
           ref={mobileNav}

@@ -1,9 +1,8 @@
 import React from "react";
 
-function FarmCards({img, name, info}) {
+const FarmCards = ({img, name, info}) => {
   return (
     <div className="bg-white rounded-xl shadow-2xl hover:translate-y-[-20px] transition duration-300 ease-in-out flex flex-col gap-6">
-      {/* img */}
       <div className="rounded-xl overflow-hidden">
         <img
           src={img}
@@ -13,7 +12,6 @@ function FarmCards({img, name, info}) {
         />
       </div>
 
-      {/* text */}
       <div className="pb-10 flex flex-col gap-4">
         <h1 className="text-3xl font-bold text-black text-center">
           {name}

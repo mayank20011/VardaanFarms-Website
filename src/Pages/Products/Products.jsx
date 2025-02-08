@@ -16,9 +16,7 @@ import buffaloGhee from "../../img/buffaloGhee.png";
 import Product from "../../Components/Product/Product.jsx";
 import { Helmet } from "react-helmet-async";
 
-import Footer from "../../Components/Footer/Footer.jsx";
-
-function Products({ totalPaddingToGive }) {
+const Products = ({ totalPaddingToGive }) => {
   return (
     <>
       <Helmet>
@@ -89,7 +87,6 @@ function Products({ totalPaddingToGive }) {
         className="flex flex-col lg:space-y-0 space-y-8 md:pt-36 bg-white lg:pt-0"
         style={{ paddingTop: `${totalPaddingToGive}px` }}
       >
-        {/* Product-1 */}
         <Product
           name={"A2 Desi Cow Milk"}
           info={"Natural & Clean"}
@@ -105,7 +102,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-2 */}
         <Product
           name={"Full Cream Milk"}
           info={"Natural & Fresh"}
@@ -121,7 +117,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-3 */}
         <Product
           name={"Toned Milk"}
           info={"Balanced, Natural & Healthy"}
@@ -137,7 +132,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-4 */}
         <Product
           name={"Double Toned Milk"}
           info={"Light, Natural & Healthy"}
@@ -153,7 +147,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-5 */}
         <Product
           name={"Natural Cow Milk"}
           info={"Pure, Natural & Fresh"}
@@ -169,7 +162,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-6 */}
         <Product
           name={"Buffalo Milk"}
           info={"Rich, Natural & Nutritious"}
@@ -185,7 +177,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-7 */}
         <Product
           name={"Family Pack"}
           info={"Convenient, Natural & Fresh"}
@@ -201,7 +192,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-8 */}
         <Product
           name={"Double Toned Milk"}
           info={"Light, Natural & Healthy"}
@@ -217,7 +207,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-9 */}
         <Product
           name={"Butter Milk"}
           info={"Refreshing, Natural & Healthy"}
@@ -233,7 +222,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-10 */}
         <Product
           name={"Masala Chach"}
           info={"Spicy, Natural & Refreshing"}
@@ -249,7 +237,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-11 */}
         <Product
           name={"Slim Curd"}
           info={"Light Natural & Fresh"}
@@ -265,7 +252,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-12 */}
         <Product
           name={"Curd"}
           info={"Creamy, Natural & Pure"}
@@ -281,7 +267,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-13 */}
         <Product
           name={"A2 Desi Cow Ghee"}
           info={"Pure, Natural & Traditional"}
@@ -297,7 +282,6 @@ function Products({ totalPaddingToGive }) {
           totalPaddingToGive={totalPaddingToGive}
         />
 
-        {/* Product-14 */}
         <Product
           name={"Buffalo Ghee"}
           info={"Rich, Natural & Flavorful"}

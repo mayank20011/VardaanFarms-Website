@@ -1,5 +1,5 @@
 import React from "react";
-function Product({
+const Product = ({
   name,
   info,
   img,
@@ -10,14 +10,13 @@ function Product({
   descriptionColor,
   availabilityColor,
   totalPaddingToGive,
-}) {
+}) => {
   return (
     <>
       <div
         className="justify-center items-center relative bg-white text-black flex-col lg:flex-row pb-6 lg:pb-0 hidden lg:flex snap-start"
         style={{ minHeight: `calc(100vh - ${totalPaddingToGive}px)` }}
       >
-        {/* Left Side */}
         <div
           className={`lg:w-1/2 flex justify-center items-center w-11/12 mx-auto cs:justify-start`}
           style={{
@@ -38,7 +37,6 @@ function Product({
           </div>
         </div>
 
-        {/* image */}
         <img
           src={img}
           alt={name}
@@ -47,7 +45,6 @@ function Product({
           loading="lazy"
         />
 
-        {/* Right Side */}
         <div
           className="lg:w-1/2 flex justify-center items-center w-11/12 mx-auto p-4 mt-6 lg:mt-0 px-8 py-12"
           style={{
@@ -72,11 +69,8 @@ function Product({
         </div>
       </div>
 
-      {/* for small screens */}
       <div className={`block lg:hidden bg-white`}>
-        {/* Card */}
         <div className="bg-slate-100 rounded-md mx-auto w-4/5 sm:w-3/4 py-12 items-center shadow-lg shadow-black flex lg:hidden flex-col md:flex-row space-y-6 sm:space-y-0">
-          {/* left */}
           <div className="flex items-center md:-translate-x-[50px]">
             <img
               src={img}
@@ -87,7 +81,6 @@ function Product({
             />
           </div>
 
-          {/* right */}
           <div className="text-black cs:space-y-2 space-y-6 px-6">
             <p className="text-4xl font-bold cs:text-xl">{name}</p>
             <p className="text-xl cs:text-lg">{info}</p>

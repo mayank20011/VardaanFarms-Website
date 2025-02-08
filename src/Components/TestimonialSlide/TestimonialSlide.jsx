@@ -9,7 +9,7 @@ import client4 from "../../img/client-4.png";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
-function TestimonialSlide() {
+const TestimonialSlide = () => {
   return (
     <div className="w-full">
       <Swiper
@@ -20,7 +20,6 @@ function TestimonialSlide() {
         autoplay={{delay:2000}}
       >
 
-        {/* SLide-1 */}
         <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
             <img src={client1} alt="" className="w-36" loading="lazy"/>
@@ -28,7 +27,6 @@ function TestimonialSlide() {
           </div>
         </SwiperSlide>
 
-         {/* SLide-2 */}
          <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
             <img src={client2} alt="" className="w-36" loading="lazy"/>
@@ -36,7 +34,6 @@ function TestimonialSlide() {
           </div>
         </SwiperSlide>
 
-         {/* SLide-3 */}
          <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
             <img src={client3} alt="" className="w-36" loading="lazy"/>
@@ -44,7 +41,6 @@ function TestimonialSlide() {
           </div>
         </SwiperSlide>
 
-         {/* SLide-4 */}
          <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
             <img src={client4} alt="" className="w-36" loading="lazy"/>
@@ -52,7 +48,6 @@ function TestimonialSlide() {
           </div>
         </SwiperSlide>
         
-        {/* Slide-5 */}
         <SwiperSlide className="text-center text-black select-none">
           <div className="bg-white w-full flex flex-col items-center">
             <img src={client1} alt="" className="w-36" loading="lazy"/>

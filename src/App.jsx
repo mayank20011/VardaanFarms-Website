@@ -30,13 +30,10 @@ function App() {
       }
     };
 
-    // Initial calculation
     handleResize();
 
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Clean up event listener
     return () => {
       window.removeEventListener("resize", handleResize);
     };

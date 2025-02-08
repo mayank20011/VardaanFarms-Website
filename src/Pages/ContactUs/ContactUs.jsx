@@ -7,7 +7,7 @@ import { getDatabase, ref, set } from "firebase/database";
 import database from "../../firebase/firebase.js";
 import { useRef } from "react";
 
-function ContactUs({totalPaddingToGive}) {
+const ContactUs = ({totalPaddingToGive}) => {
   const form = useRef(null);
   function handleSubmit(e) {
     const dataToSend = {};
@@ -107,7 +107,6 @@ function ContactUs({totalPaddingToGive}) {
 
       <section className="bg-neutral-700 w-full min-h-screen" style={{paddingTop:`${totalPaddingToGive}px`, minHeight:`calc(100vh - ${totalPaddingToGive}px`}}>
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex justify-center gap-12 flex-col lg:flex-row pt-4 vs:pt-8">
-          {/* Left-div */}
           <div className="lg:w-1/2 flex flex-col gap-6 justify-center">
             <span
               className="text-xl font-bold text-green-600"
@@ -125,10 +124,8 @@ function ContactUs({totalPaddingToGive}) {
               below, and we'll get back to you as soon as possible.
             </p>
 
-            {/* for location mail and other */}
             <div className="grid gap-4 sm:grid-cols-2 border-b-2 pb-6">
 
-              {/* for email */}
               <div className="flex gap-2 items-center p-2">
                 <i className="fa-solid fa-envelope text-yellow-600 p-2 bg-white rounded-md h-fit"></i>
                 <div>
@@ -137,7 +134,6 @@ function ContactUs({totalPaddingToGive}) {
                 </div>
               </div>
 
-              {/* for phone */}
               <div className="flex gap-2 items-center p-2">
                 <i className="fa-solid fa-phone text-orange-600 p-2 bg-white rounded-md h-fit"></i>
                 <div>
@@ -146,7 +142,6 @@ function ContactUs({totalPaddingToGive}) {
                 </div>
               </div>
 
-              {/* location */}
               <div className="flex gap-2 items-center bg-white text-black py-2 rounded-lg px-2 shadow-sm shadow-white border border-neutral-700 md:col-span-2">
                 <i className="fa-solid fa-house text-green-600 p-2 bg-neutral-700 rounded-md h-fit"></i>
                 <div>
@@ -157,7 +152,6 @@ function ContactUs({totalPaddingToGive}) {
 
             </div>
 
-            {/* social media */}
             <div className="flex items-center gap-4 justify-start">
               <div className="flex gap-4">
                 <i className="fa-brands fa-facebook text-2xl hover:scale-90 transition cursor-pointer hover:opacity-90"></i>
@@ -168,13 +162,12 @@ function ContactUs({totalPaddingToGive}) {
             </div>
           </div>
 
-          {/* form */}
           <form
             onSubmit={handleSubmit}
-            className="lg:w-1/2 bg-white w-full text-black px-4 sm:px-8 py-6 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 lg:mt-6"
+            className="lg:w-1/2 bg-white w-full text-black px-3 sm:px-8 py-4 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 lg:mt-6"
             ref={form}
           >
-            <h1 className="text-2xl sm:text-4xl font-bold text-green-600">
+            <h1 className="text-3xl sm:text-4xl font-bold text-green-600">
               Leave A Message
             </h1>
             <p className="text-neutral-500">
@@ -184,7 +177,6 @@ function ContactUs({totalPaddingToGive}) {
             </p>
 
             <div className="grid gap-6 w-full">
-              {/* Name, phoneNo, Email, Subject */}
               <div className="grid gap-4 sm:grid-cols-2">
                 <input
                   type="text"

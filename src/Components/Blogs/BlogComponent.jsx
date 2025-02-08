@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-function BlogComponent({ id, setId, setBlogClicked }) {
+const BlogComponent = ({ id, setId, setBlogClicked }) =>{
   const { id: textId } = useParams();
   const data = blogData.find((obj) => obj._id == id);
   const navigate = useNavigate();
@@ -48,13 +48,12 @@ function BlogComponent({ id, setId, setBlogClicked }) {
       />
       <div className="flex flex-col gap-6 p-8 vs:gap-4 vs:p-4">
         <div className="flex gap-8">
-          {/* for date */}
+          
           <div className="flex  items-center gap-2">
             <i className="fa-solid fa-clock"></i>
             <p className="text-green-600 font-bold">{data.data.date}</p>
           </div>
 
-          {/* for admin */}
           <div className="flex  items-center gap-2">
             <i className="fa-solid fa-user"></i>
             <p className="text-green-600 font-bold">Admin</p>
@@ -82,7 +81,7 @@ function BlogComponent({ id, setId, setBlogClicked }) {
         </div>
 
         <div className="border-t border-green-600 py-12 mt-6 flex gap-6 flex-col md:flex-row crbs:flex-col">
-          {/* for tags */}
+
           <div className="flex gap-2 grow sm:items-center flex-col sm:flex-row crbs:flex-col crbs:items-start">
             <h1 className="text-xl font-bold">Tags: </h1>
             <div className="sm:flex gap-2 grid grid-cols-2">
@@ -96,15 +95,11 @@ function BlogComponent({ id, setId, setBlogClicked }) {
               ))}
             </div>
           </div>
-          {/* for links */}
+
           <div className="flex gap-4 items-center text-xl">
-            {/* Facebook */}
             <i className="fa-brands fa-facebook-f cursor-pointer hover:text-slate-500 transition"></i>
-            {/* Twitter */}
             <i className="fa-brands fa-twitter cursor-pointer hover:text-slate-500 transition"></i>
-            {/* instagram */}
             <i className="fa-brands fa-instagram cursor-pointer hover:text-slate-500 transition"></i>
-            {/* linkedin */}
             <i className="fa-brands fa-linkedin-in cursor-pointer hover:text-slate-500 transition"></i>
           </div>
         </div>

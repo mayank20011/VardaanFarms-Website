@@ -10,7 +10,7 @@ import pcSlider2 from "../../img/pcSlider2.jpg";
 import pcSlider3 from "../../img/pcSlider3.jpg";
 import { Link } from "react-router-dom";
 
-function ShowcaseSwiper() {
+const ShowcaseSwiper = () => {
   return (
     <>
       <Swiper
@@ -35,7 +35,6 @@ function ShowcaseSwiper() {
               className="w-full h-full cursor-grab md:hidden brightness-50"
               loading="lazy"
             />
-            {/* Shadow overlay */}
             <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div>
           </div>
           <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">

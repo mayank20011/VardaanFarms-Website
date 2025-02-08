@@ -5,7 +5,7 @@ import BlogComponent from "../../Components/Blogs/BlogComponent.jsx";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-function ReadFullBlog({ totalPaddingToGive }) {
+const ReadFullBlog = ({ totalPaddingToGive }) => {
 
   const seoData = {
     "001": {
@@ -58,12 +58,11 @@ function ReadFullBlog({ totalPaddingToGive }) {
         <meta name="description" content={seoData[id]?.description} />
         <meta name="keywords" content={seoData[id]?.keywords} />
       </Helmet>
-      
+
       <div
         className="md:pb-4 md:pt-8 flex gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex-row"
-        style={{ height: `calc(100vh - ${totalPaddingToGive}px)` }} // Ensure to add "px" to the padding value
+        style={{ height: `calc(100vh - ${totalPaddingToGive}px)` }} 
       >
-        {/* for left blogs */}
 
         <div
           className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md relative scroll-smooth"

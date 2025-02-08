@@ -14,7 +14,7 @@ import ourMission from "../../img/ourMission.jpg";
 import ourVission from "../../img/ourVission.jpg";
 import ourFarmCowMilking from "../../img/ourFarmCowMilking.jpg";
 
-function AboutUs({ totalPaddingToGive }) {
+const AboutUs = ({ totalPaddingToGive }) => {
   return (
     <>
       <div
@@ -22,7 +22,6 @@ function AboutUs({ totalPaddingToGive }) {
         style={{ paddingTop: `${totalPaddingToGive}px` }}
       >
         <div className="pt-14 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 border-2 border-slate-100 min-h-screen text-black pb-24">
-          {/* key points */}
           <div className="w-full grid md:grid-cols-2 xl:grid-cols-4 gap-4">
             <div className="text-center shadow-md shadow-black p-4 rounded-lg">
               <img src={truck} alt="truck" className="mx-auto" loading="lazy" />
@@ -68,9 +67,7 @@ function AboutUs({ totalPaddingToGive }) {
             </div>
           </div>
 
-          {/* About Us */}
           <div className="pt-24 flex gap-12 flex-col lg:flex-row">
-            {/* Text */}
             <div className="lg:w-1/2 flex flex-col gap-6 lg:pr-6">
               <span className="text-left text-2xl text-green-600 font-bold ">
                 About VardaanFarms
@@ -97,7 +94,6 @@ function AboutUs({ totalPaddingToGive }) {
               </div>
             </div>
 
-            {/* img */}
             <div
               className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-md shadow-black overflow-hidden h-fit"
               style={{ border: "5px solid #d1d5db" }}
@@ -112,7 +108,6 @@ function AboutUs({ totalPaddingToGive }) {
           </div>
         </div>
 
-        {/* Our Best Services */}
         <div className="bg-white py-24">
           <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex flex-col gap-12">
             <h1 className="sm:text-center font-bold text-4xl md:text-5xl">
@@ -127,9 +122,7 @@ function AboutUs({ totalPaddingToGive }) {
               quality and care that goes into each product we deliver.
             </p>
 
-            {/* for cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Card-1 */}
               <div className="hover:shadow-lg hover:shadow-black p-8 bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img
                   src={Pipeline}
@@ -146,7 +139,6 @@ function AboutUs({ totalPaddingToGive }) {
                 </p>
               </div>
 
-              {/* card-2 */}
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img src={growth} alt="growth" className="w-[100px]" loading="lazy" />
                 <h1 className="text-xl font-bold">High Production</h1>
@@ -158,7 +150,6 @@ function AboutUs({ totalPaddingToGive }) {
                 </p>
               </div>
 
-              {/* card-3 */}
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img
                   src={recipee}
@@ -175,7 +166,6 @@ function AboutUs({ totalPaddingToGive }) {
                 </p>
               </div>
 
-              {/* Card-4 */}
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img src={house} alt="House" className="w-[100px]" loading="lazy" />
                 <h1 className="text-xl font-bold">Recomended For Babies</h1>
@@ -187,7 +177,6 @@ function AboutUs({ totalPaddingToGive }) {
                 </p>
               </div>
 
-              {/* Card-5 */}
               <div className="p-8 hover:shadow-lg hover:shadow-black bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img src={ef} alt="Environmet Friendly" className="w-[100px]" loading="lazy" />
                 <h1 className="text-xl font-bold">Environmentally Friendly</h1>
@@ -199,7 +188,6 @@ function AboutUs({ totalPaddingToGive }) {
                 </p>
               </div>
 
-              {/* Card-6 */}
               <div className="p-8 bg-slate-100  hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img
                   src={pasturization}
@@ -217,7 +205,6 @@ function AboutUs({ totalPaddingToGive }) {
               </div>
             </div>
 
-            {/* For Numbers */}
             <div className="p-8 bg-green-200 grid sm:grid-cols-2 lg:grid-cols-4 shadow-lg shadow-slate-200">
               <div className="flex flex-col p-4 w-fit mx-auto">
                 <h1 className="text-5xl text-center">
@@ -252,7 +239,6 @@ function AboutUs({ totalPaddingToGive }) {
 
         <div className="bg-slate-100 w-full">
           <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex flex-col gap-12 py-12">
-            {/* top */}
             <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center">
               <div className="md:w-2/5 flex flex-col gap-6">
                 <div className="flex gap-4 text-5xl md:text-center">
@@ -288,7 +274,6 @@ function AboutUs({ totalPaddingToGive }) {
               />
             </div>
 
-            {/* bottom */}
             <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center">
               <img
                 src={ourVission}

@@ -34,9 +34,7 @@ const Blogs = () => {
           for everyone.
         </p>
 
-        {/* for blogs */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {/* blog-1 */}
           <article className="grid gap-4">
             <div className="relative">
               <img
@@ -65,7 +63,6 @@ const Blogs = () => {
             </Link>
           </article>
 
-          {/* blog-2 */}
           <article className="grid gap-4" onClick={() => setBlogs(item)}>
             <div className="relative">
               <img
@@ -94,7 +91,6 @@ const Blogs = () => {
             </Link>
           </article>
 
-          {/* blog-3 */}
           <article className="grid gap-4">
             <div className="relative">
               <img
@@ -123,7 +119,6 @@ const Blogs = () => {
             </Link>
           </article>
 
-          {/* blog-4 */}
           <article className="grid gap-4">
             <div className="relative">
               <img
@@ -154,7 +149,6 @@ const Blogs = () => {
             </Link>
           </article>
 
-          {/* blog-5 */}
           <article className="grid gap-4">
             <div className="relative w-full">
               <img
@@ -185,7 +179,6 @@ const Blogs = () => {
             </Link>
           </article>
 
-          {/* bllog-6 */}
           <article className="grid gap-4">
             <div className="relative">
               <img

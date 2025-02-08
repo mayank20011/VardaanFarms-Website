@@ -1,5 +1,3 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import leftQuote from "../../img/left-quote.png";
 import priyaSharma from "../../img/priyaSharma.jpg";
@@ -9,13 +7,11 @@ import rahulMehta from "../../img/rahulMehta.jpg";
 import anilKumar from "../../img/anilKumar.jpeg";
 import amitJoshi from "../../img/amitJoshi.jpeg";
 
-// Import Swiper styles
 import "swiper/css/pagination";
 
-// import required modules
 import { Pagination, Autoplay } from "swiper/modules";
 
-function TestimonialSwiper() {
+const TestimonialSwiper = () => {
   return (
     <div className="w-full">
       <Swiper
@@ -28,7 +24,6 @@ function TestimonialSwiper() {
         className=""
       >
         <SwiperSlide className="w-full select-none cursor-pointer">
-          {/* Card */}
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt={"left Quote Image"} loading="lazy"/>
             <p className="text-xl text-neutral-600 text-left">
@@ -51,7 +46,6 @@ function TestimonialSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-full select-none cursor-pointer">
-          {/* Card */}
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy"/>
             <p className="text-xl text-neutral-600 text-left">
@@ -74,7 +68,6 @@ function TestimonialSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-full select-none cursor-pointer">
-          {/* Card */}
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy"/>
             <p className="text-xl text-neutral-600 text-left">
@@ -97,7 +90,6 @@ function TestimonialSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-full select-none cursor-pointer">
-          {/* Card */}
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy"/>
             <p className="text-xl text-neutral-600 text-left">
@@ -120,7 +112,6 @@ function TestimonialSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-full select-none cursor-pointer">
-          {/* Card */}
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy"/>
             <p className="text-xl text-neutral-600 text-left">
@@ -143,7 +134,6 @@ function TestimonialSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-full select-none cursor-pointer">
-          {/* Card */}
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy"/>
             <p className="text-xl text-neutral-600 text-left">
