@@ -66,7 +66,7 @@ function App() {
           element={<Blogs totalPaddingToGive={headerHeight + navHeight} />}
         />
         <Route
-          path="/readFullBlog/:id"
+          path="blog/:id"
           element={<ReadFullBlog totalPaddingToGive={headerHeight + navHeight}/>}
         />
       </Routes>

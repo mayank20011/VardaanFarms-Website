@@ -94,7 +94,7 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
               }`}
               onClick={() => {
                 setId("001");
-                navigate(`/readFullBlog/001`, { replace: true });
+                navigate(`/blog/001`, { replace: true });
                 setBlogClicked(1);
               }}
             >
@@ -113,7 +113,7 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
               }`}
               onClick={() => {
                 setId("002");
-                navigate(`/readFullBlog/002`, { replace: true });
+                navigate(`/blog/002`, { replace: true });
                 setBlogClicked(2);
               }}
             >
@@ -132,7 +132,7 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
               }`}
               onClick={() => {
                 setId("003");
-                navigate(`/readFullBlog/003`, { replace: true });
+                navigate(`/blog/003`, { replace: true });
                 setBlogClicked(3);
               }}
             >
@@ -151,7 +151,7 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
               }`}
               onClick={() => {
                 setId("004");
-                navigate(`/readFullBlog/004`, { replace: true });
+                navigate(`/blog/004`, { replace: true });
                 setBlogClicked(4);
               }}
             >
@@ -170,7 +170,7 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
               }`}
               onClick={() => {
                 setId("005");
-                navigate(`/readFullBlog/005`, { replace: true });
+                navigate(`/blog/005`, { replace: true });
                 setBlogClicked(5);
               }}
             >
@@ -189,7 +189,7 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
               }`}
               onClick={() => {
                 setId("006");
-                navigate(`/readFullBlog/006`, { replace: true });
+                navigate(`/blog/006`, { replace: true });
                 setBlogClicked(6);
               }}
             >

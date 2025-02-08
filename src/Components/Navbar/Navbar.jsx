@@ -17,7 +17,7 @@ const Navbar = ({headerHeight}) => {
       setActive("aboutUs");
     } else if (path.includes("/contactUs")) {
       setActive("contactUs");
-    } else if (path.includes("/blogs") || path.includes("/readFullBlog")) {
+    } else if (path.includes("/blogs") || path.includes("/blog")) {
       setActive("blogs");
     }
   }, [location.pathname]);

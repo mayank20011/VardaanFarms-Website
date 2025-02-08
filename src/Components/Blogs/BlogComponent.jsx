@@ -18,7 +18,7 @@ const BlogComponent = ({ id, setId, setBlogClicked }) =>{
       lastDigit = 1;
     }
     const idString = `00${lastDigit}`;
-    navigate(`/readFullBlog/${idString}`, { replace: true });
+    navigate(`/blog/${idString}`, { replace: true });
     setId(idString);
     setLastDigit(lastDigit);
     setBlogClicked(lastDigit);
@@ -32,7 +32,7 @@ const BlogComponent = ({ id, setId, setBlogClicked }) =>{
       lastDigit--;
     }
     const idString = `00${lastDigit}`;
-    navigate(`/readFullBlog/${idString}`, { replace: true });
+    navigate(`/blog/${idString}`, { replace: true });
     setId(idString);
     setLastDigit(lastDigit);
     setBlogClicked(lastDigit);

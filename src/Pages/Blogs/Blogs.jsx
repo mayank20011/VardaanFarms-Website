@@ -54,7 +54,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${"001"}`}
+              to={`/blog/${"001"}`}
               onClick={() => {
                 setBlogToView(1);
               }}
@@ -82,7 +82,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${"002"}`}
+              to={`/blog/${"002"}`}
               onClick={() => {
                 setBlogToView(2);
               }}
@@ -110,7 +110,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${"003"}`}
+              to={`/blog/${"003"}`}
               onClick={() => {
                 setBlogToView(3);
               }}
@@ -140,7 +140,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${"004"}`}
+              to={`/blog/${"004"}`}
               onClick={() => {
                 setBlogToView(4);
               }}
@@ -170,7 +170,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${"005"}`}
+              to={`/blog/${"005"}`}
               onClick={() => {
                 setBlogToView(5);
               }}
@@ -200,7 +200,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${"006"}`}
+              to={`/blog/${"006"}`}
               onClick={() => {
                 setBlogToView(6);
               }}
