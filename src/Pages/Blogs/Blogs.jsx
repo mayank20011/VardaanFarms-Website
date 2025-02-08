@@ -20,7 +20,7 @@ const Blogs = () => {
           content="Dairy Farm, A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Sustainable Dairy Farming"
         />
       </Helmet>
-      <div className="p-24 md:p-48 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex flex-col gap-6">
+      <div className="p-24 md:p-44 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex flex-col gap-6">
         <span className="md:text-center font-bold text-green-600 text-lg">
           Our Blogs
         </span>

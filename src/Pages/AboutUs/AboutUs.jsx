@@ -100,12 +100,12 @@ function AboutUs({ totalPaddingToGive }) {
             {/* img */}
             <div
               className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-md shadow-black overflow-hidden h-fit"
-              style={{ border: "10px solid white" }}
+              style={{ border: "5px solid #d1d5db" }}
             >
               <img
                 src={ourFarmCowMilking}
                 alt="cow standing in field"
-                className="rounded-2xl hover:scale-110 transition"
+                className="hover:scale-110 transition"
                 loading="lazy"
               />
             </div>
@@ -237,7 +237,7 @@ function AboutUs({ totalPaddingToGive }) {
                 <h1 className="text-5xl text-center">
                   15 <span className="text-orange-600">+</span>
                 </h1>
-                <h3 className="text-xl">Years Of Experience</h3>
+                <h3 className="text-xl">States Covered</h3>
               </div>
 
               <div className="flex flex-col p-4 w-fit mx-auto">
@@ -284,7 +284,7 @@ function AboutUs({ totalPaddingToGive }) {
                 alt="sleeping Calf"
                 className="md:w-2/5 rounded-3xl shadow-md shadow-black"
                 loading="lazy"
-                style={{ border: "10px solid white" }}
+                style={{ border: "5px solid #d1d5db" }}
               />
             </div>
 
@@ -295,7 +295,7 @@ function AboutUs({ totalPaddingToGive }) {
                 alt="calf staring"
                 className="md:w-2/5 rounded-3xl shadow-md shadow-black"
                 loading="lazy"
-                style={{ border: "10px solid white" }}
+                style={{ border: "5px solid #d1d5db" }}
               />
               <div className="md:w-2/5 flex flex-col gap-6">
                 <div className="flex gap-4 text-5xl md:text-center">
