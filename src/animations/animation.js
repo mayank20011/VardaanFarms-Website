@@ -253,4 +253,20 @@ window.addEventListener("load", () => {
   //   })
   // })
   
+//   const slide1Tl = gsap.timeline();
+  
+//    slide1Tl.from("#slide1h1",{
+//     opacity:0,
+//     y:60,
+//     duration:0.3,
+//    })
+//    slide1Tl.from("#slide1p",{
+//     opacity:0,
+//     y:60,
+//     duration:0.3,
+//    })
+//   slide1Tl.from("#slide1btn",{
+//     scale:0,
+//     duration:0.3,
+//   })
 });
