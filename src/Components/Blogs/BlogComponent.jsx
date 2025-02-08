@@ -110,7 +110,7 @@ function BlogComponent({ id, setId, setBlogClicked }) {
         </div>
       </div>
 
-      <div className="relative flex lg:hidden items-center text-black z-30 bg-white w-fit mx-auto pb-12">
+      <div className="relative flex lg:hidden items-center text-black z-10 bg-transparent w-fit mx-auto pb-12">
         <img
           src="https://img.icons8.com/?size=100&id=42477&format=png&color=000000"
           alt="arrow-left"
