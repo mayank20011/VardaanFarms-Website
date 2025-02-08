@@ -7,7 +7,7 @@ function FarmCards({img, name, info}) {
       <div className="rounded-xl overflow-hidden">
         <img
           src={img}
-          alt=""
+          alt={`${name}'s image`}
           className="rounded-xl w-full shadow-sm shadow-black transition hover:scale-105"
           loading="lazy"
         />

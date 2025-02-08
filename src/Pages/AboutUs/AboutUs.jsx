@@ -3,7 +3,6 @@ import truck from "../../img/truck.png";
 import healthy from "../../img/healthy2.png";
 import tag from "../../img/Tag.png";
 import support from "../../img/Support.png";
-import ourFarm from "../../img/farmR.jpg";
 import Pipeline from "../../img/Pipeline.png";
 import growth from "../../img/growth.png";
 import recipee from "../../img/recipee.png";
@@ -11,10 +10,9 @@ import house from "../../img/house.png";
 import ef from "../../img/ef.png";
 import pasturization from "../../img/pasturization.png";
 import aboutUsBanner from "../../img/aboutUsBanner.png";
-import Footer from "../../Components/Footer/Footer.jsx";
-import clientCow from "../../img/clientCow.jpg";
 import ourMission from "../../img/ourMission.jpg";
 import ourVission from "../../img/ourVission.jpg";
+import ourFarmCowMilking from "../../img/ourFarmCowMilking.jpg";
 
 function AboutUs({ totalPaddingToGive }) {
   return (
@@ -39,7 +37,7 @@ function AboutUs({ totalPaddingToGive }) {
             <div className="text-center shadow-md shadow-black p-4 rounded-lg">
               <img
                 src={healthy}
-                alt=""
+                alt="love Sign"
                 className="mx-auto"
                 style={{ width: "100px" }}
                 loading="lazy"
@@ -52,7 +50,7 @@ function AboutUs({ totalPaddingToGive }) {
             </div>
 
             <div className="text-center shadow-md shadow-black p-4 rounded-lg">
-              <img src={tag} alt="" className="mx-auto" loading="lazy" />
+              <img src={tag} alt="tag" className="mx-auto" loading="lazy" />
               <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
               <p className="text-slate-500 font-bold text-sm">
                 We promise reliable service and timely delivery, so you always
@@ -61,7 +59,7 @@ function AboutUs({ totalPaddingToGive }) {
             </div>
 
             <div className="text-center shadow-md shadow-black p-4 rounded-lg">
-              <img src={support} alt="" className="mx-auto" loading="lazy" />
+              <img src={support} alt="customer Support" className="mx-auto" loading="lazy" />
               <h1 className="font-bold text-xl">24/7 Customer Support</h1>
               <p className="text-slate-500 font-bold text-sm">
                 Our friendly customer support team is available around the clock
@@ -101,12 +99,12 @@ function AboutUs({ totalPaddingToGive }) {
 
             {/* img */}
             <div
-              className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-md shadow-black overflow-hidden"
+              className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-md shadow-black overflow-hidden h-fit"
               style={{ border: "10px solid white" }}
             >
               <img
-                src={clientCow}
-                alt=""
+                src={ourFarmCowMilking}
+                alt="cow standing in field"
                 className="rounded-2xl hover:scale-110 transition"
                 loading="lazy"
               />
@@ -117,7 +115,7 @@ function AboutUs({ totalPaddingToGive }) {
         {/* Our Best Services */}
         <div className="bg-white py-24">
           <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex flex-col gap-12">
-            <h1 className="sm:text-center font-bold text-5xl">
+            <h1 className="sm:text-center font-bold text-4xl md:text-5xl">
               Our Best Vardaan Service
             </h1>
 
@@ -135,7 +133,7 @@ function AboutUs({ totalPaddingToGive }) {
               <div className="hover:shadow-lg hover:shadow-black p-8 bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img
                   src={Pipeline}
-                  alt=""
+                  alt="Milk Preservation"
                   className="w-[100px]"
                   loading="lazy"
                 />
@@ -150,7 +148,7 @@ function AboutUs({ totalPaddingToGive }) {
 
               {/* card-2 */}
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-                <img src={growth} alt="" className="w-[100px]" loading="lazy" />
+                <img src={growth} alt="growth" className="w-[100px]" loading="lazy" />
                 <h1 className="text-xl font-bold">High Production</h1>
                 <p className="text-neutral-700">
                   Our farm is equipped with modern facilities that help us
@@ -164,7 +162,7 @@ function AboutUs({ totalPaddingToGive }) {
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img
                   src={recipee}
-                  alt=""
+                  alt="Recipe"
                   className="w-[100px]"
                   loading="lazy"
                 />
@@ -179,7 +177,7 @@ function AboutUs({ totalPaddingToGive }) {
 
               {/* Card-4 */}
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-                <img src={house} alt="" className="w-[100px]" loading="lazy" />
+                <img src={house} alt="House" className="w-[100px]" loading="lazy" />
                 <h1 className="text-xl font-bold">Recomended For Babies</h1>
                 <p className="text-neutral-700">
                   Our dairy products are safe and packed with essential
@@ -191,7 +189,7 @@ function AboutUs({ totalPaddingToGive }) {
 
               {/* Card-5 */}
               <div className="p-8 hover:shadow-lg hover:shadow-black bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-                <img src={ef} alt="" className="w-[100px]" loading="lazy" />
+                <img src={ef} alt="Environmet Friendly" className="w-[100px]" loading="lazy" />
                 <h1 className="text-xl font-bold">Environmentally Friendly</h1>
                 <p className="text-neutral-700">
                   We believe in eco-friendly farming practices that protect
@@ -205,7 +203,7 @@ function AboutUs({ totalPaddingToGive }) {
               <div className="p-8 bg-slate-100  hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
                 <img
                   src={pasturization}
-                  alt=""
+                  alt="Pasturization"
                   className="w-[100px]"
                   loading="lazy"
                 />
@@ -283,7 +281,7 @@ function AboutUs({ totalPaddingToGive }) {
               </div>
               <img
                 src={ourMission}
-                alt=""
+                alt="sleeping Calf"
                 className="md:w-2/5 rounded-3xl shadow-md shadow-black"
                 loading="lazy"
                 style={{ border: "10px solid white" }}
@@ -294,7 +292,7 @@ function AboutUs({ totalPaddingToGive }) {
             <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center">
               <img
                 src={ourVission}
-                alt=""
+                alt="calf staring"
                 className="md:w-2/5 rounded-3xl shadow-md shadow-black"
                 loading="lazy"
                 style={{ border: "10px solid white" }}
@@ -325,7 +323,7 @@ function AboutUs({ totalPaddingToGive }) {
 
             <img
               src={aboutUsBanner}
-              alt=""
+              alt="VardaanFarms Description Banner"
               className="rounded-3xl"
               loading="lazy"
             />

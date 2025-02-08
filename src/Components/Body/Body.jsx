@@ -4,13 +4,13 @@ import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
 import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
 import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
-import aboutUsHome from "../../img/aboutUsHome.png";
 import farmer1 from "../../img/farmer1.jpeg";
 import farmer2 from "../../img/farmer2.jpg";
 import farmer3 from "../../img/farmer3.webp";
 import farmer5 from "../../img/farmer5.jpg";
 import FarmCards from "../FarmCards/FarmCards";
 import clientCow2 from "../../img/clientCow2.jpg";
+import gfoFarm from "../../img/gfoFarm.png";
 function Body({ totalPaddingToGive }) {
   return (
     <>
@@ -62,8 +62,8 @@ function Body({ totalPaddingToGive }) {
               style={{ border: "10px solid white" }}
             >
               <img
-                src={aboutUsHome}
-                alt="AboutUsImg"
+                src={gfoFarm}
+                alt="cow Image"
                 className="w-full rounded-xl filter brightness-75"
                 id="sinceImg"
                 loading="lazy"
@@ -102,7 +102,7 @@ function Body({ totalPaddingToGive }) {
                   width="80"
                   height="80"
                   src="https://img.icons8.com/?size=100&id=3tKbNQIe_DGA&format=png&color=000000"
-                  alt="milk"
+                  alt="milk Icon"
                   className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition z-0"
                   loading="lazy"
                   // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
@@ -124,7 +124,7 @@ function Body({ totalPaddingToGive }) {
                   width="80"
                   height="80"
                   src="https://img.icons8.com/?size=100&id=KlRkVThu4Uim&format=png&color=000000"
-                  alt="silken-tofu"
+                  alt="panner Icon"
                   className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
                   // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
@@ -146,7 +146,7 @@ function Body({ totalPaddingToGive }) {
                   width="80"
                   height="80"
                   src="https://img.icons8.com/?size=100&id=QQlW3jD4qmhv&format=png&color=000000"
-                  alt="yogurt"
+                  alt="Curd Icon"
                   className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
                   // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
@@ -168,7 +168,7 @@ function Body({ totalPaddingToGive }) {
                   width="80"
                   height="80"
                   src="https://img.icons8.com/dotty/80/jam.png"
-                  alt="jam"
+                  alt="Ghee Jar Icon"
                   className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
                   // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
@@ -282,7 +282,7 @@ function Body({ totalPaddingToGive }) {
           <div className="flex gap-12 flex-col md:flex-row w-full">
             {/* for Photo */}
             <div className="md:w-1/2 rounded-lg">
-              <img src={clientCow2} alt="Testimonial" loading="lazy" className="rounded-lg shadow-lg shadow-black" style={{border:"10px solid white"}}/>
+              <img src={clientCow2} alt="cows Grazing" loading="lazy" className="rounded-lg shadow-lg shadow-black" style={{border:"10px solid white"}}/>
             </div>
 
             {/* for text and swiper*/}

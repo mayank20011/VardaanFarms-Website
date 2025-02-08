@@ -41,7 +41,7 @@ function Product({
         {/* image */}
         <img
           src={img}
-          alt="Product Image"
+          alt={name}
           className="lg:absolute w-72 hover:scale-105 transition"
           style={{ filter: "drop-shadow(0 16px 22px rgba(0, 0, 0))" }}
           loading="lazy"
@@ -56,65 +56,6 @@ function Product({
           }}
         >
           <div className="lg:w-[600px] lg:pl-48">
-            {/* For NutritionalInfo bydefault set to hidden*/}
-            <div
-              className="p-2 w-full space-y-2 pb-4 overflow-hidden hidden scale-0"
-              id="nutritionalInfo"
-            >
-              {/* heading */}
-              <div className="flex justify-between border-b-2 border-b-black">
-                <span>Nutritional Facts (100 gm)</span>
-                <span className="text-2xl cursor-pointer" id="closeNf">
-                  -
-                </span>
-              </div>
-
-              {/* body */}
-              <div className="w-full">
-                {/* Energy */}
-                <div className="flex justify-between">
-                  <span>Total Energy</span>
-                  <span>{}K cal</span>
-                </div>
-
-                {/* Carbs */}
-                <div className="flex justify-between">
-                  <span>Total Carbohydrate</span>
-                  <span>{} g</span>
-                </div>
-
-                {/* Protein */}
-                <div className="flex justify-between">
-                  <span>Total Protein</span>
-                  <span>{} g</span>
-                </div>
-
-                {/* Fat */}
-                <div className="flex justify-between">
-                  <span>Total Fat</span>
-                  <span>{} g</span>
-                </div>
-
-                {/* Calcium */}
-                <div className="flex justify-between">
-                  <span>Calcium</span>
-                  <span>{} mg</span>
-                </div>
-
-                {/* Saturated Fat */}
-                <div className="flex justify-between">
-                  <span>Saturated Fat</span>
-                  <span>{} g</span>
-                </div>
-
-                {/* SNF */}
-                <div className="flex justify-between">
-                  <span>SNF (Min)</span>
-                  <span>{} %</span>
-                </div>
-              </div>
-            </div>
-
             <p
               className="text-xl cs:text-sm cs:font-bold text-neutral-600 font-bold"
               style={{ color: descriptionColor }}

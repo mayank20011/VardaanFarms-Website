@@ -5,11 +5,21 @@ import blog4 from "../../img/blog4.jpg";
 import blog5 from "../../img/blog5.jpg";
 import blog6 from "../../img/blog6.jpg";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 const Blogs = () => {
-
   return (
     <section className="bg-slate-100 text-black min-h-screen" id="blogPage">
+      <Helmet>
+        <title>Our Blogs - Dairy Farm Insights</title>
+        <meta
+          name="description"
+          content="Explore a variety of topics about dairy farming, from maintaining a safe and sustainable environment to producing delicious and nutritious dairy products. Join us to learn more about A2 Desi Cow Milk, Full Cream Milk, Toned Milk, and more."
+        />
+        <meta
+          name="keywords"
+          content="Dairy Farm, A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Sustainable Dairy Farming"
+        />
+      </Helmet>
       <div className="p-24 md:p-48 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex flex-col gap-6">
         <span className="md:text-center font-bold text-green-600 text-lg">
           Our Blogs
@@ -29,7 +39,12 @@ const Blogs = () => {
           {/* blog-1 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog1} alt="" className="rounded-md" loading="lazy" />
+              <img
+                src={blog1}
+                alt="Cow Heard Staring at camera"
+                className="rounded-md"
+                loading="lazy"
+              />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Local
               </span>
@@ -41,7 +56,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${'001'}`}
+              to={`/readFullBlog/${"001"}`}
               onClick={() => {
                 setBlogToView(1);
               }}
@@ -53,7 +68,12 @@ const Blogs = () => {
           {/* blog-2 */}
           <article className="grid gap-4" onClick={() => setBlogs(item)}>
             <div className="relative">
-              <img src={blog2} alt="" className="rounded-md" loading="lazy" />
+              <img
+                src={blog2}
+                alt="Indian Tea Stall"
+                className="rounded-md"
+                loading="lazy"
+              />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Energizer
               </span>
@@ -65,7 +85,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${'002'}`}
+              to={`/readFullBlog/${"002"}`}
               onClick={() => {
                 setBlogToView(2);
               }}
@@ -77,7 +97,12 @@ const Blogs = () => {
           {/* blog-3 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog3} alt="" className="rounded-md" loading="lazy" />
+              <img
+                src={blog3}
+                alt="Kesar Doodh"
+                className="rounded-md"
+                loading="lazy"
+              />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Digestable
               </span>
@@ -89,7 +114,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${'003'}`}
+              to={`/readFullBlog/${"003"}`}
               onClick={() => {
                 setBlogToView(3);
               }}
@@ -101,7 +126,12 @@ const Blogs = () => {
           {/* blog-4 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog4} alt="" className="rounded-md" loading="lazy" />
+              <img
+                src={blog4}
+                alt="Indian Culture"
+                className="rounded-md"
+                loading="lazy"
+              />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Low Fat
               </span>
@@ -115,7 +145,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${'004'}`}
+              to={`/readFullBlog/${"004"}`}
               onClick={() => {
                 setBlogToView(4);
               }}
@@ -127,7 +157,12 @@ const Blogs = () => {
           {/* blog-5 */}
           <article className="grid gap-4">
             <div className="relative w-full">
-              <img src={blog5} alt="" className="rounded-md w-full" loading="lazy" />
+              <img
+                src={blog5}
+                alt="Buffalo Heard"
+                className="rounded-md w-full"
+                loading="lazy"
+              />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Creamy
               </span>
@@ -141,7 +176,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${'005'}`}
+              to={`/readFullBlog/${"005"}`}
               onClick={() => {
                 setBlogToView(5);
               }}
@@ -153,7 +188,12 @@ const Blogs = () => {
           {/* bllog-6 */}
           <article className="grid gap-4">
             <div className="relative">
-              <img src={blog6} alt="" className="rounded-md w-full" loading="lazy" />
+              <img
+                src={blog6}
+                alt="Cows Sitting and Staring at camera"
+                className="rounded-md w-full"
+                loading="lazy"
+              />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Dairy
               </span>
@@ -167,7 +207,7 @@ const Blogs = () => {
             </p>
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
-              to={`/readFullBlog/${'006'}`}
+              to={`/readFullBlog/${"006"}`}
               onClick={() => {
                 setBlogToView(6);
               }}

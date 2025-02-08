@@ -127,12 +127,13 @@ function ContactUs({totalPaddingToGive}) {
 
             {/* for location mail and other */}
             <div className="grid gap-4 sm:grid-cols-2 border-b-2 pb-6">
-              {/* location */}
-              <div className="flex gap-2 items-center bg-white text-black py-2 rounded-lg px-2 shadow-sm shadow-white border border-neutral-700">
-                <i className="fa-solid fa-house text-green-600 p-2 bg-neutral-700 rounded-md h-fit"></i>
+
+              {/* for email */}
+              <div className="flex gap-2 items-center p-2">
+                <i className="fa-solid fa-envelope text-yellow-600 p-2 bg-white rounded-md h-fit"></i>
                 <div>
-                  <h1 className="font-bold">Location</h1>
-                  <p>Gurugram India</p>
+                  <h1 className="font-bold">Email</h1>
+                  <p>hello@vardaanfarms.com</p>
                 </div>
               </div>
 
@@ -145,28 +146,19 @@ function ContactUs({totalPaddingToGive}) {
                 </div>
               </div>
 
-              {/* for email */}
-              <div className="flex gap-2 items-center p-2">
-                <i className="fa-solid fa-envelope text-yellow-600 p-2 bg-white rounded-md h-fit"></i>
+              {/* location */}
+              <div className="flex gap-2 items-center bg-white text-black py-2 rounded-lg px-2 shadow-sm shadow-white border border-neutral-700 md:col-span-2">
+                <i className="fa-solid fa-house text-green-600 p-2 bg-neutral-700 rounded-md h-fit"></i>
                 <div>
-                  <h1 className="font-bold">Email</h1>
-                  <p>hello@vardaanfarms.com</p>
+                  <h1 className="font-bold">Location</h1>
+                  <p>Office No-19 StarTower Sec-30 Gurugram India</p>
                 </div>
               </div>
 
-              {/* for work */}
-              <div className="flex gap-2 items-center p-2">
-                <i className="fa-solid fa-clock text-blue-600 p-2 bg-white rounded-md h-fit"></i>
-                <div>
-                  <h1 className="font-bold">Work Hours</h1>
-                  <p>8:00 am - 6:00 pm</p>
-                </div>
-              </div>
             </div>
 
             {/* social media */}
-            <div className="flex items-center">
-              <h5 className="grow text-2xl font-bold">Social Media :</h5>
+            <div className="flex items-center gap-4 justify-start">
               <div className="flex gap-4">
                 <i className="fa-brands fa-facebook text-2xl hover:scale-90 transition cursor-pointer hover:opacity-90"></i>
                 <i className="fa-brands fa-instagram text-2xl hover:scale-90 transition cursor-pointer hover:opacity-90"></i>
@@ -179,7 +171,7 @@ function ContactUs({totalPaddingToGive}) {
           {/* form */}
           <form
             onSubmit={handleSubmit}
-            className="lg:w-1/2 bg-white w-full text-black px-3 sm:px-8 py-8 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 lg:mt-6"
+            className="lg:w-1/2 bg-white w-full text-black px-4 sm:px-8 py-6 sm:py-12 rounded-lg flex flex-col gap-4 sm:gap-8 shadow-lg shadow-black mb-8 lg:mt-6"
             ref={form}
           >
             <h1 className="text-2xl sm:text-4xl font-bold text-green-600">

@@ -37,7 +37,7 @@ function Navbar({headerHeight}) {
         {/* for desktop Navbar*/}
         <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
           {/* For image */}
-          <img src={logo} alt="logo" className="w-24" loading="lazy" />
+          <img src={logo} alt="vardaanfarms Logo" className="w-24" loading="lazy" />
 
           {/* For Navlinks */}
           <ul className="flex gap-5">

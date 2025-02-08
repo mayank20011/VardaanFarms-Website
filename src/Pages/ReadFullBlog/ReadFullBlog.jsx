@@ -3,8 +3,43 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import BlogComponent from "../../Components/Blogs/BlogComponent.jsx";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function ReadFullBlog({ totalPaddingToGive }) {
+
+  const seoData = {
+    "001": {
+      title: "Why A2 Desi Cow Milk - Dairy Farm Insights",
+      description: "Learn about the benefits of A2 Desi Cow Milk and why it is a healthier choice for your diet. Discover how it differs from regular milk and its advantages.",
+      keywords: "A2 Desi Cow Milk, Dairy Farm, Healthy Milk, Desi Cows"
+    },
+    "002": {
+      title: "Enjoy Full Cream Milk Daily - Dairy Farm Insights",
+      description: "Discover the rich and creamy taste of Full Cream Milk and how it can enhance your daily diet. Learn about its nutritional benefits and uses.",
+      keywords: "Full Cream Milk, Rich Milk, Creamy Milk, Dairy Farm"
+    },
+    "003": {
+      title: "Healthy & Tasty: Toned Milk - Dairy Farm Insights",
+      description: "Explore the benefits of Toned Milk, a healthy and tasty option for those looking for a balanced diet. Learn about its nutritional value and uses.",
+      keywords: "Toned Milk, Healthy Milk, Balanced Diet, Dairy Farm"
+    },
+    "004": {
+      title: "Light & Tasty: Double Toned Milk - Dairy Farm Insights",
+      description: "Learn about Double Toned Milk, a lighter choice that doesn't compromise on taste. Discover its benefits and why it is a great option for your diet.",
+      keywords: "Double Toned Milk, Light Milk, Tasty Milk, Dairy Farm"
+    },
+    "005": {
+      title: "Buffalo Milk: Rich & Nutritious - Dairy Farm Insights",
+      description: "Discover the rich and creamy texture of Buffalo Milk and its nutritional benefits. Learn why you should consider adding it to your diet.",
+      keywords: "Buffalo Milk, Rich Milk, Nutritious Milk, Dairy Farm"
+    },
+    "006": {
+      title: "Sustainability On Dairy Farm - Dairy Farm Insights",
+      description: "Explore how dairy farms can adopt sustainable practices to protect the environment while providing high-quality dairy products.",
+      keywords: "Sustainability, Dairy Farm, Eco-Friendly, Sustainable Farming"
+    }
+  };
+
   const [id, setId] = useState(useParams().id);
   const navigate = useNavigate();
   const [blogClicked, setBlogClicked] = useState("0");
@@ -18,6 +53,12 @@ function ReadFullBlog({ totalPaddingToGive }) {
       className="min-h-screen w-full bg-slate-100"
       style={{ paddingTop: `${totalPaddingToGive}px` }}
     >
+      <Helmet>
+        <title>{seoData[id]?.title}</title>
+        <meta name="description" content={seoData[id]?.description} />
+        <meta name="keywords" content={seoData[id]?.keywords} />
+      </Helmet>
+      
       <div
         className="md:pb-4 md:pt-8 flex gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex-row"
         style={{ height: `calc(100vh - ${totalPaddingToGive}px)` }} // Ensure to add "px" to the padding value

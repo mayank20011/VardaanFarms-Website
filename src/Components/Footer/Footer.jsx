@@ -12,7 +12,7 @@ function Footer() {
           <div className="flex flex-col gap-4 text-sm">
             {/* img and text */}
             <div className="flex gap-4 items-center">
-              <img src="https://img.icons8.com/?size=100&id=101713&format=png&color=000000" alt="" loading="lazy" className="w-16"/>
+              <img src="https://img.icons8.com/?size=100&id=101713&format=png&color=000000" alt="cow Image" loading="lazy" className="w-16"/>
               <span
                 className="text-3xl font-bold"
                 style={{ filter: "drop-shadow(2px 2px 0px rgba(0, 0, 0, 1))" }}
@@ -26,14 +26,14 @@ function Footer() {
             <div>
               {/* for mail */}
               <div className="flex gap-4 items-center">
-                <img src="https://img.icons8.com/?size=100&id=xLIkjgcmFOsC&format=png&color=000000" alt="" className="w-12" loading="lazy"/>
+                <img src="https://img.icons8.com/?size=100&id=xLIkjgcmFOsC&format=png&color=000000" alt="mail Icon" className="w-12" loading="lazy"/>
                 <p className="hover:scale-110 transition-all hover:text-green-600 cursor-pointer">
                   hello@vardaanfarms.com
                 </p>
               </div>
               {/* for location */}
               <div className="flex gap-4 items-center">
-                <img src="https://img.icons8.com/?size=100&id=PZTTDl8ML4vy&format=png&color=000000" alt="" className="w-12" loading="lazy"/>
+                <img src="https://img.icons8.com/?size=100&id=PZTTDl8ML4vy&format=png&color=000000" alt="Location Icon" className="w-12" loading="lazy"/>
                 <p className="hover:text-green-600 transition hover:scale-110">
                   Gurugram India
                 </p>
@@ -75,7 +75,7 @@ function Footer() {
         </div>
         <div className="w-full border-t border-white">
           <p className="pt-12 text-center">
-            &copy; 2014 Vardaan Farms | All rights Reserved
+            &copy; 2024 Vardaan Farms | All rights Reserved
           </p>
         </div>
       </div>

@@ -25,13 +25,13 @@ function ShowcaseSwiper() {
           <div className="relative w-full h-full">
             <img
               src={pcSlider1}
-              alt=""
+              alt="Cows Grazing in farm"
               className="w-full h-full cursor-grab hidden md:block brightness-50"
               loading="lazy"
             />
             <img
               src={mobileSlide1}
-              alt=""
+              alt="Cow and Calf Staring at camera"
               className="w-full h-full cursor-grab md:hidden brightness-50"
               loading="lazy"
             />
@@ -69,13 +69,13 @@ function ShowcaseSwiper() {
           <div className="relative w-full h-full">
             <img
               src={pcSlider2}
-              alt=""
+              alt="cow Heard"
               className="w-full h-full cursor-grab hidden md:block brightness-50"
               loading="lazy"
             />
             <img
               src={mobileSlide2}
-              alt=""
+              alt="Cow Portrait looking somewhere else"
               className="w-full h-full cursor-grab md:hidden brightness-50"
               loading="lazy"
             />
@@ -107,13 +107,13 @@ function ShowcaseSwiper() {
           <div className="relative w-full h-full">
             <img
               src={pcSlider3}
-              alt=""
+              alt="cow Heard Grazing and onw cow looking at camera"
               className="w-full h-full cursor-grab hidden md:block brightness-50"
               loading="lazy"
             />
             <img
               src={mobileSlide3}
-              alt=""
+              alt="cow Looking Dead in cameraman eyes"
               className="w-full h-full cursor-grab md:hidden brightness-50"
               loading="lazy"
             />
@@ -147,9 +147,4 @@ function ShowcaseSwiper() {
 
 export default ShowcaseSwiper;
 
-// Slide 1: Fresh Farm Milk Our cows graze on lush green pastures, producing milk that's pure and wholesome. Straight from our farm to your table, enjoy the taste of freshness in every sip.
-
-// Slide 2: Nutritious Dairy Products From creamy yogurt to rich butter, our dairy products are crafted with care. We ensure quality and nutrition in every bite, making your meals healthier and tastier.
-
-// Slide 3: Sustainable Farming At our dairy farm, we prioritize sustainability. Our eco-friendly practices help protect the environment while providing you with the best dairy products.
 
