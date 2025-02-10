@@ -275,9 +275,9 @@ const Body = ({ totalPaddingToGive }) => {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <TestimonialSlide />
-          </div>
+          </div> */}
         </div>
       </section>
     </>
