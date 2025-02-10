@@ -27,8 +27,8 @@ const Body = ({ totalPaddingToGive }) => {
 
       <section className="w-full bg-slate-100 pt-12 md:pt-40 overflow-hidden pb-28">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-          <section className="flex gap-12 flex-col md:flex-row">
-            <div className="md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
+          <section className="flex gap-12 flex-col md:flex-row tab:flex-col">
+            <div className="md:w-1/2 flex flex-col gap-8 order-2 md:order-1 tab:w-full">
               <span className="text-green-600 text-2xl font-bold" id="aboutUs">
                 About Us
               </span>
@@ -52,7 +52,7 @@ const Body = ({ totalPaddingToGive }) => {
             </div>
 
             <div
-              className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black"
+              className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black tab:w-full"
               style={{ border: "10px solid white" }}
             >
               <img
@@ -257,12 +257,12 @@ const Body = ({ totalPaddingToGive }) => {
 
       <section className="bg-white">
         <div className=" max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
-          <div className="flex gap-12 flex-col md:flex-row w-full">
-            <div className="md:w-1/2 rounded-lg">
+          <div className="flex gap-12 flex-col md:flex-row w-full tab:flex-col">
+            <div className="md:w-1/2 rounded-lg tab:w-full">
               <img src={clientCow2} alt="cows Grazing" loading="lazy" className="rounded-lg shadow-lg shadow-black" style={{border:"10px solid white"}}/>
             </div>
 
-            <div className="flex flex-col gap-8 w-full md:w-1/2 lg:items-start ">
+            <div className="flex flex-col gap-8 w-full md:w-1/2 lg:items-start tab:w-full">
               <span className="text-green-600 text-2xl font-bold ">
                 Review
               </span>
