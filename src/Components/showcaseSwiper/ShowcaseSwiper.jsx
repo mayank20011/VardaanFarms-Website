@@ -41,12 +41,12 @@ const ShowcaseSwiper = () => {
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
               <div className="md:w-1/2 flex flex-col gap-6">
                 <h1
-                  className="text-white text-xl md:text-5xl font-bold"
+                  className="text-white text-3xl md:text-5xl font-bold"
                   id="slide1h1"
                 >
                   Fresh Farm Milk
                 </h1>
-                <p className="text-sm md:text-lg" id="slide1p">
+                <p className="text-lg md:text-lg" id="slide1p">
                   Our cows graze on lush green pastures, producing milk that's
                   pure and wholesome. Straight from our farm to your table,
                   enjoy the taste of freshness in every sip.
@@ -83,10 +83,10 @@ const ShowcaseSwiper = () => {
           <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
               <div className="md:w-1/2 flex flex-col gap-6">
-                <h1 className="text-white text-xl md:text-5xl font-bold">
+                <h1 className="text-white text-3xl md:text-5xl font-bold">
                   Nutritious Dairy Products
                 </h1>
-                <p className="text-sm md:text-lg">
+                <p className="text-lg md:text-lg">
                   From creamy yogurt to rich butter, our dairy products are
                   crafted with care. We ensure quality and nutrition in every
                   bite, making your meals healthier and tastier.
@@ -121,10 +121,10 @@ const ShowcaseSwiper = () => {
           <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
               <div className="md:w-1/2 flex flex-col gap-6">
-                <h1 className="text-white text-xl md:text-5xl font-bold">
+                <h1 className="text-white text-3xl md:text-5xl font-bold">
                   Sustainable Farming
                 </h1>
-                <p className="text-sm md:text-lg">
+                <p className="text-lg md:text-lg">
                   At our dairy farm, we prioritize sustainability. Our
                   eco-friendly practices help protect the environment while
                   providing you with the best dairy products.
