@@ -18,7 +18,7 @@ const Product = ({
         style={{ minHeight: `calc(100vh - ${totalPaddingToGive}px)` }}
       >
         <div
-          className={`lg:w-1/2 flex justify-center items-center w-11/12 mx-auto cs:justify-start`}
+          className={`lg:w-1/2 flex justify-center items-center w-11/12 mx-auto cs:justify-start border-2`}
           style={{
             background: colorSide === "left" ? bgColor : null,
             minHeight: `calc(100vh - ${totalPaddingToGive}px)`,
@@ -69,7 +69,7 @@ const Product = ({
         </div>
       </div>
 
-      <div className={`block lg:hidden bg-white`}>
+      <div className={`block lg:hidden bg-white pb-6`}>
         <div className="bg-slate-100 rounded-md mx-auto w-4/5 sm:w-3/4 py-12 items-center shadow-lg shadow-black flex lg:hidden flex-col md:flex-row space-y-6 sm:space-y-0">
           <div className="flex items-center md:-translate-x-[50px]">
             <img
