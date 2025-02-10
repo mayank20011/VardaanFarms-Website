@@ -25,7 +25,7 @@ const Body = ({ totalPaddingToGive }) => {
         <ShowcaseSwiper />
       </section>
 
-      <section className="w-full bg-slate-100 pt-12 md:pt-40 overflow-hidden pb-28">
+      <section className="w-full bg-slate-100 pt-12 md:pt-16 overflow-hidden pb-16">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           <section className="flex gap-12 flex-col md:flex-row tab:flex-col">
             <div className="md:w-1/2 flex flex-col gap-8 order-2 md:order-1 tab:w-full">
