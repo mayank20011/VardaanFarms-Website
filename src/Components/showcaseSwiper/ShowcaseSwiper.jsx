@@ -39,9 +39,9 @@ const ShowcaseSwiper = () => {
           </div>
           <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-              <div className="md:w-1/2 flex flex-col gap-6">
+              <div className="md:w-1/2 flex flex-col gap-6 tab:w-3/4">
                 <h1
-                  className="text-white text-3xl md:text-5xl font-bold"
+                  className="text-white text-3xl md:text-5xl font-bold tab:text-4xl"
                   id="slide1h1"
                 >
                   Fresh Farm Milk
@@ -82,8 +82,8 @@ const ShowcaseSwiper = () => {
           </div>
           <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-              <div className="md:w-1/2 flex flex-col gap-6">
-                <h1 className="text-white text-3xl md:text-5xl font-bold">
+              <div className="md:w-1/2 flex flex-col gap-6 tab:w-3/4">
+                <h1 className="text-white text-3xl md:text-5xl font-bold tab:text-4xl">
                   Nutritious Dairy Products
                 </h1>
                 <p className="text-lg md:text-lg">
@@ -120,8 +120,8 @@ const ShowcaseSwiper = () => {
           </div>
           <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-              <div className="md:w-1/2 flex flex-col gap-6">
-                <h1 className="text-white text-3xl md:text-5xl font-bold">
+              <div className="md:w-1/2 flex flex-col gap-6 tab:w-3/4">
+                <h1 className="text-white text-3xl md:text-5xl font-bold tab:text-4xl">
                   Sustainable Farming
                 </h1>
                 <p className="text-lg md:text-lg">

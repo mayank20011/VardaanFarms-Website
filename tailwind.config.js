@@ -9,7 +9,8 @@ export default {
       screens:{
         'cs': {'max':'780px'},
         'crbs' : {'max':'1360px', 'min':'1024px'},
-        'vs' : {'max':'500px'}
+        'vs' : {'max':'500px'},
+        'tab' : {'min':'768px', 'max':'920px'}
       },
       backgroundImage: { 'my-background': "url('/src/img/homepagebg.png')", },
     },
