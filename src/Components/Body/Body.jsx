@@ -6,7 +6,7 @@ import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
 import farmer1 from "../../img/farmer1.jpeg";
 import farmer2 from "../../img/farmer2.jpg";
-import farmer3 from "../../img/farmer3.webp";
+import farmer3 from "../../img/farmer3.jpg";
 import farmer5 from "../../img/farmer5.jpg";
 import FarmCards from "../FarmCards/FarmCards";
 import clientCow2 from "../../img/clientCow2.jpg";
