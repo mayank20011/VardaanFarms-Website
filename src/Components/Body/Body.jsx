@@ -32,7 +32,7 @@ const Body = ({ totalPaddingToGive }) => {
               <span className="text-green-600 text-2xl font-bold" id="aboutUs">
                 About Us
               </span>
-              <h1 className="text-4xl font-bold text-black" id="knowAbout">
+              <h1 className="text-4xl md:text-5xl font-bold text-black" id="knowAbout">
                 Know About Our Farm And History
               </h1>
               <p className="text-slate-500 text-xl" id="aboutUsP">
