@@ -61,25 +61,23 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
 
       <div
         className="md:pb-4 md:pt-8 flex gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex-row"
-        style={{ height: `calc(100vh - ${totalPaddingToGive}px)` }} 
       >
 
         <div
-          className="grow w-full h-full overflow-y-auto bg-white rounded-md shadow-md relative scroll-smooth"
+          className="grow w-full h-fit overflow-y-auto bg-white rounded-md shadow-md relative scroll-smooth mb-6"
           style={{
             scrollbarColor: "green white",
             scrollbarWidth: "thin",
           }}
           id="leftBlog"
         >
-          <Link to={"/blogs"} className="fixed -translate-x-1/2">
+          <Link to={"/blogs"} className="absolute">
             <i className="fa-solid fa-arrow-left text-white bg-black top-10 text-3xl p-2 rounded-md"></i>
           </Link>
 
           {<BlogComponent id={id} setId={setId} setBlogClicked={setBlogClicked}/>}
         </div>
 
-        {/* for right */}
         <div className="w-[400px] h-fit p-4 bg-white hidden flex-col gap-4 shadow-lg rounded-md lg:flex">
           <h1 className="font-bold underline-offset-8 underline">All Blogs</h1>
           <div

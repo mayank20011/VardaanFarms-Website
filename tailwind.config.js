@@ -10,7 +10,7 @@ export default {
         'cs': {'max':'780px'},
         'crbs' : {'max':'1360px', 'min':'1024px'},
         'vs' : {'max':'500px'},
-        'tab' : {'min':'768px', 'max':'920px'},
+        'tab' : {'min':'768px', 'max':'935px'},
         'bmd': {'max':'768px'}
       },
       backgroundImage: { 'my-background': "url('/src/img/homepagebg.png')", },

@@ -80,32 +80,9 @@ const BlogComponent = ({ id, setId, setBlogClicked }) =>{
           </div>
         </div>
 
-        <div className="border-t border-green-600 py-12 mt-6 flex gap-6 flex-col md:flex-row crbs:flex-col">
-
-          <div className="flex gap-2 grow sm:items-center flex-col sm:flex-row crbs:flex-col crbs:items-start">
-            <h1 className="text-xl font-bold">Tags: </h1>
-            <div className="sm:flex gap-2 grid grid-cols-2">
-              {data.data.tags.map((tag) => (
-                <span
-                  className="bg-green-600 text-white px-4 py-2 rounded-md font-bold text-center"
-                  key={tag}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex gap-4 items-center text-xl">
-            <i className="fa-brands fa-facebook-f cursor-pointer hover:text-slate-500 transition"></i>
-            <i className="fa-brands fa-twitter cursor-pointer hover:text-slate-500 transition"></i>
-            <i className="fa-brands fa-instagram cursor-pointer hover:text-slate-500 transition"></i>
-            <i className="fa-brands fa-linkedin-in cursor-pointer hover:text-slate-500 transition"></i>
-          </div>
-        </div>
       </div>
 
-      <div className="relative flex lg:hidden items-center text-black z-10 bg-transparent w-fit mx-auto pb-12">
+      <div className="relative flex lg:hidden items-center text-black z-10 bg-transparent w-fit mx-auto pb-6">
         <img
           src="https://img.icons8.com/?size=100&id=42477&format=png&color=000000"
           alt="arrow-left"

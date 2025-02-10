@@ -239,8 +239,8 @@ const AboutUs = ({ totalPaddingToGive }) => {
 
         <div className="bg-slate-100 w-full">
           <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex flex-col gap-12 py-12">
-            <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center">
-              <div className="md:w-2/5 flex flex-col gap-6">
+            <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center tab:flex-col">
+              <div className="md:w-2/5 flex flex-col gap-6 tab:w-full">
                 <div className="flex gap-4 text-5xl md:text-center">
                   <i
                     className="fa-solid fa-check text-green-600"
@@ -268,21 +268,21 @@ const AboutUs = ({ totalPaddingToGive }) => {
               <img
                 src={ourMission}
                 alt="sleeping Calf"
-                className="md:w-2/5 rounded-3xl shadow-md shadow-black"
+                className="md:w-2/5 rounded-3xl shadow-md shadow-black tab:w-full"
                 loading="lazy"
                 style={{ border: "5px solid #d1d5db" }}
               />
             </div>
 
-            <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center">
+            <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center tab:flex-col">
               <img
                 src={ourVission}
                 alt="calf staring"
-                className="md:w-2/5 rounded-3xl shadow-md shadow-black"
+                className="md:w-2/5 rounded-3xl shadow-md shadow-black tab:w-full"
                 loading="lazy"
                 style={{ border: "5px solid #d1d5db" }}
               />
-              <div className="md:w-2/5 flex flex-col gap-6">
+              <div className="md:w-2/5 flex flex-col gap-6 tab:w-full">
                 <div className="flex gap-4 text-5xl md:text-center">
                   <i
                     className="fa-solid fa-check text-green-600"
