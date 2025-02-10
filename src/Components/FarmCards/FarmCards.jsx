@@ -13,7 +13,7 @@ const FarmCards = ({img, name, info}) => {
       </div>
 
       <div className="pb-10 flex flex-col gap-4">
-        <h1 className="text-3xl font-bold text-black text-center">
+        <h1 className="text-2xl lg:text-xl xl:text-2xl font-bold text-black text-center">
           {name}
         </h1>
         <p className="font-bold text-neutral-400 text-center">{info}</p>

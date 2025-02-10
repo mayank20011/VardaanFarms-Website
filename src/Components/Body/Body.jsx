@@ -43,8 +43,8 @@ const Body = ({ totalPaddingToGive }) => {
                 livestock roams freely, providing the purest milk straight from
                 our farm to your home.
                 <br />
-                VardaanFarms was founded in 2024 by [Founder's Name]. Starting
-                as a small family-run operation, we've grown while keeping our
+                VardaanFarms was founded in 2024, starting
+                as a small family-run operation we've grown while keeping our
                 core principles and quality intact. Our journey of love, hard
                 work, and progress has made us a trusted name in the dairy
                 industry.
@@ -69,7 +69,6 @@ const Body = ({ totalPaddingToGive }) => {
 
       <section className="bg-white py-8">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-          {/* Services */}
           <section className="flex flex-col gap-12 py-8">
             <span
               className="text-green-600 text-2xl font-bold text-center"
@@ -84,11 +83,10 @@ const Body = ({ totalPaddingToGive }) => {
               What We Offer
             </h1>
 
-            {/* for cards */}
-            <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full justify-evenly gap-12 ">
-              {/* for milk */}
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full justify-evenly gap-6 bmd:gap-12">
+              
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto z-0 shadow-lg"
+                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] md:w-fit mx-auto  z-0 shadow-lg"
                 id="milk"
               >
                 <img
@@ -98,7 +96,6 @@ const Body = ({ totalPaddingToGive }) => {
                   alt="milk Icon"
                   className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition z-0"
                   loading="lazy"
-                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Milk</h1>
                 <p className="text-slate-400 font-bold">
@@ -108,9 +105,8 @@ const Body = ({ totalPaddingToGive }) => {
                 </p>
               </div>
 
-              {/* for panner */}
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
+                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
                 id="paneer"
               >
                 <img
@@ -120,7 +116,6 @@ const Body = ({ totalPaddingToGive }) => {
                   alt="panner Icon"
                   className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
-                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Paneer</h1>
                 <p className="text-slate-400 font-bold">
@@ -130,9 +125,8 @@ const Body = ({ totalPaddingToGive }) => {
                 </p>
               </div>
 
-              {/* for Curd */}
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
+                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
                 id="curd"
               >
                 <img
@@ -142,7 +136,6 @@ const Body = ({ totalPaddingToGive }) => {
                   alt="Curd Icon"
                   className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
-                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Curd</h1>
                 <p className="text-slate-400 font-bold">
@@ -152,9 +145,8 @@ const Body = ({ totalPaddingToGive }) => {
                 </p>
               </div>
 
-              {/* for Ghee */}
               <div
-                className="bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
+                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
                 id="ghee"
               >
                 <img
@@ -164,7 +156,6 @@ const Body = ({ totalPaddingToGive }) => {
                   alt="Ghee Jar Icon"
                   className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition"
                   loading="lazy"
-                  // style={{ filter: "drop-shadow(2px 2px 1px green)" }}
                 />
                 <h1 className="text-2xl font-bold pt-6">Ghee</h1>
                 <p className="text-slate-400 font-bold">
