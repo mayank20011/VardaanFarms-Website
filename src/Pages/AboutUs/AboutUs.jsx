@@ -23,17 +23,17 @@ const AboutUs = ({ totalPaddingToGive }) => {
       >
         <div className="pt-14 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 border-2 border-slate-100 min-h-screen text-black pb-24">
           <div className="w-full grid md:grid-cols-2 xl:grid-cols-4 gap-4">
-            <div className="text-center shadow-md shadow-black p-4 rounded-lg">
+            <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
               <img src={truck} alt="truck" className="mx-auto" loading="lazy" />
               <h1 className="font-bold text-xl">Deliver to your Door</h1>
-              <p className="text-slate-500 font-bold text-sm">
+              <p className="text-sm">
                 We bring fresh and pure dairy products straight to your
                 doorstep. Enjoy the convenience of farm-fresh milk and more
                 delivered daily.
               </p>
             </div>
 
-            <div className="text-center shadow-md shadow-black p-4 rounded-lg">
+            <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
               <img
                 src={healthy}
                 alt="love Sign"
@@ -42,25 +42,30 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 loading="lazy"
               />
               <h1 className="font-bold text-xl">Healthy & Nutritious</h1>
-              <p className="text-slate-500 font-bold text-sm">
+              <p className="text-sm">
                 Our dairy products are packed with essential nutrients, ensuring
                 your family stays healthy and strong every day.
               </p>
             </div>
 
-            <div className="text-center shadow-md shadow-black p-4 rounded-lg">
+            <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
               <img src={tag} alt="tag" className="mx-auto" loading="lazy" />
               <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
-              <p className="text-slate-500 font-bold text-sm">
+              <p className="text-sm">
                 We promise reliable service and timely delivery, so you always
                 have the dairy products you need.
               </p>
             </div>
 
-            <div className="text-center shadow-md shadow-black p-4 rounded-lg">
-              <img src={support} alt="customer Support" className="mx-auto" loading="lazy" />
+            <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
+              <img
+                src={support}
+                alt="customer Support"
+                className="mx-auto"
+                loading="lazy"
+              />
               <h1 className="font-bold text-xl">24/7 Customer Support</h1>
-              <p className="text-slate-500 font-bold text-sm">
+              <p className="text-sm">
                 Our friendly customer support team is available around the clock
                 to help with any questions or issues.
               </p>
@@ -95,13 +100,13 @@ const AboutUs = ({ totalPaddingToGive }) => {
             </div>
 
             <div
-              className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-md shadow-black overflow-hidden h-fit"
-              style={{ border: "5px solid #d1d5db" }}
+              className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-2xl shadow-black overflow-hidden h-fit"
+              style={{ border: "3px solid #d1d5db" }}
             >
               <img
                 src={ourFarmCowMilking}
                 alt="cow standing in field"
-                className="hover:scale-110 transition"
+                className="hover:scale-110 transition w-full"
                 loading="lazy"
               />
             </div>
@@ -140,7 +145,12 @@ const AboutUs = ({ totalPaddingToGive }) => {
               </div>
 
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-                <img src={growth} alt="growth" className="w-[100px]" loading="lazy" />
+                <img
+                  src={growth}
+                  alt="growth"
+                  className="w-[100px]"
+                  loading="lazy"
+                />
                 <h1 className="text-xl font-bold">High Production</h1>
                 <p className="text-neutral-700">
                   Our farm is equipped with modern facilities that help us
@@ -167,7 +177,12 @@ const AboutUs = ({ totalPaddingToGive }) => {
               </div>
 
               <div className="p-8 bg-slate-100 hover:shadow-lg hover:shadow-black rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-                <img src={house} alt="House" className="w-[100px]" loading="lazy" />
+                <img
+                  src={house}
+                  alt="House"
+                  className="w-[100px]"
+                  loading="lazy"
+                />
                 <h1 className="text-xl font-bold">Recomended For Babies</h1>
                 <p className="text-neutral-700">
                   Our dairy products are safe and packed with essential
@@ -178,7 +193,12 @@ const AboutUs = ({ totalPaddingToGive }) => {
               </div>
 
               <div className="p-8 hover:shadow-lg hover:shadow-black bg-slate-100 rounded-md flex gap-4 flex-col sm:hover:-translate-y-3 transition shadow-lg shadow-black sm:shadow-none">
-                <img src={ef} alt="Environmet Friendly" className="w-[100px]" loading="lazy" />
+                <img
+                  src={ef}
+                  alt="Environmet Friendly"
+                  className="w-[100px]"
+                  loading="lazy"
+                />
                 <h1 className="text-xl font-bold">Environmentally Friendly</h1>
                 <p className="text-neutral-700">
                   We believe in eco-friendly farming practices that protect
@@ -242,16 +262,8 @@ const AboutUs = ({ totalPaddingToGive }) => {
             <div className="flex gap-6 flex-col md:flex-row justify-evenly items-center tab:flex-col">
               <div className="md:w-2/5 flex flex-col gap-6 tab:w-full">
                 <div className="flex gap-4 text-5xl md:text-center">
-                  <i
-                    className="fa-solid fa-check text-green-600"
-                    style={{ filter: "drop-shadow(2px 2px 2px black)" }}
-                  ></i>
-                  <h1
-                    className="text-green-600"
-                    style={{ filter: "drop-shadow(2px 2px 2px black)" }}
-                  >
-                    Our Mission
-                  </h1>
+                  <i className="fa-solid fa-check text-green-600"></i>
+                  <h1 className="text-green-600">Our Mission</h1>
                 </div>
                 <p
                   className="text-xl"
@@ -268,9 +280,9 @@ const AboutUs = ({ totalPaddingToGive }) => {
               <img
                 src={ourMission}
                 alt="sleeping Calf"
-                className="md:w-2/5 rounded-3xl shadow-md shadow-black tab:w-full"
+                className="md:w-2/5 rounded-3xl shadow-2xl shadow-black tab:w-full"
                 loading="lazy"
-                style={{ border: "5px solid #d1d5db" }}
+                style={{ border: "3px solid #d1d5db" }}
               />
             </div>
 
@@ -278,22 +290,14 @@ const AboutUs = ({ totalPaddingToGive }) => {
               <img
                 src={ourVission}
                 alt="calf staring"
-                className="md:w-2/5 rounded-3xl shadow-md shadow-black tab:w-full"
+                className="md:w-2/5 rounded-3xl shadow-2xl shadow-black tab:w-full"
                 loading="lazy"
-                style={{ border: "5px solid #d1d5db" }}
+                style={{ border: "3px solid #d1d5db" }}
               />
               <div className="md:w-2/5 flex flex-col gap-6 tab:w-full">
                 <div className="flex gap-4 text-5xl md:text-center">
-                  <i
-                    className="fa-solid fa-check text-green-600"
-                    style={{ filter: "drop-shadow(2px 2px 2px black)" }}
-                  ></i>
-                  <h1
-                    className="text-green-600"
-                    style={{ filter: "drop-shadow(2px 2px 2px black)" }}
-                  >
-                    Our Vission
-                  </h1>
+                  <i className="fa-solid fa-check text-green-600"></i>
+                  <h1 className="text-green-600">Our Vission</h1>
                 </div>
                 <p className="text-xl">
                   At Vardaan Farms, we aim to set the standard in premium dairy,
@@ -317,6 +321,6 @@ const AboutUs = ({ totalPaddingToGive }) => {
       </div>
     </>
   );
-}
+};
 
 export default AboutUs;

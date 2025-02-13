@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollTop/ScrollTop.jsx";
 import ReadFullBlog from "./Pages/ReadFullBlog/ReadFullBlog.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import WhatsappLink from "./Components/WhatsappLink/WhatsappLink.jsx";
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <main className="bg-black text-white">
+      <WhatsappLink/>
       <ScrollToTop />
       <Header />
       <Navbar headerHeight={headerHeight} />

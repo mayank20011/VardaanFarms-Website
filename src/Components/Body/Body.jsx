@@ -55,8 +55,8 @@ const Body = ({ totalPaddingToGive }) => {
             </div>
 
             <div
-              className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-sm shadow-black tab:w-full"
-              style={{ border: "10px solid white" }}
+              className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-2xl shadow-black tab:w-full"
+              style={{ border: "5px solid white" }}
             >
               <img
                 src={gfoFarm}
