@@ -3,7 +3,6 @@ import React from 'react'
 function WhatsappLink() {
 
   function openWhatsapp(){
-    var phoneNumber = "+917015010279"; 
     var url = "https://wa.me/918816000082";
     window.open(url,"_blank");
   }

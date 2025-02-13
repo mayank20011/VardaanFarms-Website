@@ -39,7 +39,7 @@ const Body = ({ totalPaddingToGive }) => {
               >
                 Know About Our Farm And History
               </h1>
-              <p className="text-slate-500 text-xl" id="aboutUsP">
+              <p className="text-black text-xl" id="aboutUsP">
                 Located in the heart of the countryside, VardaanFarms blends
                 tradition and modernity seamlessly. Our farm is home to a
                 variety of cows and buffaloes. We believe in sustainable farming
@@ -100,7 +100,7 @@ const Body = ({ totalPaddingToGive }) => {
                   loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Milk</h1>
-                <p className="text-slate-400 font-bold">
+                <p className="text-black">
                   Enjoy the tasty milk from VardaanFarms, straight from our
                   happy cows. Perfect for tea, coffee, or homemade dishes. Full
                   of nutrients and healthy for your family.
@@ -120,7 +120,7 @@ const Body = ({ totalPaddingToGive }) => {
                   loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Paneer</h1>
-                <p className="text-slate-400 font-bold">
+                <p className="">
                   Enjoy our soft and creamy paneer made from the best milk.
                   Great for curries, snacks, parathas, and pakoras. A family
                   favorite and full of protein.
@@ -140,7 +140,7 @@ const Body = ({ totalPaddingToGive }) => {
                   loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Curd</h1>
-                <p className="text-slate-400 font-bold">
+                <p className="">
                   Enjoy the tangy flavor of VardaanFarms' curd, made from fresh
                   milk. Great for meals, adding smooth texture and healthy
                   probiotics. Use it for raita, kadhi, or lassi
@@ -160,7 +160,7 @@ const Body = ({ totalPaddingToGive }) => {
                   loading="lazy"
                 />
                 <h1 className="text-2xl font-bold pt-6">Ghee</h1>
-                <p className="text-slate-400 font-bold">
+                <p className="">
                   Enjoy the rich taste of our pure ghee, made from top-quality
                   milk. Perfect for cooking, baking, or adding a delicious touch
                   to your dishes like dal, rotis, halwa, and ladoos.
@@ -243,14 +243,14 @@ const Body = ({ totalPaddingToGive }) => {
       </section>
 
       <section className="bg-white">
-        <div className=" max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
+        <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
           <div className="flex gap-12 flex-col md:flex-row w-full tab:flex-col">
             <div className="md:w-1/2 rounded-lg tab:w-full">
               <img
                 src={clientCow2}
                 alt="cows Grazing"
                 loading="lazy"
-                className="rounded-lg shadow-lg shadow-black"
+                className="rounded-lg shadow-lg shadow-black w-full"
                 style={{ border: "10px solid white" }}
               />
             </div>
