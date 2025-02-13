@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           <nav className="flex gap-6 self-center">
-            <ul className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
               <Link className="hover:text-green-600 transition cursor-pointer" to={"/"}>
                 Home
               </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
               <Link className="hover:text-green-600 transition cursor-pointer" to={"/blogs"}>
                 Blogs
               </Link>
-            </ul>
+            </div>
 
             <div className="flex gap-6 grow self-end justify-end flex-col">
               <h1 className="text-center text-md">Social Media</h1>
