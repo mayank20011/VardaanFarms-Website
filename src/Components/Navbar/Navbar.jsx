@@ -109,8 +109,8 @@ const Navbar = ({ headerHeight }) => {
               loading="lazy"
             />
             <img
-              width="32"
-              height="32"
+              width="36"
+              height="36"
               src="https://img.icons8.com/windows/32/menu--v5.png"
               alt="menu--v5"
               className="cursor-pointer"
