@@ -47,40 +47,40 @@ const Navbar = ({ headerHeight }) => {
 
           <ul className="flex gap-5">
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "home" ? "text-green-600 scale-110" : ""
+              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+                active === "home" ? "text-green-700 scale-110" : ""
               }`}
             >
               <Link to="/">Home</Link>
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "products" ? "text-green-600 scale-110" : ""
+              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+                active === "products" ? "text-green-700 scale-110" : ""
               }`}
             >
               <Link to="/products">Our Products</Link>
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "aboutUs" ? "text-green-600 scale-110" : ""
+              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+                active === "aboutUs" ? "text-green-700 scale-110" : ""
               }`}
             >
               <Link to="/aboutUs">About Us</Link>
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "contactUs" ? "text-green-600 scale-110" : ""
+              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+                active === "contactUs" ? "text-green-700 scale-110" : ""
               }`}
             >
               <Link to="/contactUs">Contact Us</Link>
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-600 ${
-                active === "blogs" ? "text-green-600 scale-110" : ""
+              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+                active === "blogs" ? "text-green-700 scale-110" : ""
               }`}
             >
               <Link to="/blogs">Blogs</Link>
