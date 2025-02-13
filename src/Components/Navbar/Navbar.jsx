@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../img/Vardanlogo.png";
 
-const Navbar = ({headerHeight}) => {
+const Navbar = ({ headerHeight }) => {
   const [active, setActive] = useState("home");
   const location = useLocation();
   const mobileNav = useRef(null);
@@ -32,9 +32,18 @@ const Navbar = ({headerHeight}) => {
 
   return (
     <>
-      <div className="bg-white py-2 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300 fixed w-full z-50" style={{top:`${headerHeight}px`}} id="nav">
+      <div
+        className="bg-white py-2 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300 fixed w-full z-50"
+        style={{ top: `${headerHeight}px` }}
+        id="nav"
+      >
         <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
-          <img src={logo} alt="vardaanfarms Logo" className="w-24" loading="lazy" />
+          <img
+            src={logo}
+            alt="vardaanfarms Logo"
+            className="w-24"
+            loading="lazy"
+          />
 
           <ul className="flex gap-5">
             <li
@@ -80,7 +89,10 @@ const Navbar = ({headerHeight}) => {
         </nav>
       </div>
 
-      <div className="md:hidden text-black bg-transparent overflow-hidden" style={{height:"0px"}}>
+      <div
+        className="md:hidden text-black bg-transparent overflow-hidden"
+        style={{ height: "0px" }}
+      >
         <div className="w-full relative p-2 flex justify-center items-center top-[40px] z-30">
           <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-2xl fixed">
             <img
@@ -112,8 +124,8 @@ const Navbar = ({headerHeight}) => {
           className="flex flex-col bg-white opacity-90 fixed top-0 min-h-screen w-[300px] transfor p-3 -translate-x-full transition duration-700 ease-in-out z-50"
           ref={mobileNav}
         >
-          <ul className="flex flex-col gap-4">
-            <li
+          <div className="flex flex-col gap-4">
+            <div
               className={`self-end cursor-pointer hover:scale-90 transition border-white border-2 border-dashed hover:border-green-600 `}
               onClick={closeNav}
             >
@@ -124,7 +136,7 @@ const Navbar = ({headerHeight}) => {
                 alt="delete-sign"
                 loading="lazy"
               />
-            </li>
+            </div>
 
             <Link
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
@@ -190,11 +202,11 @@ const Navbar = ({headerHeight}) => {
             >
               Blogs
             </Link>
-          </ul>
+          </div>
         </nav>
       </div>
     </>
   );
-}
+};
 
 export default Navbar;
