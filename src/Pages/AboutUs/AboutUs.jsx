@@ -231,7 +231,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 <h1 className="text-5xl text-center">
                   2452 <span className="text-blue-600">+</span>
                 </h1>
-                <h3 className="text-xl text-center mx-auto">Happy Clients</h3>
+                <h2 className="text-xl text-center mx-auto">Happy Clients</h2>
               </div>
 
               <div className="flex flex-col p-4 w-fit mx-auto items-start">
@@ -239,7 +239,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 <h1 className="text-5xl text-center">
                   162 <span className="text-orange-600">+</span>
                 </h1>
-                <h3 className="text-xl text-center">Kind Of Dairy</h3>
+                <h2 className="text-xl text-center">Kind Of Dairy</h2>
               </div>
 
               <div className="flex flex-col p-4 w-fit mx-auto items-start">
@@ -247,7 +247,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 <h1 className="text-5xl text-center">
                   15 <span className="text-orange-600">+</span>
                 </h1>
-                <h3 className="text-xl">States Covered</h3>
+                <h2 className="text-xl">States Covered</h2>
               </div>
 
               <div className="flex flex-col p-4 w-fit mx-auto items-start">
@@ -255,7 +255,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 <h1 className="text-5xl text-center">
                   72 <span className="text-blue-600">+</span>
                 </h1>
-                <h3 className="text-xl">Team Members</h3>
+                <h2 className="text-xl">Team Members</h2>
               </div>
             </div>
           </div>
