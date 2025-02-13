@@ -47,7 +47,7 @@ export default function App() {
         }}
         breakpoints={{
           200:{
-            slidesPerView:1.1,
+            slidesPerView:1.3,
           },
           560: {
             slidesPerView: 2.1,
