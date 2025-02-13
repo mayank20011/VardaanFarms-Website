@@ -27,13 +27,11 @@ const ShowcaseSwiper = () => {
               src={pcSlider1}
               alt="Cows Grazing in farm"
               className="w-full h-full cursor-grab hidden md:block brightness-50"
-              loading="lazy"
             />
             <img
               src={mobileSlide1}
               alt="Cow and Calf Staring at camera"
               className="w-full h-full cursor-grab md:hidden brightness-50"
-              loading="lazy"
             />
             <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div>
           </div>

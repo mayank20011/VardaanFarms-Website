@@ -226,28 +226,32 @@ const AboutUs = ({ totalPaddingToGive }) => {
             </div>
 
             <div className="p-8 bg-green-200 grid sm:grid-cols-2 lg:grid-cols-4 shadow-lg shadow-slate-200">
-              <div className="flex flex-col p-4 w-fit mx-auto">
+              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+                <img src="https://img.icons8.com/?size=100&id=22122&format=png&color=000000" alt="clients Icon" className="w-20"/>
                 <h1 className="text-5xl text-center">
                   2452 <span className="text-blue-600">+</span>
                 </h1>
-                <h3 className="text-xl text-center">Happy Clients</h3>
+                <h3 className="text-xl text-center mx-auto">Happy Clients</h3>
               </div>
 
-              <div className="flex flex-col p-4 w-fit mx-auto">
+              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+                <img src="https://img.icons8.com/?size=100&id=13010&format=png&color=000000" alt="Shop" className="w-20"/>
                 <h1 className="text-5xl text-center">
                   162 <span className="text-orange-600">+</span>
                 </h1>
                 <h3 className="text-xl text-center">Kind Of Dairy</h3>
               </div>
 
-              <div className="flex flex-col p-4 w-fit mx-auto">
+              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+                <img src="https://img.icons8.com/?size=100&id=aREqE_6a_Aq0&format=png&color=000000" alt="map" className="w-20"/>
                 <h1 className="text-5xl text-center">
                   15 <span className="text-orange-600">+</span>
                 </h1>
                 <h3 className="text-xl">States Covered</h3>
               </div>
 
-              <div className="flex flex-col p-4 w-fit mx-auto">
+              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+                <img src="https://img.icons8.com/?size=100&id=hlk4Wa3wyoi9&format=png&color=000000" alt="Team" className="w-20"/>
                 <h1 className="text-5xl text-center">
                   72 <span className="text-blue-600">+</span>
                 </h1>
