@@ -10,7 +10,7 @@ import farmer3 from "../../img/farmer3.jpg";
 import farmer5 from "../../img/farmer5.jpg";
 import FarmCards from "../FarmCards/FarmCards";
 import clientCow2 from "../../img/clientCow2.jpg";
-import gfoFarm from "../../img/gfoFarm.png";
+import gfoFarm from "../../img/gfoFarm2.png";
 import AllProductSwiper from "../AllProductSwiper/AllProductSwiper";
 const Body = ({ totalPaddingToGive }) => {
   return (
