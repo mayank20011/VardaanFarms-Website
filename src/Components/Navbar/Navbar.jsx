@@ -33,7 +33,7 @@ const Navbar = ({ headerHeight }) => {
   return (
     <>
       <div
-        className="bg-white py-2 text-neutral-700 hidden md:flex md:border-b-2 border-neutral-300 fixed w-full z-50"
+        className="bg-white py-2 text-black hidden md:flex md:border-b-2 border-neutral-300 fixed w-full z-50"
         style={{ top: `${headerHeight}px` }}
         id="nav"
       >
