@@ -9,9 +9,9 @@ function WhatsappLink() {
   }
 
   return (
-    <button className="fixed right-10 z-50 font-bold bg-green-600 p-1 px-2 rounded-full hover:scale-95 transition shadow-md shadow-green-600" style={{top:"80%"}} onClick={openWhatsapp} name="whatsappButton">
+    <div className="fixed right-10 z-50 font-bold bg-green-600 p-1 px-2 rounded-full hover:scale-95 transition shadow-md shadow-green-600" style={{top:"80%"}} onClick={openWhatsapp}>
       <i className="fa-brands fa-whatsapp text-4xl"></i>
-    </button>
+    </div>
   )
 }
 
