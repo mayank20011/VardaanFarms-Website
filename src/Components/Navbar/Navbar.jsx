@@ -82,7 +82,7 @@ const Navbar = ({headerHeight}) => {
 
       <div className="md:hidden text-black bg-transparent overflow-hidden" style={{height:"0px"}}>
         <div className="w-full relative p-2 flex justify-center items-center top-[40px] z-30">
-          <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-md fixed shadow-black">
+          <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-2xl fixed shadow-black">
             <img
               src={logo}
               alt="vardan Farms Logo"
