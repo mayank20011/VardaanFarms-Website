@@ -6,7 +6,7 @@ const EachProductSlide = ({img, heading, pera, link, bgColor, fontColor}) => {
       <div className="grow flex items-center justify-center">
         <img src={img} alt="Product Image" className="w-52 select-none" style={{filter:"drop-shadow(2px 2px 2px black)"}}/>
       </div>
-      <div className="flex flex-col gap-2 text-black">
+      <div className="flex flex-col gap-2 text-black vs:px-4 px-2">
         <h1 className="text-white font-bold text-xl" style={{color:`${fontColor}`}}>{heading}</h1>
         <p style={{color:`white`}}>
           {pera}
