@@ -251,7 +251,7 @@ const Body = ({ totalPaddingToGive }) => {
                 alt="cows Grazing"
                 loading="lazy"
                 className="rounded-lg shadow-lg shadow-black w-full"
-                style={{ border: "10px solid white" }}
+                style={{ border: "10px solid white", width:"100%", height:"fit"}}
               />
             </div>
 

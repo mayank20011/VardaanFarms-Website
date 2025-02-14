@@ -4,7 +4,7 @@ const EachProductSlide = ({img, heading, pera, link, bgColor, fontColor}) => {
   return (
     <div className="w-full h-full rounded-md sm:px-4 md:px-6 lg:px-8 px-2 py-4 flex flex-col gap-2 shadow-md" style={{backgroundColor:`${bgColor}`}}>
       <div className="grow flex items-center justify-center">
-        <img src={img} alt="Product Image" className="w-52 select-none" style={{filter:"drop-shadow(2px 2px 2px black)"}}/>
+        <img src={img} alt="Product Image" className="select-none" style={{filter:"drop-shadow(2px 2px 2px black)", width:"210px", height:"210px" }}/>
       </div>
       <div className="flex flex-col gap-2 text-black vs:px-4 px-2">
         <h1 className="text-white font-bold text-xl" style={{color:`${fontColor}`}}>{heading}</h1>

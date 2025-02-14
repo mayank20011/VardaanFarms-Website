@@ -43,6 +43,7 @@ const Navbar = ({ headerHeight }) => {
             alt="vardaanfarms Logo"
             className="w-24"
             loading="lazy"
+            style={{width:"96px", height:"fit"}}
           />
 
           <ul className="flex gap-5">
