@@ -25,13 +25,13 @@ const ShowcaseSwiper = () => {
         <SwiperSlide className="relative">
           <div className="relative w-full h-full">
             <img
-              src={pcSlider2}
+              src={pcSlider1}
               alt="cow Heard"
               className="w-full h-full cursor-grab hidden md:block brightness-50"
               loading="lazy"
             />
             <img
-              src={mobileSlide2}
+              src={mobileSlide3}
               alt="Cow Portrait looking somewhere else"
               className="w-full h-full cursor-grab md:hidden brightness-50"
             />
@@ -62,13 +62,13 @@ const ShowcaseSwiper = () => {
         <SwiperSlide className="relative">
           <div className="relative w-full h-full">
             <img
-              src={pcSlider3}
+              src={pcSlider2}
               alt="cow Heard Grazing and onw cow looking at camera"
               className="w-full h-full cursor-grab hidden md:block brightness-50"
               loading="lazy"
             />
             <img
-              src={mobileSlide3}
+              src={mobileSlide2}
               alt="cow Looking Dead in cameraman eyes"
               className="w-full h-full cursor-grab md:hidden brightness-50"
               loading="lazy"
@@ -100,7 +100,7 @@ const ShowcaseSwiper = () => {
         <SwiperSlide className="relative">
           <div className="relative w-full h-full">
             <img
-              src={pcSlider1}
+              src={pcSlider3}
               alt="Cows Grazing in farm"
               className="w-full h-full cursor-grab hidden md:block brightness-50"
               loading="lazy"
