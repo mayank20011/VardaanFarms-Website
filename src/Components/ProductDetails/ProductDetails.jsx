@@ -1,14 +1,23 @@
 import React from "react";
 import SelectProductComponent from "../SelectProductComponent/SelectProductComponent";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function ProductDetails({ data }) {
+function ProductDetails({ data, returnPage }) {
+  const navigate = useNavigate();
+  function navigateBack() {
+    if (returnPage == "Home") {
+      navigate("/");
+    } else {
+      navigate("/products");
+    }
+  }
   return (
     <div className="text-black flex gap-6 pb-12 flex-col md:flex-row">
       <div className="md:w-1/2 relative">
-        <Link to="/">
-          <i className="fa-solid fa-arrow-left text-2xl absolute text-white px-4 py-2 rounded-lg bg-neutral-500 cursor-pointer hover:scale-95 transition"></i>
-        </Link>
+        <i
+          className="fa-solid fa-arrow-left text-2xl absolute text-white px-4 py-2 rounded-lg bg-neutral-500 cursor-pointer hover:scale-95 transition"
+          onClick={navigateBack}
+        ></i>
         <img src={data.img} alt="" className="mx-auto w-4/5" />
       </div>
 
@@ -34,7 +43,7 @@ function ProductDetails({ data }) {
             Available in:
           </p>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {data.availableIn.map((value) => (
               <div
                 key={value}
@@ -54,52 +63,97 @@ function ProductDetails({ data }) {
 
           <span className="border border-black"></span>
 
-          <div className="px-2 py-1 flex flex-col gap-2">
-            <div className="grow flex justify-between">
-              <span>Energy (kcal)</span>
-              <span>{data.nutritionalFact["Energy"]}</span>
+          {data.category !== "Ghee" ? (
+            <div className="px-2 py-1 flex flex-col gap-2">
+              <div className="grow flex justify-between">
+                <span>Energy (kcal)</span>
+                <span>{data.nutritionalFact["Energy"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Total Fat (g)</span>
+                <span>{data.nutritionalFact["TotalFat"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Saturated Fat (g)</span>
+                <span>{data.nutritionalFact["saturatedFat"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Trans Fat (g)</span>
+                <span>{data.nutritionalFact["transFat"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Cholestrol (mg)</span>
+                <span>{data.nutritionalFact["cholestrol"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Carbohydrates (g)</span>
+                <span>{data.nutritionalFact["carbohydrate"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Total Sugar (g)</span>
+                <span>{data.nutritionalFact["totalSugar"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Added Sugar (g)</span>
+                <span>{data.nutritionalFact["addedSugar"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Protein (g)</span>
+                <span>{data.nutritionalFact["protein"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Sodium (mg)</span>
+                <span>{data.nutritionalFact["sodium"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Calcium (mg)</span>
+                <span>{data.nutritionalFact["calcium"]}</span>
+              </div>
             </div>
-            <div className="grow flex justify-between">
-              <span>Total Fat (g)</span>
-              <span>{data.nutritionalFact["totalFat"]}</span>
+          ) : (
+            <div className="px-2 py-1 flex flex-col gap-2">
+              <div className="grow flex justify-between">
+                <span>Energy (kcal)</span>
+                <span>{data.nutritionalFact["Energy"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Calories From Fat (kcal)</span>
+                <span>{data.nutritionalFact["caloriesFromFat"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Total Fat (g)</span>
+                <span>{data.nutritionalFact["totalFat"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Saturated Faty Acid (g)</span>
+                <span>{data.nutritionalFact["saturatedFatyAcid"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>MUFA (g)</span>
+                <span>{data.nutritionalFact["mufa"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>PUFA (g)</span>
+                <span>{data.nutritionalFact["pufa"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Cholestrol (mg)</span>
+                <span>{data.nutritionalFact["cholestrol"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Carbohydrate (g)</span>
+                <span>{data.nutritionalFact["carbohydrate"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Sugar (g)</span>
+                <span>{data.nutritionalFact["totalSugar"]}</span>
+              </div>
+              <div className="grow flex justify-between">
+                <span>Protein (g)</span>
+                <span>{data.nutritionalFact["protein"]}</span>
+              </div>
             </div>
-            <div className="grow flex justify-between">
-              <span>Saturated Fat (g)</span>
-              <span>{data.nutritionalFact["saturatedFat"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Trans Fat (g)</span>
-              <span>{data.nutritionalFact["transFat"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Cholestrol (mg)</span>
-              <span>{data.nutritionalFact["cholestrol"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Carbohydrates (g)</span>
-              <span>{data.nutritionalFact["carbohydrates"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Total Sugar (g)</span>
-              <span>{data.nutritionalFact["totalSugar"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Added Sugar (g)</span>
-              <span>{data.nutritionalFact["addedSugar"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Protein (g)</span>
-              <span>{data.nutritionalFact["protein"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Sodium (mg)</span>
-              <span>{data.nutritionalFact["sodium"]}</span>
-            </div>
-            <div className="grow flex justify-between">
-              <span>Calcium (mg)</span>
-              <span>{data.nutritionalFact["calcium"]}</span>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

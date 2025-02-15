@@ -1,9 +1,9 @@
 import React from "react";
 import Body from "../../Components/Body/Body.jsx";
-const HomePage = ({totalPaddingToGive}) =>{
+const HomePage = ({totalPaddingToGive, setReturnPage}) =>{
   return (
     <>
-      <Body totalPaddingToGive={totalPaddingToGive}/>
+      <Body totalPaddingToGive={totalPaddingToGive} setReturnPage={setReturnPage}/>
     </>
   );
 }

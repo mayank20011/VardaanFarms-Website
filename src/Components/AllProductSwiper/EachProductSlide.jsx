@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const EachProductSlide = ({img, heading, pera, link, bgColor, fontColor}) => {
+const EachProductSlide = ({img, heading, pera, link, bgColor, fontColor, setReturnPage}) => {
   return (
     <div className="w-full h-full rounded-md sm:px-4 md:px-6 lg:px-8 px-2 py-4 flex flex-col gap-2 shadow-md" style={{backgroundColor:`${bgColor}`}}>
       <div className="grow flex items-center justify-center">
@@ -11,7 +11,7 @@ const EachProductSlide = ({img, heading, pera, link, bgColor, fontColor}) => {
         <p style={{color:`white`}}>
           {pera}
         </p>
-        <Link className="bg-transparent border-2 text-white font-bold  px-4 py-2 flex justify-center items-center w-fit rounded-md hover:scale-95 transition hover:shadow-slate-100 hover:shadow-md text-sm" to={`${link}`}>
+        <Link className="bg-transparent border-2 text-white font-bold  px-4 py-2 flex justify-center items-center w-fit rounded-md hover:scale-95 transition hover:shadow-slate-100 hover:shadow-md text-sm" to={`${link}`} onClick={()=>{setReturnPage("Home")}}>
           Read More
         </Link>
       </div>

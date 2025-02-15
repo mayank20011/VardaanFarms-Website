@@ -16,7 +16,7 @@ import ProductPage from "./Pages/ProductPage/ProductPage.jsx";
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
   const [navHeight, setNavHeight] = useState(0);
-
+  const [returnPage, setReturnPage] = useState("Home");
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
@@ -50,11 +50,11 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<HomePage totalPaddingToGive={headerHeight + navHeight} />}
+          element={<HomePage totalPaddingToGive={headerHeight + navHeight} setReturnPage={setReturnPage}/>}
         />
         <Route
           path="/products"
-          element={<Products totalPaddingToGive={headerHeight + navHeight} />}
+          element={<Products totalPaddingToGive={headerHeight + navHeight} setReturnPage={setReturnPage}/>}
         />
         <Route
           path="/aboutUs"
@@ -74,7 +74,7 @@ function App() {
         />
         <Route
           path="product/:name"
-          element={<ProductPage totalPaddingToGive={headerHeight + navHeight}/>}
+          element={<ProductPage totalPaddingToGive={headerHeight + navHeight} returnPage={returnPage}/>}
         />
       </Routes>
       <Footer/>

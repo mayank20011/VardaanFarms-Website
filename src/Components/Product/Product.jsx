@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const Product = ({
   name,
@@ -13,12 +12,12 @@ const Product = ({
   availabilityColor,
   totalPaddingToGive,
   pageUrl,
+  setReturnPage
 }) => {
-
   const navigate = useNavigate();
 
   function navigatePage(url) {
-    console.log(url);
+    setReturnPage("Product");
     navigate(`/${url}`, { replace: true });
   }
 
@@ -77,7 +76,7 @@ const Product = ({
               {availability}
             </p>
             <p
-              className="text-white px-4 py-2 border-2 rounded-md hover:scale-95 rnasition w-fit"
+              className="text-white px-4 py-2 border-2 rounded-md hover:scale-95 transition w-fit cursor-pointer"
               style={{ color: descriptionColor, borderColor: descriptionColor }}
               onClick={() => {
                 navigatePage(pageUrl);
@@ -106,11 +105,9 @@ const Product = ({
             <p className="text-xl cs:text-lg">{info}</p>
             <p className="font-bold text-slate-500">{description}</p>
             <p className="font-bold text-slate-500">{availability}</p>
-            <Link to={pageUrl}>
-              <p className="px-4 py-2 rounded-lg border-2 w-fit mt-2 hover:scale-95 transition">
-                Read More
-              </p>
-            </Link>
+            <p className="px-4 py-2 rounded-lg border-2 w-fit mt-2 hover:scale-95 transition cursor-pointer" onClick={()=>{navigatePage(pageUrl)}}>
+              Read More
+            </p>
           </div>
         </div>
       </div>

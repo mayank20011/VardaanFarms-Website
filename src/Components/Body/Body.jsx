@@ -12,7 +12,7 @@ import FarmCards from "../FarmCards/FarmCards";
 import clientCow2 from "../../img/clientCow2.jpg";
 import gfoFarm from "../../img/gfoFarm.png";
 import AllProductSwiper from "../AllProductSwiper/AllProductSwiper";
-const Body = ({ totalPaddingToGive }) => {
+const Body = ({ totalPaddingToGive,  setReturnPage }) => {
   return (
     <>
       <section
@@ -212,7 +212,7 @@ const Body = ({ totalPaddingToGive }) => {
           </h1>
 
           {/* sipper */}
-          <AllProductSwiper/>
+          <AllProductSwiper setReturnPage={setReturnPage}/>
 
         </div>
       </section>

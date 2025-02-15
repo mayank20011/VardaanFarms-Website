@@ -16,7 +16,7 @@ import buffaloGhee from "../../img/buffaloGhee.png";
 import Product from "../../Components/Product/Product.jsx";
 import { Helmet } from "react-helmet-async";
 
-const Products = ({ totalPaddingToGive }) => {
+const Products = ({ totalPaddingToGive, setReturnPage }) => {
   return (
     <>
       <Helmet>
@@ -101,6 +101,7 @@ const Products = ({ totalPaddingToGive }) => {
           colorSide={"right"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/a2DesiCowMilk"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -117,6 +118,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/fullCream"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -133,6 +135,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#ffffff"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/tonedMilk"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -149,6 +152,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/doubleTonedMilk"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -165,6 +169,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#1a1a2e"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/naturalCowMilk"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -181,6 +186,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/buffaloMilk"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -197,6 +203,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#3B2F2F"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/familyPack"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -213,6 +220,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/doubleTonedMilk"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -229,6 +237,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#ffffff"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/butterMilk"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -245,6 +254,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/masalaChach"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -261,6 +271,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#1a1a2e"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/slimCurd"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -277,6 +288,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/curd"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -293,6 +305,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/a2DesiCowGhee"}
+          setReturnPage={setReturnPage}
         />
 
         <Product
@@ -309,6 +322,7 @@ const Products = ({ totalPaddingToGive }) => {
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/buffaloGhee"}
+          setReturnPage={setReturnPage}
         />
       </section>
 

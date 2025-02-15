@@ -24,7 +24,7 @@ import masalaChach from "../../img/masalaChach.png";
 import slimCurd from "../../img/dahiLight.png";
 import curd from "../../img/curd.png";
 
-export default function App() {
+export default function App({setReturnPage}) {
   return (
     <>
       <Swiper
