@@ -1,16 +1,18 @@
 import React from "react";
 import SelectProductComponent from "../SelectProductComponent/SelectProductComponent";
+import { Link } from "react-router-dom";
 
 function ProductDetails({ data }) {
   return (
     <div className="text-black flex gap-6 pb-12 flex-col md:flex-row">
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 relative">
+        <Link to="/">
+          <i className="fa-solid fa-arrow-left text-2xl absolute text-white px-4 py-2 rounded-lg bg-neutral-500 cursor-pointer hover:scale-95 transition"></i>
+        </Link>
         <img src={data.img} alt="" className="mx-auto w-4/5" />
       </div>
 
-      <div
-        className="md:w-1/2 flex flex-col gap-6 "
-      >
+      <div className="md:w-1/2 flex flex-col gap-6 ">
         <div className="flex justify-between order-1">
           <p
             className="px-4 py-2 rounded-full w-fit h-fit text-white font-bold"
@@ -20,7 +22,10 @@ function ProductDetails({ data }) {
           </p>
           <SelectProductComponent />
         </div>
-        <h1 className="text-4xl font-bold order-2" style={{ color: `${data.color}` }}>
+        <h1
+          className="text-4xl font-bold order-2"
+          style={{ color: `${data.color}` }}
+        >
           {data.heading}
         </h1>
         <p className="order-3">{data.info}</p>
@@ -41,9 +46,7 @@ function ProductDetails({ data }) {
           </div>
         </div>
 
-        <div        
-          className="bg-slate-100 p-4 flex flex-col gap-4 text-sm w-full sm:w-[350px] order-4"
-        >
+        <div className="bg-slate-100 p-4 flex flex-col gap-4 text-sm w-full sm:w-[350px] order-4">
           <div className="flex justify-between">
             <p>Nutritional Facts</p>
             <p>{`Per (100) ${data.measurmentUnit}`}</p>

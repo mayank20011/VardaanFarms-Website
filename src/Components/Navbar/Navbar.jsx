@@ -20,6 +20,9 @@ const Navbar = ({ headerHeight }) => {
     } else if (path.includes("/blogs") || path.includes("/blog")) {
       setActive("blogs");
     }
+    else{
+      setActive(null);
+    }
   }, [location.pathname]);
 
   function openNav() {

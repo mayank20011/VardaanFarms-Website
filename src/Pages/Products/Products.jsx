@@ -100,6 +100,7 @@ const Products = ({ totalPaddingToGive }) => {
           bgColor={"#b1998c"}
           colorSide={"right"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/a2DesiCowMilk"}
         />
 
         <Product
@@ -115,6 +116,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/fullCream"}
         />
 
         <Product
@@ -130,6 +132,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#ffffff"}
           availabilityColor={"#ffffff"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/tonedMilk"}
         />
 
         <Product
@@ -145,6 +148,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/doubleTonedMilk"}
         />
 
         <Product
@@ -160,6 +164,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#1a1a2e"}
           availabilityColor={"#1a1a2e"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/naturalCowMilk"}
         />
 
         <Product
@@ -175,6 +180,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/buffaloMilk"}
         />
 
         <Product
@@ -190,6 +196,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#3B2F2F"}
           availabilityColor={"#3B2F2F"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/familyPack"}
         />
 
         <Product
@@ -205,6 +212,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/doubleTonedMilk"}
         />
 
         <Product
@@ -220,6 +228,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#ffffff"}
           availabilityColor={"#ffffff"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/butterMilk"}
         />
 
         <Product
@@ -235,6 +244,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/masalaChach"}
         />
 
         <Product
@@ -250,6 +260,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#1a1a2e"}
           availabilityColor={"#1a1a2e"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/slimCurd"}
         />
 
         <Product
@@ -265,6 +276,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/curd"}
         />
 
         <Product
@@ -280,6 +292,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/a2DesiCowGhee"}
         />
 
         <Product
@@ -295,6 +308,7 @@ const Products = ({ totalPaddingToGive }) => {
           descriptionColor={"#4f4f4f"}
           availabilityColor={"#4f4f4f"}
           totalPaddingToGive={totalPaddingToGive}
+          pageUrl={"product/buffaloGhee"}
         />
       </section>
 
