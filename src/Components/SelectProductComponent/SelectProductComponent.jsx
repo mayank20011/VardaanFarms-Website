@@ -66,7 +66,8 @@ function SelectProductComponent() {
     <select
       className="outline-none px-4 py-2 rounded-lg right-4 md:right-0 shadow-md cursor-pointer font-bold bg-slate-100"
       id="selectProduct"
-      onClick={navigate}
+      onChange={navigate}
+      // onSelect={()=>{console.log('Selected')}}
     >
       <option value="A2 Desi Cow Milk">
         A2 Desi Cow Milk
