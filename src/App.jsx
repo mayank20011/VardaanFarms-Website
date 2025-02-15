@@ -11,6 +11,7 @@ import ScrollToTop from "./Components/ScrollTop/ScrollTop.jsx";
 import ReadFullBlog from "./Pages/ReadFullBlog/ReadFullBlog.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import WhatsappLink from "./Components/WhatsappLink/WhatsappLink.jsx";
+import ProductPage from "./Pages/ProductPage/ProductPage.jsx";
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -70,6 +71,10 @@ function App() {
         <Route
           path="blog/:id"
           element={<ReadFullBlog totalPaddingToGive={headerHeight + navHeight}/>}
+        />
+        <Route
+          path="product/:name"
+          element={<ProductPage totalPaddingToGive={headerHeight + navHeight}/>}
         />
       </Routes>
       <Footer/>

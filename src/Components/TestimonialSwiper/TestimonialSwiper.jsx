@@ -6,6 +6,7 @@ import snehaReddy from "../../img/snehaReddy.jpg";
 import rahulMehta from "../../img/rahulMehta.jpg";
 import anilKumar from "../../img/anilKumar.jpeg";
 import amitJoshi from "../../img/amitJoshi.jpeg";
+import vinay from "../../img/vinay.jpg";
 
 import "swiper/css/pagination";
 
@@ -32,14 +33,14 @@ const TestimonialSwiper = () => {
             <div>
               <div className="flex gap-4 pt-6">
                 <img
-                  src={rahulMehta}
+                  src={vinay}
                   alt="Rahul Mehta's image"
                   className="w-28 rounded-full border-2 border-green-600 shadow-md shadow-black"
                   loading="lazy"
                 />
                 <div className="grow flex flex-col justify-center">
-                  <h1 className="text-black">Rahul Mehta</h1>
-                  <p className="text-neutral-500 text-sm">Delhi</p>
+                  <h1 className="text-black">Vinay Gurjar</h1>
+                  <p className="text-neutral-500 text-sm">Haryana</p>
                 </div>
               </div>
             </div>

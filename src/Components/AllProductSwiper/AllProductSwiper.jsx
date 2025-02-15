@@ -70,7 +70,7 @@ export default function App() {
             img={a2DesiCowMilk}
             heading={"A2 Desi Cow Milk"}
             pera={"A2 Desi cow milk is healthy, natural, and easily digestible."}
-            link={""}
+            link={"product/a2DesiCowMilk"}
             bgColor={"#e8b794"}
             fontColor={"white"}
           />
@@ -80,7 +80,7 @@ export default function App() {
             img={fullCream}
             heading={"Full Cream"}
             pera={"Full cream A2 Desi cow milk is rich, creamy, nutritious."}
-            link={""}
+            link={"product/fullCream"}
             bgColor={"#f9b3b3"}
           />
         </SwiperSlide>
@@ -89,7 +89,7 @@ export default function App() {
             img={tonedMilk}
             heading={"Toned Milk"}
             pera={"Light, nutritious, balanced milk, great for daily use."}
-            link={""}
+            link={"product/tonedMilk"}
             bgColor={"#8cd8d7"}
           />
         </SwiperSlide>
@@ -98,7 +98,7 @@ export default function App() {
             img={doubleTonedMilk}
             heading={"Double Toned Milk"}
             pera={"Lighter, low-fat option, healthy, easily digestible for everyone."}
-            link={""}
+            link={"product/doubleTonedMilk"}
             bgColor={"#a999cf"}
           />
         </SwiperSlide>
@@ -107,7 +107,7 @@ export default function App() {
             img={naturalCowMilk}
             heading={"Natural Cow Milk"}
             pera={"Pure, fresh milk, straight from cows, wholesome goodness."}
-            link={""}
+            link={"product/naturalCowMilk"}
             bgColor={"#8cbfe0"}
           />
         </SwiperSlide>
@@ -116,7 +116,7 @@ export default function App() {
             img={buffaloMilk}
             heading={"Buffalo Milk"}
             pera={"Creamy, rich milk, full of flavor, very nutritious."}
-            link={""}
+            link={"product/buffaloMilk"}
             bgColor={"#6b6972"}
           />
         </SwiperSlide>
@@ -125,7 +125,7 @@ export default function App() {
             img={familyPack}
             heading={"Family Pack"}
             pera={"Convenient, larger size, perfect for household needs, budget-friendly."}
-            link={""}
+            link={"product/familyPack"}
             bgColor={"#f28d92"}
           />
         </SwiperSlide>
@@ -134,7 +134,7 @@ export default function App() {
             img={butterMilk}
             heading={"Butter Milk"}
             pera={"Light, refreshing drink, aids digestion, loved by all."}
-            link={""}
+            link={"product/butterMilk"}
             bgColor={"#6b957c"}
           />
         </SwiperSlide>
@@ -143,7 +143,7 @@ export default function App() {
             img={masalaChach}
             heading={"Masala Chach"}
             pera={"Spiced, tangy drink, refreshing, perfect for summer days."}
-            link={""}
+            link={"product/masalaChach"}
             bgColor={"#a7d87f"}
           />
         </SwiperSlide>
@@ -152,7 +152,7 @@ export default function App() {
             img={slimCurd}
             heading={"Slim Curd"}
             pera={"Low-fat, smooth curd, healthy choice, great taste."}
-            link={""}
+            link={"product/slimCurd"}
             bgColor={"#a4d8e3"}
           />
         </SwiperSlide>
@@ -161,7 +161,7 @@ export default function App() {
             img={curd}
             heading={"Curd"}
             pera={"Creamy, tangy yogurt, probiotic, enhances meals, loved by all."}
-            link={""}
+            link={"product/curd"}
             bgColor={"#f49b80"}
           />
         </SwiperSlide>
