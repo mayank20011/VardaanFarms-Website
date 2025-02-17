@@ -54,7 +54,8 @@ const AboutUs = ({ totalPaddingToGive }) => {
         <div className="pt-14 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 border-2 border-slate-100 min-h-screen text-black pb-24">
           <div className="w-full grid md:grid-cols-2 xl:grid-cols-4 gap-4">
             <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
-              <img src={truck} alt="truck" className="mx-auto" loading="lazy" />
+              <img src={truck} alt="truck" className="mx-auto" loading="lazy" style={{width:"100px", height:"100px"}}/>
+
               <h1 className="font-bold text-xl">Deliver to your Door</h1>
               <p className="text-sm">
                 We bring fresh and pure dairy products straight to your
@@ -68,7 +69,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 src={healthy}
                 alt="love Sign"
                 className="mx-auto"
-                style={{ width: "100px" }}
+                style={{width:"100px", height:"100px"}}
                 loading="lazy"
               />
               <h1 className="font-bold text-xl">Healthy & Nutritious</h1>
@@ -79,7 +80,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
             </div>
 
             <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
-              <img src={tag} alt="tag" className="mx-auto" loading="lazy" />
+              <img src={tag} alt="tag" className="mx-auto" loading="lazy" style={{width:"100px", height:"100px"}}/>
               <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
               <p className="text-sm">
                 We promise reliable service and timely delivery, so you always
@@ -93,6 +94,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 alt="customer Support"
                 className="mx-auto"
                 loading="lazy"
+                style={{width:"100px", height:"100px"}}
               />
               <h1 className="font-bold text-xl">24/7 Customer Support</h1>
               <p className="text-sm">
@@ -130,7 +132,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
             </div>
 
             <div
-              className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-2xl shadow-black overflow-hidden h-fit"
+              className="lg:w-1/2 flex justify-center items-center rounded-2xl shadow-2xl shadow-black overflow-hidden h-fit aspect-[16/9]"
               style={{ border: "3px solid #d1d5db" }}
             >
               <img
