@@ -43,16 +43,21 @@ const Blogs = () => {
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-
-          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"001"}`)}}>
+          <article
+            className="grid gap-4 cursor-pointer"
+            onClick={() => {
+              redirect(`/blog/${"001"}`);
+            }}
+          >
             <div className="relative">
-              <img
-                src={blog1}
-                alt="Cow Heard Staring at camera"
-                className="rounded-md"
-                loading="lazy"
-                style={{width:"100%", height:"auto"}}
-              />
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={blog1}
+                  alt="Cow Heard Staring at camera"
+                  className="rounded-md"
+                  loading="lazy"
+                />
+              </div>
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Local
               </span>
@@ -70,15 +75,21 @@ const Blogs = () => {
             </Link>
           </article>
 
-          <article className="grid gap-4 cursor-pointer" onClick={() => {redirect(`/blog/${"002"}`)}}>
+          <article
+            className="grid gap-4 cursor-pointer"
+            onClick={() => {
+              redirect(`/blog/${"002"}`);
+            }}
+          >
             <div className="relative w-full">
-              <img
-                src={blog2}
-                alt="Indian Tea Stall"
-                className="rounded-md"
-                loading="lazy"
-                style={{width:"100%", height:"auto"}}
-              />
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={blog2}
+                  alt="Indian Tea Stall"
+                  className="rounded-md"
+                  loading="lazy"
+                />
+              </div>
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Energizer
               </span>
@@ -96,15 +107,21 @@ const Blogs = () => {
             </Link>
           </article>
 
-          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"003"}`)}}>
+          <article
+            className="grid gap-4 cursor-pointer"
+            onClick={() => {
+              redirect(`/blog/${"003"}`);
+            }}
+          >
             <div className="relative w-full">
-              <img
-                src={blog3}
-                alt="Kesar Doodh"
-                className="rounded-md"
-                loading="lazy"
-                style={{width:"100%", height:"auto"}}
-              />
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={blog3}
+                  alt="Kesar Doodh"
+                  className="rounded-md"
+                  loading="lazy"
+                />
+              </div>
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Digestable
               </span>
@@ -122,15 +139,21 @@ const Blogs = () => {
             </Link>
           </article>
 
-          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"004"}`)}}>
+          <article
+            className="grid gap-4 cursor-pointer"
+            onClick={() => {
+              redirect(`/blog/${"004"}`);
+            }}
+          >
             <div className="relative w-full">
-              <img
-                src={blog4}
-                alt="Indian Culture"
-                className="rounded-md"
-                loading="lazy"
-                style={{width:"100%", height:"auto"}}
-              />
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={blog4}
+                  alt="Indian Culture"
+                  className="rounded-md"
+                  loading="lazy"
+                />
+              </div>
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Low Fat
               </span>
@@ -150,15 +173,21 @@ const Blogs = () => {
             </Link>
           </article>
 
-          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"005"}`)}}>
+          <article
+            className="grid gap-4 cursor-pointer"
+            onClick={() => {
+              redirect(`/blog/${"005"}`);
+            }}
+          >
             <div className="relative w-full">
-              <img
-                src={blog5}
-                alt="Buffalo Heard"
-                className="rounded-md w-full"
-                loading="lazy"
-                style={{width:"100%", height:"auto"}}
-              />
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={blog5}
+                  alt="Buffalo Heard"
+                  className="rounded-md w-full"
+                  loading="lazy"
+                />
+              </div>
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Creamy
               </span>
@@ -178,15 +207,21 @@ const Blogs = () => {
             </Link>
           </article>
 
-          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"006"}`)}}>
+          <article
+            className="grid gap-4 cursor-pointer"
+            onClick={() => {
+              redirect(`/blog/${"006"}`);
+            }}
+          >
             <div className="relative w-full">
-              <img
-                src={blog6}
-                alt="Cows Sitting and Staring at camera"
-                className="rounded-md w-full"
-                loading="lazy"
-                style={{width:"100%", height:"auto"}}
-              />
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={blog6}
+                  alt="Cows Sitting and Staring at camera"
+                  className="rounded-md w-full"
+                  loading="lazy"
+                />
+              </div>
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Dairy
               </span>
