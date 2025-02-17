@@ -44,9 +44,8 @@ const Navbar = ({ headerHeight }) => {
           <img
             src={logo}
             alt="vardaanfarms Logo"
-            className="w-24"
+            className="w-[96px] h-auto"
             loading="lazy"
-            style={{width:"96px", height:"fit"}}
           />
 
           <ul className="flex gap-5">

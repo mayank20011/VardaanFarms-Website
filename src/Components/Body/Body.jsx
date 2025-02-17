@@ -96,7 +96,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
               <img
                 src={gfoFarm}
                 alt="cow Image"
-                className="w-full rounded-xl filter brightness-75"
+                className="w-full rounded-xl filter brightness-75 h-auto"
                 id="sinceImg"
                 loading="lazy"
               />

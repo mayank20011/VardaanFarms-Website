@@ -7,7 +7,7 @@ const FarmCards = ({img, name, info}) => {
         <img
           src={img}
           alt={`${name}'s image`}
-          className="rounded-xl w-full shadow-sm shadow-black transition hover:scale-105"
+          className="rounded-xl w-full shadow-sm shadow-black transition hover:scale-105 h-auto"
           loading="lazy"
           style={{width:"100%", height:"fit"}}
         />
