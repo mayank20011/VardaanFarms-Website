@@ -22,7 +22,7 @@ const ShowcaseSwiper = () => {
         className="w-full bg-slate-100 md:rounded-b-3xl rounded-b-2xl"
       >
 
-        <SwiperSlide className="relative">
+        <SwiperSlide className="relative aspect-auto">
           <div className="relative w-full h-full">
             <img
               src={pcSlider1}
@@ -59,7 +59,7 @@ const ShowcaseSwiper = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="relative">
+        <SwiperSlide className="relative aspect-auto">
           <div className="relative w-full h-full">
             <img
               src={pcSlider2}
@@ -97,7 +97,7 @@ const ShowcaseSwiper = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="relative">
+        <SwiperSlide className="relative aspect-auto">
           <div className="relative w-full h-full">
             <img
               src={pcSlider3}

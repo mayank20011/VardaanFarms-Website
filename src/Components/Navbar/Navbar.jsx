@@ -19,8 +19,7 @@ const Navbar = ({ headerHeight }) => {
       setActive("contactUs");
     } else if (path.includes("/blogs") || path.includes("/blog")) {
       setActive("blogs");
-    }
-    else{
+    } else {
       setActive(null);
     }
   }, [location.pathname]);
@@ -41,12 +40,14 @@ const Navbar = ({ headerHeight }) => {
         id="nav"
       >
         <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
-          <img
-            src={logo}
-            alt="vardaanfarms Logo"
-            className="w-[96px] h-auto"
-            loading="lazy"
-          />
+          <div className="aspect-[16/9]">
+            <img
+              src={logo}
+              alt="vardaanfarms Logo"
+              className="w-[96px] h-auto"
+              loading="lazy"
+            />
+          </div>
 
           <ul className="flex gap-5">
             <li

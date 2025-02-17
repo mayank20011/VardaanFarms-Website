@@ -89,10 +89,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
               </p>
             </div>
 
-            <div
-              className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-2xl shadow-black tab:w-full"
-              style={{ border: "0px solid white" }}
-            >
+            <div className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-xl shadow-2xl shadow-black tab:w-full aspect-[16/9]">
               <img
                 src={gfoFarm}
                 alt="cow Image"
@@ -279,17 +276,19 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
           <div className="flex gap-12 flex-col md:flex-row w-full tab:flex-col">
             <div className="md:w-1/2 rounded-lg tab:w-full">
-              <img
-                src={clientCow2}
-                alt="cows Grazing"
-                loading="lazy"
-                className="rounded-lg shadow-lg shadow-black w-full"
-                style={{
-                  border: "10px solid white",
-                  width: "100%",
-                  height: "fit",
-                }}
-              />
+              <div className="aspect-[16/9]">
+                <img
+                  src={clientCow2}
+                  alt="cows Grazing"
+                  loading="lazy"
+                  className="rounded-lg shadow-lg shadow-black w-full"
+                  style={{
+                    border: "10px solid white",
+                    width: "100%",
+                    height: "fit",
+                  }}
+                />
+              </div>
             </div>
 
             <div className="flex flex-col gap-8 w-full md:w-1/2 lg:items-start tab:w-full">
