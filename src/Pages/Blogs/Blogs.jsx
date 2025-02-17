@@ -51,6 +51,7 @@ const Blogs = () => {
                 alt="Cow Heard Staring at camera"
                 className="rounded-md"
                 loading="lazy"
+                style={{width:"100%", height:"auto"}}
               />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Local
@@ -76,6 +77,7 @@ const Blogs = () => {
                 alt="Indian Tea Stall"
                 className="rounded-md"
                 loading="lazy"
+                style={{width:"100%", height:"auto"}}
               />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Energizer
@@ -101,6 +103,7 @@ const Blogs = () => {
                 alt="Kesar Doodh"
                 className="rounded-md"
                 loading="lazy"
+                style={{width:"100%", height:"auto"}}
               />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Digestable
@@ -126,6 +129,7 @@ const Blogs = () => {
                 alt="Indian Culture"
                 className="rounded-md"
                 loading="lazy"
+                style={{width:"100%", height:"auto"}}
               />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Low Fat
@@ -153,6 +157,7 @@ const Blogs = () => {
                 alt="Buffalo Heard"
                 className="rounded-md w-full"
                 loading="lazy"
+                style={{width:"100%", height:"auto"}}
               />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Creamy
@@ -180,6 +185,7 @@ const Blogs = () => {
                 alt="Cows Sitting and Staring at camera"
                 className="rounded-md w-full"
                 loading="lazy"
+                style={{width:"100%", height:"auto"}}
               />
               <span className="absolute text-white bg-green-600  px-6 py-2 rounded-full bottom-[20px] left-[20px]">
                 Dairy
