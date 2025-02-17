@@ -12,9 +12,44 @@ import FarmCards from "../FarmCards/FarmCards";
 import clientCow2 from "../../img/clientCow2.jpg";
 import gfoFarm from "../../img/gfoFarm.png";
 import AllProductSwiper from "../AllProductSwiper/AllProductSwiper";
-const Body = ({ totalPaddingToGive,  setReturnPage }) => {
+import { Helmet } from "react-helmet-async";
+
+const Body = ({ totalPaddingToGive, setReturnPage }) => {
   return (
     <>
+      <Helmet>
+        <title>Vardaan Farms - Organic Dairy Products</title>
+        <meta
+          name="description"
+          content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
+        />
+        <meta
+          name="keywords"
+          content="Vardaan Farms, dairy products, organic milk, sustainable farming, paneer, curd, ghee, A2 cow milk, buffalo milk, fresh dairy"
+        />
+        <meta
+          property="og:title"
+          content="Vardaan Farms - Organic Dairy Products"
+        />
+        <meta
+          property="og:description"
+          content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
+        />
+        <meta property="og:image" content={clientCow2} />
+        <meta property="og:url" content="https://www.vardaanfarms.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Vardaan Farms - Organic Dairy Products"
+        />
+        <meta
+          name="twitter:description"
+          content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
+        />
+        <meta name="twitter:image" content={clientCow2} />
+        <link rel="canonical" href="https://www.vardaanfarms.com" />
+      </Helmet>
+
       <section
         className="w-full bg-slate-100"
         style={
@@ -200,7 +235,6 @@ const Body = ({ totalPaddingToGive,  setReturnPage }) => {
       {/* For new swiper */}
       <section className="bg-white pb-12 overflow-x-hidden">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex flex-col gap-6 md:gap-8">
-          
           {/* heading */}
           <h1 className="text-green-600 text-center text-2xl font-bold">
             Shop
@@ -212,8 +246,7 @@ const Body = ({ totalPaddingToGive,  setReturnPage }) => {
           </h1>
 
           {/* sipper */}
-          <AllProductSwiper setReturnPage={setReturnPage}/>
-
+          <AllProductSwiper setReturnPage={setReturnPage} />
         </div>
       </section>
 
@@ -251,7 +284,11 @@ const Body = ({ totalPaddingToGive,  setReturnPage }) => {
                 alt="cows Grazing"
                 loading="lazy"
                 className="rounded-lg shadow-lg shadow-black w-full"
-                style={{ border: "10px solid white", width:"100%", height:"fit"}}
+                style={{
+                  border: "10px solid white",
+                  width: "100%",
+                  height: "fit",
+                }}
               />
             </div>
 
@@ -276,49 +313,3 @@ const Body = ({ totalPaddingToGive,  setReturnPage }) => {
 };
 
 export default Body;
-
-
-
-
-
-
-// <section className="bg-white pb-12 overflow-x-hidden">
-// <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex justify-center items-center flex-col gap-8 ">
-//   <div className="xl:4/5 mx-auto flex flex-col justify-center items-center gap-8 ">
-//     <span className="text-2xl font-bold text-green-600">Shop</span>
-//     <h1 className="text-5xl font-bold text-black">Our Products</h1>
-
-//     <div className="flex w-full xl:gap-24 justify-between lg:gap-12 flex-col md:flex-row gap-12">
-//       {/* For productSwiper */}
-//       <div className="flex lg:px-12">
-//         <ProductSwiper />
-//       </div>
-//       {/* Text */}
-//       <div className="w-full text-center md:text-left md:w-1/2 lg:w-3/4 text-black flex flex-col gap-4">
-//         <h1 className="text-3xl font-bold text-neutral-600">
-//           We Offer daily Labtested Products
-//         </h1>
-//         <p className="text-xl">
-//           At VardaanFarms, we ensure that every product you receive is
-//           lab-tested daily for quality and purity. Our commitment is to
-//           deliver fresh, nutritious, and safe dairy products to your
-//           family.
-//           <br />
-//           From milk to ghee, each item undergoes rigorous testing to
-//           meet our high standards. Enjoy the confidence of knowing that
-//           VardaanFarms’ dairy products are of the highest quality, made
-//           with care and dedication.
-//         </p>
-//         <div className="grow flex justify-center md:justify-start md:items-end">
-//           <Link
-//             to={"/products"}
-//             className="px-6 py-4 border-2 rounded-md text-neutral-500 shadow-md font-bold"
-//           >
-//             Explore More
-//           </Link>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// </section>
