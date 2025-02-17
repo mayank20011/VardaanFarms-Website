@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-const BlogComponent = ({ id, setId, setBlogClicked }) =>{
+const BlogComponent = ({ id, setId, setBlogClicked }) => {
   const { id: textId } = useParams();
   const data = blogData.find((obj) => obj._id == id);
   const navigate = useNavigate();
@@ -40,15 +40,16 @@ const BlogComponent = ({ id, setId, setBlogClicked }) =>{
 
   return (
     <div className="w-full h-full flex flex-col gap-6 vs:gap-4">
-      <img
-        src={data.data.img}
-        alt="blog-1"
-        className="w-full border-4 border-white rounded-lg"
-        loading="lazy"
-      />
+      <div className="aspect-[16/9]">
+        <img
+          src={data.data.img}
+          alt="blog-1"
+          className="w-full border-4 border-white rounded-lg"
+          loading="lazy"
+        />
+      </div>
       <div className="flex flex-col gap-6 p-8 vs:gap-4 vs:p-4">
         <div className="flex gap-8">
-          
           <div className="flex  items-center gap-2">
             <i className="fa-solid fa-clock"></i>
             <p className="text-green-600 font-bold">{data.data.date}</p>
@@ -79,7 +80,6 @@ const BlogComponent = ({ id, setId, setBlogClicked }) =>{
             <p>{data.data.conclusion}</p>
           </div>
         </div>
-
       </div>
 
       <div className="relative flex lg:hidden items-center text-black z-10 bg-transparent w-fit mx-auto pb-6">
@@ -101,6 +101,6 @@ const BlogComponent = ({ id, setId, setBlogClicked }) =>{
       </div>
     </div>
   );
-}
+};
 
 export default BlogComponent;

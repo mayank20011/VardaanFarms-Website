@@ -18,7 +18,14 @@ function ProductDetails({ data, returnPage }) {
           className="fa-solid fa-arrow-left text-2xl absolute text-white px-4 py-2 rounded-lg bg-neutral-500 cursor-pointer hover:scale-95 transition"
           onClick={navigateBack}
         ></i>
-        <img src={data.img} alt="" className="mx-auto w-4/5" style={{filter:"drop-shadow(5px 5px 10px black)"}}/>
+        <div className="aspect-[16/9]">
+          <img
+            src={data.img}
+            alt=""
+            className="mx-auto w-4/5"
+            style={{ filter: "drop-shadow(5px 5px 10px black)" }}
+          />
+        </div>
       </div>
 
       <div className="md:w-1/2 flex flex-col gap-6 ">
