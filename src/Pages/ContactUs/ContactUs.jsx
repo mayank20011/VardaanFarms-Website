@@ -187,19 +187,19 @@ const ContactUs = ({totalPaddingToGive}) => {
                 <input
                   type="tel"
                   placeholder="Your Phone"
-                  className="outline-none p-4 border-2 rounded-2xl"
+                  className="outline-none p-4 border-2 rounded-2xl w-full"
                   name="phoneNumber"
                 />
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="outline-none p-4 border-2 rounded-2xl"
+                  className="outline-none p-4 border-2 rounded-2xl w-full"
                   name="email"
                 />
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="outline-none p-4 border-2 rounded-2xl"
+                  className="outline-none p-4 border-2 rounded-2xl w-full"
                   name="subject"
                 />
               </div>
