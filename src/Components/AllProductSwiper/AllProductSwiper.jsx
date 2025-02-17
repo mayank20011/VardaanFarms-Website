@@ -62,7 +62,7 @@ export default function App({setReturnPage}) {
         modules={[Pagination, Autoplay, EffectCoverflow]}
         pagination={true}
         autoplay={{ delay: 3000 }}
-        className="mySwiper w-full h-[435px]"
+        className="mySwiper w-full h-[435px] rounded-2xl"
         style={{ padding: "0px 0px 35px 0px" }}
       >
         <SwiperSlide className="relative w-[320px]">

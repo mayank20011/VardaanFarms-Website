@@ -12,7 +12,7 @@ const Product = ({
   availabilityColor,
   totalPaddingToGive,
   pageUrl,
-  setReturnPage
+  setReturnPage,
 }) => {
   const navigate = useNavigate();
 
@@ -26,6 +26,9 @@ const Product = ({
       <div
         className="justify-center items-center relative bg-white text-black flex-col lg:flex-row pb-6 lg:pb-0 hidden lg:flex snap-start"
         style={{ minHeight: `calc(100vh - ${totalPaddingToGive}px)` }}
+        onClick={() => {
+          navigatePage(pageUrl);
+        }}
       >
         <div
           className={`lg:w-1/2 flex justify-center items-center w-11/12 mx-auto cs:justify-start border-2`}
@@ -88,7 +91,12 @@ const Product = ({
         </div>
       </div>
 
-      <div className={`block lg:hidden bg-white pb-6`}>
+      <div
+        className={`block lg:hidden bg-white pb-6`}
+        onClick={() => {
+          navigatePage(pageUrl);
+        }}
+      >
         <div className="bg-slate-100 rounded-md mx-auto w-4/5 sm:w-3/4 py-12 items-center shadow-lg shadow-black flex lg:hidden flex-col md:flex-row space-y-6 sm:space-y-0">
           <div className="flex items-center md:-translate-x-[50px]">
             <img
@@ -105,7 +113,12 @@ const Product = ({
             <p className="text-xl cs:text-lg">{info}</p>
             <p className="font-bold text-slate-500">{description}</p>
             <p className="font-bold text-slate-500">{availability}</p>
-            <p className="px-4 py-2 rounded-lg border-2 w-fit mt-2 hover:scale-95 transition cursor-pointer" onClick={()=>{navigatePage(pageUrl)}}>
+            <p
+              className="px-4 py-2 rounded-lg border-2 w-fit mt-2 hover:scale-95 transition cursor-pointer"
+              onClick={() => {
+                navigatePage(pageUrl);
+              }}
+            >
               Read More
             </p>
           </div>

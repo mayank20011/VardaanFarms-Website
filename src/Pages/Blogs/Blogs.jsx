@@ -6,7 +6,15 @@ import blog5 from "../../img/blog5.jpg";
 import blog6 from "../../img/blog6.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
+
 const Blogs = () => {
+  const navigate = useNavigate();
+
+  function redirect(url) {
+    navigate(url);
+  }
+
   return (
     <section className="bg-slate-100 text-black min-h-screen" id="blogPage">
       <Helmet>
@@ -35,7 +43,8 @@ const Blogs = () => {
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-          <article className="grid gap-4">
+
+          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"001"}`)}}>
             <div className="relative">
               <img
                 src={blog1}
@@ -55,16 +64,13 @@ const Blogs = () => {
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
               to={`/blog/${"001"}`}
-              onClick={() => {
-                setBlogToView(1);
-              }}
             >
               Read More
             </Link>
           </article>
 
-          <article className="grid gap-4" onClick={() => setBlogs(item)}>
-            <div className="relative">
+          <article className="grid gap-4 cursor-pointer" onClick={() => {redirect(`/blog/${"002"}`)}}>
+            <div className="relative w-full">
               <img
                 src={blog2}
                 alt="Indian Tea Stall"
@@ -83,16 +89,13 @@ const Blogs = () => {
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
               to={`/blog/${"002"}`}
-              onClick={() => {
-                setBlogToView(2);
-              }}
             >
               Read More
             </Link>
           </article>
 
-          <article className="grid gap-4">
-            <div className="relative">
+          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"003"}`)}}>
+            <div className="relative w-full">
               <img
                 src={blog3}
                 alt="Kesar Doodh"
@@ -111,16 +114,13 @@ const Blogs = () => {
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
               to={`/blog/${"003"}`}
-              onClick={() => {
-                setBlogToView(3);
-              }}
             >
               Read More
             </Link>
           </article>
 
-          <article className="grid gap-4">
-            <div className="relative">
+          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"004"}`)}}>
+            <div className="relative w-full">
               <img
                 src={blog4}
                 alt="Indian Culture"
@@ -141,15 +141,12 @@ const Blogs = () => {
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
               to={`/blog/${"004"}`}
-              onClick={() => {
-                setBlogToView(4);
-              }}
             >
               Read More
             </Link>
           </article>
 
-          <article className="grid gap-4">
+          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"005"}`)}}>
             <div className="relative w-full">
               <img
                 src={blog5}
@@ -171,16 +168,13 @@ const Blogs = () => {
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
               to={`/blog/${"005"}`}
-              onClick={() => {
-                setBlogToView(5);
-              }}
             >
               Read More
             </Link>
           </article>
 
-          <article className="grid gap-4">
-            <div className="relative">
+          <article className="grid gap-4 cursor-pointer" onClick={()=>{redirect(`/blog/${"006"}`)}}>
+            <div className="relative w-full">
               <img
                 src={blog6}
                 alt="Cows Sitting and Staring at camera"
@@ -201,9 +195,6 @@ const Blogs = () => {
             <Link
               className="px-4 py-2 text-white font-bold bg-green-600 rounded-md hover:scale-95 transition hover:shadow-md hover:shadow-slate-500 w-fit h-fit"
               to={`/blog/${"006"}`}
-              onClick={() => {
-                setBlogToView(6);
-              }}
             >
               Read More
             </Link>

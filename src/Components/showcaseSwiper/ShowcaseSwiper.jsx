@@ -19,7 +19,7 @@ const ShowcaseSwiper = () => {
         }}
         autoplay={{ delay: "5000" }}
         modules={[Scrollbar, Autoplay]}
-        className="w-full bg-slate-100"
+        className="w-full bg-slate-100 md:rounded-b-3xl rounded-b-2xl"
       >
 
         <SwiperSlide className="relative">
