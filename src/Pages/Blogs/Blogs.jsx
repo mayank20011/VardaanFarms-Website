@@ -44,13 +44,13 @@ const Blogs = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           <article
-            className="grid gap-4 cursor-pointer"
+            className="grid gap-4 cursor-pointer w-full"
             onClick={() => {
               redirect(`/blog/${"001"}`);
             }}
           >
-            <div className="relative">
-              <div className="aspect-w-16 aspect-h-9">
+            <div className="relative w-full h-auto ">
+              <div className="aspect-[16/9]">
                 <img
                   src={blog1}
                   alt="Cow Heard Staring at camera"
@@ -76,13 +76,13 @@ const Blogs = () => {
           </article>
 
           <article
-            className="grid gap-4 cursor-pointer"
+            className="grid gap-4 cursor-pointer w-full"
             onClick={() => {
               redirect(`/blog/${"002"}`);
             }}
           >
-            <div className="relative w-full">
-              <div className="aspect-w-16 aspect-h-9">
+            <div className="relative w-full h-auto">
+              <div className="aspect-[16/9]">
                 <img
                   src={blog2}
                   alt="Indian Tea Stall"
@@ -108,13 +108,13 @@ const Blogs = () => {
           </article>
 
           <article
-            className="grid gap-4 cursor-pointer"
+            className="grid gap-4 cursor-pointer w-full"
             onClick={() => {
               redirect(`/blog/${"003"}`);
             }}
           >
-            <div className="relative w-full">
-              <div className="aspect-w-16 aspect-h-9">
+            <div className="relative w-full h-auto">
+              <div className="aspect-[16/9]">
                 <img
                   src={blog3}
                   alt="Kesar Doodh"
@@ -140,13 +140,13 @@ const Blogs = () => {
           </article>
 
           <article
-            className="grid gap-4 cursor-pointer"
+            className="grid gap-4 cursor-pointer w-full"
             onClick={() => {
               redirect(`/blog/${"004"}`);
             }}
           >
-            <div className="relative w-full">
-              <div className="aspect-w-16 aspect-h-9">
+            <div className="relative w-full h-auto">
+              <div className="aspect-[16/9]">
                 <img
                   src={blog4}
                   alt="Indian Culture"
@@ -174,13 +174,13 @@ const Blogs = () => {
           </article>
 
           <article
-            className="grid gap-4 cursor-pointer"
+            className="grid gap-4 cursor-pointer w-full"
             onClick={() => {
               redirect(`/blog/${"005"}`);
             }}
           >
-            <div className="relative w-full">
-              <div className="aspect-w-16 aspect-h-9">
+            <div className="relative w-full h-auto">
+              <div className="aspect-[16/9]">
                 <img
                   src={blog5}
                   alt="Buffalo Heard"
@@ -208,13 +208,13 @@ const Blogs = () => {
           </article>
 
           <article
-            className="grid gap-4 cursor-pointer"
+            className="grid gap-4 cursor-pointer w-full"
             onClick={() => {
               redirect(`/blog/${"006"}`);
             }}
           >
-            <div className="relative w-full">
-              <div className="aspect-w-16 aspect-h-9">
+            <div className="relative w-full h-auto">
+              <div className="aspect-[16/9]">
                 <img
                   src={blog6}
                   alt="Cows Sitting and Staring at camera"
