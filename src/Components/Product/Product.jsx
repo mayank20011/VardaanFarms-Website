@@ -98,7 +98,7 @@ const Product = ({
         }}
       >
         <div className="bg-slate-100 rounded-md mx-auto w-4/5 sm:w-3/4 py-12 items-center shadow-lg shadow-black flex lg:hidden flex-col md:flex-row space-y-6 sm:space-y-0">
-          <div className="flex items-center md:-translate-x-[50px]">
+          <div className="flex items-center md:-translate-x-[50px] aspect-[16/9] w-72 ">
             <img
               src={img}
               alt=""
