@@ -54,7 +54,13 @@ const AboutUs = ({ totalPaddingToGive }) => {
         <div className="pt-14 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 border-2 border-slate-100 min-h-screen text-black pb-24">
           <div className="w-full grid md:grid-cols-2 xl:grid-cols-4 gap-4">
             <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
-              <img src={truck} alt="truck" className="mx-auto" loading="lazy" style={{width:"100px", height:"100px"}}/>
+              <img
+                src={truck}
+                alt="truck"
+                className="mx-auto"
+                loading="lazy"
+                style={{ width: "100px", height: "100px" }}
+              />
 
               <h1 className="font-bold text-xl">Deliver to your Door</h1>
               <p className="text-sm">
@@ -69,7 +75,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 src={healthy}
                 alt="love Sign"
                 className="mx-auto"
-                style={{width:"100px", height:"100px"}}
+                style={{ width: "100px", height: "100px" }}
                 loading="lazy"
               />
               <h1 className="font-bold text-xl">Healthy & Nutritious</h1>
@@ -80,7 +86,13 @@ const AboutUs = ({ totalPaddingToGive }) => {
             </div>
 
             <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
-              <img src={tag} alt="tag" className="mx-auto" loading="lazy" style={{width:"100px", height:"100px"}}/>
+              <img
+                src={tag}
+                alt="tag"
+                className="mx-auto"
+                loading="lazy"
+                style={{ width: "100px", height: "100px" }}
+              />
               <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
               <p className="text-sm">
                 We promise reliable service and timely delivery, so you always
@@ -94,7 +106,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 alt="customer Support"
                 className="mx-auto"
                 loading="lazy"
-                style={{width:"100px", height:"100px"}}
+                style={{ width: "100px", height: "100px" }}
               />
               <h1 className="font-bold text-xl">24/7 Customer Support</h1>
               <p className="text-sm">
@@ -258,52 +270,60 @@ const AboutUs = ({ totalPaddingToGive }) => {
             </div>
 
             <div className="p-8 bg-green-200 grid sm:grid-cols-2 lg:grid-cols-4 shadow-lg shadow-slate-200">
-              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+              <div className="flex flex-row gap-4 sm:gap-0 sm:flex-col p-4 w-fit mx-auto items-start">
                 <img
                   src="https://img.icons8.com/?size=100&id=22122&format=png&color=000000"
                   alt="clients Icon"
                   className="w-20"
                 />
-                <h1 className="text-5xl text-center">
-                  2452 <span className="text-blue-600">+</span>
-                </h1>
-                <h2 className="text-xl text-center mx-auto">Happy Clients</h2>
+                <div>
+                  <h1 className="text-3xl sm:text-5xl">
+                    2452<span className="text-blue-600">+</span>
+                  </h1>
+                  <h2 className="text-xl mx-auto">Happy Clients</h2>
+                </div>
               </div>
 
-              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+              <div className="flex flex-row gap-4 sm:gap-0 sm:flex-col p-4 w-fit mx-auto items-start">
                 <img
                   src="https://img.icons8.com/?size=100&id=13010&format=png&color=000000"
                   alt="Shop"
                   className="w-20"
                 />
-                <h1 className="text-5xl text-center">
-                  162 <span className="text-orange-600">+</span>
-                </h1>
-                <h2 className="text-xl text-center">Kind Of Dairy</h2>
+                <div>
+                  <h1 className="text-3xl sm:text-5xl">
+                    162<span className="text-orange-600">+</span>
+                  </h1>
+                  <h2 className="text-xl">Kind Of Dairy</h2>
+                </div>
               </div>
 
-              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+              <div className="flex flex-row gap-4 sm:gap-0 sm:flex-col p-4 w-fit mx-auto items-start">
                 <img
                   src="https://img.icons8.com/?size=100&id=aREqE_6a_Aq0&format=png&color=000000"
                   alt="map"
                   className="w-20"
                 />
-                <h1 className="text-5xl text-center">
-                  15 <span className="text-orange-600">+</span>
-                </h1>
-                <h2 className="text-xl">States Covered</h2>
+                <div>
+                  <h1 className="text-4xl sm:text-5xl">
+                    15<span className="text-orange-600">+</span>
+                  </h1>
+                  <h2 className="text-xl">States Covered</h2>
+                </div>
               </div>
 
-              <div className="flex flex-col p-4 w-fit mx-auto items-start">
+              <div className="flex flex-row gap-4 sm:gap-0 sm:flex-col p-4 w-fit mx-auto items-start">
                 <img
                   src="https://img.icons8.com/?size=100&id=hlk4Wa3wyoi9&format=png&color=000000"
                   alt="Team"
                   className="w-20"
                 />
-                <h1 className="text-5xl text-center">
-                  72 <span className="text-blue-600">+</span>
-                </h1>
-                <h2 className="text-xl">Team Members</h2>
+                <div>
+                  <h1 className="text-4xl sm:text-5xl">
+                    72<span className="text-blue-600">+</span>
+                  </h1>
+                  <h2 className="text-xl">Team Members</h2>
+                </div>
               </div>
             </div>
           </div>
