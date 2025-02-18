@@ -102,6 +102,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
           totalPaddingToGive={totalPaddingToGive}
           pageUrl={"product/a2DesiCowMilk"}
           setReturnPage={setReturnPage}
+          lazyLoading={false}
         />
 
         <Product

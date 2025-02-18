@@ -13,6 +13,7 @@ const Product = ({
   totalPaddingToGive,
   pageUrl,
   setReturnPage,
+  lazyLoading
 }) => {
   const navigate = useNavigate();
 
@@ -20,6 +21,8 @@ const Product = ({
     setReturnPage("Product");
     navigate(`/${url}`, { replace: true });
   }
+
+  console.log(lazyLoading)
 
   return (
     <>
@@ -104,7 +107,7 @@ const Product = ({
               alt=""
               className="w-3/4 mx-auto md:w-72"
               style={{ filter: "drop-shadow(5px 5px 10px black)" }}
-              loading="lazy"
+              loading = {lazyLoading == false ? "eager" : "lazy"}
             />
           </div>
 
