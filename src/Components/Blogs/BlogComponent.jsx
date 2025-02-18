@@ -52,16 +52,16 @@ const BlogComponent = ({ id, setId, setBlogClicked }) => {
         <div className="flex gap-8">
           <div className="flex  items-center gap-2">
             <i className="fa-solid fa-clock"></i>
-            <p className="text-green-600 font-bold">{data.data.date}</p>
+            <p className="text-green-700 font-bold">{data.data.date}</p>
           </div>
 
           <div className="flex  items-center gap-2">
             <i className="fa-solid fa-user"></i>
-            <p className="text-green-600 font-bold">Admin</p>
+            <p className="text-green-700 font-bold">Admin</p>
           </div>
         </div>
 
-        <h1 className="text-4xl font-bold hover:text-green-600 duration-300">
+        <h1 className="text-4xl font-bold hover:text-green-700 duration-300">
           {data.data.heading}
         </h1>
 
@@ -69,14 +69,14 @@ const BlogComponent = ({ id, setId, setBlogClicked }) => {
           <p>{data.data.intro}</p>
           {data.data.pera.map((obj) => (
             <div key={obj.heading}>
-              <h3 className="text-xl underline text-green-600">
+              <h2 className="text-xl underline text-green-700">
                 {obj.heading}
-              </h3>
+              </h2>
               <p>{obj.info}</p>
             </div>
           ))}
-          <div className="p-4 px-6 border-l border-l-green-600 bg-slate-100 flex flex-col gap-4">
-            <h3 className="text-3xl font-bold text-green-600">Conclusion</h3>
+          <div className="p-4 px-6 border-l border-l-green-700 bg-slate-100 flex flex-col gap-4">
+            <h3 className="text-3xl font-bold text-green-700">Conclusion</h3>
             <p>{data.data.conclusion}</p>
           </div>
         </div>

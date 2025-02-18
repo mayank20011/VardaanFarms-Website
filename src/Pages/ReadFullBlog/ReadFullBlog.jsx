@@ -71,8 +71,8 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
           }}
           id="leftBlog"
         >
-          <Link to={"/blogs"} className="absolute">
-            <i className="fa-solid fa-arrow-left text-white bg-black top-10 text-3xl p-2 rounded-md"></i>
+          <Link to={"/blogs"} className="absolute" data-discover="true" aria-label="Read Our Blogs">
+            <i className="fa-solid fa-arrow-left text-white bg-black text-3xl p-2 rounded-md"></i>
           </Link>
 
           {<BlogComponent id={id} setId={setId} setBlogClicked={setBlogClicked}/>}
