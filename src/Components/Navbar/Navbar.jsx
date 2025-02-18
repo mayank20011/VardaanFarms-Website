@@ -51,7 +51,7 @@ const Navbar = ({ headerHeight }) => {
 
           <ul className="flex gap-5">
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+              className={`cursor-pointer hover:scale-110 transition duration 700 hover:text-green-700 ${
                 active === "home" ? "text-green-700 scale-110" : ""
               }`}
             >
@@ -59,7 +59,7 @@ const Navbar = ({ headerHeight }) => {
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+              className={`cursor-pointer hover:scale-110 transition duration 700 hover:text-green-700 ${
                 active === "products" ? "text-green-700 scale-110" : ""
               }`}
             >
@@ -67,7 +67,7 @@ const Navbar = ({ headerHeight }) => {
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+              className={`cursor-pointer hover:scale-110 transition duration 700 hover:text-green-700 ${
                 active === "aboutUs" ? "text-green-700 scale-110" : ""
               }`}
             >
@@ -75,7 +75,7 @@ const Navbar = ({ headerHeight }) => {
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+              className={`cursor-pointer hover:scale-110 transition duration 700 hover:text-green-700 ${
                 active === "contactUs" ? "text-green-700 scale-110" : ""
               }`}
             >
@@ -83,7 +83,7 @@ const Navbar = ({ headerHeight }) => {
             </li>
 
             <li
-              className={`cursor-pointer hover:scale-110 transition duration 700 font-bold hover:text-green-700 ${
+              className={`cursor-pointer hover:scale-110 transition duration 700 hover:text-green-700 ${
                 active === "blogs" ? "text-green-700 scale-110" : ""
               }`}
             >

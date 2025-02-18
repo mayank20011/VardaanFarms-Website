@@ -47,7 +47,7 @@ const ShowcaseSwiper = () => {
               alt="Cow Portrait looking somewhere else"
               className="w-full h-full cursor-grab md:hidden brightness-100"
             />
-            <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div>
+            {/* <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div> */}
           </div>
           {/* <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
@@ -85,7 +85,7 @@ const ShowcaseSwiper = () => {
               className="w-full h-full cursor-grab md:hidden brightness-100"
               loading="lazy"
             />
-            <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div>
+            {/* <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div> */}
           </div>
           {/* <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
