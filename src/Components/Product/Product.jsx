@@ -114,8 +114,8 @@ const Product = ({
           <div className="text-black cs:space-y-2 space-y-6 px-6">
             <p className="text-4xl font-bold cs:text-xl">{name}</p>
             <p className="text-xl cs:text-lg">{info}</p>
-            <p className="font-bold text-slate-500">{description}</p>
-            <p className="font-bold text-slate-500">{availability}</p>
+            <p className="text-slate-700">{description}</p>
+            <p className="text-slate-700">{availability}</p>
             <p
               className="px-4 py-2 rounded-lg border-2 w-fit mt-2 hover:scale-95 transition cursor-pointer"
               onClick={() => {
