@@ -89,11 +89,11 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
               </p>
             </div>
 
-            <div className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-4xl shadow-2xl shadow-black tab:w-full aspect-[16/9]">
+            <div className="md:w-1/2 md:h-[400px] flex justify-center md:flex-row-reverse order-1 md:order-2 spacing-6 rounded-3xl shadow-2xl shadow-black tab:w-full aspect-[16/9]">
               <img
                 src={gfoFarm}
                 alt="cow Image"
-                className="w-full rounded43xl filter brightness-75 h-auto"
+                className="w-full rounded-3xl filter brightness-75 h-auto"
                 id="sinceImg"
                 loading="lazy"
               />
