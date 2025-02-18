@@ -14,8 +14,31 @@ import ourMission from "../../img/ourMission.jpg";
 import ourVission from "../../img/ourVission.jpg";
 import ourFarmCowMilking from "../../img/ourFarmCowMilking.jpg";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 const AboutUs = ({ totalPaddingToGive }) => {
+  useEffect(() => {
+    const numberNodelist = document.querySelectorAll(".number");
+    numberNodelist.forEach((numberSpan) => {
+      let start = 1;
+      let end = numberSpan.attributes[`data-val`].value;
+      gsap.to({val:start}, {
+        scrollTrigger:{
+          trigger: numberSpan,
+          scrollber:"body",
+          start:"top 80%"
+        },
+        duration:1.7,
+        val:end,
+        roundProps:"val",
+        onUpdate: function (){
+          numberSpan.innerHTML = this.targets()[0].val;
+        },
+        ease:"power1.inOut"
+      });
+    });
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -278,7 +301,10 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-3xl sm:text-5xl">
-                    2452<span className="text-blue-600">+</span>
+                    <span className="number" data-val="2452">
+                      0000
+                    </span>
+                    <span className="text-blue-600">+</span>
                   </h1>
                   <h2 className="text-xl mx-auto">Happy Clients</h2>
                 </div>
@@ -292,7 +318,10 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-3xl sm:text-5xl">
-                    162<span className="text-orange-600">+</span>
+                    <span className="number" data-val="162">
+                      000
+                    </span>
+                    <span className="text-orange-600">+</span>
                   </h1>
                   <h2 className="text-xl">Kind Of Dairy</h2>
                 </div>
@@ -306,7 +335,10 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-4xl sm:text-5xl">
-                    15<span className="text-orange-600">+</span>
+                    <span className="number" data-val="15">
+                      00
+                    </span>
+                    <span className="text-orange-600">+</span>
                   </h1>
                   <h2 className="text-xl">States Covered</h2>
                 </div>
@@ -320,7 +352,10 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-4xl sm:text-5xl">
-                    72<span className="text-blue-600">+</span>
+                    <span className="number" data-val="72">
+                      00
+                    </span>
+                    <span className="text-blue-600">+</span>
                   </h1>
                   <h2 className="text-xl">Team Members</h2>
                 </div>
