@@ -2,15 +2,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
-import mobileSlide1 from "../../img/mobileSlider1.jpg";
-import mobileSlide2 from "../../img/mobileSlider2.jpg";
-import mobileSlide3 from "../../img/mobileSlider3.jpg";
-import pcSlider1 from "../../img/pcSlider1.jpg";
-import pcSlider2 from "../../img/pcSlider2.jpg";
-import pcSlider3 from "../../img/pcSlider3.jpg";
-import { Link } from "react-router-dom";
+
+// import mobileSlide1 from "../../img/mobileSlider1.jpg";
+// import mobileSlide2 from "../../img/mobileSlider2.jpg";
+// import mobileSlide3 from "../../img/mobileSlider3.jpg";
+// import pcSlider1 from "../../img/pcSlider1.jpg";
+// import pcSlider2 from "../../img/pcSlider2.jpg";
+// import pcSlider3 from "../../img/pcSlider3.jpg";
+
+import mobileSlide2 from "../../img/s1m.png";
+import mobileSlide3 from "../../img/s2m.png"
+import pcSlider2 from "../../img/s1d.png"
+import pcSlider1 from "../../img/s2d.png"
+import { useNavigate } from "react-router-dom";
 
 const ShowcaseSwiper = () => {
+ 
+  const navigate = useNavigate();
+
+  function navigateTo(url){
+    navigate(url);
+  }
   return (
     <>
       <Swiper
@@ -22,22 +34,22 @@ const ShowcaseSwiper = () => {
         className="w-full bg-slate-100 md:rounded-b-3xl rounded-b-2xl md:aspect-[16/6]"
       >
 
-        <SwiperSlide className="relative aspect-auto">
+        <SwiperSlide className="relative aspect-auto" onClick={()=>{navigateTo("/products")}}>
           <div className="relative w-full h-full">
             <img
               src={pcSlider1}
               alt="cow Heard"
-              className="w-full h-full cursor-grab hidden md:block brightness-50"
+              className="w-full h-full cursor-grab hidden md:block brightness-100"
               loading="lazy"
             />
             <img
               src={mobileSlide3}
               alt="Cow Portrait looking somewhere else"
-              className="w-full h-full cursor-grab md:hidden brightness-50"
+              className="w-full h-full cursor-grab md:hidden brightness-100"
             />
             <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div>
           </div>
-          <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
+          {/* <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
               <div className="md:w-1/2 flex flex-col gap-6 tab:w-3/4">
                 <h1 className="text-white text-3xl md:text-5xl font-bold tab:text-4xl">
@@ -56,26 +68,26 @@ const ShowcaseSwiper = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </SwiperSlide>
 
-        <SwiperSlide className="relative aspect-auto">
+        <SwiperSlide className="relative aspect-auto" onClick={()=>{navigateTo("/blog/006")}}>
           <div className="relative w-full h-full">
             <img
               src={pcSlider2}
               alt="cow Heard Grazing and onw cow looking at camera"
-              className="w-full h-full cursor-grab hidden md:block brightness-50"
+              className="w-full h-full cursor-grab hidden md:block brightness-100"
               loading="lazy"
             />
             <img
               src={mobileSlide2}
               alt="cow Looking Dead in cameraman eyes"
-              className="w-full h-full cursor-grab md:hidden brightness-50"
+              className="w-full h-full cursor-grab md:hidden brightness-100"
               loading="lazy"
             />
             <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(0,0,0,0.7)] pointer-events-none"></div>
           </div>
-          <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
+          {/* <div className="absolute z-50 top-0 flex flex-col gap-6 h-full w-full justify-end md:justify-center pb-12 md:pb-0">
             <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
               <div className="md:w-1/2 flex flex-col gap-6 tab:w-3/4">
                 <h1 className="text-white text-3xl md:text-5xl font-bold tab:text-4xl">
@@ -94,10 +106,10 @@ const ShowcaseSwiper = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </SwiperSlide>
 
-        <SwiperSlide className="relative aspect-auto">
+        {/* <SwiperSlide className="relative aspect-auto">
           <div className="relative w-full h-full">
             <img
               src={pcSlider3}
@@ -137,7 +149,7 @@ const ShowcaseSwiper = () => {
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         
       </Swiper>
     </>
