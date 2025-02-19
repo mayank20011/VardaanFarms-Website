@@ -100,6 +100,7 @@ const Footer = () => {
                   }}
                   style={{width:"40px", height:"40px"}}
                   className="cursor-pointer hover:scale-95"
+                  loading="lazy"
                 />
                 <img
                   src={instagramLogo}
@@ -109,6 +110,7 @@ const Footer = () => {
                   }}
                   style={{width:"40px", height:"40px"}}
                   className="cursor-pointer hover:scale-95"
+                  loading="lazy"
                 />
                 <img
                   src={linkedinLogo}
@@ -118,6 +120,7 @@ const Footer = () => {
                   }}
                   style={{width:"40px", height:"40px"}}
                   className="cursor-pointer hover:scale-95"
+                  loading="lazy"
                 />
                 <img
                   src={youtubeLogo}
@@ -126,7 +129,8 @@ const Footer = () => {
                     window.open("https://www.youtube.com/@VardaanFarms");
                   }}
                   style={{width:"40px", height:"40px"}}
-                  className="cursor-pointer hover:scale-95 "
+                  className="cursor-pointer hover:scale-95"
+                  loading="lazy"
                 />
               </div>
             </div>

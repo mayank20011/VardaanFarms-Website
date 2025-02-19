@@ -32,18 +32,18 @@ const Header = () => {
       <div className="flex justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12">
         <div className="flex gap-4 text-sm">
           <div className="flex gap-2 items-center">
-            <img src={envelopeLogo} alt="Envelope" />
+            <img src={envelopeLogo} alt="Envelope" loading="lazy"/>
             <p>hello@vardaanfarms.com</p>
           </div>
           <div className="flex gap-1 items-center">
-            <img src={phoneLogo} alt="phone" />
+            <img src={phoneLogo} alt="phone" loading="lazy"/>
             <p>+91 8816000082</p>
           </div>
         </div>
 
         <div className="flex gap-4 text-sm">
           <div className="flex gap-2 items-center border-r-2 pr-6">
-            <img src={clockLogo} alt="clock" />
+            <img src={clockLogo} alt="clock" loading="lazy"/>
             <p>08:00 am - 6:00 pm</p>
           </div>
           <div className="flex gap-4 items-center">
@@ -53,6 +53,7 @@ const Header = () => {
               style={{ width: "20px", height: "20px" }}
               className="cursor-pointer hover:scale-95 transition"
               onClick={openFb}
+              loading="lazy"
             />
             <img
               src={instagramLogo}
@@ -60,6 +61,7 @@ const Header = () => {
               style={{ width: "20px", height: "20px" }}
               className="cursor-pointer hover:scale-95 transition"
               onClick={openIg}
+              loading="lazy"
             />
             <img
               src={linkedinLogo}
@@ -67,6 +69,7 @@ const Header = () => {
               style={{ width: "20px", height: "20px" }}
               className="cursor-pointer hover:scale-95 transition"
               onClick={openLinkedin}
+              loading="lazy"
             />
             <img
               src={youtubeLogo}
@@ -74,6 +77,7 @@ const Header = () => {
               style={{ width: "20px", height: "20px" }}
               className="cursor-pointer hover:scale-95 transition"
               onClick={openYt}
+              loading="lazy"
             />
           </div>
         </div>

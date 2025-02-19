@@ -150,6 +150,7 @@ const ContactUs = ({ totalPaddingToGive }) => {
                   src={envelopeLogo}
                   alt="Envelope"
                   className="bg-white rounded-md p-2"
+                  loading="lazy"
                 />
                 <div>
                   <h1 className="font-bold">Email</h1>
@@ -162,6 +163,7 @@ const ContactUs = ({ totalPaddingToGive }) => {
                   src={phoneLogo}
                   alt="Phone Logo"
                   className="bg-white rounded-md p-2"
+                  loading="lazy"
                 />
                 <div>
                   <h1 className="font-bold">Phone</h1>
@@ -174,6 +176,7 @@ const ContactUs = ({ totalPaddingToGive }) => {
                   src="https://img.icons8.com/?size=100&id=PZTTDl8ML4vy&format=png&color=000000"
                   alt="Location Logo"
                   style={{ width: "30px", height: "30px" }}
+                  loading="lazy"
                 />
                 <div>
                   <h1 className="font-bold">Location</h1>

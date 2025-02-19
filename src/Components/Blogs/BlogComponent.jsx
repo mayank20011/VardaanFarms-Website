@@ -88,6 +88,7 @@ const BlogComponent = ({ id, setId, setBlogClicked }) => {
           alt="arrow-left"
           className="w-12 cursor-pointer select-none"
           onClick={prevBlog}
+          loading="lazy"
         />
         <p className="font-bold">{`${textId[2]} of ${blogData.length}`}</p>
         <img
@@ -97,6 +98,7 @@ const BlogComponent = ({ id, setId, setBlogClicked }) => {
           alt="right"
           className="w-12 cursor-pointer select-none"
           onClick={nextBlog}
+          loading="lazy"
         />
       </div>
     </div>
