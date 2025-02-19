@@ -1,13 +1,26 @@
 import React from "react";
-import Footer from "../../Components/Footer/Footer.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import { Bounce } from "react-toastify";
 import { Helmet } from "react-helmet-async";
 import { getDatabase, ref, set } from "firebase/database";
-import database from "../../firebase/firebase.js";
+// import database from "../../firebase/firebase.js";
 import { useRef } from "react";
+import { useEffect, useState } from "react";
 
 const ContactUs = ({totalPaddingToGive}) => {
+
+  // new changes
+  const [database, setDatabase] = useState(null);
+  
+  useEffect(() => {
+    const loadDB = async () => {
+      const db = await (await import("../../firebase/firebase.js")).loadFirebase();
+      setDatabase(db);
+    };
+    loadDB();
+  }, []);
+
+
   const form = useRef(null);
   function handleSubmit(e) {
     const dataToSend = {};
