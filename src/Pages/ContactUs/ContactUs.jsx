@@ -3,23 +3,23 @@ import { ToastContainer, toast } from "react-toastify";
 import { Bounce } from "react-toastify";
 import { Helmet } from "react-helmet-async";
 import { getDatabase, ref, set } from "firebase/database";
-// import database from "../../firebase/firebase.js";
 import { useRef } from "react";
 import { useEffect, useState } from "react";
+import envelopeLogo from "../../img/envelopeLogo.png";
+import phoneLogo from "../../img/phoneLogo.png";
 
-const ContactUs = ({totalPaddingToGive}) => {
-
-  // new changes
+const ContactUs = ({ totalPaddingToGive }) => {
   const [database, setDatabase] = useState(null);
-  
+
   useEffect(() => {
     const loadDB = async () => {
-      const db = await (await import("../../firebase/firebase.js")).loadFirebase();
+      const db = await (
+        await import("../../firebase/firebase.js")
+      ).loadFirebase();
       setDatabase(db);
     };
     loadDB();
   }, []);
-
 
   const form = useRef(null);
   function handleSubmit(e) {
@@ -36,16 +36,17 @@ const ContactUs = ({totalPaddingToGive}) => {
     ) {
       toast.error("Fields Can't Be Empty");
     } else {
-      const db=getDatabase();
-      const useRef=ref(db, 'users/' + new Date().getTime());
-      set(useRef,dataToSend).then(()=>{
+      const db = getDatabase();
+      const useRef = ref(db, "users/" + new Date().getTime());
+      set(useRef, dataToSend)
+        .then(() => {
           toast.success("Your Response is Recorded");
           form.current.reset();
-      })
-      .catch((err)=>{
-        toast.error("Something Went Wrong");
-        console.log(err);
-      })
+        })
+        .catch((err) => {
+          toast.error("Something Went Wrong");
+          console.log(err);
+        });
     }
   }
   return (
@@ -118,7 +119,13 @@ const ContactUs = ({totalPaddingToGive}) => {
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       </Helmet>
 
-      <section className="bg-neutral-700 w-full min-h-screen" style={{paddingTop:`${totalPaddingToGive}px`, minHeight:`calc(100vh - ${totalPaddingToGive}px`}}>
+      <section
+        className="bg-neutral-700 w-full min-h-screen"
+        style={{
+          paddingTop: `${totalPaddingToGive}px`,
+          minHeight: `calc(100vh - ${totalPaddingToGive}px`,
+        }}
+      >
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex justify-center gap-12 flex-col lg:flex-row pt-4 vs:pt-8">
           <div className="lg:w-1/2 flex flex-col gap-6 justify-center">
             <span
@@ -138,9 +145,12 @@ const ContactUs = ({totalPaddingToGive}) => {
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2 border-b-2 pb-6">
-
               <div className="flex gap-2 items-center p-2">
-                <i className="fa-solid fa-envelope text-yellow-600 p-2 bg-white rounded-md h-fit"></i>
+                <img
+                  src={envelopeLogo}
+                  alt="Envelope"
+                  className="bg-white rounded-md p-2"
+                />
                 <div>
                   <h1 className="font-bold">Email</h1>
                   <p>hello@vardaanfarms.com</p>
@@ -148,7 +158,11 @@ const ContactUs = ({totalPaddingToGive}) => {
               </div>
 
               <div className="flex gap-2 items-center p-2">
-                <i className="fa-solid fa-phone text-orange-600 p-2 bg-white rounded-md h-fit"></i>
+                <img
+                  src={phoneLogo}
+                  alt="Phone Logo"
+                  className="bg-white rounded-md p-2"
+                />
                 <div>
                   <h1 className="font-bold">Phone</h1>
                   <p>(+91 ) 8816000082</p>
@@ -156,13 +170,16 @@ const ContactUs = ({totalPaddingToGive}) => {
               </div>
 
               <div className="flex gap-2 items-center bg-white text-black py-2 rounded-lg px-2 shadow-sm shadow-white border border-neutral-700 md:col-span-2">
-                <i className="fa-solid fa-house text-green-600 p-2 bg-neutral-700 rounded-md h-fit"></i>
+                <img
+                  src="https://img.icons8.com/?size=100&id=PZTTDl8ML4vy&format=png&color=000000"
+                  alt="Location Logo"
+                  style={{ width: "30px", height: "30px" }}
+                />
                 <div>
                   <h1 className="font-bold">Location</h1>
                   <p>Office No-19 StarTower Sec-30 Gurugram India</p>
                 </div>
               </div>
-
             </div>
 
             <div className="flex items-center gap-4 justify-start">
@@ -235,6 +252,6 @@ const ContactUs = ({totalPaddingToGive}) => {
       </section>
     </>
   );
-}
+};
 
 export default ContactUs;

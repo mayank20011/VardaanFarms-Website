@@ -6,38 +6,43 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 const ReadFullBlog = ({ totalPaddingToGive }) => {
-
   const seoData = {
     "001": {
       title: "Why A2 Desi Cow Milk - Dairy Farm Insights",
-      description: "Learn about the benefits of A2 Desi Cow Milk and why it is a healthier choice for your diet. Discover how it differs from regular milk and its advantages.",
-      keywords: "A2 Desi Cow Milk, Dairy Farm, Healthy Milk, Desi Cows"
+      description:
+        "Learn about the benefits of A2 Desi Cow Milk and why it is a healthier choice for your diet. Discover how it differs from regular milk and its advantages.",
+      keywords: "A2 Desi Cow Milk, Dairy Farm, Healthy Milk, Desi Cows",
     },
     "002": {
       title: "Enjoy Full Cream Milk Daily - Dairy Farm Insights",
-      description: "Discover the rich and creamy taste of Full Cream Milk and how it can enhance your daily diet. Learn about its nutritional benefits and uses.",
-      keywords: "Full Cream Milk, Rich Milk, Creamy Milk, Dairy Farm"
+      description:
+        "Discover the rich and creamy taste of Full Cream Milk and how it can enhance your daily diet. Learn about its nutritional benefits and uses.",
+      keywords: "Full Cream Milk, Rich Milk, Creamy Milk, Dairy Farm",
     },
     "003": {
       title: "Healthy & Tasty: Toned Milk - Dairy Farm Insights",
-      description: "Explore the benefits of Toned Milk, a healthy and tasty option for those looking for a balanced diet. Learn about its nutritional value and uses.",
-      keywords: "Toned Milk, Healthy Milk, Balanced Diet, Dairy Farm"
+      description:
+        "Explore the benefits of Toned Milk, a healthy and tasty option for those looking for a balanced diet. Learn about its nutritional value and uses.",
+      keywords: "Toned Milk, Healthy Milk, Balanced Diet, Dairy Farm",
     },
     "004": {
       title: "Light & Tasty: Double Toned Milk - Dairy Farm Insights",
-      description: "Learn about Double Toned Milk, a lighter choice that doesn't compromise on taste. Discover its benefits and why it is a great option for your diet.",
-      keywords: "Double Toned Milk, Light Milk, Tasty Milk, Dairy Farm"
+      description:
+        "Learn about Double Toned Milk, a lighter choice that doesn't compromise on taste. Discover its benefits and why it is a great option for your diet.",
+      keywords: "Double Toned Milk, Light Milk, Tasty Milk, Dairy Farm",
     },
     "005": {
       title: "Buffalo Milk: Rich & Nutritious - Dairy Farm Insights",
-      description: "Discover the rich and creamy texture of Buffalo Milk and its nutritional benefits. Learn why you should consider adding it to your diet.",
-      keywords: "Buffalo Milk, Rich Milk, Nutritious Milk, Dairy Farm"
+      description:
+        "Discover the rich and creamy texture of Buffalo Milk and its nutritional benefits. Learn why you should consider adding it to your diet.",
+      keywords: "Buffalo Milk, Rich Milk, Nutritious Milk, Dairy Farm",
     },
     "006": {
       title: "Sustainability On Dairy Farm - Dairy Farm Insights",
-      description: "Explore how dairy farms can adopt sustainable practices to protect the environment while providing high-quality dairy products.",
-      keywords: "Sustainability, Dairy Farm, Eco-Friendly, Sustainable Farming"
-    }
+      description:
+        "Explore how dairy farms can adopt sustainable practices to protect the environment while providing high-quality dairy products.",
+      keywords: "Sustainability, Dairy Farm, Eco-Friendly, Sustainable Farming",
+    },
   };
 
   const [id, setId] = useState(useParams().id);
@@ -59,10 +64,7 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
         <meta name="keywords" content={seoData[id]?.keywords} />
       </Helmet>
 
-      <div
-        className="md:pb-4 md:pt-8 flex gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex-row"
-      >
-
+      <div className="md:pb-4 md:pt-8 flex gap-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black flex-row">
         <div
           className="grow w-full h-fit overflow-y-auto bg-white rounded-md shadow-md relative scroll-smooth mb-6"
           style={{
@@ -71,11 +73,28 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
           }}
           id="leftBlog"
         >
-          <Link to={"/blogs"} className="absolute" data-discover="true" aria-label="Read Our Blogs">
-            <i className="fa-solid fa-arrow-left text-white bg-black text-3xl p-2 rounded-md"></i>
+          <Link
+            to={"/blogs"}
+            className="absolute"
+            data-discover="true"
+            aria-label="Read Our Blogs"
+          >
+            <img
+              width="80"
+              height="80"
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-arrow-left-web-flaticons-lineal-color-flat-icons-6.png"
+              alt="external-arrow-left-web-flaticons-lineal-color-flat-icons-6"
+              className="bg-white relative shadow-sm shadow-black rounded-md"
+            />
           </Link>
 
-          {<BlogComponent id={id} setId={setId} setBlogClicked={setBlogClicked}/>}
+          {
+            <BlogComponent
+              id={id}
+              setId={setId}
+              setBlogClicked={setBlogClicked}
+            />
+          }
         </div>
 
         <div className="w-[400px] h-fit p-4 bg-white hidden flex-col gap-4 shadow-lg rounded-md lg:flex">
@@ -202,6 +221,6 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
       </div>
     </div>
   );
-}
+};
 
 export default ReadFullBlog;

@@ -14,10 +14,14 @@ function ProductDetails({ data, returnPage }) {
   return (
     <div className="text-black flex gap-6 pb-12 flex-col md:flex-row">
       <div className="md:w-1/2 relative">
-        <i
-          className="fa-solid fa-arrow-left text-2xl absolute text-white px-4 py-2 rounded-lg bg-neutral-500 cursor-pointer hover:scale-95 transition"
+        <img
+          width="80"
+          height="80"
+          src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-arrow-left-web-flaticons-lineal-color-flat-icons-6.png"
+          alt="external-arrow-left-web-flaticons-lineal-color-flat-icons-6"
+          className="shadow-sm shadow-black rounded-md absolute cursor-pointer hover:scale-95 transition"
           onClick={navigateBack}
-        ></i>
+        />
         <div className="aspect-[16/9]">
           <img
             src={data.img}
