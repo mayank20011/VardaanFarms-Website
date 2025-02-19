@@ -1,7 +1,7 @@
 import React from "react";
-import ProductSwiper from "../ProductSwiper/ProductSwiper";
+// import ProductSwiper from "../ProductSwiper/ProductSwiper";
 import TestimonialSwiper from "../TestimonialSwiper/TestimonialSwiper";
-import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
+// import TestimonialSlide from "../TestimonialSlide/TestimonialSlide";
 import ShowcaseSwiper from "../showcaseSwiper/ShowcaseSwiper";
 import { Link } from "react-router-dom";
 import farmer1 from "../../img/farmer1.jpeg";
