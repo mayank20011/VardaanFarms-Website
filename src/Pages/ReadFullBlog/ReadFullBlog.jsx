@@ -79,13 +79,15 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
             data-discover="true"
             aria-label="Read Our Blogs"
           >
-            <img
-              width="80"
-              height="80"
-              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-arrow-left-web-flaticons-lineal-color-flat-icons-6.png"
-              alt="external-arrow-left-web-flaticons-lineal-color-flat-icons-6"
-              className="bg-white relative shadow-sm shadow-black rounded-md"
-            />
+            <div className="aspect-[16/9]">
+              <img
+                width="80"
+                height="80"
+                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-arrow-left-web-flaticons-lineal-color-flat-icons-6.png"
+                alt="external-arrow-left-web-flaticons-lineal-color-flat-icons-6"
+                className="bg-white relative shadow-sm shadow-black rounded-md"
+              />
+            </div>
           </Link>
 
           {
