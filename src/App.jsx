@@ -58,7 +58,7 @@ function App() {
       <ScrollToTop />
       <Header />
       <Navbar headerHeight={headerHeight} />
-      <Suspense fallback={<div className="h-[700px] w-full bg-transparent flex">Loading ...</div>}>
+      <Suspense fallback={<div className="h-[900px] w-full bg-slate-100 text-black flex">Loading ...</div>}>
         <Routes>
           <Route
             path="/"
