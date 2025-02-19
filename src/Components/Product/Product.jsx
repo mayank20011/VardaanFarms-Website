@@ -22,8 +22,6 @@ const Product = ({
     navigate(`/${url}`, { replace: true });
   }
 
-  console.log(lazyLoading)
-
   return (
     <>
       <div
