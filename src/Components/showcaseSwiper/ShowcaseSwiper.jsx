@@ -31,7 +31,7 @@ const ShowcaseSwiper = () => {
         }}
         autoplay={{ delay: "5000" }}
         modules={[Scrollbar, Autoplay]}
-        className="w-full bg-slate-100 md:rounded-b-[40px] md:aspect-[16/6]"
+        className="w-full bg-slate-100 md:rounded-b-[40px] md:aspect-[16/6] aspect-[16/24]"
       >
 
         <SwiperSlide className="relative aspect-auto" onClick={()=>{navigateTo("/products")}}>

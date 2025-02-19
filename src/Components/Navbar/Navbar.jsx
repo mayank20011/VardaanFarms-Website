@@ -99,28 +99,34 @@ const Navbar = ({ headerHeight }) => {
       >
         <div className="w-full relative p-2 flex justify-center items-center top-[40px] z-30">
           <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-2xl fixed">
-            <img
-              src={logo}
-              alt="vardan Farms Logo"
-              className="h-[36px]"
-              loading="lazy"
-            />
-            <img
-              width="36"
-              height="36"
-              src="https://img.icons8.com/ink/48/cow.png"
-              alt="cow"
-              loading="lazy"
-            />
-            <img
-              width="36"
-              height="36"
-              src="https://img.icons8.com/windows/32/menu--v5.png"
-              alt="menu--v5"
-              className="cursor-pointer"
-              onClick={openNav}
-              loading="lazy"
-            />
+            <div className="aspect-[16/9]">
+              <img
+                src={logo}
+                alt="vardan Farms Logo"
+                className="h-[36px]"
+                loading="lazy"
+              />
+            </div>
+            <div className="aspect-[16/9]">
+              <img
+                width="36"
+                height="36"
+                src="https://img.icons8.com/ink/48/cow.png"
+                alt="cow"
+                loading="lazy"
+              />
+            </div>
+            <div className="aspect-[16/9]">
+              <img
+                width="36"
+                height="36"
+                src="https://img.icons8.com/windows/32/menu--v5.png"
+                alt="menu--v5"
+                className="cursor-pointer"
+                onClick={openNav}
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
 
