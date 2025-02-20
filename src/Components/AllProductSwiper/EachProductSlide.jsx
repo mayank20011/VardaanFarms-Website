@@ -52,6 +52,7 @@ const EachProductSlide = ({
           aria-label={`read more about ${heading}`}
         >
           Read More
+          <span className="absolute w-[1px] h-[1px] p-0 m-[-1px] overflow-hidden border-0"> about {heading}</span>
         </Link>
       </div>
     </div>
