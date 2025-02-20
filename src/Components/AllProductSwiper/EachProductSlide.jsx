@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const EachProductSlide = ({
   img,
@@ -11,17 +11,17 @@ const EachProductSlide = ({
   fontColor,
   setReturnPage,
 }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  function redirectPage() {
-    navigate(link);
-  }
+  // function redirectPage() {
+  //   navigate(link);
+  // }
 
   return (
     <div
       className="w-full h-full rounded-2xl sm:px-4 md:px-6 lg:px-8 px-2 py-4 flex flex-col gap-2 shadow-2xl md:shadow-xl"
       style={{ backgroundColor: `${bgColor}` }}
-      onClick={redirectPage}
+      // onClick={redirectPage}
     >
       <div className="grow flex items-center justify-center">
         <img

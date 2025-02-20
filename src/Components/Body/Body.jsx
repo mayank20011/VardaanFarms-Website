@@ -227,7 +227,6 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
         </section>
       </section>
 
-      {/* For new swiper */}
       <section className="bg-white pb-12 overflow-x-hidden">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-10 mx-auto flex flex-col gap-6 md:gap-8">
           {/* heading */}
