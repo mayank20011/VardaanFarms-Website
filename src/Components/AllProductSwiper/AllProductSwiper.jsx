@@ -46,7 +46,7 @@ export default function App({setReturnPage}) {
         }}
         breakpoints={{
           200:{
-            slidesPerView:1.2,
+            slidesPerView:1,
           },
           560: {
             slidesPerView: 2.1,
