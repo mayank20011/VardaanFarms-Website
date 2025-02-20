@@ -72,6 +72,7 @@ const Blogs = () => {
               to={`/blog/${"001"}`}
             >
               Read More
+              <span className="absolute w-[1px] h-[1px] overflow-hidden">Why A2 Desi Cow Milk</span>
             </Link>
           </article>
 
@@ -104,6 +105,7 @@ const Blogs = () => {
               to={`/blog/${"002"}`}
             >
               Read More
+              <span className="absolute w-[1px] h-[1px] overflow-hidden">Enjoy Full Cream Milk Daily</span>
             </Link>
           </article>
 
@@ -136,6 +138,7 @@ const Blogs = () => {
               to={`/blog/${"003"}`}
             >
               Read More
+              <span className="absolute w-[1px] h-[1px] overflow-hidden">Healthy and Tasty Toned Milk</span>
             </Link>
           </article>
 
@@ -170,6 +173,7 @@ const Blogs = () => {
               to={`/blog/${"004"}`}
             >
               Read More
+              <span className="absolute w-[1px] h-[1px] overflow-hidden">Light and Tasty DTM</span>
             </Link>
           </article>
 
@@ -204,6 +208,7 @@ const Blogs = () => {
               to={`/blog/${"005"}`}
             >
               Read More
+              <span className="absolute w-[1px] h-[1px] overflow-hidden">Buffalo Milk Rich and Nutritious</span>
             </Link>
           </article>
 
@@ -238,6 +243,7 @@ const Blogs = () => {
               to={`/blog/${"006"}`}
             >
               Read More
+              <span className="absolute w-[1px] h-[1px] overflow-hidden">Sustainability On a Dairy Farm</span>
             </Link>
           </article>
         </div>

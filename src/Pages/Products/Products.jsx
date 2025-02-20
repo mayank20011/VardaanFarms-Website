@@ -55,7 +55,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
         <meta property="og:image" content={freshDahi} />
         <meta property="og:image" content={a2CowGhee} />
         <meta property="og:image" content={buffaloGhee} />
-        <meta property="og:url" content="https://vardaan-farms-website.vercel.app/products" />
+        <meta property="og:url" content="https://vardaan-farms-website.vercel.app/products"/>
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
