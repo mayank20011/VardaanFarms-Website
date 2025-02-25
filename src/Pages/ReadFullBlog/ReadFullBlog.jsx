@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import BlogComponent from "../../Components/Blogs/BlogComponent.jsx";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import arrowLeft from "../../img/arrowLeft.svg";
 
 const ReadFullBlog = ({ totalPaddingToGive }) => {
   const seoData = {
@@ -80,13 +81,8 @@ const ReadFullBlog = ({ totalPaddingToGive }) => {
             aria-label="Read Our Blogs"
           >
             <div className="aspect-[16/9]">
-              <img
-                width="80"
-                height="80"
-                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-arrow-left-web-flaticons-lineal-color-flat-icons-6.png"
-                alt="external-arrow-left-web-flaticons-lineal-color-flat-icons-6"
-                className="bg-white relative shadow-sm shadow-black rounded-md"
-              />
+              <img src={arrowLeft} alt="arrowLeft" className="w-10 bg-white rounded-md"/>
+              
             </div>
           </Link>
 
