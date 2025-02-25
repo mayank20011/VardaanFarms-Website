@@ -219,7 +219,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
           </h1>
           <Link
             id="organicDairyServicesB"
-            className="mx-auto w-fit px-8 py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white"
+            className="mx-auto w-fit px-4 py-2 text-sm md:text-lg md:px-8 md:py-4 border-2 rounded-md hover:scale-90 transition hover:shadow-xl hover:shadow-white"
             to={"/contactUs"}
           >
             Contact Us

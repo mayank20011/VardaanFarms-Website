@@ -58,7 +58,6 @@ export default function App({ setReturnPage }) {
         className="mySwiper w-full h-[435px] rounded-2xl"
         style={{ padding: "0px 0px 35px 0px" }}
         touchReleaseOnEdges={true}
-        // grabCursor={window.innerWidth > 768}
         mousewheel={window.innerWidth > 768 ? { thresholdDelta: 70 } : false}
       >
         <SwiperSlide className="relative w-[320px]">

@@ -19,7 +19,7 @@ const EachProductSlide = ({
 
   return (
     <div
-      className="w-full h-full rounded-2xl sm:px-4 md:px-6 lg:px-8 px-2 py-4 flex flex-col gap-2 shadow-2xl md:shadow-xl"
+      className="w-full h-full rounded-2xl sm:px-4 md:px-6 lg:px-8 px-2 py-4 flex flex-col gap-2 shadow-md md:shadow-xl"
       style={{ backgroundColor: `${bgColor}` }}
       onClick={redirectPage}
     >
