@@ -33,7 +33,7 @@ const ShowcaseSwiper = () => {
             alt="Cow Portrait"
             className="w-full h-full cursor-grab md:hidden brightness-100"
           />
-          <div className="absolute inset-0 md:hidden bg-gradient-to-b from-black/50 via-transparent to-black/50 pointer-events-none"></div>
+          {/* <div className="absolute inset-0 md:hidden bg-gradient-to-b from-black/50 via-transparent to-black/50 pointer-events-none"></div> */}
         </SwiperSlide>
 
         <SwiperSlide className="relative aspect-auto" onClick={() => navigate("/blog/006")}>
@@ -49,7 +49,7 @@ const ShowcaseSwiper = () => {
             className="w-full h-full cursor-grab md:hidden brightness-100"
             loading="lazy"
           />
-          <div className="absolute inset-0 md:hidden bg-gradient-to-b from-black/50 via-transparent to-black/50 pointer-events-none"></div>
+          {/* <div className="absolute inset-0 md:hidden bg-gradient-to-b from-black/50 via-transparent to-black/50 pointer-events-none"></div> */}
         </SwiperSlide>
       </Swiper>
 
