@@ -234,12 +234,10 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
             Shop
           </h1>
 
-          {/* heading-2 */}
           <h1 className="text-center text-black text-5xl font-bold">
             Our Products
           </h1>
 
-          {/* sipper */}
           <AllProductSwiper setReturnPage={setReturnPage} />
         </div>
       </section>

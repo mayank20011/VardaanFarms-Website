@@ -54,8 +54,8 @@ const ShowcaseSwiper = () => {
       </Swiper>
 
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-40">
-        <div className={`w-3 h-3 md:w-6 md:h-6 rounded-full transition-all ${activeIndex === 0 ? "bg-green-400 border-2 border-white" : "bg-white border-2 border-green-400"}`}></div>
-        <div className={`w-3 h-3 md:w-6 md:h-6 rounded-full transition-all ${activeIndex === 1 ? "bg-green-400 border-2 border-white" : "bg-white border-2 border-green-400"}`}></div>
+        <div className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all ${activeIndex === 0 ? "bg-green-400 border-2 border-white" : "bg-white border-2 border-green-400"}`}></div>
+        <div className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all ${activeIndex === 1 ? "bg-green-400 border-2 border-white" : "bg-white border-2 border-green-400"}`}></div>
       </div>
     </div>
   );

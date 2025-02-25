@@ -23,7 +23,7 @@ import masalaChach from "../../img/masalaChach.png";
 import slimCurd from "../../img/dahiLight.png";
 import curd from "../../img/curd.png";
 
-export default function App({setReturnPage}) {
+export default function App({ setReturnPage }) {
   return (
     <>
       <Swiper
@@ -38,15 +38,10 @@ export default function App({setReturnPage}) {
           slideShadows: true,
         }}
         loop={true}
-        keyboard={{
-          enabled: true,
-        }}
-        mousewheel={{
-          thresholdDelta: 70,
-        }}
+        autoplay={{ delay: 3000, disableOnInteraction: true }}
         breakpoints={{
-          200:{
-            slidesPerView:1,
+          200: {
+            slidesPerView: 1,
           },
           560: {
             slidesPerView: 2.1,
@@ -60,15 +55,19 @@ export default function App({setReturnPage}) {
         }}
         modules={[Pagination, Autoplay, EffectCoverflow]}
         pagination={true}
-        autoplay={{ delay: 3000 }}
         className="mySwiper w-full h-[435px] rounded-2xl"
         style={{ padding: "0px 0px 35px 0px" }}
+        touchReleaseOnEdges={true}
+        // grabCursor={window.innerWidth > 768}
+        mousewheel={window.innerWidth > 768 ? { thresholdDelta: 70 } : false}
       >
         <SwiperSlide className="relative w-[320px]">
           <EachProductSlide
             img={a2DesiCowMilk}
             heading={"A2 Desi Cow Milk"}
-            pera={"A2 Desi cow milk is healthy, natural, and easily digestible."}
+            pera={
+              "A2 Desi cow milk is healthy, natural, and easily digestible."
+            }
             link={"product/a2DesiCowMilk"}
             bgColor={"#e8b794"}
             fontColor={"white"}
@@ -96,7 +95,9 @@ export default function App({setReturnPage}) {
           <EachProductSlide
             img={doubleTonedMilk}
             heading={"Double Toned Milk"}
-            pera={"Lighter, low-fat option, healthy, easily digestible for everyone."}
+            pera={
+              "Lighter, low-fat option, healthy, easily digestible for everyone."
+            }
             link={"product/doubleTonedMilk"}
             bgColor={"#a999cf"}
           />
@@ -123,7 +124,9 @@ export default function App({setReturnPage}) {
           <EachProductSlide
             img={familyPack}
             heading={"Family Pack"}
-            pera={"Convenient, larger size, perfect for household needs, budget-friendly."}
+            pera={
+              "Convenient, larger size, perfect for household needs, budget-friendly."
+            }
             link={"product/familyPack"}
             bgColor={"#f28d92"}
           />
@@ -159,7 +162,9 @@ export default function App({setReturnPage}) {
           <EachProductSlide
             img={curd}
             heading={"Curd"}
-            pera={"Creamy, tangy yogurt, probiotic, enhances meals, loved by all."}
+            pera={
+              "Creamy, tangy yogurt, probiotic, enhances meals, loved by all."
+            }
             link={"product/curd"}
             bgColor={"#f49b80"}
           />
