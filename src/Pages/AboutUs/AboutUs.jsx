@@ -59,7 +59,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
         <meta property="og:image" content={ourMission} />
         <meta
           property="og:url"
-          content="https://www.vardaanfarms.com/aboutUs"
+          content="https://vardaanfarms.com/aboutUs"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Us - Vardaan Farms" />

@@ -6,7 +6,7 @@ import snehaReddy from "../../img/snehaReddy.jpg";
 import rahulMehta from "../../img/rahulMehta.jpg";
 import anilKumar from "../../img/anilKumar.jpeg";
 import amitJoshi from "../../img/amitJoshi.jpeg";
-import vinay from "../../img/vinay.jpg";
+// import vinay from "../../img/vinay.jpg";
 
 import "swiper/css/pagination";
 
@@ -33,14 +33,14 @@ const TestimonialSwiper = () => {
             <div>
               <div className="flex gap-4 pt-6">
                 <img
-                  src={vinay}
+                  src={rahulMehta}
                   alt="Rahul Mehta's image"
                   className="w-28 rounded-full border-2 border-green-600 shadow-md shadow-black"
                   loading="lazy"
                 />
                 <div className="grow flex flex-col justify-center">
-                  <h1 className="text-black">Vinay Gurjar</h1>
-                  <p className="text-neutral-500 text-sm">Haryana</p>
+                  <h1 className="text-black">Rahul Mehta</h1>
+                  <p className="text-neutral-500 text-sm">Gurugram</p>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ const TestimonialSwiper = () => {
                 />
                 <div className="grow flex flex-col justify-center">
                   <h1 className="text-black">Priya Sharma</h1>
-                  <p className="text-neutral-500 text-sm">Mumbai</p>
+                  <p className="text-neutral-500 text-sm">Jhajjar</p>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ const TestimonialSwiper = () => {
                 />
                 <div className="grow flex flex-col justify-center">
                   <h1 className="text-black">Anil Kumar</h1>
-                  <p className="text-neutral-500 text-sm">Bangalore</p>
+                  <p className="text-neutral-500 text-sm">Gurugram</p>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ const TestimonialSwiper = () => {
                 />
                 <div className="grow flex flex-col justify-center">
                   <h1 className="text-black">Sneha Reddy</h1>
-                  <p className="text-neutral-500 text-sm">Hyderabad</p>
+                  <p className="text-neutral-500 text-sm">Delhi</p>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ const TestimonialSwiper = () => {
                 />
                 <div className="grow flex flex-col justify-center">
                   <h1 className="text-black">Amit Joshi</h1>
-                  <p className="text-neutral-500 text-sm">Pune</p>
+                  <p className="text-neutral-500 text-sm">Jhajjar</p>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@ const TestimonialSwiper = () => {
                 />
                 <div className="grow flex flex-col justify-center">
                   <h1 className="text-black">Pooja Singh</h1>
-                  <p className="text-neutral-500 text-sm">Jaipur</p>
+                  <p className="text-neutral-500 text-sm">Delhi</p>
                 </div>
               </div>
             </div>

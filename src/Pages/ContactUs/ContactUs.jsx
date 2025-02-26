@@ -96,7 +96,7 @@ const ContactUs = ({ totalPaddingToGive }) => {
         />
         <meta
           property="og:url"
-          content="https://www.vardaanfarms.com/your-page-url"
+          content="https://www.vardaanfarms.com/contactUs"
         />
 
         {/* Twitter */}

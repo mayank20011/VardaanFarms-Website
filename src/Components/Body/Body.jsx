@@ -34,7 +34,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
           content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
         />
         <meta property="og:image" content={clientCow2} />
-        <meta property="og:url" content="https://www.vardaanfarms.com" />
+        <meta property="og:url" content="https://www.vardaanfarms.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -45,7 +45,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
           content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
         />
         <meta name="twitter:image" content={clientCow2} />
-        <link rel="canonical" href="https://www.vardaanfarms.com" />
+        <link rel="canonical" href="https://www.vardaanfarms.com/" />
       </Helmet>
 
       <section

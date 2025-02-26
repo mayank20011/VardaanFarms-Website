@@ -55,7 +55,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
         <meta property="og:image" content={freshDahi} />
         <meta property="og:image" content={a2CowGhee} />
         <meta property="og:image" content={buffaloGhee} />
-        <meta property="og:url" content="https://vardaan-farms-website.vercel.app/products"/>
+        <meta property="og:url" content="https://vardaanfarms.com/products"/>
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -80,7 +80,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
         <meta name="twitter:image" content={a2CowGhee} />
         <meta name="twitter:image" content={buffaloGhee} />
 
-        <link rel="canonical" href="https://vardaan-farms-website.vercel.app/products" />
+        <link rel="canonical" href="https://vardaanfarms.com/products" />
       </Helmet>
 
       <section
