@@ -54,7 +54,7 @@ const Product = ({
         <img
           src={img}
           alt={name}
-          className="lg:absolute w-72 hover:scale-105 transition"
+          className="lg:absolute w-64 hover:scale-105 transition"
           style={{ filter: "drop-shadow(0 16px 22px rgba(0, 0, 0))" }}
           loading="lazy"
         />
