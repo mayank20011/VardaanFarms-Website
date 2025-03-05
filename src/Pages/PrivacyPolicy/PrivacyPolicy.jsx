@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const PrivacyPolicy = ({ totalPaddingToGive }) => {
   return (
     <div style={{ paddingTop: `${totalPaddingToGive}px` }} className="bg-slate-100">
@@ -15,14 +15,7 @@ const PrivacyPolicy = ({ totalPaddingToGive }) => {
         <p>
           We use Your Personal data to provide and improve the Service. By using
           the Service, You agree to the collection and use of information in
-          accordance with this Privacy Policy. This Privacy Policy has been
-          created with the help of the{" "}
-          <a
-            href="https://www.termsfeed.com/privacy-policy-generator/"
-            target="_blank"
-          >
-            Privacy Policy Generator
-          </a>
+          accordance with this Privacy Policy
           .
         </p>
         <h2 className="text-2xl sm:text-3xl font-semibold text-green-600">Interpretation and Definitions</h2>
@@ -513,14 +506,7 @@ const PrivacyPolicy = ({ totalPaddingToGive }) => {
           <li>
             <p>
               By visiting this page on our website:{" "}
-              <a
-                href="https://vardaanfarms.com/contactUs"
-                rel="external nofollow noopener"
-                target="_blank"
-                className="text-green-600"
-              >
-                https://vardaanfarms.com/contactUs
-              </a>
+              <Link to="/contactUs" className="text-green-600">https://vardaanfarms.com/contactUs</Link>
             </p>
           </li>
           <li>

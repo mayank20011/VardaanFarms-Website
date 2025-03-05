@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const TermsAndCondition = ({ totalPaddingToGive }) => {
   return (
     <div
@@ -62,15 +62,7 @@ const TermsAndCondition = ({ totalPaddingToGive }) => {
               <strong>Terms and Conditions</strong> (also referred as
               &quot;Terms&quot;) mean these Terms and Conditions that form the
               entire agreement between You and the Company regarding the use of
-              the Service. This Terms and Conditions agreement has been created
-              with the help of the{" "}
-              <a
-                href="https://www.termsfeed.com/terms-conditions-generator/"
-                target="_blank"
-              >
-                Terms and Conditions Generator
-              </a>
-              .
+              the Service.
             </p>
           </li>
           <li>
@@ -84,13 +76,8 @@ const TermsAndCondition = ({ totalPaddingToGive }) => {
           <li>
             <p>
               <strong>Website</strong> refers to Vardaan Farms, accessible from{" "}
-              <a
-                href="https://vardaanfarms.com/"
-                rel="external nofollow noopener"
-                target="_blank"
-              >
-                https://vardaanfarms.com/
-              </a>
+              <Link to="/" className="text-green-600">https://vardaanfarms.com/</Link>
+                
             </p>
           </li>
           <li>
