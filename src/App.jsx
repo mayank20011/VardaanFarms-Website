@@ -4,18 +4,10 @@ import Header from "./Components/Header/Header.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import HomePage from "./Pages/Home/HomePage.jsx";
 
-const Products = lazy(() => 
-  import("./Pages/Products/Products.jsx")
-);
-const AboutUs = lazy(() => 
-  import("./Pages/AboutUs/AboutUs.jsx")
-);
-const ContactUs = lazy(() => 
-  import("./Pages/ContactUs/ContactUs.jsx")
-);
-const Blogs = lazy(() => 
-  import("./Pages/Blogs/Blogs.jsx")
-);
+const Products = lazy(() => import("./Pages/Products/Products.jsx"));
+const AboutUs = lazy(() => import("./Pages/AboutUs/AboutUs.jsx"));
+const ContactUs = lazy(() => import("./Pages/ContactUs/ContactUs.jsx"));
+const Blogs = lazy(() => import("./Pages/Blogs/Blogs.jsx"));
 
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollTop/ScrollTop.jsx";
@@ -23,6 +15,8 @@ import ReadFullBlog from "./Pages/ReadFullBlog/ReadFullBlog.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import WhatsappLink from "./Components/WhatsappLink/WhatsappLink.jsx";
 import ProductPage from "./Pages/ProductPage/ProductPage.jsx";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy.jsx";
+import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition.jsx";
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -58,7 +52,13 @@ function App() {
       <ScrollToTop />
       <Header />
       <Navbar headerHeight={headerHeight} />
-      <Suspense fallback={<div className="h-[900px] w-full bg-slate-100 text-black flex">Loading ...</div>}>
+      <Suspense
+        fallback={
+          <div className="h-[900px] w-full bg-slate-100 text-black flex">
+            Loading ...
+          </div>
+        }
+      >
         <Routes>
           <Route
             path="/"
@@ -104,6 +104,20 @@ function App() {
               <ProductPage
                 totalPaddingToGive={headerHeight + navHeight}
                 returnPage={returnPage}
+              />
+            }
+          />
+          <Route
+            path="privacyPolicy"
+            element={
+              <PrivacyPolicy totalPaddingToGive={headerHeight + navHeight} />
+            }
+          />
+          <Route
+            path="termsAndConditions"
+            element={
+              <TermsAndCondition
+                totalPaddingToGive={headerHeight + navHeight}
               />
             }
           />
