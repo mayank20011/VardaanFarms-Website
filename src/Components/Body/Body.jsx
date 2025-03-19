@@ -21,29 +21,26 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
   return (
     <>
       <Helmet>
-        <title>Vardaan Farms - Organic Dairy Products</title>
-        <meta
-          name="description"
-          content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
-        />
+        <title>Vardaan Farms - Farm Fresh Best Organic Milk In Gurgaon</title>
+        <meta name="description" content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free"/>
         <meta
           name="keywords"
-          content="Vardaan Farms, dairy products, organic milk, sustainable farming, paneer, curd, ghee, A2 cow milk, buffalo milk, fresh dairy"
+          content="Vardaan Farms, We Offer 100% Natural, Organic, Daily Lab Tested, Fresh, High-Protein, and Cultured Milk, Perfect for Your Healthy, Chemical-Free Lifestyle."
         />
         <meta
           property="og:title"
-          content="Vardaan Farms - Organic Dairy Products"
+          content="Vardaan Farms - Farm Fresh Best Organic Milk In Gurgaon"
         />
         <meta
           property="og:description"
-          content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
+          content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free"
         />
         <meta property="og:image" content={clientCow2} />
         <meta property="og:url" content="https://www.vardaanfarms.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Vardaan Farms - Organic Dairy Products"
+          content="Vardaan Farms - Farm Fresh Best Organic Milk In Gurgaon"
         />
         <meta
           name="twitter:description"
@@ -51,6 +48,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
         />
         <meta name="twitter:image" content={clientCow2} />
         <link rel="canonical" href="https://www.vardaanfarms.com/" />
+        <meta name="keywords" content="high protein milk, fresh milk, best organic milk, cultured milk" />
       </Helmet>
 
       <section

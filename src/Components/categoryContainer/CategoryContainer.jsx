@@ -16,8 +16,8 @@ const CategoryContainer = ({details}) => {
         </div>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {details.card.map((card)=>(
-          <CategoryCard src={card.src} alt={card.alt} heading={card.heading} pera={card.pera} buttonText={card.buttonText} navigateTo={card.navigateTo}/>
+        {details.card.map((card, indx)=>(
+          <CategoryCard key={indx} src={card.src} alt={card.alt} heading={card.heading} pera={card.pera} buttonText={card.buttonText} navigateTo={card.navigateTo}/>
         ))}
       </div>
     </div>
