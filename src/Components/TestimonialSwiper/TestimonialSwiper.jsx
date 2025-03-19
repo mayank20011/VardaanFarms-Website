@@ -28,7 +28,7 @@ const TestimonialSwiper = () => {
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt={"left Quote Image"} loading="lazy" className="w-16"/>
             <p className="text-xl text-neutral-600 text-left">
-            "VardaanFarms' milk has been a game-changer for our family. The quality is top-notch, and it’s so fresh. We love starting our day with it! Whether it's tea, coffee, or just a glass of milk, we can taste the difference in every sip. The richness and purity make it a perfect choice for all our dairy needs."
+            "Vardaan Farms’ fresh milk has been a game changer for my family. The taste is pure, and I love that it's free from preservatives. My kids enjoy every sip!"
             </p>
             <div>
               <div className="flex gap-4 pt-6">
@@ -39,8 +39,8 @@ const TestimonialSwiper = () => {
                   loading="lazy"
                 />
                 <div className="grow flex flex-col justify-center">
-                  <h1 className="text-black">Rahul Mehta</h1>
-                  <p className="text-neutral-500 text-sm">Gurugram</p>
+                  <h1 className="text-black">Aman Kumar</h1>
+                  <p className="text-neutral-500 text-sm">Delhi</p>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ const TestimonialSwiper = () => {
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy" className="w-16" />
             <p className="text-xl text-neutral-600 text-left">
-            "I've tried many dairy brands, but nothing compares to VardaanFarms. Their paneer is incredibly soft and delicious, making my curries and snacks taste amazing. It's become a staple in our kitchen, and even my kids love it! The texture and flavor are always consistent, which makes it easy to cook with."
+            "As a café owner, I need high-quality dairy products daily. Vardaan Farms’ high-protein milk has been the perfect choice for our protein shakes and lattes!"
             </p>
             <div>
               <div className="flex gap-4 pt-6">
@@ -61,8 +61,8 @@ const TestimonialSwiper = () => {
                   loading="lazy"
                 />
                 <div className="grow flex flex-col justify-center">
-                  <h1 className="text-black">Priya Sharma</h1>
-                  <p className="text-neutral-500 text-sm">Jhajjar</p>
+                  <h1 className="text-black">Ritika Sharma</h1>
+                  <p className="text-neutral-500 text-sm">Gurgaon</p>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ const TestimonialSwiper = () => {
           <div className="w-full bg-white pb-12" >
             <img src={leftQuote} alt="left Quote image" loading="lazy" className="w-16" />
             <p className="text-xl text-neutral-600 text-left">
-            "VardaanFarms' ghee has brought back the traditional taste to my cooking. It’s rich and flavorful, just like what my grandmother used to make. The aroma and taste are so authentic that it makes every dish special. It’s not just food, it's a journey back to those cherished family recipes."
+            "We’ve been sourcing bulk fresh milk from Vardaan Farms for our retail store, and the quality has been exceptional. Customers love the purity!"
             </p>
             <div>
               <div className="flex gap-4 pt-6">
@@ -83,8 +83,8 @@ const TestimonialSwiper = () => {
                   loading="lazy"
                 />
                 <div className="grow flex flex-col justify-center">
-                  <h1 className="text-black">Anil Kumar</h1>
-                  <p className="text-neutral-500 text-sm">Gurugram</p>
+                  <h1 className="text-black">Rajesh Mehra</h1>
+                  <p className="text-neutral-500 text-sm">Gurugram, Dairy Distributor</p>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ const TestimonialSwiper = () => {
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy" className="w-16" />
             <p className="text-xl text-neutral-600 text-left">
-            "Their curd is simply amazing. It’s smooth and has the perfect tangy taste that enhances every meal. Whether it's in raita, lassi, or kadhi, VardaanFarms' curd adds that extra touch of deliciousness. It's a must-have in our refrigerator, and we enjoy it daily."
+            "Switching to Vardaan Farms' organic milk was the best decision. It’s rich, creamy, and truly natural. I feel the difference in my health!"
             </p>
             <div>
               <div className="flex gap-4 pt-6">
@@ -105,8 +105,8 @@ const TestimonialSwiper = () => {
                   loading="lazy"
                 />
                 <div className="grow flex flex-col justify-center">
-                  <h1 className="text-black">Sneha Reddy</h1>
-                  <p className="text-neutral-500 text-sm">Delhi</p>
+                  <h1 className="text-black">Neha</h1>
+                  <p className="text-neutral-500 text-sm">Jhajjar</p>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@ const TestimonialSwiper = () => {
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy" className="w-16"/>
             <p className="text-xl text-neutral-600 text-left">
-            "The convenience of having fresh, nutritious milk delivered to our doorstep every day is unbeatable. VardaanFarms has exceeded our expectations with their service and quality. It's a relief to know we can always count on them for our dairy needs. The hassle-free service is a huge plus for our busy lifestyle."
+            "The paneer and ghee from Vardaan Farms are of the highest quality. You can taste the authenticity and farm-fresh goodness in every bite!"
             </p>
             <div>
               <div className="flex gap-4 pt-6">
@@ -138,7 +138,7 @@ const TestimonialSwiper = () => {
           <div className="w-full bg-white pb-12">
             <img src={leftQuote} alt="left Quote image" loading="lazy" className="w-16" />
             <p className="text-xl text-neutral-600 text-left">
-            "I love the purity and taste of VardaanFarms' products. Their buffalo milk is perfect for making sweets, and the quality is always consistent. My family enjoys the rich and creamy taste in our desserts and everyday meals. The freshness and authenticity make all the difference."
+            "Their cultured milk is amazing! My digestion has improved, and I love that it’s packed with natural probiotics. Highly recommend!"
             </p>
             <div>
               <div className="flex gap-4 pt-6">
@@ -149,8 +149,8 @@ const TestimonialSwiper = () => {
                   loading="lazy"
                 />
                 <div className="grow flex flex-col justify-center">
-                  <h1 className="text-black">Pooja Singh</h1>
-                  <p className="text-neutral-500 text-sm">Delhi</p>
+                  <h1 className="text-black">Sonia Parjapati</h1>
+                  <p className="text-neutral-500 text-sm">Gurugram</p>
                 </div>
               </div>
             </div>

@@ -11,8 +11,13 @@ import clientCow2 from "../../img/clientCow2.jpg";
 import gfoFarm from "../../img/gfoFarm.png";
 import AllProductSwiper from "../AllProductSwiper/AllProductSwiper";
 import { Helmet } from "react-helmet-async";
+import WhyUsCards from "../whyUsCrads/WhyUsCards";
+import Faq from "../FAQ/Faq";
+import CategoryContainer from "../categoryContainer/CategoryContainer";
+import { productCategory } from "../categoryContainer/productCategoryDetail.js";
 
 const Body = ({ totalPaddingToGive, setReturnPage }) => {
+  
   return (
     <>
       <Helmet>
@@ -67,23 +72,20 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
                 About Us
               </span>
               <h1
-                className="text-4xl md:text-5xl font-bold text-black"
+                className="text-3xl md:text-4xl font-bold text-black"
                 id="knowAbout"
               >
-                Know About Our Farm And History
+                Farm-Fresh Dairy, Trusted by Families & Businesses
               </h1>
               <p className="text-black text-xl" id="aboutUsP">
-                Located in the heart of the countryside, VardaanFarms blends
-                tradition and modernity seamlessly. Our farm is home to a
-                variety of cows and buffaloes. We believe in sustainable farming
-                that protects the environment and ensures animal well-being. Our
-                livestock roams freely, providing the purest milk straight from
-                our farm to your home.
-                <br />
-                VardaanFarms was founded in 2024, starting as a small family-run
-                operation we've grown while keeping our core principles and
-                quality intact. Our journey of love, hard work, and progress has
-                made us a trusted name in the dairy industry.
+                At Vardaan Farms, we bring you the best organic milk and fresh
+                milk, sourced from healthy, grass-fed cows. With no
+                preservatives or additives, our fresh milk retains its natural
+                purity and nutrition—just as nature intended. Whether you're
+                looking for a nutritious choice for your family or a reliable
+                supplier for your business, we ensure quality in every drop. Our
+                high-protein milk and cultured milk provide additional health
+                benefits for all ages.
               </p>
             </div>
 
@@ -102,102 +104,49 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
 
       <section className="bg-white py-8">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
-          <section className="flex flex-col gap-12 py-8">
+          <section className="flex flex-col gap-12 py-8 text-black">
             <span
               className="text-green-600 text-2xl font-bold text-center"
               id="serviceSpan"
             >
-              Services
+              Product Categories
             </span>
-            <h1
-              className="text-5xl text-center text-black font-bold pb-6"
-              id="whatWeOffer"
-            >
-              What We Offer
-            </h1>
+            <p className="text-2xl text-center leading-8 w-11/12 mx-auto">Experience the goodness of farm-fresh dairy products, crafted with care and delivered with love.</p>
+            <CategoryContainer details={productCategory[0]}/>
+            <CategoryContainer details={productCategory[1]}/>
+          </section>
+        </div>
+      </section>
 
-            <div className="grid md:grid-cols-2 2xl:grid-cols-4 w-full justify-evenly gap-12 2xl:gap-6">
-              <div
-                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] md:w-fit mx-auto  z-0 shadow-lg"
-                id="milk"
-              >
-                <img
-                  width="80"
-                  height="80"
-                  src="https://img.icons8.com/?size=100&id=3tKbNQIe_DGA&format=png&color=000000"
-                  alt="milk Icon"
-                  className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition z-0"
-                  loading="lazy"
-                />
-                <h1 className="text-2xl font-bold pt-6">Milk</h1>
-                <p className="text-black">
-                  Enjoy the tasty milk from VardaanFarms, straight from our
-                  happy cows. Perfect for tea, coffee, or homemade dishes. Full
-                  of nutrients and healthy for your family.
-                </p>
-              </div>
+      <section className="bg-slate-100 py-12">
+        <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
 
-              <div
-                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
-                id="paneer"
+          <div className="flex flex-col md:flex-row gap-6 md:gap-12 pb-8">
+            <div className="w-full md:w-2/5 flex flex-col justify-between gap-12">
+              <span
+                className="text-green-600 text-2xl font-bold "
+                id="serviceSpan"
               >
-                <img
-                  width="80"
-                  height="80"
-                  src="https://img.icons8.com/?size=100&id=KlRkVThu4Uim&format=png&color=000000"
-                  alt="panner Icon"
-                  className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
-                  loading="lazy"
-                />
-                <h1 className="text-2xl font-bold pt-6">Paneer</h1>
-                <p className="">
-                  Enjoy our soft and creamy paneer made from the best milk.
-                  Great for curries, snacks, parathas, and pakoras. A family
-                  favorite and full of protein.
-                </p>
-              </div>
+                Why Vardaan Farms?
+              </span>
+              <h1
+                className="text-black text-3xl font-bold"
+                id="whatWeOffer"
+              >
+                Quality & Purity in Every Drop
+              </h1>
 
-              <div
-                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
-                id="curd"
-              >
-                <img
-                  width="80"
-                  height="80"
-                  src="https://img.icons8.com/?size=100&id=QQlW3jD4qmhv&format=png&color=000000"
-                  alt="Curd Icon"
-                  className="absolute -top-[40px] left-1 cursor-pointer hover:scale-90 transition"
-                  loading="lazy"
-                />
-                <h1 className="text-2xl font-bold pt-6">Curd</h1>
-                <p className="">
-                  Enjoy the tangy flavor of VardaanFarms' curd, made from fresh
-                  milk. Great for meals, adding smooth texture and healthy
-                  probiotics. Use it for raita, kadhi, or lassi
-                </p>
-              </div>
-
-              <div
-                className="bmd:w-full bg-slate-100 px-4 py-6 flex flex-col gap-4 text-black rounded-md relative w-[300px] mx-auto md:w-auto shadow-lg"
-                id="ghee"
-              >
-                <img
-                  width="80"
-                  height="80"
-                  src="https://img.icons8.com/dotty/80/jam.png"
-                  alt="Ghee Jar Icon"
-                  className="absolute -top-[40px] left-0 cursor-pointer hover:scale-90 transition"
-                  loading="lazy"
-                />
-                <h1 className="text-2xl font-bold pt-6">Ghee</h1>
-                <p className="">
-                  Enjoy the rich taste of our pure ghee, made from top-quality
-                  milk. Perfect for cooking, baking, or adding a delicious touch
-                  to your dishes like dal, rotis, halwa, and ladoos.
-                </p>
+              <div className="w-full aspect-[16/12] border-2 rounded-md shadow-md">
+              <img src="" alt="" className="w-full"/>
               </div>
             </div>
-          </section>
+            <div className="w-full md:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-6 self-center">
+                <WhyUsCards number={"01"} heading={"Fresh Milk, Delivered Daily"} pera={"No preservatives, no compromise"}/>
+                <WhyUsCards number={"02"} heading={"High-Protein Milk"} pera={"Packed with essential nutrients, great for fitness & active lifestyles"}/>
+                <WhyUsCards number={"03"} heading={"Best Organic Milk"} pera={"Farm-to-table purity, no artificial processing"}/>
+                <WhyUsCards number={"04"} heading={"Probiotic-Rich Cultured Milk"} pera={"Supports digestion & gut health naturally"}/>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -297,11 +246,15 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
             </div>
           </div>
 
-          {/* <div>
-            <TestimonialSlide />
-          </div> */}
         </div>
       </section>
+
+      <section className="bg-slate-100">
+        <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
+          <Faq/>
+        </div>
+      </section>
+
     </>
   );
 };
