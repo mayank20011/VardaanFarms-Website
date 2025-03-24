@@ -15,14 +15,6 @@ function ProductDetails({ data, returnPage }) {
   return (
     <div className="text-black flex gap-6 pb-12 flex-col md:flex-row">
       <div className="md:w-1/2 relative">
-        {/* <img
-          width="80"
-          height="80"
-          src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-arrow-left-web-flaticons-lineal-color-flat-icons-6.png"
-          alt="external-arrow-left-web-flaticons-lineal-color-flat-icons-6"
-          className="shadow-sm shadow-black rounded-md absolute cursor-pointer hover:scale-95 transition"
-          onClick={navigateBack}
-        /> */}
         <img src={arrowLeft} alt="arrow-left" onClick={navigateBack} className="w-10 bg-white rounded-md cursor-pointer"/>
         <div className="aspect-[16/9]">
           <img

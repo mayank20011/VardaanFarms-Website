@@ -13,7 +13,7 @@ import a2DesiCowGhee from "../../img/a2CowGhee.png";
 import buffaloGhee from "../../img/buffaloGhee.png";
 
 const allProductsDetail = {
-  a2DesiCowMilk: {
+  "a2-desi-cow-milk": {
     img: a2DesiCowMilk,
     category: "Milk",
     heading: "A2 Desi Cow Milk",
@@ -57,7 +57,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/a2DesiCowMilk",
     },
   },
-  fullCream: {
+  "full-cream": {
     img: fullCream,
     category: "Milk",
     heading: "Full Cream Milk",
@@ -101,7 +101,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/fullCreamMilk",
     },
   },
-  tonedMilk: {
+  "toned-milk": {
     img: tonedMilk,
     category: "Milk",
     heading: "Toned Milk",
@@ -145,7 +145,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/tonedMilk",
     },
   },
-  doubleTonedMilk: {
+  "double-toned-milk": {
     img: doubleTonedMilk,
     category: "Milk",
     heading: "Double Toned Milk",
@@ -189,7 +189,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/doubleTonedMilk",
     },
   },
-  naturalCowMilk: {
+  "natural-cow-milk": {
     img: naturalCowMilk,
     category: "Milk",
     heading: "Natural Cow Milk",
@@ -233,7 +233,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/naturalCowMilk",
     },
   },
-  buffaloMilk: {
+  "buffalo-milk": {
     img: buffaloMilk,
     category: "Milk",
     heading: "Buffalo Milk",
@@ -277,7 +277,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/buffaloMilk",
     },
   },
-  familyPack: {
+  "family-pack": {
     img: familyPack,
     category: "Milk",
     heading: "Family Pack",
@@ -321,7 +321,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/familyPack",
     },
   },
-  butterMilk: {
+  "butter-milk": {
     img: butterMilk,
     category: "Chach",
     heading: "Butter Milk",
@@ -365,7 +365,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/butterMilk",
     },
   },
-  masalaChach: {
+  "masala-chach": {
     img: masalaChach,
     category: "Chach",
     heading: "Masala Chach",
@@ -409,7 +409,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/masalaChach",
     },
   },
-  slimCurd: {
+  "slim-curd": {
     img: slimCurd,
     category: "Curd",
     heading: "Slim Curd",
@@ -453,7 +453,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/slimCurd",
     },
   },
-  curd: {
+  "curd": {
     img: Curd,
     category: "Curd",
     heading: "Curd",
@@ -497,7 +497,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/curd",
     },
   },
-  a2DesiCowGhee: {
+  "a2-desi-cow-ghee": {
     img: a2DesiCowGhee,
     category: "Ghee",
     heading: "A2 Desi Cow Ghee",
@@ -541,7 +541,7 @@ const allProductsDetail = {
       canonical: "https://www.vardaanfarms.com/product/a2DesiCowGhee",
     },
   },
-  buffaloGhee: {
+  "buffalo-ghee": {
     img: buffaloGhee,
     category: "Ghee",
     heading: "Buffalo Ghee",

@@ -79,11 +79,11 @@ function App() {
             }
           />
           <Route
-            path="/aboutUs"
+            path="/about-us"
             element={<AboutUs totalPaddingToGive={headerHeight + navHeight} />}
           />
           <Route
-            path="/contactUs"
+            path="/contact-us"
             element={
               <ContactUs totalPaddingToGive={headerHeight + navHeight} />
             }
@@ -108,13 +108,13 @@ function App() {
             }
           />
           <Route
-            path="privacyPolicy"
+            path="privacy-policy"
             element={
               <PrivacyPolicy totalPaddingToGive={headerHeight + navHeight} />
             }
           />
           <Route
-            path="termsAndConditions"
+            path="terms-and-conditions"
             element={
               <TermsAndCondition
                 totalPaddingToGive={headerHeight + navHeight}

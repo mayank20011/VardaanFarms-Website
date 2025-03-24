@@ -1,68 +1,50 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function SelectProductComponent() {
   const { name } = useParams();
   const navigatee = useNavigate();
+  const[paramsValue, setParamsValue] = useState(selectFromParams(name));
 
   function selectFromParams(name) {
-    if (name === "a2DesiCowMilk") {
+    if (name === "a2-desi-cow-milk") {
       return "A2 Desi Cow Milk";
-    } else if (name === "fullCream") {
+    } else if (name === "full-cream") {
       return "Full Cream";
-    } else if (name === "tonedMilk") {
+    } else if (name === "toned-milk") {
       return "Toned Milk";
-    } else if (name === "doubleTonedMilk") {
+    } else if (name === "double-toned-milk") {
       return "Double Toned Milk";
-    } else if (name === "naturalCowMilk") {
+    } else if (name === "natural-cow-milk") {
       return "Natural Cow Milk";
-    } else if (name === "buffaloMilk") {
+    } else if (name === "buffalo-milk") {
       return "Buffalo Milk";
-    } else if (name === "familyPack") {
+    } else if (name === "family-pack") {
       return "Family Pack";
-    } else if (name === "butterMilk") {
+    } else if (name === "butter-milk") {
       return "Butter Milk";
-    } else if (name === "masalaChach") {
+    } else if (name === "masala-chach") {
       return "Masala Chach";
-    } else if (name === "slimCurd") {
+    } else if (name === "slim-curd") {
       return "Slim Curd";
     } else if (name === "curd") {
       return "Curd";
-    } else if (name == "a2DesiCowGhee") {
+    } else if (name == "a2-desi-cow-ghee") {
       return "A2 Desi Cow Ghee";
-    } else if (name === "buffaloGhee") {
+    } else if (name === "buffalo-ghee") {
       return "Buffalo Ghee";
     }
   }
 
-  function convertToString(a) {
-    let s = "";
-    for (let i = 0; i < a.length; i++) {
-      if (a[i] != " ") {
-        s = s + a[i];
-      }
-    }
-    return s;
-  }
-
   function navigate(e) {
     let str = e.target.value;
-    let f = str[0];
-    let newStr = [];
-    f = f.toLowerCase();
-    newStr[0] = f;
-    for (let i = 1; i < str.length; i++) {
-      newStr[i] = str[i];
-    }
-    str = convertToString(newStr);
     navigatee(`/product/${str}`, { replace: true });
   }
 
-  let paramsValue = selectFromParams(name);
-
   useEffect(() => {
+    setParamsValue(name);
     document.getElementById("selectProduct").value = paramsValue;
   }, [paramsValue]);
 
@@ -72,19 +54,19 @@ function SelectProductComponent() {
       id="selectProduct"
       onChange={navigate}
     >
-      <option value="A2 Desi Cow Milk">A2 Desi Cow Milk</option>
-      <option value="Full Cream">Full Cream</option>
-      <option value="Toned Milk">Toned Milk</option>
-      <option value="Double Toned Milk">Double Toned Milk</option>
-      <option value="Natural Cow Milk">Natural Cow Milk</option>
-      <option value="Buffalo Milk">Buffalo Milk</option>
-      <option value="Family Pack">Family Pack</option>
-      <option value="Butter Milk">Butter Milk</option>
-      <option value="Masala Chach">Masala Chach</option>
-      <option value="Slim Curd">Slim Curd</option>
-      <option value="Curd">Curd</option>
-      <option value="A2 Desi Cow Ghee">A2 Desi Cow Ghee</option>
-      <option value="Buffalo Ghee">Buffalo Ghee</option>
+      <option value="a2-desi-cow-milk">A2 Desi Cow Milk</option>
+      <option value="full-cream">Full Cream</option>
+      <option value="toned-milk">Toned Milk</option>
+      <option value="double-toned-milk">Double Toned Milk</option>
+      <option value="natural-cow-milk">Natural Cow Milk</option>
+      <option value="buffalo-milk">Buffalo Milk</option>
+      <option value="family-pack">Family Pack</option>
+      <option value="butter-milk">Butter Milk</option>
+      <option value="masala-chach">Masala Chach</option>
+      <option value="slim-curd">Slim Curd</option>
+      <option value="curd">Curd</option>
+      <option value="a2-desi-cow-ghee">A2 Desi Cow Ghee</option>
+      <option value="buffalo-ghee">Buffalo Ghee</option>
     </select>
   );
 }

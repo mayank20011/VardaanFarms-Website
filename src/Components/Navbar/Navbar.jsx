@@ -13,9 +13,9 @@ const Navbar = ({ headerHeight }) => {
       setActive("home");
     } else if (path.includes("/products")) {
       setActive("products");
-    } else if (path.includes("/aboutUs")) {
+    } else if (path.includes("/about-us")) {
       setActive("aboutUs");
-    } else if (path.includes("/contactUs")) {
+    } else if (path.includes("/contact-us")) {
       setActive("contactUs");
     } else if (path.includes("/blogs") || path.includes("/blog")) {
       setActive("blogs");
@@ -40,14 +40,14 @@ const Navbar = ({ headerHeight }) => {
         id="nav"
       >
         <nav className="justify-between mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 items-center hidden md:flex">
-          <div className="aspect-[16/9]">
+          <Link className="aspect-[16/9]" to={"/"}>
             <img
               src={logo}
               alt="vardaanfarms Logo"
               className="w-[96px] h-auto"
               loading="lazy"
             />
-          </div>
+          </Link>
 
           <ul className="flex gap-5">
             <li
@@ -71,7 +71,7 @@ const Navbar = ({ headerHeight }) => {
                 active === "aboutUs" ? "text-green-700 scale-110" : ""
               }`}
             >
-              <Link to="/aboutUs">About Us</Link>
+              <Link to="/about-us">About Us</Link>
             </li>
 
             <li
@@ -79,7 +79,7 @@ const Navbar = ({ headerHeight }) => {
                 active === "contactUs" ? "text-green-700 scale-110" : ""
               }`}
             >
-              <Link to="/contactUs">Contact Us</Link>
+              <Link to="/contact-us">Contact Us</Link>
             </li>
 
             <li
@@ -99,14 +99,14 @@ const Navbar = ({ headerHeight }) => {
       >
         <div className="w-full relative p-2 flex justify-center items-center top-[40px] z-30">
           <div className="flex md:hidden bg-gray-100 p-2 w-[300px] mx-auto px-6 py-3 rounded-2xl justify-between shadow-2xl fixed">
-            <div className="aspect-[16/9]">
+            <Link className="aspect-[16/9]" to="/">
               <img
                 src={logo}
                 alt="vardan Farms Logo"
                 className="h-[36px]"
                 loading="lazy"
               />
-            </div>
+            </Link>
             <div className="aspect-[16/9]">
               <img
                 width="36"
@@ -178,7 +178,7 @@ const Navbar = ({ headerHeight }) => {
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
                 active === "aboutUs" ? "border-green-600 scale-90" : ""
               }`}
-              to="/aboutUs"
+              to="/about-us"
               onClick={() => {
                 closeNav();
                 setActive("aboutUs");
@@ -191,7 +191,7 @@ const Navbar = ({ headerHeight }) => {
               className={`px-4 py-2 border-2 border-dashed hover:border-green-600 hover:scale-90 transition cursor-pointer ${
                 active === "contactUs" ? "border-green-600 scale-90" : ""
               }`}
-              to="/contactUs"
+              to="/contact-us"
               onClick={() => {
                 closeNav();
                 setActive("contactUs");

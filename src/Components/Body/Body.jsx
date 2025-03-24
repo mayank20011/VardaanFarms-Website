@@ -24,10 +24,6 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
         <title>Vardaan Farms - Farm Fresh Best Organic Milk In Gurgaon</title>
         <meta name="description" content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free"/>
         <meta
-          name="keywords"
-          content="Vardaan Farms, We Offer 100% Natural, Organic, Daily Lab Tested, Fresh, High-Protein, and Cultured Milk, Perfect for Your Healthy, Chemical-Free Lifestyle."
-        />
-        <meta
           property="og:title"
           content="Vardaan Farms - Farm Fresh Best Organic Milk In Gurgaon"
         />

@@ -71,13 +71,13 @@ const Footer = () => {
               </Link>
               <Link
                 className="hover:text-green-600 transition cursor-pointer"
-                to={"/aboutUs"}
+                to={"/about-us"}
               >
                 About Us
               </Link>
               <Link
                 className="hover:text-green-600 transition cursor-pointer"
-                to={"/contactUs"}
+                to={"/contact-us"}
               >
                 Contact Us
               </Link>
