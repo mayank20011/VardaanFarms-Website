@@ -22,20 +22,23 @@ const AboutUs = ({ totalPaddingToGive }) => {
     numberNodelist.forEach((numberSpan) => {
       let start = 1;
       let end = numberSpan.attributes[`data-val`].value;
-      gsap.to({val:start}, {
-        scrollTrigger:{
-          trigger: numberSpan,
-          scrollber:"body",
-          start:"top 80%"
-        },
-        duration:1.7,
-        val:end,
-        roundProps:"val",
-        onUpdate: function (){
-          numberSpan.innerHTML = this.targets()[0].val;
-        },
-        ease:"power1.inOut"
-      });
+      gsap.to(
+        { val: start },
+        {
+          scrollTrigger: {
+            trigger: numberSpan,
+            scrollber: "body",
+            start: "top 80%",
+          },
+          duration: 1.7,
+          val: end,
+          roundProps: "val",
+          onUpdate: function () {
+            numberSpan.innerHTML = this.targets()[0].val;
+          },
+          ease: "power1.inOut",
+        }
+      );
     });
   }, []);
 
@@ -57,10 +60,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
           content="Learn about the history and values of Vardaan Farms. Blending tradition and modernity in dairy farming, we provide organic, sustainable dairy products."
         />
         <meta property="og:image" content={ourMission} />
-        <meta
-          property="og:url"
-          content="https://vardaanfarms.com/aboutUs"
-        />
+        <meta property="og:url" content="https://vardaanfarms.com/aboutUs" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Us - Vardaan Farms" />
         <meta
@@ -84,13 +84,14 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 loading="lazy"
                 style={{ width: "100px", height: "100px" }}
               />
-
-              <h1 className="font-bold text-xl">Deliver to your Door</h1>
-              <p className="text-sm">
-                We bring fresh and pure dairy products straight to your
-                doorstep. Enjoy the convenience of farm-fresh milk and more
-                delivered daily.
-              </p>
+              <div className="flex flex-col gap-2">
+                <h1 className="font-bold text-xl">Reliable Dairy Supply</h1>
+                <p className="text-sm">
+                  We ensure a steady supply of grass-fed milk commercial through
+                  trusted retailers, delivering pure, fresh, and high-quality
+                  dairy always.
+                </p>
+              </div>
             </div>
 
             <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
@@ -101,11 +102,14 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 style={{ width: "100px", height: "100px" }}
                 loading="lazy"
               />
-              <h1 className="font-bold text-xl">Healthy & Nutritious</h1>
-              <p className="text-sm">
-                Our dairy products are packed with essential nutrients, ensuring
-                your family stays healthy and strong every day.
-              </p>
+              <div className="flex flex-col gap-2">
+                <h1 className="font-bold text-xl">Healthy & Nutritious</h1>
+                <p className="text-sm">
+                  With a seamless supply chain, we guarantee uninterrupted
+                  access to grass-fed milk commercial, ensuring freshness and
+                  premium quality.
+                </p>
+              </div>
             </div>
 
             <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
@@ -116,11 +120,14 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 loading="lazy"
                 style={{ width: "100px", height: "100px" }}
               />
-              <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
-              <p className="text-sm">
-                We promise reliable service and timely delivery, so you always
-                have the dairy products you need.
-              </p>
+              <div className="flex flex-col gap-2">
+                <h1 className="font-bold text-xl">99% Uptime Guarantee</h1>
+                <p className="text-sm">
+                  With a seamless supply chain, we ensure grass-fed milk
+                  commercial is always available, fresh, and of the highest
+                  quality—whenever you need it.
+                </p>
+              </div>
             </div>
 
             <div className="text-center shadow-2xl p-4 rounded-lg bg-white border">
@@ -131,37 +138,44 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 loading="lazy"
                 style={{ width: "100px", height: "100px" }}
               />
-              <h1 className="font-bold text-xl">24/7 Customer Support</h1>
-              <p className="text-sm">
-                Our friendly customer support team is available around the clock
-                to help with any questions or issues.
-              </p>
+              <div className="flex flex-col gap-2">
+                <h1 className="font-bold text-xl">24/7 Customer Support</h1>
+                <p className="text-sm">
+                  Our expert team is available 24/7 to assist you with grass-fed
+                  milk commercial inquiries, ensuring a smooth experience.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="pt-24 flex gap-12 flex-col lg:flex-row">
             <div className="lg:w-1/2 flex flex-col gap-6 lg:pr-6">
               <span className="text-left text-2xl text-green-600 font-bold ">
-                About VardaanFarms
+                About Vardaan Farms
               </span>
               <h1 className="text-left text-4xl capitalize font-bold">
                 Crafting Dairy Excellence
               </h1>
               <div className="text-left text-black text-lg text-md flex flex-col gap-3">
                 <span>
-                  Welcome to Vardaan Farms! We are more than just a dairy
-                  product company; we are the custodians of tradition, quality,
-                  and innovation in every delectable morsel we offer.
+                  At Vardaan Farms, we are committed to producing grass-fed milk
+                  commercial that blends ethical farming with innovation,
+                  ensuring pure, natural dairy for consumers who demand only the
+                  best.
                 </span>
                 <span>
-                  Vardaan Farms' journey began with a vision to enrich lives
-                  through wholesome products sourced from nature's bounty. From
-                  field to table, we prioritize freshness and goodness.
+                  From our farms to your table, we follow strict quality control
+                  processes to ensure freshness, hygiene, and sustainability.
+                  Our cows graze on lush green pastures, producing
+                  nutrient-rich, grass-fed milk commercial that supports a
+                  healthy lifestyle.
                 </span>
                 <span>
-                  With unwavering commitment to perfection, we maintain rigorous
-                  standards of hygiene and safety, ensuring every Vardaan Farms
-                  product exceeds expectations and delights consumers.
+                  With an emphasis on tradition and transparency, we deliver
+                  dairy products that retain authentic flavor, essential
+                  nutrients, and uncompromised quality. Whether for personal use
+                  or commercial needs, Vardaan Farms is your trusted partner for
+                  premium dairy excellence.
                 </span>
               </div>
             </div>
@@ -187,11 +201,10 @@ const AboutUs = ({ totalPaddingToGive }) => {
             </h1>
 
             <p className="sm:text-center text-xl">
-              At VardaanFarms, we are dedicated to providing top-quality dairy
-              products directly from our farm to your doorstep. Our commitment
-              ensures that you receive fresh, natural, and delicious dairy
-              products every day. With our reliable service, you can trust the
-              quality and care that goes into each product we deliver.
+              At Vardaan Farms, we bring high-quality grass-fed milk commercial
+              straight from our ethically managed farms. With a focus on purity,
+              sustainability, and freshness, our dairy products stand out in
+              both taste and health benefits.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -204,10 +217,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <h1 className="text-xl font-bold">Milk Preservation</h1>
                 <p className="text-neutral-700">
-                  We use the best techniques to keep our milk fresh and pure.
-                  From the moment it leaves our cows to the time it reaches your
-                  home, our milk is handled with utmost care to preserve its
-                  natural taste and nutrients.
+                We use advanced cooling techniques to lock in the freshness and nutrition of grass-fed milk commercial, preserving its rich taste and essential nutrients.
                 </p>
               </div>
 
@@ -220,10 +230,9 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <h1 className="text-xl font-bold">High Production</h1>
                 <p className="text-neutral-700">
-                  Our farm is equipped with modern facilities that help us
-                  produce high-quality dairy products in large quantities. This
-                  ensures that we meet all your needs, providing fresh supplies
-                  daily without compromising on quality.
+                  Our modern dairy facilities ensure efficient production of
+                  grass-fed milk commercial, meeting demand while maintaining
+                  superior quality and freshness.
                 </p>
               </div>
 
@@ -236,10 +245,9 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <h1 className="text-xl font-bold">Featured Recipe</h1>
                 <p className="text-neutral-700">
-                  Discover mouth-watering recipes made with VardaanFarms' dairy
-                  products. From creamy curries to delicious desserts, our dairy
-                  adds a special touch to every dish. Perfect for making every
-                  meal a celebration.
+                  Enhance your cooking with grass-fed milk commercial—perfect
+                  for creamy sauces, desserts, and smoothies, adding rich flavor
+                  and health benefits.
                 </p>
               </div>
 
@@ -252,10 +260,9 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <h1 className="text-xl font-bold">Recomended For Babies</h1>
                 <p className="text-neutral-700">
-                  Our dairy products are safe and packed with essential
-                  nutrients, making them a great choice for your little ones.
-                  They provide the necessary vitamins and minerals to support
-                  healthy growth and development.
+                  Our grass-fed milk commercial is packed with essential
+                  vitamins, making it a safe, nutritious choice for infants and
+                  young children.
                 </p>
               </div>
 
@@ -268,10 +275,9 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <h1 className="text-xl font-bold">Environmentally Friendly</h1>
                 <p className="text-neutral-700">
-                  We believe in eco-friendly farming practices that protect
-                  nature. Our methods ensure that we produce pure, natural
-                  products while caring for the environment. This way, you get
-                  the best of both worlds.
+                  We follow sustainable farming practices to produce grass-fed
+                  milk commercial, ensuring purity while protecting nature and
+                  reducing environmental impact.
                 </p>
               </div>
 
@@ -284,10 +290,9 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <h1 className="text-xl font-bold">Reliable pasturization</h1>
                 <p className="text-neutral-700">
-                  Our pasteurization process is reliable and keeps your milk
-                  safe and delicious. It ensures that all harmful bacteria are
-                  removed while preserving the natural goodness of the milk, so
-                  you can enjoy it with peace of mind.
+                  Our pasteurization process preserves the natural goodness of
+                  grass-fed milk commercial, removing harmful bacteria while
+                  keeping it fresh and safe.
                 </p>
               </div>
             </div>
@@ -301,12 +306,12 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-3xl sm:text-5xl">
-                    <span className="number" data-val="2452">
-                      0000
+                    <span className="number" data-val="20000">
+                      00000
                     </span>
                     <span className="text-blue-600">+</span>
                   </h1>
-                  <h2 className="text-xl mx-auto">Happy Clients</h2>
+                  <h2 className="text-xl mx-auto">Happy Houses</h2>
                 </div>
               </div>
 
@@ -318,8 +323,8 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-3xl sm:text-5xl">
-                    <span className="number" data-val="162">
-                      000
+                    <span className="number" data-val="170">
+                      00
                     </span>
                     <span className="text-orange-600">+</span>
                   </h1>
@@ -335,7 +340,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-4xl sm:text-5xl">
-                    <span className="number" data-val="15">
+                    <span className="number" data-val="5">
                       00
                     </span>
                     <span className="text-orange-600">+</span>
@@ -352,7 +357,7 @@ const AboutUs = ({ totalPaddingToGive }) => {
                 />
                 <div>
                   <h1 className="text-4xl sm:text-5xl">
-                    <span className="number" data-val="72">
+                    <span className="number" data-val="103">
                       00
                     </span>
                     <span className="text-blue-600">+</span>
@@ -373,15 +378,21 @@ const AboutUs = ({ totalPaddingToGive }) => {
                   <h1 className="text-green-600">Our Mission</h1>
                 </div>
                 <p
-                  className="text-xl"
+                  className="text-lg flex flex-col gap-2"
                   style={{ filter: "drop-shadow(2px 2px 2px white)" }}
                 >
-                  At Vardaan Farms, we blend the best of tradition and
-                  innovation to deliver premium dairy delights. With our
-                  contented cows, every sip and bite is a testament to purity
-                  and joy. From velvety milk to delectable cheeses, we’re
-                  dedicated to excellence and sustainability, making every dairy
-                  experience memorable.
+                  At Vardaan Farms, our mission is to produce grass-fed milk
+                  commercial that prioritizes health, sustainability, and
+                  ethical farming. We ensure pure, nutrient-rich dairy by
+                  raising our cows in natural, stress-free environments,
+                  preserving both flavor and nutrition.
+                  <span>
+                    By bridging tradition and technology, we deliver
+                    uncompromised quality, making grass-fed milk commercial
+                    accessible to homes and businesses. Our goal is to create
+                    sustainable dairy solutions while maintaining the highest
+                    standards of excellence.
+                  </span>
                 </p>
               </div>
               <img
@@ -406,13 +417,18 @@ const AboutUs = ({ totalPaddingToGive }) => {
                   <i className="fa-solid fa-check text-green-600"></i>
                   <h1 className="text-green-600">Our Vission</h1>
                 </div>
-                <p className="text-xl">
-                  At Vardaan Farms, we aim to set the standard in premium dairy,
-                  renowned for its quality, sustainability, and customer
-                  delight. We envision a future where our legacy flourishes,
-                  bridging communities with the pure goodness of nature.
-                  Grounded in tradition yet propelled by innovation, we strive
-                  to enrich lives globally with our exceptional dairy offerings.
+                <p className="text-lg flex flex-col gap-2">
+                  We strive to set new standards in grass-fed milk commercial,
+                  ensuring purity, sustainability, and premium quality. Our
+                  vision is to revolutionize dairy farming, making natural,
+                  grass-fed milk commercial a global benchmark.
+                  <span>
+                    With cutting-edge practices and transparency, we aim to
+                    educate consumers, build trust, and promote ethical dairy
+                    choices. Through continuous innovation and commitment, we
+                    envision a future where every home enjoys the healthiest,
+                    freshest dairy possible.
+                  </span>
                 </p>
               </div>
             </div>
