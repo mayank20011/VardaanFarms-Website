@@ -15,6 +15,7 @@ import WhyUsCards from "../whyUsCrads/WhyUsCards";
 import Faq from "../FAQ/Faq";
 import CategoryContainer from "../categoryContainer/CategoryContainer";
 import { productCategory } from "../categoryContainer/productCategoryDetail.js";
+import { homeFaq } from "../FAQ/Faqdata.js";
 
 const Body = ({ totalPaddingToGive, setReturnPage }) => {
   
@@ -31,7 +32,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
           property="og:description"
           content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free"
         />
-        <meta property="og:image" content={clientCow2} />
+        <meta property="og:image" content="https://vardaanfarms.com/assets/ourFarmCowMilking-DkrKgpGU.jpg" />
         <meta property="og:url" content="https://www.vardaanfarms.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -42,7 +43,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
           name="twitter:description"
           content="Discover Vardaan Farms - blending tradition and modernity in dairy farming. Enjoy our sustainable, organic dairy products including milk, paneer, curd, and ghee."
         />
-        <meta name="twitter:image" content={clientCow2} />
+        <meta name="twitter:image" content="https://vardaanfarms.com/assets/ourFarmCowMilking-DkrKgpGU.jpg" />
         <link rel="canonical" href="https://www.vardaanfarms.com/" />
         <meta name="keywords" content="high protein milk, fresh milk, best organic milk, cultured milk" />
       </Helmet>
@@ -245,7 +246,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
 
       <section className="bg-slate-100">
         <div className="max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 py-24 mx-auto flex justify-center items-center flex-col gap-8 text-black">
-          <Faq/>
+          <Faq data={homeFaq}/>
         </div>
       </section>
 

@@ -15,72 +15,213 @@ import a2CowGhee from "../../img/a2CowGhee.png";
 import buffaloGhee from "../../img/buffaloGhee.png";
 import Product from "../../Components/Product/Product.jsx";
 import { Helmet } from "react-helmet-async";
-
+import { productsFaq } from "../../Components/FAQ/Faqdata.js";
+import Faq from "../../Components/FAQ/Faq.jsx";
 const Products = ({ totalPaddingToGive, setReturnPage }) => {
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Our Products",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "A2 Desi Cow Milk",
+        url: "https://vardaanfarms.com/product/a2-desi-cow-milk",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Full Cream Milk",
+        url: "https://vardaanfarms.com/product/full-cream",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Toned Milk",
+        url: "https://vardaanfarms.com/product/toned-milk",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Double Toned Milk",
+        url: "https://vardaanfarms.com/product/double-toned-milk",
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        name: "Natural Cow Milk",
+        url: "https://vardaanfarms.com/product/natural-cow-milk",
+      },
+      {
+        "@type": "ListItem",
+        position: 6,
+        name: "Buffalo Milk",
+        url: "https://vardaanfarms.com/product/buffalo-milk",
+      },
+      {
+        "@type": "ListItem",
+        position: 7,
+        name: "Family Pack",
+        url: "https://vardaanfarms.com/product/family-pack",
+      },
+      {
+        "@type": "ListItem",
+        position: 8,
+        name: "Butter Milk",
+        url: "https://vardaanfarms.com/product/butter-milk",
+      },
+      {
+        "@type": "ListItem",
+        position: 9,
+        name: "Chach Masala",
+        url: "https://vardaanfarms.com/product/masala-chach",
+      },
+      {
+        "@type": "ListItem",
+        position: 10,
+        name: "Slim Curd",
+        url: "https://vardaanfarms.com/product/slim-curd",
+      },
+      {
+        "@type": "ListItem",
+        position: 11,
+        name: "Curd",
+        url: "https://vardaanfarms.com/product/curd",
+      },
+      {
+        "@type": "ListItem",
+        position: 12,
+        name: "A2 Desi Cow Ghee",
+        url: "https://vardaanfarms.com/product/a2-desi-cow-ghee",
+      },
+      {
+        "@type": "ListItem",
+        position: 13,
+        name: "Buffalo Ghee",
+        url: "https://vardaanfarms.com/product/buffalo-ghee",
+      },
+    ],
+  };
+
+  const faqData=
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What dairy products are available on Vardaan Farms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vardaan Farms offer a wide range of premium dairy products, including A2 Desi Cow Milk, Buffalo Milk, Full Cream Milk, Paneer, Ghee, and more, all sourced from our ethical farms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Vardaan Farms ghee made using the traditional Bilona method?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Vardaan Farms A2 Desi Cow Ghee is prepared using the Bilona method, ensuring superior taste, aroma, and nutritional value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Vardaan Farms paneer different from store-bought paneer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vardaan Farms farm-fresh paneer is made without preservatives, ensuring better taste, texture, and higher protein content compared to mass-produced options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you use any preservatives in your dairy products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, all Vardaan Farms dairy products are 100% natural, free from artificial preservatives, chemicals, and additives."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do Vardaan Farms offer lactose-free or plant-based alternatives?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Currently, Vardaan Farms specialize in fresh dairy products"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your dairy products suitable for children and elderly individuals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Vardaan Farms dairy products are rich in essential vitamins, calcium, and proteins, making them ideal for all age groups."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I place an order for bulk dairy products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vardaan Farms offer bulk purchasing for businesses, hotels, and retailers. You can contact through whatsapp or e-mail"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Vardaan Farms’ dairy products better than store-bought alternatives?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vardaan Farms dairy products are Fresh & organic, Preservative-free, Nutrient-rich, Ethically sourced from happy, healthy animals"
+        }
+      }
+    ]
+  }
+  
   return (
     <>
       <Helmet>
-        <meta
-          name="title"
-          content="Natural & Clean A2 Desi Cow Milk | Full Cream, Toned, Double Toned, Natural Cow Milk | Buffalo Milk & Ghee | Family Pack & Refreshing Chach | Fresh, Nutritious & Healthy Milk Products"
-        />
+        <title>Best Fresh, 100% Natural and Chemical Free Dairy products</title>
         <meta
           name="description"
-          content="Explore our wide range of 100% natural and clean milk products: A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee. Available in various sizes."
+          content="Explore our range of 100% pure and fresh dairy products, including A2 Desi Cow Milk, Buffalo Milk, Curd, and more. No preservatives, farm-fresh quality with pure Love."
         />
-        <meta
-          name="keywords"
-          content="A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee, 100% Natural, Nutritious, Healthy Milk Products"
-        />
-        <meta name="author" content="VardaanFarms" />
+        <meta name="keywords" content="Milk, Paneer, Ghee, Curd, Chach" />
+
         <meta
           property="og:title"
-          content="Natural & Clean A2 Desi Cow Milk | Full Cream, Toned, Double Toned, Natural Cow Milk | Buffalo Milk & Ghee | Family Pack & Refreshing Chach | Fresh, Nutritious & Healthy Milk Products"
+          content="Vardaan Farms: Best Fresh, 100% Natural and Chemical Free Dairy products"
         />
         <meta
           property="og:description"
-          content="Explore our wide range of 100% natural and clean milk products: A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee. Available in various sizes."
+          content="Explore our range of 100% pure and fresh dairy products, including A2 Desi Cow Milk, Buffalo Milk, Curd, and more. No preservatives, farm-fresh quality with pure Love."
         />
-        <meta property="og:image" content={a2DesiCowMilk} />
-        <meta property="og:image" content={fullCream} />
-        <meta property="og:image" content={toned} />
-        <meta property="og:image" content={dtm} />
-        <meta property="og:image" content={cowMilk} />
-        <meta property="og:image" content={buffaloMilk} />
-        <meta property="og:image" content={familyPack} />
-        <meta property="og:image" content={dtmBacha} />
-        <meta property="og:image" content={plainChach} />
-        <meta property="og:image" content={masalaChach} />
-        <meta property="og:image" content={dahiLight} />
-        <meta property="og:image" content={freshDahi} />
-        <meta property="og:image" content={a2CowGhee} />
-        <meta property="og:image" content={buffaloGhee} />
-        <meta property="og:url" content="https://vardaanfarms.com/products"/>
+        <meta
+          property="og:image"
+          content="https://vardaanfarms.com/assets/ourVission-BnlmFmqI.jpg"
+        />
+        <meta property="og:url" content="https://vardaanfarms.com/products" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Vardaan Farms" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta
-          name="twitter:title"
-          content="Natural & Clean A2 Desi Cow Milk | Full Cream, Toned, Double Toned, Natural Cow Milk | Buffalo Milk & Ghee | Family Pack & Refreshing Chach | Fresh, Nutritious & Healthy Milk Products"
+          name="twiter:title"
+          content="Best Fresh, 100% Natural and Chemical Free Dairy products"
         />
         <meta
           name="twitter:description"
-          content="Explore our wide range of 100% natural and clean milk products: A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Double Toned Milk, Natural Cow Milk, Buffalo Milk, Family Pack, Butter Milk, Masala Chach, Slim Curd, Fresh Curd, A2 Desi Cow Ghee, Buffalo Ghee. Available in various sizes."
+          content="Explore our range of 100% pure and fresh dairy products, including A2 Desi Cow Milk, Buffalo Milk, Curd, and more. No preservatives, farm-fresh quality with pure Love."
         />
-        <meta name="twitter:image" content={a2DesiCowMilk} />
-        <meta name="twitter:image" content={fullCream} />
-        <meta name="twitter:image" content={toned} />
-        <meta name="twitter:image" content={dtm} />
-        <meta name="twitter:image" content={cowMilk} />
-        <meta name="twitter:image" content={buffaloMilk} />
-        <meta name="twitter:image" content={familyPack} />
-        <meta name="twitter:image" content={dtmBacha} />
-        <meta name="twitter:image" content={plainChach} />
-        <meta name="twitter:image" content={masalaChach} />
-        <meta name="twitter:image" content={dahiLight} />
-        <meta name="twitter:image" content={freshDahi} />
-        <meta name="twitter:image" content={a2CowGhee} />
-        <meta name="twitter:image" content={buffaloGhee} />
+        <meta
+          name="twitter:image"
+          content="https://vardaanfarms.com/assets/clientCow2-BOVJgFh3.jpg"
+        />
+        <meta name="twitter:url" content="https://vardaanfarms.com/products" />
 
+        <meta />
         <link rel="canonical" href="https://vardaanfarms.com/products" />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqData)}</script>
       </Helmet>
 
       <section
@@ -325,10 +466,12 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
           pageUrl={"product/buffalo-ghee"}
           setReturnPage={setReturnPage}
         />
+        <div className="py-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
+          <Faq data={productsFaq} />
+        </div>
       </section>
-
     </>
   );
-}
+};
 
 export default Products;

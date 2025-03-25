@@ -15,8 +15,73 @@ import ourVission from "../../img/ourVission.jpg";
 import ourFarmCowMilking from "../../img/ourFarmCowMilking.jpg";
 import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
-
+import Faq from "../../Components/FAQ/Faq";
+import { aboutUsFaq } from "../../Components/FAQ/Faqdata";
 const AboutUs = ({ totalPaddingToGive }) => {
+
+  const faqData={
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes Vardaan Farms different from other dairy brands?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vardaan Farms focuses on natural, sustainable, and ethical dairy farming. Our cows graze freely, and we ensure fresh, high-quality dairy without artificial preservatives or hormones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Vardaan Farms ensure the purity of its milk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We follow strict hygiene and safety protocols, from milking to packaging. Our advanced processing retains the milk’s natural nutrients while ensuring it meets the highest quality standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where does Vardaan Farms source its milk from?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We produce milk from our own farms, where cows are raised in a natural, stress-free environment and fed a balanced diet, ensuring superior taste and nutrition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Vardaan Farms milk suitable for children and elderly individuals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our milk is rich in essential vitamins and minerals, making it an excellent choice for all age groups, including children and seniors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Vardaan Farms offer dairy products in bulk for businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we supply bulk dairy products to retailers, distributors, and businesses. Contact us for customized pricing and supply options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Vardaan Farms practice sustainability?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We implement eco-friendly farming techniques, responsible waste management, and water conservation to minimize our environmental impact while ensuring high-quality dairy production."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I buy Vardaan Farms dairy products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our dairy products are available through distributors and retail partners across Gurgaon, Jhajjar, Dadri, and Delhi. Contact us to find the nearest supplier!"
+        }
+      }
+    ]
+  };
+
   useEffect(() => {
     const numberNodelist = document.querySelectorAll(".number");
     numberNodelist.forEach((numberSpan) => {
@@ -45,30 +110,33 @@ const AboutUs = ({ totalPaddingToGive }) => {
   return (
     <>
       <Helmet>
-        <title>About Us - Vardaan Farms</title>
+        <title>Vardaan Farms - Ethical And Grass Fed Dairy Farming In India</title>
         <meta
           name="description"
-          content="Learn about the history and values of Vardaan Farms. Blending tradition and modernity in dairy farming, we provide organic, sustainable dairy products."
+          content="We Deliver Pure, high-quality Dairy Products From Grass-fed Cows That Freely Roam In Sunlight. Our Dairy Products are Natural,  and Free From Artificial Additives."
         />
         <meta
           name="keywords"
-          content="Vardaan Farms, about Vardaan Farms, dairy farm history, sustainable dairy farming, organic dairy products, farm history, dairy industry"
+          content="Grass Fed"
         />
-        <meta property="og:title" content="About Us - Vardaan Farms" />
+        <meta property="og:title" content="Vardaan Farms - Ethical And Grass Fed Dairy Farming In India" />
         <meta
           property="og:description"
-          content="Learn about the history and values of Vardaan Farms. Blending tradition and modernity in dairy farming, we provide organic, sustainable dairy products."
+          content="We Deliver Pure, high-quality Dairy Products From Grass-fed Cows That Freely Roam In Sunlight. Our Dairy Products are Natural,  and Free From Artificial Additives."
         />
-        <meta property="og:image" content={ourMission} />
+        <meta property="og:image" content="" />
         <meta property="og:url" content="https://vardaanfarms.com/aboutUs" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us - Vardaan Farms" />
+        <meta name="twitter:title" content="Vardaan Farms - Ethical And Grass Fed Dairy Farming In India" />
         <meta
           name="twitter:description"
-          content="Learn about the history and values of Vardaan Farms. Blending tradition and modernity in dairy farming, we provide organic, sustainable dairy products."
+          content="We Deliver Pure, high-quality Dairy Products From Grass-fed Cows That Freely Roam In Sunlight. Our Dairy Products are Natural,  and Free From Artificial Additives."
         />
-        <meta name="twitter:image" content={ourMission} />
+        <meta name="twitter:image" content="" />
         <link rel="canonical" href="https://www.vardaanfarms.com/aboutUs" />
+        <script type="application/ld+json">
+           {JSON.stringify(faqData)}
+        </script>
       </Helmet>
       <div
         className="min-h-screen w-full bg-slate-100"
@@ -439,6 +507,8 @@ const AboutUs = ({ totalPaddingToGive }) => {
               className="rounded-3xl"
               loading="lazy"
             />
+
+            <Faq data={aboutUsFaq}/>
           </div>
         </div>
       </div>
