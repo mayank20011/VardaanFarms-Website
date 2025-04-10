@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet-async";
 import { productsFaq } from "../../Components/FAQ/Faqdata.js";
 import Faq from "../../Components/FAQ/Faq.jsx";
 const Products = ({ totalPaddingToGive, setReturnPage }) => {
-
+  
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -105,85 +105,107 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
     ],
   };
 
-  const faqData=
-  {
+  const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
+    mainEntity: [
       {
         "@type": "Question",
-        "name": "What dairy products are available on Vardaan Farms?",
-        "acceptedAnswer": {
+        name: "What dairy products are available on Vardaan Farms?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Vardaan Farms offer a wide range of premium dairy products, including A2 Desi Cow Milk, Buffalo Milk, Full Cream Milk, Paneer, Ghee, and more, all sourced from our ethical farms."
-        }
+          text: "Vardaan Farms offer a wide range of premium dairy products, including A2 Desi Cow Milk, Buffalo Milk, Full Cream Milk, Paneer, Ghee, and more, all sourced from our ethical farms.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Is Vardaan Farms ghee made using the traditional Bilona method?",
-        "acceptedAnswer": {
+        name: "Is Vardaan Farms ghee made using the traditional Bilona method?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Yes! Vardaan Farms A2 Desi Cow Ghee is prepared using the Bilona method, ensuring superior taste, aroma, and nutritional value."
-        }
+          text: "Yes! Vardaan Farms A2 Desi Cow Ghee is prepared using the Bilona method, ensuring superior taste, aroma, and nutritional value.",
+        },
       },
       {
         "@type": "Question",
-        "name": "How is Vardaan Farms paneer different from store-bought paneer?",
-        "acceptedAnswer": {
+        name: "How is Vardaan Farms paneer different from store-bought paneer?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Vardaan Farms farm-fresh paneer is made without preservatives, ensuring better taste, texture, and higher protein content compared to mass-produced options."
-        }
+          text: "Vardaan Farms farm-fresh paneer is made without preservatives, ensuring better taste, texture, and higher protein content compared to mass-produced options.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Do you use any preservatives in your dairy products?",
-        "acceptedAnswer": {
+        name: "Do you use any preservatives in your dairy products?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "No, all Vardaan Farms dairy products are 100% natural, free from artificial preservatives, chemicals, and additives."
-        }
+          text: "No, all Vardaan Farms dairy products are 100% natural, free from artificial preservatives, chemicals, and additives.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Do Vardaan Farms offer lactose-free or plant-based alternatives?",
-        "acceptedAnswer": {
+        name: "Do Vardaan Farms offer lactose-free or plant-based alternatives?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Currently, Vardaan Farms specialize in fresh dairy products"
-        }
+          text: "Currently, Vardaan Farms specialize in fresh dairy products",
+        },
       },
       {
         "@type": "Question",
-        "name": "Are your dairy products suitable for children and elderly individuals?",
-        "acceptedAnswer": {
+        name: "Are your dairy products suitable for children and elderly individuals?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Yes, Vardaan Farms dairy products are rich in essential vitamins, calcium, and proteins, making them ideal for all age groups."
-        }
+          text: "Yes, Vardaan Farms dairy products are rich in essential vitamins, calcium, and proteins, making them ideal for all age groups.",
+        },
       },
       {
         "@type": "Question",
-        "name": "How do I place an order for bulk dairy products?",
-        "acceptedAnswer": {
+        name: "How do I place an order for bulk dairy products?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Vardaan Farms offer bulk purchasing for businesses, hotels, and retailers. You can contact through whatsapp or e-mail"
-        }
+          text: "Vardaan Farms offer bulk purchasing for businesses, hotels, and retailers. You can contact through whatsapp or e-mail",
+        },
       },
       {
         "@type": "Question",
-        "name": "What makes Vardaan Farms’ dairy products better than store-bought alternatives?",
-        "acceptedAnswer": {
+        name: "What makes Vardaan Farms’ dairy products better than store-bought alternatives?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Vardaan Farms dairy products are Fresh & organic, Preservative-free, Nutrient-rich, Ethically sourced from happy, healthy animals"
-        }
-      }
-    ]
-  }
-  
+          text: "Vardaan Farms dairy products are Fresh & organic, Preservative-free, Nutrient-rich, Ethically sourced from happy, healthy animals",
+        },
+      },
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Best Fresh, 100% Natural and Chemical Free Dairy products",
+    description:
+      "Explore our range of 100% pure and fresh dairy products, including A2 Desi Cow Milk, Buffalo Milk, Curd, and more. No preservatives, farm-fresh quality with pure Love.",
+    image: "https://vardaanfarms.com/assets/ourFarmCowMilking-DkrKgpGU.jpg",
+    author: {
+      "@type": "Person",
+      name: "Mayank Behl",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Vardaan Farms",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://vardaanfarms.com/assets/ourFarmCowMilking-DkrKgpGU.jpg",
+      },
+    },
+    datePublished: "2025-03-26",
+    dateModified: "2025-03-26",
+  };
+
   return (
     <>
       <Helmet>
         <title>Best Fresh, 100% Natural and Chemical Free Dairy products</title>
         <meta
           name="description"
-          content="Explore our range of 100% pure and fresh dairy products, including A2 Desi Cow Milk, Buffalo Milk, Curd, and more. No preservatives, farm-fresh quality with pure Love."
+          content="Explore Our Range Of 100% Pure, Farm-Fresh Dairy Products, Including A2 Cow Milk, Buffalo Milk, Curd, and more. No Preservatives Just Natural Goodness!."
         />
         <meta name="keywords" content="Milk, Paneer, Ghee, Curd, Chach" />
 
@@ -193,7 +215,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
         />
         <meta
           property="og:description"
-          content="Explore our range of 100% pure and fresh dairy products, including A2 Desi Cow Milk, Buffalo Milk, Curd, and more. No preservatives, farm-fresh quality with pure Love."
+          content="Explore Our Range Of 100% Pure, Farm-Fresh Dairy Products, Including A2 Cow Milk, Buffalo Milk, Curd, and more. No Preservatives Just Natural Goodness!."
         />
         <meta
           property="og:image"
@@ -210,7 +232,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
         />
         <meta
           name="twitter:description"
-          content="Explore our range of 100% pure and fresh dairy products, including A2 Desi Cow Milk, Buffalo Milk, Curd, and more. No preservatives, farm-fresh quality with pure Love."
+          content="Explore Our Range Of 100% Pure, Farm-Fresh Dairy Products, Including A2 Cow Milk, Buffalo Milk, Curd, and more. No Preservatives Just Natural Goodness!."
         />
         <meta
           name="twitter:image"
@@ -222,6 +244,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
         <link rel="canonical" href="https://vardaanfarms.com/products" />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
         <script type="application/ld+json">{JSON.stringify(faqData)}</script>
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       </Helmet>
 
       <section
@@ -466,7 +489,7 @@ const Products = ({ totalPaddingToGive, setReturnPage }) => {
           pageUrl={"product/buffalo-ghee"}
           setReturnPage={setReturnPage}
         />
-        <div className="py-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
+        <div className="py-12 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-black">
           <Faq data={productsFaq} />
         </div>
       </section>

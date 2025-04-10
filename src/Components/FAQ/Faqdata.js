@@ -91,4 +91,21 @@ export const productsFaq = [
   }
 ];
 
-export const contactUsFaq = [];
+export const contactUsFaq = [
+  {
+    q: "How can i contact Vardaan Farms?",
+    ans: "You can easily reach out to Vardaan Farms by calling us at +91 8816000082. We're happy to assist you with any queries about our dairy products and services! "
+  },
+  {
+    q: "What's the Official mail of Vardaan Farms?",
+    ans: "The Official mail of Vardaan Farms is hello@vardaanfarms.com"
+  },
+  {
+    q: "Where is Vardaan Farms Office?",
+    ans: "Vardaan Farms office is located in Star Tower, Block A, Sector 30, Gurugram, Office No 19, You can also Checkout on Google maps."
+  },
+  {
+    q: "Is Vardaan Farms office open on Sunday?",
+    ans: "No, but you can still visit their Manufacturing Plant (Green Field Organc farming) in Jhajjar, checkout on google maps."
+  },
+];

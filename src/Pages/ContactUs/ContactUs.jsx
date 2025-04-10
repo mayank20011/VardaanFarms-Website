@@ -7,6 +7,8 @@ import { useRef } from "react";
 import { useEffect, useState } from "react";
 import envelopeLogo from "../../img/envelopeLogo.png";
 import phoneLogo from "../../img/phoneLogo.png";
+import { contactUsFaq } from "../../Components/FAQ/Faqdata.js";
+import Faq from "../../Components/FAQ/Faq.jsx";
 
 const ContactUs = ({ totalPaddingToGive }) => {
   const [database, setDatabase] = useState(null);
@@ -49,6 +51,69 @@ const ContactUs = ({ totalPaddingToGive }) => {
         });
     }
   }
+
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How can i contact Vardaan Farms?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can easily reach out to Vardaan Farms by calling us at +91 8816000082. We're happy to assist you with any queries about our dairy products and services!",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the Official mail of Vardaan Farms?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Official mail of Vardaan Farms is hello@vardaanfarms.com",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where is Vardaan Farms Office?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Vardaan Farms office is located in Star Tower, Block A, Sector 30, Gurugram, Office No 19, You can also Checkout on Google maps.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Vardaan Farms office open on Sunday?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No, but you can still visit their Manufacturing Plant (Green Field Organc farming) in Jhajjar, checkout on google maps.",
+        },
+      },
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Get in Touch with Vardaan Farms, Contact Us at (+91)881600082",
+    description:
+      "Have a Question or Need Fresh Dairy Products? We'd Love To Hear From You! Reach Out to Vardaan Farms via call, email, or Visit us for farm-fresh Goodness.",
+    image: "https://vardaanfarms.com/assets/ourFarmCowMilking-DkrKgpGU.jpg",
+    author: {
+      "@type": "Person",
+      name: "Mayank Behl",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Vardaan Farms",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://vardaanfarms.com/assets/ourFarmCowMilking-DkrKgpGU.jpg",
+      },
+    },
+    datePublished: "2025-03-26",
+    dateModified: "2025-03-26",
+  };
+
   return (
     <>
       <ToastContainer
@@ -65,58 +130,47 @@ const ContactUs = ({ totalPaddingToGive }) => {
         transition={Bounce}
       />
       <Helmet>
-        {/* Primary Meta Tags */}
         <title>
-          Vardaan Farms | Fresh Dairy Products Delivered to Your Doorstep in
-          Gurugram, India
+          Get in Touch with Vardaan Farms, Contact Us at (+91)881600082
         </title>
         <meta
           name="description"
-          content="Experience fresh and pure dairy products delivered straight to your doorstep with Vardaan Farms. Our healthy and nutritious milk and dairy products ensure your family stays strong every day. Contact us at (+91) 8816000082."
+          content="Have a Question or Need Fresh Dairy Products? We'd Love To Hear From You! Reach Out to Vardaan Farms via call, email, or Visit us for farm-fresh Goodness."
         />
-        <meta
-          name="keywords"
-          content="Vardaan Farms, Fresh Dairy Products, Milk Delivery Gurugram, Healthy Milk India, Nutritious Dairy Products, Farm-Fresh Milk, Milk Preservation, High Production Dairy, Eco-Friendly Farming, Reliable Pasteurization"
-        />
+        <meta name="keywords" content="" />
         <meta name="author" content="Vardaan Farms" />
-
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Vardaan Farms | Fresh Dairy Products Delivered to Your Doorstep in Gurugram, India"
+          content="Get in Touch with Vardaan Farms, Contact Us at (+91)881600082"
         />
         <meta
           property="og:description"
-          content="Experience fresh and pure dairy products delivered straight to your doorstep with Vardaan Farms. Our healthy and nutritious milk and dairy products ensure your family stays strong every day."
+          content="Have a Question or Need Fresh Dairy Products? We'd Love To Hear From You! Reach Out to Vardaan Farms via call, email, or Visit us for farm-fresh Goodness."
         />
         <meta
           property="og:image"
-          content="https://www.vardaanfarms.com/images/your-image.jpg"
+          content="https://vardaanfarms.com/assets/clientCow2-BOVJgFh3.jpg"
         />
         <meta
           property="og:url"
-          content="https://www.vardaanfarms.com/contactUs"
+          content="https://www.vardaanfarms.com/contact-us"
         />
-
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Vardaan Farms | Fresh Dairy Products Delivered to Your Doorstep in Gurugram, India"
+          content="Get in Touch with Vardaan Farms, Contact Us at (+91)881600082"
         />
         <meta
           name="twitter:description"
-          content="Experience fresh and pure dairy products delivered straight to your doorstep with Vardaan Farms. Healthy and nutritious dairy products for your family's well-being."
+          content="Have a Question or Need Fresh Dairy Products? We'd Love To Hear From You! Reach Out to Vardaan Farms via call, email, or Visit us for farm-fresh Goodness."
         />
         <meta
           name="twitter:image"
-          content="https://www.vardaanfarms.com/images/your-image.jpg"
+          content="https://vardaanfarms.com/assets/clientCow2-BOVJgFh3.jpg"
         />
-
-        {/* Additional Meta Tags */}
-        <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="application/ld+json">{JSON.stringify(faqData)}</script>
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       </Helmet>
 
       <section
@@ -250,7 +304,9 @@ const ContactUs = ({ totalPaddingToGive }) => {
             </div>
           </form>
         </div>
-
+        <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 text-white py-12">
+          <Faq data={contactUsFaq} />
+        </div>
         <div className="border-t-2 border-dashed"></div>
       </section>
     </>

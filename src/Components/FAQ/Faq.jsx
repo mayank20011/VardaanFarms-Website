@@ -9,7 +9,7 @@ const Faq = ({data}) => {
   }
 
   return (
-    <div className="flex flex-col gap-6 md:gap-8 w-full text-black select-none">
+    <div className="flex flex-col gap-6 md:gap-8 w-full select-none">
       <h1 className="text-3xl font-bold text-center">
         Frequently Asked Questions
       </h1>

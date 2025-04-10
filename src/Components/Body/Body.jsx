@@ -22,15 +22,15 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
   return (
     <>
       <Helmet>
-        <title>Vardaan Farms - Farm Fresh Best Organic Milk In Gurgaon</title>
-        <meta name="description" content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free"/>
+        <title>Vardaan Farms - Farm Fresh Best Organic Milk In Haryana</title>
+        <meta name="description" content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free With Pure Love From Our Farms."/>
         <meta
           property="og:title"
-          content="Vardaan Farms - Farm Fresh Best Organic Milk In Gurgaon"
+          content="Vardaan Farms - Farm Fresh Best Organic Milk In Haryana"
         />
         <meta
           property="og:description"
-          content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free"
+          content="At Vardaan Farms We Sell Fresh, Hight-Protein, Organic & Cultured Milk For Healthy Living, 100% Natural & Chemical-Free With Pure Love From Our Farms."
         />
         <meta property="og:image" content="https://vardaanfarms.com/assets/ourFarmCowMilking-DkrKgpGU.jpg" />
         <meta property="og:url" content="https://www.vardaanfarms.com/" />
@@ -97,7 +97,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
         </div>
       </section>
 
-      <section className="bg-white py-8">
+      {/* <section className="bg-white py-8">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
           <section className="flex flex-col gap-12 py-8 text-black">
             <span
@@ -111,9 +111,9 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
             <CategoryContainer details={productCategory[1]}/>
           </section>
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-slate-100 py-12">
+      {/* <section className="bg-slate-100 py-12">
         <div className="mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0">
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 pb-8">
@@ -143,7 +143,7 @@ const Body = ({ totalPaddingToGive, setReturnPage }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-12 md:py-24 bg-my-background bg-cover bg-center relative">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black opacity-50"></div>

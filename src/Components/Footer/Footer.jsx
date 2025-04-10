@@ -138,9 +138,8 @@ const Footer = () => {
         </div>
         <div className="w-full border-t border-white">
           <p className="pt-12 text-center">
-            &copy; 2024 Vardaan Farms | All rights Reserved <Link to={"/privacyPolicy"} className="hover:scale-110 transition hover:text-green-600">| Privacy Policy</Link>
-            <Link to={"/termsAndConditions"} className="hover:scale-110 transition hover:text-green-600"> | Terms & conditions</Link>
-            
+            &copy; 2024 Vardaan Farms | All rights Reserved <Link to={"/privacy-policy"} className="hover:scale-110 transition hover:text-green-600">| Privacy Policy</Link>
+            <Link to={"/terms-and-conditions"} className="hover:scale-110 transition hover:text-green-600"> | Terms & conditions</Link>     
           </p>
         </div>
       </div>

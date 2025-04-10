@@ -15,18 +15,22 @@ const Blogs = () => {
     navigate(url);
   }
 
+  const articleSchema = {};
   return (
     <section className="bg-slate-100 text-black min-h-screen" id="blogPage">
       <Helmet>
-        <title>Our Blogs - Dairy Farm Insights</title>
+        <title>Vardaan Farms Blog: Fresh Insights on Dairy, Health & More!</title>
         <meta
           name="description"
-          content="Explore a variety of topics about dairy farming, from maintaining a safe and sustainable environment to producing delicious and nutritious dairy products. Join us to learn more about A2 Desi Cow Milk, Full Cream Milk, Toned Milk, and more."
+          content="Welcome to the Vardaan Farms Blog! Explore insights on dairy, healthy living, and farm sustainability. Stay informed and enjoy fresh, pure dairy with us!"
         />
         <meta
           name="keywords"
-          content="Dairy Farm, A2 Desi Cow Milk, Full Cream Milk, Toned Milk, Sustainable Dairy Farming"
+          content="Vardaan dairy, Vardaan Milk, Vardaan Farms"
         />
+        <script type="application/ld+json">
+        {JSON.stringify(articleSchema)}
+        </script>
       </Helmet>
       <div className="p-24 md:p-44 mx-auto max-w-[1400px] lg:w-3/4 md:w-11/12 px-4 md:px-0 flex flex-col gap-6">
         <span className="md:text-center font-bold text-green-600 text-lg">

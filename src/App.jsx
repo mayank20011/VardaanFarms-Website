@@ -1,22 +1,20 @@
 import { lazy, Suspense } from "react";
 import React, { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import HomePage from "./Pages/Home/HomePage.jsx";
-
+import ScrollToTop from "./Components/ScrollTop/ScrollTop.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
+import WhatsappLink from "./Components/WhatsappLink/WhatsappLink.jsx";
 const Products = lazy(() => import("./Pages/Products/Products.jsx"));
 const AboutUs = lazy(() => import("./Pages/AboutUs/AboutUs.jsx"));
 const ContactUs = lazy(() => import("./Pages/ContactUs/ContactUs.jsx"));
 const Blogs = lazy(() => import("./Pages/Blogs/Blogs.jsx"));
-
-import { Route, Routes } from "react-router-dom";
-import ScrollToTop from "./Components/ScrollTop/ScrollTop.jsx";
-import ReadFullBlog from "./Pages/ReadFullBlog/ReadFullBlog.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
-import WhatsappLink from "./Components/WhatsappLink/WhatsappLink.jsx";
-import ProductPage from "./Pages/ProductPage/ProductPage.jsx";
-import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy.jsx";
-import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition.jsx";
+const ReadFullBlog = lazy (()=>import("./Pages/ReadFullBlog/ReadFullBlog.jsx"));
+const ProductPage = lazy(()=> import("./Pages/ProductPage/ProductPage.jsx"));
+const PrivacyPolicy = lazy(()=> import("./Pages/PrivacyPolicy/PrivacyPolicy.jsx"));
+const TermsAndCondition = lazy (()=> import("./Pages/TermsAndCondition/TermsAndCondition.jsx"));
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
