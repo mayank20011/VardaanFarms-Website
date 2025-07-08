@@ -67,7 +67,7 @@ export default function App({ setReturnPage }) {
             pera={
               "A2 Desi cow milk is healthy, natural, and easily digestible."
             }
-            link={"product/a2DesiCowMilk"}
+            link={"product/a2-desi-cow-milk"}
             bgColor={"#e8b794"}
             fontColor={"white"}
           />
@@ -77,7 +77,7 @@ export default function App({ setReturnPage }) {
             img={fullCream}
             heading={"Full Cream"}
             pera={"Full cream A2 Desi cow milk is rich, creamy, nutritious."}
-            link={"product/fullCream"}
+            link={"product/full-cream"}
             bgColor={"#f9b3b3"}
           />
         </SwiperSlide>
@@ -86,7 +86,7 @@ export default function App({ setReturnPage }) {
             img={tonedMilk}
             heading={"Toned Milk"}
             pera={"Light, nutritious, balanced milk, great for daily use."}
-            link={"product/tonedMilk"}
+            link={"product/toned-milk"}
             bgColor={"#8cd8d7"}
           />
         </SwiperSlide>
@@ -97,7 +97,7 @@ export default function App({ setReturnPage }) {
             pera={
               "Lighter, low-fat option, healthy, easily digestible for everyone."
             }
-            link={"product/doubleTonedMilk"}
+            link={"product/double-toned-milk"}
             bgColor={"#a999cf"}
           />
         </SwiperSlide>
@@ -106,7 +106,7 @@ export default function App({ setReturnPage }) {
             img={naturalCowMilk}
             heading={"Natural Cow Milk"}
             pera={"Pure, fresh milk, straight from cows, wholesome goodness."}
-            link={"product/naturalCowMilk"}
+            link={"product/natural-cow-milk"}
             bgColor={"#8cbfe0"}
           />
         </SwiperSlide>
@@ -115,7 +115,7 @@ export default function App({ setReturnPage }) {
             img={buffaloMilk}
             heading={"Buffalo Milk"}
             pera={"Creamy, rich milk, full of flavor, very nutritious."}
-            link={"product/buffaloMilk"}
+            link={"product/buffalo-milk"}
             bgColor={"#6b6972"}
           />
         </SwiperSlide>
@@ -126,7 +126,7 @@ export default function App({ setReturnPage }) {
             pera={
               "Convenient, larger size, perfect for household needs, budget-friendly."
             }
-            link={"product/familyPack"}
+            link={"product/family-pack"}
             bgColor={"#f28d92"}
           />
         </SwiperSlide>
@@ -135,7 +135,7 @@ export default function App({ setReturnPage }) {
             img={butterMilk}
             heading={"Butter Milk"}
             pera={"Light, refreshing drink, aids digestion, loved by all."}
-            link={"product/butterMilk"}
+            link={"product/butter-milk"}
             bgColor={"#6b957c"}
           />
         </SwiperSlide>
@@ -144,7 +144,7 @@ export default function App({ setReturnPage }) {
             img={masalaChach}
             heading={"Masala Chach"}
             pera={"Spiced, tangy drink, refreshing, perfect for summer days."}
-            link={"product/masalaChach"}
+            link={"product/masala-chach"}
             bgColor={"#a7d87f"}
           />
         </SwiperSlide>
@@ -153,7 +153,7 @@ export default function App({ setReturnPage }) {
             img={slimCurd}
             heading={"Slim Curd"}
             pera={"Low-fat, smooth curd, healthy choice, great taste."}
-            link={"product/slimCurd"}
+            link={"product/slim-curd"}
             bgColor={"#a4d8e3"}
           />
         </SwiperSlide>
