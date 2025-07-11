@@ -1,7 +1,7 @@
-import React from "react";
 import SelectProductComponent from "../SelectProductComponent/SelectProductComponent";
 import { useNavigate } from "react-router-dom";
 import arrowLeft from "../../img/arrowLeft.svg";
+import ProductSwiper from "./ProductSwiper";
 
 function ProductDetails({ data, returnPage }) {
   const navigate = useNavigate();
@@ -17,12 +17,13 @@ function ProductDetails({ data, returnPage }) {
       <div className="md:w-1/2 relative">
         <img src={arrowLeft} alt="arrow-left" onClick={navigateBack} className="w-10 bg-white rounded-md cursor-pointer"/>
         <div className="aspect-[16/9]">
-          <img
-            src={data.img}
+          {/* <img
+            src={`${data.img[0]}`}
             alt=""
             className="mx-auto w-4/5"
             style={{ filter: "drop-shadow(5px 5px 10px black)" }}
-          />
+          /> */}
+          <ProductSwiper images={data.img}/>
         </div>
       </div>
 
